@@ -9,6 +9,11 @@ WinXound is a free and open source Front-End GUI Editor for CSound, CSoundAV, CS
 
 ---
 
+## Build Guides
+
+- Windows build guide: [Windows/README.md](Windows/README.md)
+- Linux build guide: [Linux/README.md](Linux/README.md)
+
 ## About
 
 WinXound is a lightweight, powerful editor designed for Csound users. It provides a user-friendly interface for editing and compiling audio code across multiple platforms.
