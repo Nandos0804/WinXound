@@ -13,3 +13,17 @@ Windows/bin/WinXound_Net.exe
 Windows/bin/WinXound_Net.pdb
 Windows/bin/WinXound_Net.vshost.exe
 Windows/bin/WinXound_Net.vshost.exe.manifest
+Linux/.DS_Store
+Linux/.anjuta/
+Linux/.anjuta_sym_db.db
+Linux/autom4te.cache/
+Linux/config.h
+Linux/config.log
+Linux/config.status
+Linux/libtool
+Linux/Makefile
+Linux/stamp-h1
+Linux/src/.deps/
+Linux/src/Makefile
+Linux/scintilla/.deps/
+Linux/scintilla/bin/

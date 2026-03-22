@@ -1,7 +1,0 @@
-Indicator.o: Indicator.cxx Platform.h Scintilla.h Indicator.h
-
-Platform.h:
-
-Scintilla.h:
-
-Indicator.h:
