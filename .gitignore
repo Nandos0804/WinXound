@@ -1,0 +1,15 @@
+Windows/**/*.user
+Windows/**/*.suo
+Windows/**/obj/
+Windows/ScintillaTextEditor/bin/
+Windows/Utility/OpcodesParser/OpcodesParser/bin/
+Windows/scintilla211_for_winxound/bin/
+Windows/SciLexer.dll
+Windows/bin/SciLexer.dll
+Windows/bin/ScintillaTextEditor.dll
+Windows/bin/ScintillaTextEditor.pdb
+Windows/bin/Utility/WinXound_RTConsole.exe
+Windows/bin/WinXound_Net.exe
+Windows/bin/WinXound_Net.pdb
+Windows/bin/WinXound_Net.vshost.exe
+Windows/bin/WinXound_Net.vshost.exe.manifest
