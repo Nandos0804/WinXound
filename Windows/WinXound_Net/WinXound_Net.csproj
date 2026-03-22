@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{404F9597-D148-40E1-AA08-293449DED8B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinXound_Net</RootNamespace>
+    <AssemblyName>WinXound_Net</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>WinXound.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileAccessRights.cs" />
+    <Compile Include="FormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNew.Designer.cs">
+      <DependentUpon>FormNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrcScoLinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrcScoLinks.Designer.cs">
+      <DependentUpon>FormOrcScoLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayer.Designer.cs">
+      <DependentUpon>FormPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettingsAutoSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettingsAutoSearch.Designer.cs">
+      <DependentUpon>FormSettingsAutoSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxCodeFormatter.cs" />
+    <Compile Include="wxCodeFormatterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wxCodeFormatterForm.designer.cs">
+      <DependentUpon>wxCodeFormatterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxCodeRepositoryInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wxCodeRepositoryInputBox.Designer.cs">
+      <DependentUpon>wxCodeRepositoryInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxCodeRepositoryModifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wxCodeRepositoryModifyForm.Designer.cs">
+      <DependentUpon>wxCodeRepositoryModifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxCSoundOpcodesRepository.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="wxCSoundOpcodesRepository.Designer.cs">
+      <DependentUpon>wxCSoundOpcodesRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="wxEditor.Designer.cs">
+      <DependentUpon>wxEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnalysis.Designer.cs">
+      <DependentUpon>FormAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFindAndReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindAndReplace.Designer.cs">
+      <DependentUpon>FormFindAndReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFindLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindLine.Designer.cs">
+      <DependentUpon>FormFindLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputBox.Designer.cs">
+      <DependentUpon>FormInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertHeader.Designer.cs">
+      <DependentUpon>FormInsertHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnalysis.resx">
+      <DependentUpon>FormAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindAndReplace.resx">
+      <DependentUpon>FormFindAndReplace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindLine.resx">
+      <DependentUpon>FormFindLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputBox.resx">
+      <DependentUpon>FormInputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertHeader.resx">
+      <DependentUpon>FormInsertHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxCompilerConsole.resx">
+      <DependentUpon>wxCompilerConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxIntelliTip.resx">
+      <DependentUpon>wxIntelliTip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="wxCodeRepository.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="wxCodeRepository.Designer.cs">
+      <DependentUpon>wxCodeRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxCompiler.cs" />
+    <Compile Include="wxCompilerConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="wxCompilerConsole.Designer.cs">
+      <DependentUpon>wxCompilerConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxDraggableTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="wxFindCodeStructure.cs" />
+    <Compile Include="wxGlobal.cs" />
+    <Compile Include="wxImportExport.cs" />
+    <Compile Include="wxIntelliTip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="wxIntelliTip.Designer.cs">
+      <DependentUpon>wxIntelliTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wxNamedPipe.cs" />
+    <Compile Include="wxPosition.cs" />
+    <Compile Include="wxRegistry.cs" />
+    <Compile Include="wxSettings.cs" />
+    <Compile Include="wxSocket.cs" />
+    <Compile Include="wxTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScintillaTextEditor\ScintillaTextEditor.csproj">
+      <Project>{B7F0C8F4-9380-4F57-BB06-03D57D62D0C6}</Project>
+      <Name>ScintillaTextEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormNew.resx">
+      <DependentUpon>FormNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrcScoLinks.resx">
+      <DependentUpon>FormOrcScoLinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayer.resx">
+      <DependentUpon>FormPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettingsAutoSearch.resx">
+      <DependentUpon>FormSettingsAutoSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxCodeFormatterForm.resx">
+      <DependentUpon>wxCodeFormatterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxCodeRepositoryInputBox.resx">
+      <DependentUpon>wxCodeRepositoryInputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxCodeRepositoryModifyForm.resx">
+      <DependentUpon>wxCodeRepositoryModifyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxCSoundOpcodesRepository.resx">
+      <DependentUpon>wxCSoundOpcodesRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxEditor.resx">
+      <DependentUpon>wxEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxCodeRepository.resx">
+      <DependentUpon>wxCodeRepository.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wxDraggableTabControl.resx">
+      <DependentUpon>wxDraggableTabControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="History.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReadMe.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\opcodes.txt" />
+    <Content Include="WinXound.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScintillaTextEditor", "ScintillaTextEditor.csproj", "{B7F0C8F4-9380-4F57-BB06-03D57D62D0C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{A2389022-2F88-42F3-8078-FCDD0E406FA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7F0C8F4-9380-4F57-BB06-03D57D62D0C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F0C8F4-9380-4F57-BB06-03D57D62D0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F0C8F4-9380-4F57-BB06-03D57D62D0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F0C8F4-9380-4F57-BB06-03D57D62D0C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2389022-2F88-42F3-8078-FCDD0E406FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2389022-2F88-42F3-8078-FCDD0E406FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2389022-2F88-42F3-8078-FCDD0E406FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2389022-2F88-42F3-8078-FCDD0E406FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

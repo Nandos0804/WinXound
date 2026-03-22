@@ -1,0 +1,31 @@
+C:\Users\Teto\AppData\Local\Temporary Projects\OpcodesParser\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\AppData\Local\Temporary Projects\OpcodesParser\obj\Debug\OpcodesParser.Form1.resources
+C:\Users\Teto\AppData\Local\Temporary Projects\OpcodesParser\obj\Debug\OpcodesParser.Properties.Resources.resources
+C:\Users\Teto\AppData\Local\Temporary Projects\OpcodesParser\obj\Debug\OpcodesParser.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\bin\OpcodesParser.exe.config
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.Form1.resources
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.Properties.Resources.resources
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\bin\OpcodesParser.exe
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\bin\OpcodesParser.pdb
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.exe
+C:\Users\Teto\Desktop\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\bin\OpcodesParser.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.exe
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\bin\OpcodesParser.exe
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\bin\OpcodesParser.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.Form1.resources
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_275 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\bin\OpcodesParser.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.exe
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\bin\OpcodesParser.exe
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\bin\OpcodesParser.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.Form1.resources
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_291 - Copia\Utility\OpcodesParser\OpcodesParser\obj\Debug\OpcodesParser.csproj.GenerateResource.Cache

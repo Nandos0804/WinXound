@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>32</key>
+	<string>#000000,#FFFFFF,False,False,256,False,DefaultStyle</string>
+	<key>0</key>
+	<string>#000000,#FFFFFF,False,False,256,False,WhiteSpace</string>
+	<key>1</key>
+	<string>#009600,#FFFFFF,False,False,256,False,CommentMulti</string>
+	<key>2</key>
+	<string>#009600,#FFFFFF,False,False,256,False,CommentLine</string>
+	<key>4</key>
+	<string>#000000,#FFFFFF,False,False,256,False,Numbers</string>
+	<key>5</key>
+	<string>#0000FF,#FFFFFF,False,False,256,False,Opcodes</string>
+	<key>6</key>
+	<string>#B40000,#FFFFFF,False,False,256,False,DoubleQuotedString</string>
+	<key>9</key>
+	<string>#A032A0,#FFFFFF,False,False,256,False,PreprocessorAndMacro</string>
+	<key>10</key>
+	<string>#0000FF,#FFFFFF,False,False,256,False,Operator=</string>
+	<key>16</key>
+	<string>#DC006E,#FFFFFF,False,False,256,False,CsdTags</string>
+	<key>20</key>
+	<string>#A032A0,#FFFFFF,False,False,256,False,UserOpcodes</string>
+	<key>21</key>
+	<string>#0000FF,#FFFFFF,False,False,256,False,InstrEndin</string>
+	<key>33</key>
+	<string>#828282,#F4F4F4,False,False,256,False,Margins</string>
+	<key>256</key>
+	<string>#000000,#A0C8FF,False,False,256,False,TextSelection</string>
+	<key>257</key>
+	<string>#0000FF,#0000FF,False,False,40,False,Bookmarks</string>
+	<key>258</key>
+	<string>#C0C0C0,#000000,False,False,256,False,VerticalRuler</string>
+	<key>259</key>
+	<string>#FFFF64,#000000,False,False,256,False,CaretLineMarker</string>
+</dict>
+</plist>

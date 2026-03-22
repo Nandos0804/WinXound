@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>sndinfo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<div class="navheader">
+			<table width="100%" summary="Navigation header">
+				<tr>
+					<th colspan="3" align="center">
+						sndinfo</th>
+				</tr>
+				<tr>
+					<td width="20%" align="left"></td>
+					<th width="60%" align="center">
+						File Queries (SNDINFO)</th>
+					<td width="20%" align="right">&nbsp;</td>
+				</tr>
+			</table>
+			<hr>
+		</div>
+		<div class="refentry" lang="en" xml:lang="en">
+			<a id="sndinfo"></a>
+			<div class="titlepage"></div>
+			<div class="refnamediv">
+				<h2>
+					<span class="refentrytitle">sndinfo</span>
+				</h2>
+				<p>sndinfo — Displays information about a soundfile. <a id="IndexSndinfo" class="indexterm">
+					</a>
+				</p>
+			</div>
+			<div class="refsect1" lang="en" xml:lang="en">
+				<a id="id1636034"></a>
+				<h2>Description</h2>
+				<p>
+					Get basic information about one or more soundfiles.
+				</p>
+			</div>
+			<div class="refsect1" lang="en" xml:lang="en">
+				<a id="id1636678"></a>
+				<h2>Syntax</h2>
+				<pre class="synopsis"><span class="command"><strong>csound -U sndinfo</strong></span> [options] soundfilenames ...</pre>
+				<pre class="synopsis"><span class="command"><strong>sndinfo</strong></span> [options] soundfilenames ...</pre>
+			</div>
+			<div class="refsect1" lang="en" xml:lang="en">
+				<a id="id1636709"></a>
+				<h2>Initialization</h2>
+				<p>
+					<span class="emphasis">
+						<em>sndinfo</em></span>
+					will attempt to find each named file, open it for reading, read in the 
+					soundfile header, then print a report on the basic information it finds. The 
+					order of search across soundfile directories is as described furthermore. If 
+					the file is of type AIFF, some further details are listed first.
+				</p>
+				<p>
+					There are two option types:
+				</p>
+				<DIV class="orderedlist">
+					<OL type="1">
+						<li>
+							<p><span class="emphasis"><em>-i</em></span>
+								or
+								<span class="emphasis">
+									<em>-i1</em></span>
+								will print instrument information, which includes looping. The option continues 
+								until a
+								<span class="emphasis">
+									<em>-i0</em></span>
+								option.</p>
+						<li>
+							<p>The other option is
+								<span class="emphasis">
+									<em>-b</em></span>
+								which prints the broadcast information for WAV files. It can similarly be 
+								negated with
+								<span class="emphasis">
+									<em>-b0</em></span>.</p>
+						</li>
+					</OL>
+				</DIV>
+				<p>
+				</p>
+			</div>
+			<div class="refsect1" lang="en" xml:lang="en">
+				<a id="id1636795"></a>
+				<DIV>
+					<H2>Directories</H2>
+					<P><FONT size="3">Filenames are of two kinds, source soundfiles and resultant analysis 
+							files. Each has a hierarchical naming convention, influenced by the directory 
+							from which the Utility is invoked. Source soundfiles with a full pathname 
+							(begins with dot (.), slash (/), or for ThinkC includes a colon (:)), will be 
+							sought only in the directory named. Soundfiles without a path will be sought 
+							first in the current directory, then in the directory named by the SSDIR 
+							environment variable (if defined), then in the directory named by SFDIR. An 
+							unsuccessful search will return a "cannot open" error. </FONT>
+					</P>
+				</DIV>
+				</H2>
+				<P>Resultant analysis files are written into the current directory, or to the named 
+					directory if a path is included. It is tidy to keep analysis files separate 
+					from sound files, usually in a separate directory known to the SADIR variable. 
+					Analysis is conveniently run from within the SADIR directory. When an analysis 
+					file is later invoked by a Csound generator it is sought first in the current 
+					directory, then in the directory defined by SADIR. </FONT>
+				</P>
+				<H2>Examples</H2>
+				<p>
+				</p>
+				<pre class="programlisting">
+<span class="emphasis"><em>csound -U sndinfo</em></span> test Bosendorfer/"BOSEN mf A0 st" foo foo2</pre>
+				<p>
+					where the environment variables SFDIR = /u/bv/sound, and SSDIR = 
+					/so/bv/Samples, might produce the following:
+				</p>
+				<pre class="programlisting">
+util  SNDINFO:      
+     /u/bv/sound/test:
+           srate 22050, monaural, 16 bit shorts, 1.10 seconds
+           headersiz 1024, datasiz 48500  (24250 sample frames)
+  
+    /so/bv/Samples/Bosendorfer/BOSEN mf A0 st:  AIFF, 197586 stereo samples, base Frq 261.6 (MIDI 60), sustnLp: mode 1, 121642 to 197454, relesLp: mode 0
+     AIFF soundfile, looping with modes 1, 0
+     srate 44100, stereo, 16 bit shorts, 4.48 seconds
+  
+     headersiz  402, datasiz 790344  (197586 sample frames)
+  
+     /u/bv/sound/foo:
+           no recognizable soundfile header
+  
+     /u/bv/sound/foo2:
+            couldn't find</pre>
+				<PRE class="programlisting">&nbsp;</PRE>
+				<PRE class="programlisting">&nbsp;</PRE>
+			</div>
+		</div>
+	</body>
+</html>

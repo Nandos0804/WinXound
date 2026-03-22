@@ -1,0 +1,1050 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.2" />
+<title>Cabbage v0.01</title>
+<style type="text/css">
+/* Sans-serif font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+div#toctitle,
+span#author, span#revnumber, span#revdate, span#revremark,
+div#footer {
+  font-family: sans-serif;
+}
+
+/* Serif font. */
+div.sectionbody {
+  font-family: serif;
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+ul > li     { color: #aaa; }
+ul > li > * { color: black; }
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revnumber, span#revdate, span#revremark {
+}
+
+div#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+  margin-right: 10%;
+  color: #606060;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock, div.verseblock {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  margin-right: 10%;
+  border-left: 5px solid #dddddd;
+  color: #777777;
+}
+
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock > pre.content {
+  font-family: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 3px solid #dddddd;
+}
+
+div.exampleblock > div.content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead, p.table.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+div.colist td {
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  vertical-align: top;
+}
+div.colist td img {
+  margin-top: 0.3em;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toc {
+  margin-bottom: 2.5em;
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+window.onload = function(){asciidoc.footnotes(); asciidoc.toc(2);}
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([2-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  var cont = document.getElementById("content");
+  var noteholder = document.getElementById("footnotes");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      // Use [\s\S] in place of . so multi-line matches work.
+      // Because JavaScript has no s (dotall) regex flag.
+      note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      spans[i].innerHTML =
+        "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+        "' title='View footnote' class='footnote'>" + n + "</a>]";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+}
+
+}
+/*]]>*/
+</script>
+</head>
+<body class="book">
+<div id="header">
+<h1>Cabbage v0.01</h1>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph"><p>Cabbage is a software for creating Csound based audio plugins. It also ships with a standalone host so that instrument can be tested and played without the need of a VST host. Cabbage provide a simple albeit powerful toolkit for the development of cross-platform audio software. Although the project is being developed with real time, non-score driven performance in mind it can be used to run just about any Csound file.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_cabbage">Running Cabbage</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>When you open Cabbage you will be met with a small blank screen. Clicking on the options button will give you a access to the following commands</p></div>
+<div class="sect2">
+<h3 id="_open">Open</h3>
+<div class="paragraph"><p>Use this command to open a cabbage patch(Unified Csound file with a dedicated Cabbage section). Any text editor or Csound frontend can be used to create Cabbage patches.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_update">Update</h3>
+<div class="paragraph"><p>Whenever you make any changes to the text in a Cabbage patch you can hit this command so that the changes are reflected in the Cabbage GUI and processing methods.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_export_as_plugin">Export As Plugin</h3>
+<div class="paragraph"><p>Use this command to export your Cabbage patch as a VST/AU plugin. You will be asked to give a name and location for your plugin. Cabbage will then create a plugin library and place a copy of your Cabbage patch in the same directory as the plugin. Cabbage patches must reside in the same directly as their equivalent plugins. For example if you have created a plugin call Amp, you must make sure that Amp.csd is in the same directory. If not your plugin will not run. The exported plugins do not have any menus so you will not have access to any of the <em>Options</em> you have in the Cabbage host.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_audio_settings">Audio Settings</h3>
+<div class="paragraph"><p>Clicking on the audio setting command will open the audio settings window. Here you can choose your audio/MIDI input/output devices. You can also select the sampling rate and audio buffer sizes. Small buffer sizes will reduce latency but might cause some drop outs. Keep testing buffer sizes until you find a setting that works best for your machine.</p></div>
+<div class="paragraph"><p>The Cabbage host uses its own audio IO callbacks which will override any audio and MIDI settings specified in the CsOptions sections of the cabbage patch.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_view_csound_messages">View Csound Messages</h3>
+<div class="paragraph"><p>Call this to display Csound output messages.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="note.png" alt="Note" />
+</td>
+<td class="content">The Csound Message window is invaluable when it comes to debugging patches. Using one of the many print family of opcodes in Csound allows you to print useful information to this window while Csound is running.</td>
+</tr></table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="X1">Your first Cabbage patch</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The following section illustrates the steps involved in building a simple Cabbage patch. It&#8217;s assumed that the user has some prior knowledge of Csound. For a list of Csound tutorials and resources please visit the <a href="http://www.csounds.com">Csound Homepage</a>. When creating a Cabbage patch users must provide special xml-style tags at the top of a unified Csound file. The Cabbage specific code should be placed between an opening &lt;Cabbage&gt; and a closing &lt;/Cabbage&gt; tag.</p></div>
+<div class="paragraph"><p>Each line of Cabbage specific code relates to one GUI control only and the syntax is non case-sensitive. Each and every Cabbage application must have a form widget. Calling a Form widget creates the main application window.  Forms do not communicate with an instance of Csound, only child widgets and menus contained within a form can communicate with an instance of Csound.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="note.png" alt="Note" />
+</td>
+<td class="content">This section does not go into details about each Cabbage widget. Details about the various widgets can be found in quick reference section.</td>
+</tr></table>
+</div>
+<div class="paragraph"><p>Code to create the most basic of Cabbage applications looks like this:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>&lt;Cabbage&gt;
+form caption("Minimal Example") size(280, 40)
+&lt;/Cabbage&gt;
+&lt;CsoundSynthesizer&gt;
+&lt;CsOptions&gt;
+-n -g
+&lt;/CsOptions&gt;
+&lt;CsInstruments&gt;
+sr = 44100
+ksmps = 64
+nchnls = 2
+
+instr 1
+a1 oscil 10000, 440, 1
+outs a1, a1
+endin
+
+&lt;/CsInstruments&gt;
+&lt;CsScore&gt;
+f1 0 1024 10 1
+i1 0 1000
+&lt;/CsScore&gt;
+&lt;/CsoundSynthesizer&gt;</tt></pre>
+</div></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="note.png" alt="Note" />
+</td>
+<td class="content">You&#8217;ll notice that a <em>-n</em> and <em>-g</em> were passed to Csound in the CsOptions section. -n stops Csound from writing audio to disk. This must be used as Cabbage manages it&#8217;s own audio IO callbacks. The <em>-g</em> prevents any fltk widgets from displaying. When running Cabbage patches as plugins you will need to be careful to ensure your instrument runs for long enough time. It&#8217;s probably useful to get into the habit of passing long durations to you i-statements.</td>
+</tr></table>
+</div>
+<div class="sect2">
+<h3 id="_controlling_your_cabbage_patch">Controlling your Cabbage patch</h3>
+<div class="paragraph"><p>The biggest drawback with the application presented above is that users can not interact with the underlying Csound instrument. In order to do this we can use one of the channel opcodes and a IO widget such as a slider. When one wants to interact with Csound one must supply a channel parameter to the widget. Widget parameters can be either strings denoted with double quotes or float values. More information on different widget parameters is given below in the <a href="#X1">Quick Reference</a> section.</p></div>
+<div class="paragraph"><p>When one supplies a channel name to a widget Csound will listen for data being sent on that channel through the use of the named channel opcodes. There are a few ways of retrieving data from the named channel bus, one such way is by using the chnget opcode defined in Csound as:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>kval chnget Sname</tt></pre>
+</div></div>
+<div class="paragraph"><p>Where Sname is the name of the channel that was passed as the channel parameter to the IO widget. We can modify our previous example so that a slider controls the frequency of our oscillator.</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>&lt;Cabbage&gt;
+form caption("Minimal Example") size(280, 40)
+hslider channel("freq"), pos(15, 23),  max(1500), caption("Frequency");
+&lt;/Cabbage&gt;
+&lt;CsoundSynthesizer&gt;
+&lt;CsOptions&gt;
+csound  -odevaudio -b64 -B4096 temp.orc temp.sco
+&lt;/CsOptions&gt;
+&lt;CsInstruments&gt;
+sr = 44100
+ksmps = 64
+nchnls = 2
+
+instr 1
+kfreq chnget "freq"
+a1 oscil 10000, kfreq, 1
+outs a1, a1
+endin
+
+&lt;/CsInstruments&gt;
+&lt;CsScore&gt;
+f1 0 1024 10 1
+i1 0 100
+&lt;/CsScore&gt;
+&lt;/CsoundSynthesizer&gt;</tt></pre>
+</div></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cabbage_widgets">Cabbage Widgets</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Each and every Cabbage must be supplied with a value for top, left, width and height. They can be passed to a widget using the pos() and size() macros:</p></div>
+<div class="paragraph"><p><tt>pos(top, left)</tt>: position on screen in pixels</p></div>
+<div class="paragraph"><p><tt>size(width, height)</tt>: size of application in pixels their position on screen and their size.</p></div>
+<div class="paragraph"><p>Apart from position and size all other parameters are optional. If left out default values will be assigned. Certain widgets accept certain macros. For example groupbox and form both accepts a colour() macro to specify colour. Sliders accept a min and max values while other widgets don&#8217;t. A list of macros supported by each widgets is given in the <a href="#X1">Quick Reference</a> section. Parameters can appear in any order and are not case-sensitive. Below is a list of the different GUI controls currently available in Cabbage.</p></div>
+<div class="sect2">
+<h3 id="_form">Form</h3>
+<div class="listingblock">
+<div class="content">
+<pre><tt>form caption("title"), pos(Top, Left), size(Width, Height)</tt></pre>
+</div></div>
+<div class="paragraph"><p><tt>caption</tt>: The string passed to caption will be the string that appears on the main application window.</p></div>
+<div class="paragraph"><p>Form creates the main application window. Top, Left, Width and Height are all integer values. The default values for size are 400x600. Forms do not communicate with an instance of Csound, only child widgets and menus contained within a form can communicate with an instance of Csound, therefore no channel identifier is needed.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_sliders">Sliders</h3>
+<div class="listingblock">
+<div class="content">
+<pre><tt>slider chan("chanName"), pos(Top, Left), size(Width, Height), min(float), max(float), value(float), kind("type"), caption("caption")</tt></pre>
+</div></div>
+<div class="paragraph"><p><tt>min</tt>: minimum slider value</p></div>
+<div class="paragraph"><p><tt>max</tt>: maximum slider value</p></div>
+<div class="paragraph"><p><tt>value</tt>: initial value for slider</p></div>
+<div class="paragraph"><p><tt>kind</tt>: string denoted the type of slider, must be <em>vertical</em> or <em>horizontal</em>. Defaults to horizontal.</p></div>
+<div class="paragraph"><p><tt>channel</tt>: string denoting the named channel upon which to communicate with Csound.</p></div>
+<div class="paragraph"><p><tt>name</tt>: string denoting the parameter name that will appear in a VST host</p></div>
+<div class="paragraph"><p>Scrollbar creates a scrollbar/slider that can be used to send data to Csound on the channel specified through the chanName string. Min and Max will determine the slider range while value initialises the slider to a particular value.  There are three types of slider widgets provided by Cabbage:</p></div>
+<div class="paragraph"><p>Horizontal slider = hslider
+Vertical slider = vslider
+Rotary/Pot slider = rslider</p></div>
+<div class="paragraph"><p>Presented above is the syntax for a horizontal slider. In order to change it to another slider type simple substitute hslider with the appropriate identifier.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_button">Button</h3>
+<div class="listingblock">
+<div class="content">
+<pre><tt>button channel("chanName"), pos(Top, Left), size(Width,Height), OnOffCaption("OnCaption","OffCaption")</tt></pre>
+</div></div>
+<div class="paragraph"><p><tt>onoffCaption</tt>: The button will toggle between on and off captions when the pressed.</p></div>
+<div class="paragraph"><p>Button creates a button on screen that can be used for a whole range of different tasks. The "channel" string identifies the channel on which the host will communicate with an instance of Csound. "OnCaption" and "OffCaption" determine the strings that will appear on the button as users toggles between two states, i.e., 0 or 1. By default these captions are set to "On" and "Off" but the user can specifiy any strings they wish.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_checkbox">CheckBox</h3>
+<div class="listingblock">
+<div class="content">
+<pre><tt>checkbox channel("chanName"),  pos(Top, Left), size(Width, Height), value(val), caption("Caption")</tt></pre>
+</div></div>
+<div class="paragraph"><p><tt>caption</tt>: string that will appear beside checkbox</p></div>
+<div class="paragraph"><p>Checkbox creates a checkbox which functions like a button only the associated caption will not change when the user checks it. As with all controls capable of sending data to an instance of Csound the channel string is the channel on which the control will communicate with Csound. The value attribute defaults to 0 while the caption is set by default to the same name as the channel.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_combobox">ComboBox</h3>
+<div class="listingblock">
+<div class="content">
+<pre><tt>combobox channel("chanName"),  pos(Top, Left), size(Width, Height), value(val), items("item1", "item2", ...), caption("caption");</tt></pre>
+</div></div>
+<div class="paragraph"><p><tt>items</tt>: list of items that will populate combobox</p></div>
+<div class="paragraph"><p>Combobox creates a drop-down list of items which end-users can choose from. Once the user selects an item, the index of their selection will be sent to Csound on a channel named by the channel string. The default value is 0 and three items named "item1", "item2" and "item3" fill the list by default.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_groupbox">GroupBox</h3>
+<div class="listingblock">
+<div class="content">
+<pre><tt>groupbox caption("Caption"), pos(Top, Left), size(Width, Height), colour("Colour")</tt></pre>
+</div></div>
+<div class="paragraph"><p>Groupbox creates a container for other GUI controls. It does not communicate with Csound but is useful when it comes to organising different widgets.</p></div>
+</div>
+<div class="sect2">
+<h3 id="_keyboard">Keyboard</h3>
+<div class="listingblock">
+<div class="content">
+<pre><tt>keyboard pos(Top, Left), size(Width, Height)</tt></pre>
+</div></div>
+<div class="paragraph"><p>Keyboard creates a piano keyboard that will send MIDI information to your Csound instrument. This is a useful components for testing synth plugins while running patches in the Cabbage host.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="note.png" alt="Note" />
+</td>
+<td class="content">You can only have one keyboard widget on each patch.</td>
+</tr></table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quick_reference">Quick Reference</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This quick reference table table gives a list of the paramters that each Cabbgea widget accepts. Positon and size are the only paramters you <em>must</em> include. All other parameters have default values.</p></div>
+<div class="tableblock">
+<table rules="all"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<col width="171" />
+<col width="68" />
+<col width="91" />
+<col width="91" />
+<col width="114" />
+<col width="114" />
+<col width="114" />
+<thead>
+  <tr>
+    <th align="right">
+    Parameter
+    </th>
+    <th align="center">
+    Form
+    </th>
+    <th align="center">
+    Slider
+    </th>
+    <th align="center">
+    Button
+    </th>
+    <th align="center">
+    CheckBox
+    </th>
+    <th align="center">
+    GroupBox
+    </th>
+    <th align="center">
+    ComboBox
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="right">
+    position
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    size
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    channel
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    min
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    max
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    value
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    onoffCaption
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    caption
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    items
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    x
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    colour
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+    <td align="center">
+    x
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting_faq">Troubleshooting FAQ</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>TODO&#8230;.
+Why does my plugin not work? (midi options command line flags)
+Why does my plugin sound crackly? (-m0d, -b etc&#8230;)
+Why does my host not see my plugin? (make sure the VST path is correct)
+etc&#8230;</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples">Examples</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>TODO&#8230;.
+Below is an overview of the examples that come with Cabbage.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_license">License</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Cabbage is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.</p></div>
+<div class="paragraph"><p>Cabbage is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+You should have received a copy of the GNU Lesser General Public License along with Csound; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_acknowledgements">Acknowledgements</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>This project would not have come to fruition without the help of everyone on the Csound mailing list and in particular Victor Lazzarini, John ffitch, Michael Goggins, Steven Yi, Andres Cabrera, Matt Goggins, Stefano Bonetti, Art Hunkins and Istvan Varga.</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2010-11-11 16:28:07 GMT Standard Time
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="windowFindLine">
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkHBox" id="hbox1">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkSpinButton" id="spinbuttonLineNumber">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">&#x25CF;</property>
+            <property name="adjustment">adjustment1</property>
+            <property name="numeric">True</property>
+          </object>
+          <packing>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonFindLine">
+            <property name="label" translatable="yes"> Find </property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <accelerator key="Return" signal="activate"/>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonExit">
+            <property name="label" translatable="yes"> Exit </property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+</interface>

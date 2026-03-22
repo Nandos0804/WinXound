@@ -1,0 +1,606 @@
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_72\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_72\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_72\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_72\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_72\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_72\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_71 (Prove RT)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_71 (Prove RT)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_71 (Prove RT)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_71 (Prove RT)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_71 (Prove RT)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_71 (Prove RT)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_113\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_113\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_113\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_113\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_113\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_113\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_207\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_207\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_207\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_207\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_207\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_207\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_215\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_215\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_215\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_215\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_215\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_215\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_221\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_221\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_221\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_221\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_221\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_221\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 339 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 339 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 339 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 339 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 339 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 339 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 369 (Bug Analysis)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 369 (Bug Analysis)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 369 (Bug Analysis)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 369 (Bug Analysis)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 369 (Bug Analysis)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 369 (Bug Analysis)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 370 (Pvoc-Ex)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 370 (Pvoc-Ex)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 370 (Pvoc-Ex)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 370 (Pvoc-Ex)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 370 (Pvoc-Ex)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 370 (Pvoc-Ex)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 373 (Try catch)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 373 (Try catch)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 373 (Try catch)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 373 (Try catch)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 373 (Try catch)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 373 (Try catch)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 381 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 381 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 381 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 381 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 381 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 381 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 385 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 385 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 385 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 385 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 385 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 385 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 388\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 388\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 388\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 388\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 388\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 388\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 388 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 388 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 388 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 388 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 388 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 388 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 389 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 389 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 389 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 389 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 389 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 389 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 391 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 391 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 391 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 391 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 391 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 391 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 395 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 395 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 395 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 395 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 395 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 395 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 396 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 396 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 396 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 396 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 396 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 396 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 401\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 401\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 401\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 401\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 401\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 401\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 401 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 401 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 401 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 401 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 401 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 401 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 407 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 407 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 407 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 407 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 407 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 407 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 409 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 409 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 409 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 409 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 409 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 409 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 414 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 414 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 414 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 414 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 414 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 414 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 417 - Copia\bin\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 417 - Copia\bin\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 417 - Copia\bin\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 417 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 417 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 417 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 425 - Copia\bin\Utility\WinXound_RTConsole.exe.config
+C:\Users\Teto\Desktop\WinXound 425 - Copia\bin\Utility\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 425 - Copia\bin\Utility\WinXound_RTConsole.pdb
+C:\Users\Teto\Desktop\WinXound 425 - Copia\RTConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 425 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.exe
+C:\Users\Teto\Desktop\WinXound 425 - Copia\RTConsole\obj\x86\Debug\WinXound_RTConsole.pdb

@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+		<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+		<META NAME="GENERATOR" CONTENT="SciTE">
+		<META NAME="CREATED" CONTENT="0;0">
+		<META NAME="CHANGED" CONTENT="20091220;10504000">
+		<META NAME="KEYWORDS" CONTENT="winxound, WinXound, winxoundpro, winxound.net, csound, winsound, csoundav, csound editor, WinXoundPro">
+		<META NAME="vs_targetSchema" CONTENT="http://schemas.microsoft.com/intellisense/ie5">
+		<STYLE TYPE="text/css"> <!-- A:link { color: #0000ff; text-decoration: none }
+		A:visited { color: #0000ff; text-decoration: none }
+	--> 
+		</STYLE>
+	</HEAD>
+	<BODY LANG="it-IT" LINK="#0000ff" VLINK="#0000ff" BGCOLOR="#f5f5f5" DIR="ltr">
+		<A NAME="table_main"></A>
+		<TABLE WIDTH="100%" BORDER="0" CELLPADDING="2" CELLSPACING="1" BGCOLOR="#428ade">
+			<TR>
+				<TD>
+					<P ALIGN="center"><FONT COLOR="#ffffff"><FONT SIZE="6" face="Verdana">WinXound Help</FONT></FONT></P>
+				</TD>
+			</TR>
+		</TABLE>
+		<P STYLE="MARGIN-BOTTOM: 0cm"><A NAME="Table2"><FONT face="Verdana"></FONT></A><BR>
+		</P>
+		<TABLE WIDTH="100%" BORDER="0" CELLPADDING="2" CELLSPACING="1">
+			<TR>
+				<TD VALIGN="top"><A NAME="Table5"></A><CENTER>
+						<TABLE WIDTH="90%" BORDER="0" CELLPADDING="2" CELLSPACING="0">
+								<TR>
+									<TD WIDTH="100%">
+										<P ALIGN="left"><FONT SIZE="2" face="Verdana">
+													<B>WinXound is a free and open-source 
+													Front-End GUI Editor for CSound 5, CSoundAV and CSoundAC, with Python and 
+													Lua support, developed by Stefano Bonetti.<BR>
+													It runs on Microsoft Windows (Xp or major), Mac OsX (10.5 or major) and Linux and it is 
+													optimized to work with the new CSound 5 compiler (older versions may be incompatible).</B>
+													<BR>
+													<BR>
+													<B>Main features:</B><BR>
+													- Edit CSound, Python and Lua files (csd, orc, sco, py, lua) with Syntax Highlight and Rectangular Selection;
+													<BR>
+													- Run CSound, CSoundAV, CSoundAC, Python and Lua compilers;
+													<BR>
+													- Run external language tools (QuteCsound, Idle or other GUI Editors);
+													<BR>
+													- CSound analysis user friendly GUI;
+													<BR>
+													- Integrated CSound manual help;
+													<BR>
+													- Possibilities to set personal colors for the syntax highlighter;
+													<BR>
+													- Convert orc/sco to csd or csd to orc/sco;
+													<BR>
+													- Split the code in two windows horizontally or vertically;
+													<BR>
+													- CSound csd explorer (File structure for Tags and Instruments)
+													<BR>
+													- Line numbers;
+													<BR>
+													- Bookmarks;
+													<BR>
+													- Code repository to store your preferred code;
+													<BR>
+													- CSound Opcodes Autocompletion;
+													<BR>
+													And much more ...
+													<BR>
+													<B>Note</B>: Starting from version 3.0.0, Orc and Sco documents are 
+													automatically converted into the CSD format.<BR>
+													<BR>
+													The main web site of WinXound is: 
+													[<A href="http://winxound.codeplex.com/" target="_blank"><B>winxound.codeplex.com</B></A>]<BR>
+													Please visit it to download newer versions.<BR><BR>
+													<HR SIZE="1">
+													<a href="#installation">Installation</a> - 
+													<a href="#settings">Settings</a> - 
+													<a href="#menu">Menu</a> - 
+													<a href="#editor">Editor View</a> - 
+													<a href="#compiler">Compiler Window</a> - 
+													<a href="#help">Help Window</a> - 
+													<a href="#udo">Code Repository</a> - 
+													<a href="#csoundrepository">CSound Opcodes Repository</a> - 													
+													<a href="#usage">Usage</a> -
+													<a href="#autocompletion">Autocompletion</a> -
+													<a href="#tips">Tips</a>
+													<HR SIZE="1">
+											
+										</P>
+										<P ALIGN="left"><FONT SIZE="2" face="Verdana"><BR>
+										
+													<a name="installation"></a> 
+													<B>1. INSTALLATION</B><BR><BR>
+													<B>Installation:<BR></B>
+													Starting from version 3.0.0 
+													there is no need to install WinXound; only decompress the downloaded zipped 
+													file and double-click on the "WinXound_Net" executable.<BR>
+													<FONT COLOR="#ff0000">
+													Note: WinXound folder must be located in a path where you have full read and 
+													write permission (for example in your user personal folder).
+													<FONT COLOR="#000000">
+													<BR><BR>
+													If you want to associate csd, orc and sco files to WinXound or to create a 
+													WinXound link to your desktop go to "Menu File &gt; Settings &gt; File 
+													associations" tab.
+													<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													<BR>
+													<BR>
+													<BR>
+										</P>
+										<P ALIGN="left">
+													<a name="settings"></a> 
+													<B>2. SETTINGS</B><BR><BR>
+													<U><B>WinXound Settings (Menu File &gt; Settings):</B></U>
+													<BR>
+													All settings are saved inside the WinXound 
+													'Settings' folder (WinXoundSettings.txt): so for example you can create also 
+													multiple WinXound.Net folders with different settings.<BR>
+													<U><B>Note: In order to work correctly, the first time you launch 
+													WinXound, it will ask you to fill some required fields into the Settings Window.</B>
+													<BR></U>
+													(You could change this settings when you want by simply clicking on Menu File &gt; Settings).
+													<BR>
+													<BR>
+													<B><U>2.1 - General:</U></B><BR>
+													Here you can set the default Startup action: Nothing (do nothing)&nbsp;or New Csound, Python or Lua 
+													Document (create a new document based on the relative language template) or Last Session files.<BR>
+													Inside the Document Templates you can write the code for every new created files.<BR><BR>
+													<U><B>2.2 - Directories:<BR></B></U>
+													If you have already installed CSound 5 (and/or Python and Lua), you can press the "Auto Search Paths" button 
+													to retrieve automatically the correct paths of csound executables. Otherwise 
+													you must select all paths manually with the "Browse" buttons.<BR>
+													<B>CSound 5 executable</B>: 
+													Click on browse and set your "csound.exe" (CSound5) path. This field is required in order to compile your csound files.<BR>
+													<B>CSound 5 Help</B>: 
+													Click on browse and specify the path of "index.html" of CSound 5 Html Manual. This field is required to visualize the CSound manual inside WinXound.<BR>
+													<B>CSound 5 GUI</B>: 
+													Click on browse and specify the path of Csound Gui Editor (for example 
+													QuteCSound).
+													<BR>
+													<B>CSoundAV</B>: Click on browse and specify the path of "CsoundAV_Win.exe".
+													<BR>
+													<B>CSoundAV Help</B>: 
+													Click on browse and specify the path of index.html of CSoundAV Html Help.
+													<BR>
+													<B>Wave Editor executable</B>: 
+													Specify the executable of your preferred wave editor (for example Audacity).
+													<BR>
+													<B>Working Directory</B>: 
+													Set here the path of your preferred directory for csd, orc, sco file. When you 
+													click on "Restore Home Directory" icon on the WinXound main toolbar
+													and after click on Open, you will be redirected to your preferred folder.<BR>
+													<B>Python Compiler</B>: 
+													Click on browse and specify your “python.exe” path.
+													<BR>
+													<B>Python External GUI</B>: Click on browse and specify your Python Gui path.
+													<BR>
+													<B>Lua Compiler</B>: Click on browse and specify your “LuaJit.exe” or “lua5.x.x.exe” path.
+													<BR>
+													<B>Lua External GUI</B>: Click on browse and specify your Lua Gui path.
+													<BR>
+													<BR><U><B>2.3 - Environment Variables:</B></U><BR>
+													Click on the various Browse buttons to set CSound Environment Variables paths.<BR>
+													<B>“SFDIR” checkbox behaviour:</B><BR> 
+													when you compile for example -otest.wav you will find it in three ways: <BR>
+													- 1.If you haven't specified the SFDIR in your WinXound settings, it will be in your *.csd path;<BR>
+													- 2.If you have specified the SFDIR you will find it in your SFDIR path;<BR>
+													- 3.If you have specified SFDIR but you have unchecked the checkbox on the left side of SFDIR field (in your WinXound settings) 
+													you will find it in your .csd path (the checkbox enable or disable SFDIR output)<BR>
+													<BR>
+													<U><B>2.4 - Compiler settings:</B></U><BR>
+													Set the preferred Csound, Python and Lua compilers options or click "Default" to restore the original 
+													WinXound settings.<BR>
+													Set the default font name and size of the compiler output window.<BR><BR>
+													<U><B>2.5 - Text and Syntax:</B></U><BR>
+													Set the default font name, size and tab indent, syntax highlight colors and other properties of the text 
+													editor.<BR>
+													For Python syntax you can also choose between Mixed mode (inside the triple quoted strings ''' 
+													WinXound will use the CSound syntax highlighter) and Pure Mode (Python only).<BR>
+													<BR>
+													<U><B>2.6 - Explorer:</B></U><BR>
+													Here you can choose which elements of the code should be displayed in the explorer view 
+													(Options, Macros, Opcodes, Instruments, Functions and Sections) and also the default  Font size (Small, Medium or Large).<BR><BR>
+													<U><B>2.7 - Toolbar:</B></U><BR>
+													Set the buttons that you want to display on the main WinXound toolbar.<BR>
+													<BR>
+													<U><B>2.8 - Files Association:</B></U>
+													<BR>
+													Here you can associate csd, orc and sco files with WinXound (so when you click on a csd, orc or 
+													sco file WinXound will start and open it automatically) or create a Desktop Shortcut for WinXound.<BR>
+													<BR>													
+													<U><B>2.9 - Exporting and Importing WinXound settings:<BR></B></U>
+													Click on Export to save your preferred WinXound settings to a file.<BR>
+													Click on Import to load your preferred Settings from a previously saved file.
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													<BR>
+													<BR>
+													<BR>
+										</P>
+										<P ALIGN="left">
+													<a name="menu"></a> 
+													<B>3. MENU</B><BR>
+													<BR>
+													<U><B>3.1 - File:</B></U><BR>
+													<B>New</B> - Create a New Document with empty CSD Tags.<BR>
+													<B>Open</B> - Open a csound file (when you open an orc or sco files they will be automatically converted in a 
+													NEW UNTITLED CSD document).<BR>
+													<B>Save</B> - Save the document (csd format).<BR>
+													<B>Save As</B> - Save the document with a new name ...<BR>
+													<B>Save All</B> - Save all opened documents.<BR>
+													<B>Close</B> - Close current document.<BR>
+													<B>Close All</B> - Close all documents.<BR>
+													<B>Import</B>-&gt;<B>Orc</B>: Import a .orc file into the &lt;CsInstruments&gt; section.<BR>
+													<B>Import</B>-&gt;<B>Sco</B>: Import a .sco file into the &lt;CsScore&gt; section.<BR>
+													<B>Export</B>-&gt;<B>Orc/Sco</B>: Export csd file to two separate .orc and .sco files (with the same name).<BR>
+													<B>Export</B>-&gt;<B>Orc</B>: Export only the &lt;CsInstruments&gt; section to a .orc file.<BR>
+													<B>Export</B>-&gt;<B>Sco</B>: Export only the &lt;CsScore&gt; section to a .sco file.<BR>
+													<B>Page setup</B> - Settings for the printed page format.<BR>
+													<B>Print preview</B> - make a preview before to print.<BR>
+													<B>Print </B>- print the text of the file.<BR>
+													<B>Settings</B> - WinXound Settings.<BR>
+													<B>Recent files -</B> last recent files used.<BR>
+													<B>Exit -</B> exit the program.<BR>
+													<BR>
+													------------------------------------------------------------------------------------------
+													<BR>
+													<B><U>3.2 - Edit:</B></U><BR>
+													<B>Undo </B>- Undo text modifications.<BR>
+													<B>Redo </B>- Redo text modifications.<BR>
+													<B>Cut </B>- Cut a part of text.<BR>
+													<B>Copy </B>- Copy text.<BR>
+													<B>Paste </B>- Paste text.<BR>
+													<B>Delete </B>- Delete text.<BR>
+													<B>Select All </B>- Select all document.<BR>
+													<B>Find and Replace</B> - Find some text or/and Replace text.<BR>
+													<B>Find Line number</B> - Find a line number in the text.<BR>
+													<B>Comments</B> - Comment or remove a line or a selection of text (with ";" for Csound, 
+													"#" for Python and 	"--" for Lua).<BR>
+													<B>Bookmarks</B> - Insert or remove bookmarks (they are signalled by a light blue line). Go to next or 
+													previous Bookmark.<BR>
+													<B>Code formatting</B> - Format the code (organize the code visually). Format code options to set the code 
+													elements to organize.<BR>
+													<B>Code Repository</B> - “Show Window” calls the repository code window (for your User Defined Opcodes or for other personal code).<BR>
+													To store some text from your code, select it and press Ctrl+Shift+I.<BR>	
+													<B>Autocompletion</B> - “CSound Opcodes Repository” calls the opcodes repository window (with a treeview list of all CSound opcodes).<BR>
+													"List Opcodes" popup an autocompletion list of csound opcodes.<BR>
+													<B>Line Endings</B> - Convert the line ends of the text (CrLf, Cr, Lf).<BR>													
+													<BR>
+													------------------------------------------------------------------------------------------
+													<BR>
+													<U><B>3.3 - View:</B></U><BR>
+													<B>Line numbers</B> - Hide or Show the line numbers in the text.<BR>
+													<B>Explorer</B> - Hide or Show the left panel (Structure, Bookmarks and User Code).<BR>
+													<B>Online Opcodes Help</B> - Hide or Show the bottom real time help window.<BR>
+													<B>Toolbar</B> - Hide or Show the toolbar of WinXound.<BR>
+													<B>Show all tools</B> - Show all (Lines, Explorer, Help and Toolbar).<BR>
+													<B>Hide all tools</B> - Hide all (Lines, Explorer, Help and Toolbar).<BR>
+													<B>Full Code</B> - Show the full code view.<BR>
+													<B>Split Horizontal</B> - Split the text window into two horizontal windows.<BR>
+													<B>Split Horizontal (Orc/Sco)</B> -Split the text window into two horizontal windows and show 
+													in the first window the &lt;CsInstruments&gt; section and in the second the &lt;CsScore&gt; 
+													section.<BR>
+													<B>Split Vertical</B> - Split the text window into two vertical windows.<BR>
+													<B>Split Vertical (Orc/Sco)</B> - Split the text window into two vertical windows and position 
+													they into the &lt;CsInstruments&gt; and &lt;CsScore&gt; sections.<BR>
+													<B>Show Code</B> - Show the code window.<BR>
+													<B>Show Compiler</B> - Show the compiler output window.<BR>
+													<B>Show Help</B> - Show the CSound help window.<BR>
+													<B>Show/Hide White Spaces</B> - Show or Hide the white spaces on the text editor.<BR>
+													<B>Show/Hide End Of Line Markers</B> - Show or Hide the line end markers (CR, LF, CR+LF).<BR>
+													<B>Navigate Nackward/Forward</B> - Move the caret to the previous or next mouse click position (F3/F4).<BR>
+													<B>Set Caret on Primary/Secondary View</B> - Move the cursor on primary/secondary view when you have splitted view (F11/F12).<BR>													
+													<B>WinXound screen position</B> - Put the WinXound window on the upside, downside, 
+													left side or right side of  your desktop screen.<BR>
+													<BR>
+													------------------------------------------------------------------------------------------
+													<BR>
+													<U><B>3.4 - Font:</B></U><BR>
+													<B>Size</B>: Select your preferred size.<BR>
+													<U>Note</U>: ZOOM-IN, ZOOM-OUT -&gt; Use "CTRL + mouse wheel" to zoom-in or out the size of 
+													the font.<BR>
+													<B>Reset to Default</B>: Reset the text to the default font size.<BR>
+													<BR>
+													------------------------------------------------------------------------------------------
+													<BR>
+													<U><B>3.5 - Tools <BR>
+													(remember to specify the executable paths in File &gt; Settings):</U></B><BR>
+													<B>Compile (F5):</B> Run CSound, Python or Lua compiler (depends from the file extension).<BR>
+													<B>Compile (External cmd - CTRL + F5):</B> Run CSound,Python or Lua compiler in an external terminal window.<BR>
+													<B>Use WinXound flags:</B><BR>
+													when checked WinXound will use the CSound default compiler settings 
+													(see Menu File &gt; Settings &gt; Compiler Settings) plus the flags present inside &lt;CsOptions&gt; tags;<BR>
+													when unchecked WinXound will only use the flags present inside the &lt;CsOptions&gt; tags.<BR>
+													<B>Run External Gui (F6)</B>: Call an External GUI interface and pass&nbsp;your document to it 
+													(ready to compile).<BR>
+													<B>Run CSoundAV (F7)</B>: Call CSoundAV compiler.<BR>
+													<B>CSound Analysis (F8)</B>: Csound utilities window.<BR>
+													<B>OS Media Player</B>: Run Operating System preferred media player.<BR>
+													<B>External Wave Player</B>: Run your preferred wave editor.<BR>
+													<B>Calculator</B>: Run the OS calculator.<BR>
+													<B>Command Line</B>: Open the command line window.<BR>
+													<B>WinXound Opcode Utilities</B>: Open the WinXound Opcode Utilities to create a new 
+													opcodes database for WinXound. Please refer to the dedicated section below.<BR>
+													<BR>
+													------------------------------------------------------------------------------------------
+													<BR>
+													<U><B>3.6 - Insert:</B></U><BR>
+													<B>Orchestra Header</B> - Open a window where you can define the settings for the 
+													orchestra header and insert it into your document.<BR>
+													<B>CSD tags</B> - Insert the chosen csd tag into your document.<BR>
+													<BR>
+													------------------------------------------------------------------------------------------
+													<BR>
+													<U><B>3.7 - Info:</B></U><BR>
+													<B>WinXound Help</B> - Open this manual.<BR>
+													<B>Opcode Help (F1)</B> - Open the reference manual for the opcode under the caret.<BR>
+													<B>CSound Help (F2)</B> - Open the CSound Html Manual.<BR>
+													<B>CSound Opcodes Help</B> - Open the CSound Opcodes manual.<BR>
+													<B>CSound Flags Help</B> - Open the CSound Command line flags manual.<BR>
+													<B>CSoundAV Help</B> - Open the CSoundAV Html Manual.<BR>
+													<B>CSound Tutorials (at csounds.com)</B> - Open the CSound Tutorials page at csounds.com with your default internet browser<BR>
+													<B>CSound Manual (at Flossmanuals.net)</B> - Open the CSound Manual page at flossmanual.net with your default internet browser<BR>
+													<B>About</B> - Show info about WinXound author and version.<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													<BR>
+													<BR>
+													<BR>
+										</P>
+										<P ALIGN="left">
+													<a name="editor"></a> 
+													<B>4. EDITOR VIEW</B><BR><BR>
+													<B><U>4.1 - LEFT PANEL</U></B><BR>
+													<B>Explorer</B> - Here you will find the global "csd" structure with the tags and instruments 
+													found in your document. If you click on it you will be redirected automatically to the corresponding 
+													line position of the text.<BR>
+													<B>Bookmarks</B> - Here you will find your selected bookmarks. Click on it and you will be redirected 
+													to the corresponding line.<BR>
+													<BR>
+													<B><U>4.2 - TEXT EDITOR</B></U><BR>
+													- Write your opcode and see the real time help on the bottom window of  WinXound.<BR>													
+													You can also press F1 so you will be redirected directly to the CSound Manual reference for that opcode.<BR>
+													- Starting from 3.0.0 version, thanks to Scintilla Editor, you can do a rectangular selection of the 
+													text using the ALT key.<BR>
+													- When you close the "Find and Replace" window, WinXound memorizes your last searched word so 
+													you can research it by clicking "CTRL-" (search previous) or "CTRL+" (search next).<BR>
+													- If you click on the text window with the right mouse button it will appear a popup menu with some useful tools:<BR>
+													- Cut, Copy and Paste;<BR>
+													- Insert Bookmarks and Comments;<BR>
+													- Go to a definition of a variable;<BR>
+													- Go to reference of a variable;<BR>
+													- Call the html help for an opcode (keyboard shortcut: F1);<BR>
+													- Drag your file directly on the text window to open it.<BR>
+													- Use CTRL+D to duplicate a line.<BR>
+													- Use CTRL+L to cut a line.<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													<BR>
+													<BR>
+													<BR>
+										</P>
+										<P ALIGN="left">
+													<a name="compiler"></a> 
+													<B>5. COMPILER OUTPUT WINDOW</B><BR><BR>
+													This is the window where the CSound Compiler outputs all the compiling informations and errors.<BR>
+													Click on "Stop" button (or press Esc key) to stop the compiler.<BR>
+													Click on "Pause" button to pause or resume the compiler.<BR>
+													Click on "Save output as ..." to save the output text to a specified file.<BR>
+													<BR>
+													<STRONG>Notes:</STRONG>
+													<BR>
+													Menu &gt; Tools &gt; <B>Use WinXound flags</B>
+													<BR>
+													- when checked WinXound will use the Default compiler settings for CSound (see Menu File &gt; Settings &gt; Compiler Settings) plus the 
+													flags present inside &lt;CsOptions&gt; tags;&nbsp;<BR>
+													- when unchecked WinXound will only use the flags present inside the &lt;CsOptions&gt; tags.
+													<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													<BR>
+													<BR>
+													<BR>
+										</P>
+										<P ALIGN="left">
+													<a name="help"></a> 
+													<B>6. HELP WINDOW</B><BR><BR>
+													This window show CSound and WinXound on-line help (html format help). <BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													<BR>
+													<BR>
+													<BR>
+										</P>
+										<P ALIGN="left">
+													<a name="udo"></a> 
+													<B>7. UDO &amp; USER CODE REPOSITORY WINDOW</B><BR><BR>
+													- To save personal code (or new User Defined Opcodes) drag and drop any 
+													selected text onto the TreeView area (on the left side of the UDO text area).<BR>
+													- To insert the entire UDO code into the editor left-click on the UDO name inside the 
+													TreeView area and drag and drop it onto the editor area (the cursor will indicate you the insert 
+													position).<BR>
+													- To insert partial code into the Text Editor select it on the UDO Text Area and drag and drop 
+													it to the editor area.<BR>
+													You can also manually edit or insert new files in your "WinXound\CodeRepository\" path 
+													(WinXound will automatically refresh the list during startup).<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													<BR>
+													<BR>
+													<BR>
+										</P>
+										<P ALIGN="left">
+													<a name="csoundrepository"></a> 
+													<B>8. CSOUND OPCODES REPOSITORY</B><BR><BR>
+													To insert an opcode drag and drop it into the text editor.<BR>
+													To insert the opcode synopsis drag and drop it while pressing the CTRL key.<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+										</P>
+										<P ALIGN="left">
+													<a name="usage"></a> 
+													<B>9. WINXOUND USAGE</B><BR><BR>
+													<FONT COLOR="#ff0000">
+													In order to use this program correctly, it's very important that you fill all the 
+													compiler paths fields (please refer to Menu File &gt; Settings).
+													</FONT>
+													<FONT COLOR="#000000"><BR>
+													Write or load your csound file (csd, orc, sco, py, pyw, lua) and compile it with Csound, Python or Lua (F5 or 
+													CTRL-F5 for external cmd window), QuteCSound (F6) or CSoundAV (F7).<BR>
+													To test WinXound, please click on "Tools &gt; WinXound Test": a simple "oscili.csd" example file 
+													will be loaded ...
+													<BR>
+													press F5 to compile it and hear (if all goes right) the sound.<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													
+										</P>
+										<P ALIGN="left">
+													<a name="autocompletion"></a> 
+													<B>10. AUTOCOMPLETION</B><BR><BR>
+													By pressing "Ctrl+Enter" or "AltGr+Enter" keys WinXound will popup an autocompletion list of  
+													csound opcodes...<BR><BR>
+													Keys and behaviour:<BR>
+													- Enter: insert the opcode name.<BR>
+													- Ctrl+Enter (or AltGr+Enter): insert the opcode synopsis.<BR>
+													- Space: insert the opcode name with a final space. <BR>
+													- Tab: insert the opcode name with a final tab.<BR>
+													If you are at the start of a word, Autocompletion will <B>insert</B> the opcode.<BR>
+													If  you are inside or at the end of a word, Autocompletion will <B>substitute</B> the entire word.<BR>
+													<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													</FONT>
+										</P>
+																				<P ALIGN="left">
+													<a name="tips"></a> 
+													<B>11. TIPS</B><BR><BR>
+													<B>- Drag'n Drop:</B><BR>
+													--If you drag a file using the left mouse button, WinXound will open the file in a new tab.<BR>
+													--If you drag a file using the right mouse button, WinXound will insert in your text the complete 
+													path surrounded by double quotes.<BR><BR>
+													<B>- Ctrl+Click inside strings:</B><BR>
+													-- WinXound will try to open the path included inside your string.<BR>
+													<B>- Ctrl+Alt+Click inside strings:</B><BR>
+													-- WinXound will select the entire string (including also the ' or " chars).<BR>												
+													<BR>
+													<HR SIZE="1">
+													<a href="#TOP">Back to top</a>
+													</FONT>
+										</P>
+									</TD>
+									</FONT>
+								</TR>
+						</TABLE>
+					</CENTER>
+				</TD>
+			</TR>
+		</TABLE>
+	</BODY>
+</HTML>

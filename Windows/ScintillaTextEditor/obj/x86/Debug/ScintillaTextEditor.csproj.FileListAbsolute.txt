@@ -1,0 +1,1159 @@
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_71 (RTconsole) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_72 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_74 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_75 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_82 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_86 (File Permissions) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_87 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_89 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_90 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_93 (Startup Action) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_94 (Send Mail on Error) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_95 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_96 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_99 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_100 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_101 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_103 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_104 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_105 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_106 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_107 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_109 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_111 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_113\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_116 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_117 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_119 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_121 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_122 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_123 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_125 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_126 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_127 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_131 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_132 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_134 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_135 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_136 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_138 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_139 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_140 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_146\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_147 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_151 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_158 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_161 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_163 (Scintilla 2.11) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_165 (TreeView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_168 (UseSFDIR) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_169 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_171 (Bug Close) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_172 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_173 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_175 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_177 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_178 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_181 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_185 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_187 (Icons) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_188 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_189 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_190 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_191 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_193 (VarPtr subst) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_194 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_195 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_196 (TextView) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_197 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_198 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_199 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_200 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_201 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_202 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_203 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_204 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_207\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_210 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_212 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_215\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_217 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_218\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_218 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_219 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_221\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_221 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_222 (EOLS) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_225 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_226 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_228 (Scintilla Mod)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_229 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_238 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_239 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_242 (Mod_Container)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_243 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_246\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_246 (Pause) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_249\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_251 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_255 (String click)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_257 (Bugfix DragDrop) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_258 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_260 (Opcodes)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_261 (Auto complete) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_262 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_263 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_266 - Copia (2)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_268 (Tab CSound) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_269 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_272 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_276 (Utility) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_278 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_280\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_282 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_283 (Escape orders) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_284 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_285 - (ALTGR)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_286 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_288 (Intellitip double buffered) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 3_2_297\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 338 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 339 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 342 (Settings - LastSessionFiles) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 344 (StoreCurPos) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 345 (lowercase check) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 348 (Compiler Cursor Bug) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 353 (Bug Analysis) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 354 (Comments Bug Doati) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 377 (Temp)\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 381 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 385 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 388\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 389 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 390 (Bug EOLS dirty document) - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 401\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 401 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 407 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 409 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 414 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 417 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Teto\Desktop\WinXound 425 - Copia\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb
+C:\Users\Mac\Desktop\WinXound 3.4.0 - Sources - NEW\WinXound 3.4.0 - Sources\ScintillaTextEditor\bin\ScintillaTextEditor.dll
+C:\Users\Mac\Desktop\WinXound 3.4.0 - Sources - NEW\WinXound 3.4.0 - Sources\ScintillaTextEditor\bin\ScintillaTextEditor.pdb
+C:\Users\Mac\Desktop\WinXound 3.4.0 - Sources - NEW\WinXound 3.4.0 - Sources\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.Properties.Resources.resources
+C:\Users\Mac\Desktop\WinXound 3.4.0 - Sources - NEW\WinXound 3.4.0 - Sources\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.TextEditor.resources
+C:\Users\Mac\Desktop\WinXound 3.4.0 - Sources - NEW\WinXound 3.4.0 - Sources\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.csproj.GenerateResource.Cache
+C:\Users\Mac\Desktop\WinXound 3.4.0 - Sources - NEW\WinXound 3.4.0 - Sources\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.dll
+C:\Users\Mac\Desktop\WinXound 3.4.0 - Sources - NEW\WinXound 3.4.0 - Sources\ScintillaTextEditor\obj\x86\Debug\ScintillaTextEditor.pdb

@@ -1,0 +1,8 @@
+;Syntax of a user-defined opcode block
+;
+;	opcode  name, outTypes, inTypes
+;xinarg1 [, xinarg2] [, xinarg3] ... [xinargN]  xin
+;	[setksmps  iksmps]
+;... the rest of the instrument's code.
+;xout  xoutarg1 [, xoutarg2] [, xoutarg3] ... [xoutargN]
+;	endop

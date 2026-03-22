@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>32</key>
+	<string>#000000,#FFFFFF,False,False,256,False,DefaultStyle</string>
+	<key>0</key>
+	<string>#000000,#FFFFFF,False,False,256,False,WhiteSpace</string>
+	<key>1</key>
+	<string>#009600,#FFFFFF,False,False,256,False,CommentLine</string>
+	<key>2</key>
+	<string>#007F7F,#FFFFFF,False,False,256,False,Numbers</string>
+	<key>3</key>
+	<string>#960000,#FFFFFF,False,False,256,False,Strings</string>
+	<key>4</key>
+	<string>#960000,#FFFFFF,False,False,256,False,StringsSingle</string>
+	<key>5</key>
+	<string>#00007F,#FFFFFF,True,False,256,False,Keywords</string>
+	<key>6</key>
+	<string>#960000,#FFFFFF,False,False,256,False,StringsTriple</string>
+	<key>7</key>
+	<string>#960000,#FFFFFF,False,False,256,False,StringsTripleD</string>
+	<key>8</key>
+	<string>#0000FF,#FFFFFF,True,False,256,False,Classes</string>
+	<key>9</key>
+	<string>#007F7F,#FFFFFF,True,False,256,False,Functions</string>
+	<key>10</key>
+	<string>#000000,#FFFFFF,True,False,256,False,Operators</string>
+	<key>11</key>
+	<string>#000000,#FFFFFF,False,False,256,False,Words</string>
+	<key>12</key>
+	<string>#009600,#FFFFFF,False,False,256,False,CommentBlocks</string>
+	<key>13</key>
+	<string>#000000,#E0C0E0,False,False,256,False,EolStringNotClosed</string>
+	<key>14</key>
+	<string>#0000FF,#FFFFFF,False,False,256,False,Identifiers</string>
+	<key>15</key>
+	<string>#805000,#FFFFFF,False,False,256,False,Decorators</string>
+	<key>33</key>
+	<string>#828282,#F4F4F4,False,False,256,False,Margins</string>
+	<key>256</key>
+	<string>#000000,#A0C8FF,False,False,256,False,TextSelection</string>
+	<key>257</key>
+	<string>#0000FF,#0000FF,False,False,40,False,Bookmarks</string>
+	<key>258</key>
+	<string>#C0C0C0,#000000,False,False,256,False,VerticalRuler</string>
+	<key>259</key>
+	<string>#FFFF64,#000000,False,False,256,False,CaretLineMarker</string>
+</dict>
+</plist>

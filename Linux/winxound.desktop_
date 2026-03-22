@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=WinXound
+Comment=An open source editor for cSound
+GenericName=Editor for cSound files
+Type=Application
+Exec=winxound %F
+Icon=winxound_48.png
+Terminal=false
+StartupNotify=true
+Categories=TextEditor;Development;GTK;Application;
+

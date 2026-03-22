@@ -1,0 +1,11 @@
+Csound version 5.11 (float samples) Sep 24 2009
+libsndfile-1.0.20
+UnifiedCSD:  /trapped.csd
+STARTING FILE
+Creating options
+Creating orchestra
+Creating score
+orchname:  /tmp/csound-JeNUtC.orc
+scorename: /tmp/csound-fSgyel.sco
+rtaudio: PortAudio module enabled ... using callback interface
+rtmidi: PortMIDI module enabled

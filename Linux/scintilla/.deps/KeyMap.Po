@@ -1,0 +1,7 @@
+KeyMap.o: KeyMap.cxx Platform.h Scintilla.h KeyMap.h
+
+Platform.h:
+
+Scintilla.h:
+
+KeyMap.h:

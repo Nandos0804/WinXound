@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FirstStart</key>
+	<false/>
+	<key>FindWholeWord</key>
+	<false/>
+	<key>FindMatchCase</key>
+	<false/>
+	<key>ReplaceFromCaret</key>
+	<false/>
+	<key>ReplaceUp</key>
+	<false/>
+	<key>CSoundDefaultFlags</key>
+	<string>-B4096 --displays --asciidisplay</string>
+	<key>LuaDefaultFlags</key>
+	<string></string>
+	<key>PythonDefaultFlags</key>
+	<string>-u</string>
+	<key>UseWinxoundFlags</key>
+	<true/>
+	<key>OpenSoundFileWith</key>
+	<integer>1</integer>
+	<key>CompilerFontName</key>
+	<string>Andale Mono</string>
+	<key>CompilerFontSize</key>
+	<integer>12</integer>
+	<key>StartupAction</key>
+	<integer>0</integer>
+	<key>CSoundConsolePath</key>
+	<string>/usr/local/bin/csound</string>
+	<key>PythonConsolePath</key>
+	<string>/usr/bin/python</string>
+	<key>LuaConsolePath</key>
+	<string></string>
+	<key>CSoundExternalGuiPath</key>
+	<string>/Applications/QuteCsound.app</string>
+	<key>PythonExternalGuiPath</key>
+	<string>/usr/bin/idle</string>
+	<key>LuaExternalGuiPath</key>
+	<string></string>
+	<key>WaveEditorPath</key>
+	<string></string>
+	<key>CSoundHelpHtmlPath</key>
+	<string>/Library/Frameworks/CsoundLib.Framework/Resources/Manual/index.html</string>
+	<key>WorkingPath</key>
+	<string></string>
+	<key>ShowImportOrcScoMessage</key>
+	<true/>
+	<key>SaveBookmarks</key>
+	<true/>
+	<key>SFDIRPath</key>
+	<string></string>
+	<key>SSDIRPath</key>
+	<string></string>
+	<key>SADIRPath</key>
+	<string></string>
+	<key>MFDIRPath</key>
+	<string></string>
+	<key>INCDIRPath</key>
+	<string></string>
+	<key>OPCODEDIRPath</key>
+	<string></string>
+	<key>UseSFDIR</key>
+	<true/>
+	<key>EditorFontName</key>
+	<string>Andale Mono</string>
+	<key>EditorFontSize</key>
+	<integer>12</integer>
+	<key>EditorTabIndent</key>
+	<integer>8</integer>
+	<key>EditorShowVerticalRuler</key>
+	<false/>
+	<key>EditorShowMatchingBracket</key>
+	<true/>
+	<key>EditorShowLineNumbers</key>
+	<true/>
+	<key>EditorShowIntellitip</key>
+	<true/>
+	<key>EditorShowExplorer</key>
+	<true/>
+	<key>EditorShowToolbar</key>
+	<true/>
+	<key>EditorMarkCaretLine</key>
+	<false/>
+	<key>EditorUseMixedPython</key>
+	<true/>
+	<key>CodeFormatHeader</key>
+	<true/>
+	<key>CodeFormatInstruments</key>
+	<true/>
+	<key>CodeFormatFunctions</key>
+	<true/>
+	<key>CodeFormatScoreInstruments</key>
+	<true/>
+	<key>CodeFormatTempo</key>
+	<true/>
+	<key>CodeFormatInstrumentsType</key>
+	<integer>0</integer>
+	<key>CodeFormatTabIndent</key>
+	<integer>8</integer>
+	<key>TemplatesCSound</key>
+	<string>&lt;CsoundSynthesizer&gt;
+
+&lt;CsOptions&gt;
+
+&lt;/CsOptions&gt;
+
+
+&lt;CsInstruments&gt;
+
+&lt;/CsInstruments&gt;
+
+
+&lt;CsScore&gt;
+
+&lt;/CsScore&gt;
+
+
+&lt;/CsoundSynthesizer&gt;</string>
+	<key>TemplatesPython</key>
+	<string></string>
+	<key>TemplatesLua</key>
+	<string></string>
+	<key>TemplatesCabbage</key>
+	<string>&lt;Cabbage&gt;
+&lt;/Cabbage&gt;
+
+&lt;CsoundSynthesizer&gt;
+
+&lt;CsOptions&gt;
+-d -n
+&lt;/CsOptions&gt;
+
+&lt;CsInstruments&gt;
+sr = 44100
+ksmps = 32
+nchnls = 2
+
+instr 1
+endin
+&lt;/CsInstruments&gt;
+
+&lt;CsScore&gt;
+i1 0 1000
+&lt;/CsScore&gt;
+
+&lt;/CsoundSynthesizer&gt;</string>
+	<key>ExplorerShowOptions</key>
+	<true/>
+	<key>ExplorerShowInstrMacros</key>
+	<true/>
+	<key>ExplorerShowInstrOpcodes</key>
+	<true/>
+	<key>ExplorerShowInstrInstruments</key>
+	<true/>
+	<key>ExplorerShowScoreFunctions</key>
+	<true/>
+	<key>ExplorerShowScoreMacros</key>
+	<true/>
+	<key>ExplorerShowScoreSections</key>
+	<true/>
+	<key>ExplorerFontSize</key>
+	<integer>0</integer>
+	<key>DocumentWindowWidth</key>
+	<integer>1000</integer>
+	<key>DocumentWindowHeight</key>
+	<integer>700</integer>
+	<key>OrcScoImport</key>
+	<integer>0</integer>
+	<key>CSoundAdditionalFlags</key>
+	<string>[Realtime output]: -odac
+[Render to filename]: -W -o&quot;CompilerOutput.wav&quot;
+[Render to file using csd/orc/sco name]: -W -o&quot;*.wav&quot;
+[Render to file asking for its name]: -W -o&quot;?.wav&quot;</string>
+	<key>DefaultWavePlayer</key>
+	<integer>0</integer>
+	<key>CabbagePath</key>
+	<string>/Applications/Cabbage.app</string>
+	<key>BringWinXoundToFrontForCabbage</key>
+	<true/>
+</dict>
+</plist>
