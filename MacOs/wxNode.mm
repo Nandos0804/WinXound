@@ -8,32 +8,27 @@
 
 #import "wxNode.h"
 
-
 @implementation wxNode
 
 @synthesize name, extendedname, children, isGroup;
 
-- (id)init
-{
-	if (self = [super init])
-	{
-		self.name = nil;
-		self.extendedname = nil;
-		self.children = [NSMutableArray array];
-		self.isGroup = NO;
-	}
-	
-	return self;
+- (id)init {
+    if (self = [super init]) {
+        self.name = nil;
+        self.extendedname = nil;
+        self.children = [NSMutableArray array];
+        self.isGroup = NO;
+    }
+
+    return self;
 }
 
-- (void)dealloc
-{
-	//NSLog(@"wxNode DEALLOC");
-	self.name = nil;
-	self.extendedname = nil;
-	self.children = nil;
-	[super dealloc];
+- (void)dealloc {
+    // NSLog(@"wxNode DEALLOC");
+    self.name = nil;
+    self.extendedname = nil;
+    self.children = nil;
+    [super dealloc];
 }
-
 
 @end

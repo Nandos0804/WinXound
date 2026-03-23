@@ -11,35 +11,30 @@
 @class TextEditorView;
 @class wxDocument;
 
-
-
 @interface wxAutoComplete : NSObject {
-	
-	IBOutlet NSTableView* TableViewOpcodes;
-	IBOutlet NSPanel* CSoundAutocompleteWindow;
-	
-	@private
-	TextEditorView* textEditor;
-	wxDocument*		document;
-	NSMutableArray* opcodes;
-	
-	
+
+    IBOutlet NSTableView *TableViewOpcodes;
+    IBOutlet NSPanel *CSoundAutocompleteWindow;
+
+  @private
+    TextEditorView *textEditor;
+    wxDocument *document;
+    NSMutableArray *opcodes;
 }
 
-
-+ (wxAutoComplete*) sharedInstance;
++ (wxAutoComplete *)sharedInstance;
 
 - (IBAction)wxCloseAutocompleteWindow:(id)sender;
 - (IBAction)wxAutocompleteInsertText:(id)sender;
 - (IBAction)wxDoubleClickInsertText:(id)sender;
 
-
-- (void)setDocumentOwner:(wxDocument*)wxDoc withEditor:(TextEditorView*)editor;
+- (void)setDocumentOwner:(wxDocument *)wxDoc
+              withEditor:(TextEditorView *)editor;
 - (void)displayAutocomplete;
 - (void)displayAutocompleteAt:(NSPoint)point;
 - (void)FillTableWithOpcodes;
-- (void)insertAutocompleteString:(NSString*)text space:(NSString*)space opcode:(NSString*)opcode;
-
-
+- (void)insertAutocompleteString:(NSString *)text
+                           space:(NSString *)space
+                          opcode:(NSString *)opcode;
 
 @end

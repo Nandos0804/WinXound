@@ -5,67 +5,63 @@
 //  Created by Stefano Bonetti on 19/01/10.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "wxSettings.h"
+#import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
 
 //@class wxSettings;
 
+@interface wxMainController : NSObject { // NSWindowController { //NSObject {
 
-@interface wxMainController : NSObject { //NSWindowController { //NSObject {
+    IBOutlet NSWindow *StartWindow;
+    IBOutlet NSTableView *RecentFiles;
+    IBOutlet NSWindow *HelpWindow;
+    IBOutlet WebView *helpBrowser;
+    IBOutlet NSSearchField *helpSearchField;
+    IBOutlet NSButton *buttonBack;
+    IBOutlet NSButton *buttonForward;
+    IBOutlet NSTextField *version;
 
-	IBOutlet NSWindow* StartWindow;
-	IBOutlet NSTableView* RecentFiles;
-	IBOutlet NSWindow* HelpWindow;
-	IBOutlet WebView* helpBrowser;
-	IBOutlet NSSearchField* helpSearchField;
-	IBOutlet NSButton* buttonBack;
-	IBOutlet NSButton* buttonForward;
-	IBOutlet NSTextField* version;
-	
-	IBOutlet NSMenu* menuCompileWithAdditionalOptions;
-	IBOutlet NSMenu* menuCompileExternalWithAdditionalOptions;
-	
-	@private
-	FSEventStreamRef _stream;
-    FSEventStreamContext* _context;
-	//NSTimer* _Timer;
-	
-	//For Cabbage connection
-	NSFileHandle*   fifoOUT;
-	NSFileHandle*   fifoIN;
+    IBOutlet NSMenu *menuCompileWithAdditionalOptions;
+    IBOutlet NSMenu *menuCompileExternalWithAdditionalOptions;
+
+  @private
+    FSEventStreamRef _stream;
+    FSEventStreamContext *_context;
+    // NSTimer* _Timer;
+
+    // For Cabbage connection
+    NSFileHandle *fifoOUT;
+    NSFileHandle *fifoIN;
 }
 
-
-+ (wxMainController*) sharedInstance;
-
++ (wxMainController *)sharedInstance;
 
 + (void)setupDefaults;
-- (NSMutableDictionary*) getOpcodes;
-- (NSString*) getOpcodeValue:(NSString*) opcode;
-- (wxSettings*) getSettings;
-- (NSInteger)ShowMessage:(NSString *)message 
-		 informativeText:(NSString *)informativeText 
-		   defaultButton:(NSString *)defaultButton 
-		 alternateButton:(NSString *)alternateButton 
-			 otherButton:(NSString *)otherButton;
-- (void) ShowMessageError:(NSString*)title error:(NSString*)error;
-- (void) showOpcodeHelp:(NSString*) opcode;
-- (void) showHelpFor:(NSString*) fileHtml;
-- (void) displayStartWindow;
+- (NSMutableDictionary *)getOpcodes;
+- (NSString *)getOpcodeValue:(NSString *)opcode;
+- (wxSettings *)getSettings;
+- (NSInteger)ShowMessage:(NSString *)message
+         informativeText:(NSString *)informativeText
+           defaultButton:(NSString *)defaultButton
+         alternateButton:(NSString *)alternateButton
+             otherButton:(NSString *)otherButton;
+- (void)ShowMessageError:(NSString *)title error:(NSString *)error;
+- (void)showOpcodeHelp:(NSString *)opcode;
+- (void)showHelpFor:(NSString *)fileHtml;
+- (void)displayStartWindow;
 - (void)closeStartWindow;
 //+ (void)applyPreferencesToOpenedDocuments;
 - (void)applyPreferencesToOpenedDocuments;
 - (void)applySettings;
-- (void) wxOpenDocumentWithFilename:(NSString*)filename;
-- (void) wxOpenOrcScoDocumentWithFilename:(NSString*)filename;
-- (id) GetInfoValueForKey:(NSString*)key;
-- (BOOL) checkForOrcSco:(NSString*)filename;
-- (void)createNewCsoundFileWithContentOfString:(NSString*)text;
-- (void) refreshRecentList;
-- (NSString*)getStringFromFilename:(NSString*)filename;
-- (void) UpdateAdditionalFlagsMenu;
-
+- (void)wxOpenDocumentWithFilename:(NSString *)filename;
+- (void)wxOpenOrcScoDocumentWithFilename:(NSString *)filename;
+- (id)GetInfoValueForKey:(NSString *)key;
+- (BOOL)checkForOrcSco:(NSString *)filename;
+- (void)createNewCsoundFileWithContentOfString:(NSString *)text;
+- (void)refreshRecentList;
+- (NSString *)getStringFromFilename:(NSString *)filename;
+- (void)UpdateAdditionalFlagsMenu;
 
 - (IBAction)wxNewCsoundFile:(id)sender;
 - (IBAction)wxNewPythonFile:(id)sender;
@@ -103,24 +99,20 @@
 - (IBAction)wxShowCSoundOpcodesHelp:(id)sender;
 - (IBAction)wxImportOrcScoToNewCsdFile:(id)sender;
 
-
 - (IBAction)wxNewOrcFile:(id)sender;
 - (IBAction)wxNewScoFile:(id)sender;
 - (IBAction)wxNewCabbageFile:(id)sender;
 
-
-//Cabbage stuffs
-- (bool) UpdateCabbage:(NSString*)filename;
-- (bool) CabbageExportVSTI:(NSString*)filename;
-- (bool) CabbageExportVST:(NSString*)filename;
-- (bool) CabbageExportAU:(NSString*)filename;
+// Cabbage stuffs
+- (bool)UpdateCabbage:(NSString *)filename;
+- (bool)CabbageExportVSTI:(NSString *)filename;
+- (bool)CabbageExportVST:(NSString *)filename;
+- (bool)CabbageExportAU:(NSString *)filename;
 //- (bool) SendCabbageMessage:(NSString*)message;
-- (bool) SendCabbageMessage:(NSString*)message withFilename:(NSString*)filename;
-- (void) dataReady:(NSNotification *)n;
+- (bool)SendCabbageMessage:(NSString *)message
+              withFilename:(NSString *)filename;
+- (void)dataReady:(NSNotification *)n;
 
 //- (bool) CheckForCabbageConnection;
-
-
-
 
 @end

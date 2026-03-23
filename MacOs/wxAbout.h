@@ -7,14 +7,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface wxAbout : NSView {
-	IBOutlet NSPanel* mainWindow;
-	IBOutlet NSTextField* version;
+    IBOutlet NSPanel *mainWindow;
+    IBOutlet NSTextField *version;
 }
 
-- (void) showAboutWindow:(id)sender;
+- (void)showAboutWindow:(id)sender;
 //- (id) hyperlinkFromString:(NSString*)inString withURL:(NSURL*)aURL;
-- (id) infoValueForKey:(NSString*)key;
+- (id)infoValueForKey:(NSString *)key;
 
 @end

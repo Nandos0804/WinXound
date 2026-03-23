@@ -3,7 +3,7 @@
 //  WinXound
 //
 //  Created by Stefano Bonetti on 22/02/10.
-//  
+//
 //  This class implements methods to format (indent) the source code
 //
 
@@ -11,34 +11,29 @@
 
 @class TextEditorView;
 
-
 @interface wxCodeFormatter : NSObject {
 
-	IBOutlet NSTextView* textView;
-	IBOutlet NSWindow* optionsWindow; 
+    IBOutlet NSTextView *textView;
+    IBOutlet NSWindow *optionsWindow;
 }
 
-+ (wxCodeFormatter*) sharedInstance;
-
++ (wxCodeFormatter *)sharedInstance;
 
 //- (IBAction) wxFormatterCANCEL:(id)sender;
-- (IBAction) wxFormatterAPPLY:(id)sender;
-- (IBAction) wxFormatterRESET:(id)sender;
-- (IBAction) wxFormatterCLICK:(id)sender;
+- (IBAction)wxFormatterAPPLY:(id)sender;
+- (IBAction)wxFormatterRESET:(id)sender;
+- (IBAction)wxFormatterCLICK:(id)sender;
 
+- (void)showOptionsWindow;
 
-- (void) showOptionsWindow;
-	
-- (void) formatCode:(TextEditorView*)textEditor 
-			  start:(NSInteger)start
-				end:(NSInteger)end;
+- (void)formatCode:(TextEditorView *)textEditor
+             start:(NSInteger)start
+               end:(NSInteger)end;
 
-- (NSString*) parseString: (NSString*) stringWithSpaces;
+- (NSString *)parseString:(NSString *)stringWithSpaces;
 
-- (BOOL) CheckScoreForGoodLine:(NSString*)textline;
+- (BOOL)CheckScoreForGoodLine:(NSString *)textline;
 
-- (void) FormatExample;
-
-
+- (void)FormatExample;
 
 @end

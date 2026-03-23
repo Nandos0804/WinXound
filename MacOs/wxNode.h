@@ -8,17 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface wxNode : NSObject {
-	NSString *name;
-	NSString *extendedname;
-	NSMutableArray *children;
-	BOOL isGroup;
+    NSString *name;
+    NSString *extendedname;
+    NSMutableArray *children;
+    BOOL isGroup;
 }
 
-@property (readwrite, retain) NSString *name;
-@property (readwrite, retain) NSString *extendedname;
-@property (readwrite, retain) NSMutableArray *children;
-@property (readwrite) BOOL isGroup;
+@property(readwrite, retain) NSString *name;
+@property(readwrite, retain) NSString *extendedname;
+@property(readwrite, retain) NSMutableArray *children;
+@property(readwrite) BOOL isGroup;
 
 @end
