@@ -93,3 +93,16 @@ Linux/**/*.lo
 Linux/**/*.o
 Linux/**/*~
 Linux/**/*.bak
+Linux/CMakeLists.txt.user
+Linux/CMakeCache.txt
+Linux/CMakeFiles
+Linux/CMakeScripts
+Linux/Testing
+Linux/Makefile
+Linux/cmake_install.cmake
+Linux/install_manifest.txt
+Linux/compile_commands.json
+Linux/CTestTestfile.cmake
+Linux/_deps
+Linux/CMakeUserPresets.json
+Linux/build
