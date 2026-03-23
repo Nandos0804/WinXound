@@ -9,33 +9,31 @@
 
 @class TextEditorView;
 
-
 @interface wxCodeRepository : NSObject {
-	
-	IBOutlet NSTableView* codeList;
-	
-	//IBOutlet NSWindow* codeWindow;
-	IBOutlet NSPanel* codeWindow;
-	
-	IBOutlet NSBox* codeEditorHost;
-	TextEditorView* codeEditor;
-	
-	IBOutlet NSTextField* codeInputName;
-	IBOutlet NSPanel* codeInputWindow;
-	IBOutlet NSTextField* labelPath;
-	
-	NSMutableArray* files;
-	NSString* winxoundPath;
-	TextEditorView* textEditor;
+
+    IBOutlet NSTableView *codeList;
+
+    // IBOutlet NSWindow* codeWindow;
+    IBOutlet NSPanel *codeWindow;
+
+    IBOutlet NSBox *codeEditorHost;
+    TextEditorView *codeEditor;
+
+    IBOutlet NSTextField *codeInputName;
+    IBOutlet NSPanel *codeInputWindow;
+    IBOutlet NSTextField *labelPath;
+
+    NSMutableArray *files;
+    NSString *winxoundPath;
+    TextEditorView *textEditor;
 }
 
-
-+ (wxCodeRepository*) sharedInstance;
++ (wxCodeRepository *)sharedInstance;
 
 - (void)displayCodeRepository;
 - (void)displayCodeRepositoryAt:(NSPoint)point;
-- (void)setOwner:(TextEditorView*)editor;
-- (void)displayInputBoxPanel:(NSWindow*) window;
+- (void)setOwner:(TextEditorView *)editor;
+- (void)displayInputBoxPanel:(NSWindow *)window;
 - (void)initializeRepository;
 - (void)refreshList;
 - (void)loadFileName:(NSInteger)index;
@@ -49,6 +47,5 @@
 - (IBAction)codeSaveTextChanges:(id)sender;
 - (IBAction)codeRestoreDefaultFiles:(id)sender;
 //- (IBAction)wxOpenRepositoryFolder:(id)sender;
-
 
 @end

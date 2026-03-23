@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24506"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="24506"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="530" id="531"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="WinXound" id="56">
+                    <menu key="submenu" title="WinXound" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About WinXound" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxOpenAboutPanel:" target="530" id="847"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="wxShowPreferences:" target="530" id="741"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide WinXound" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit WinXound" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="448"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="83">
+                    <menu key="submenu" title="File" id="81">
+                        <items>
+                            <menuItem title="New" keyEquivalent="n" id="82">
+                                <connections>
+                                    <action selector="wxNewDocument:" target="530" id="681"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open…" keyEquivalent="o" id="72">
+                                <connections>
+                                    <action selector="wxOpen:" target="530" id="694"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open Recent" id="124">
+                                <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="125">
+                                    <items>
+                                        <menuItem title="Clear Menu" id="126">
+                                            <connections>
+                                                <action selector="clearRecentDocuments:" target="-1" id="127"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="79">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Close" keyEquivalent="w" id="73">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="193"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Close All" keyEquivalent="W" id="534">
+                                <connections>
+                                    <action selector="wxCloseAllDocuments:" target="530" id="696"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="535"/>
+                            <menuItem title="Save" keyEquivalent="s" id="75">
+                                <connections>
+                                    <action selector="saveDocument:" target="-1" id="362"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save As…" keyEquivalent="S" id="80">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="saveDocumentAs:" target="-1" id="363"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save All" id="536">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="saveAllDocuments:" target="-1" id="695"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Revert to Saved" id="112">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="revertDocumentToSaved:" target="-1" id="364"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="74">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Import" id="944">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Import" id="945">
+                                    <items>
+                                        <menuItem title="ORC/SCO into a new Csd file" id="1024">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxImportOrcScoToNewCsdFile:" target="530" id="1033"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="1025"/>
+                                        <menuItem title="ORC/SCO into the current Csd file" id="1026">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxImportOrcSco:" target="-1" id="1034"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="ORC into the current Csd file" id="946">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxImportOrc:" target="-1" id="950"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="SCO into the current Csd file" id="947">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxImportSco:" target="-1" id="951"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Export" id="941">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Export" id="942">
+                                    <items>
+                                        <menuItem title="Orc/Sco" id="943">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxExportOrcSco:" target="-1" id="952"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Orc" id="949">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxExportOrc:" target="-1" id="953"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Sco" id="948">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxExportSco:" target="-1" id="954"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="939"/>
+                            <menuItem title="Print…" keyEquivalent="p" id="78">
+                                <connections>
+                                    <action selector="printDocument:" target="-1" id="373"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="217">
+                    <menu key="submenu" title="Edit" id="205">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="207">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="960"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="215">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="redo:" target="-1" id="961"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="206">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Cut" keyEquivalent="x" id="199">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="962"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="197">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="963"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="203">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="964"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="202">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="965"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="198">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="966"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="214">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Find and Replace" id="537">
+                                <menu key="submenu" title="Find" id="538">
+                                    <items>
+                                        <menuItem title="Find and Replace" tag="1" keyEquivalent="f" id="539">
+                                            <connections>
+                                                <action selector="wxFindAndReplace:" target="-1" id="908"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Find Next" tag="2" keyEquivalent="g" id="540">
+                                            <connections>
+                                                <action selector="wxFindNext:" target="-1" id="909"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Find Previous" tag="3" keyEquivalent="G" id="543">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="wxFindPrevious:" target="-1" id="910"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Use Selection for Find" tag="7" keyEquivalent="e" id="541">
+                                            <connections>
+                                                <action selector="wxFindSetSelection:" target="-1" id="911"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Jump to Selection" keyEquivalent="j" id="542">
+                                            <connections>
+                                                <action selector="wxJumpToSelection:" target="-1" id="912"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Find Line Number" keyEquivalent="g" id="544">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxGoToLine:" target="-1" id="742"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="545"/>
+                            <menuItem title="Comments" id="546">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" id="547">
+                                    <items>
+                                        <menuItem title="Comment Line(s)" keyEquivalent="r" id="549">
+                                            <connections>
+                                                <action selector="wxCommentLine:" target="-1" id="826"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Uncomment Line(s)" keyEquivalent="R" id="548">
+                                            <connections>
+                                                <action selector="wxUnCommentLine:" target="-1" id="827"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Bookmarks" id="550">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Menu" id="551">
+                                    <items>
+                                        <menuItem title="Insert/Remove Bookmark" keyEquivalent="b" id="556">
+                                            <connections>
+                                                <action selector="wxInsertRemoveBookmark:" target="-1" id="625"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Remove All bookmarks" keyEquivalent="B" id="555">
+                                            <connections>
+                                                <action selector="wxRemoveAllBookmarks:" target="-1" id="624"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="554"/>
+                                        <menuItem title="Go to Next Bookmark" keyEquivalent="+" id="553">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="wxGotoNextBookmark:" target="-1" id="626"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Go to Previous Bookmark" keyEquivalent="-" id="552">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="wxGotoPreviousBookmark:" target="-1" id="627"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Code Formatting" id="564">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Code Formatting" id="565">
+                                    <items>
+                                        <menuItem title="Format Line/Selection" keyEquivalent="k" id="567">
+                                            <connections>
+                                                <action selector="wxFormatCode:" target="-1" id="905"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Format All lines" keyEquivalent="K" id="987">
+                                            <connections>
+                                                <action selector="wxFormatCodeAll:" target="-1" id="989"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="988"/>
+                                        <menuItem title="Format Code Options" keyEquivalent="k" id="566">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="wxShowCodeFormatOptions:" target="530" id="906"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Code Repository" id="967">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Code Repository" id="968">
+                                    <items>
+                                        <menuItem title="Show Window" keyEquivalent="i" id="969">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                            <connections>
+                                                <action selector="wxShowCodeRepositoryWindow:" target="-1" id="972"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Store selected text" keyEquivalent="I" id="970">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                            <connections>
+                                                <action selector="wxSaveUserCodeToRepository:" target="-1" id="971"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="568"/>
+                            <menuItem title="Autocompletion" id="977">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Menu" id="978">
+                                    <items>
+                                        <menuItem title="List Opcodes" id="979">
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                            <connections>
+                                                <action selector="wxShowAutocompleteWindow:" target="-1" id="982"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="CSound Opcodes Repository" keyEquivalent="j" id="980">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                            <connections>
+                                                <action selector="wxShowCSoundRepositoryWindow:" target="-1" id="981"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="976"/>
+                            <menuItem title="Line Endings" id="569">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Menu" id="570">
+                                    <items>
+                                        <menuItem title="Unix - OsX (LF)" id="573">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxLineEndsConverter:" target="-1" id="828"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Mac (CR)" tag="1" id="572">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxLineEndsConverter:" target="-1" id="829"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Windows (CRLF)" tag="2" id="571">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxLineEndsConverter:" target="-1" id="830"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Reset Text zoom" keyEquivalent="t" id="899">
+                                <connections>
+                                    <action selector="wxResetTextZoom:" target="-1" id="900"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="View" id="295">
+                    <menu key="submenu" title="View" id="296">
+                        <items>
+                            <menuItem title="Show Line Numbers" state="on" keyEquivalent="1" id="574">
+                                <connections>
+                                    <action selector="wxShowLineNumbers:" target="530" id="739"/>
+                                    <binding destination="831" name="value" keyPath="values.EditorShowLineNumbers" id="840"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show Explorer" state="on" keyEquivalent="2" id="575">
+                                <connections>
+                                    <action selector="wxShowExplorer:" target="530" id="738"/>
+                                    <binding destination="831" name="value" keyPath="values.EditorShowExplorer" id="835"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show Opcodes Help" state="on" keyEquivalent="3" id="576">
+                                <connections>
+                                    <action selector="wxShowOnlineHelp:" target="530" id="740"/>
+                                    <binding destination="831" name="value" keyPath="values.EditorShowIntellitip" id="838"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show Toolbar" state="on" keyEquivalent="4" id="990">
+                                <connections>
+                                    <action selector="wxShowToolbar:" target="530" id="996"/>
+                                    <binding destination="831" name="value" keyPath="values.EditorShowToolbar" id="995"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All Tools" keyEquivalent="5" id="578">
+                                <connections>
+                                    <action selector="wxShowAllTools:" target="530" id="737"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide All Tools" keyEquivalent="6" id="579">
+                                <connections>
+                                    <action selector="wxHideAllTools:" target="530" id="736"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="580"/>
+                            <menuItem title="Show Full Code" keyEquivalent="1" id="581">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxShowFullCode:" target="-1" id="618"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Split Horizontal" keyEquivalent="2" id="582">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxSplitHorizontal:" target="-1" id="619"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Split Horizontal (Orc/Sco)" keyEquivalent="3" id="583">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxSplitHorizontalOrcSco:" target="-1" id="621"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Split Vertical" keyEquivalent="4" id="584">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxSplitVertical:" target="-1" id="620"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Split Vertical (Orc/Sco)" keyEquivalent="5" id="585">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxSplitVerticalOrcSco:" target="-1" id="622"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="586"/>
+                            <menuItem title="Show Code" keyEquivalent="8" id="587">
+                                <connections>
+                                    <action selector="wxShowCode:" target="-1" id="752"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show Compiler" keyEquivalent="9" id="588">
+                                <connections>
+                                    <action selector="wxShowCompiler:" target="-1" id="753"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show Help" keyEquivalent="0" id="589">
+                                <connections>
+                                    <action selector="wxShowHelp:" target="530" id="751"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="590"/>
+                            <menuItem title="Show/Hide White Spaces" keyEquivalent="q" id="732">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="wxShowHideWhiteSpaces:" target="-1" id="735"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show/Hide Line Endings" keyEquivalent="h" id="733">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="wxShowHideLineEndings:" target="-1" id="734"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="894"/>
+                            <menuItem title="Go Forward" keyEquivalent="" id="895">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxCursorPositionNext:" target="-1" id="897"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Go Back" keyEquivalent="" id="896">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxCursorPositionPrevious:" target="-1" id="898"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="931"/>
+                            <menuItem title="Set caret on Primary View" keyEquivalent="" id="927">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxSetFocusOnPrimaryView:" target="-1" id="929"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Set caret on Secondary View" keyEquivalent="" id="928">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxSetFocusOnSecondaryView:" target="-1" id="930"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Tools" id="591">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Tools" id="592">
+                        <items>
+                            <menuItem title="Compile" image="compile_16" id="607">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                <connections>
+                                    <action selector="wxCompile:" target="-1" id="623"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Compile with Additional Options (⌥⌘L)" image="compile_16" id="1027">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Menu" id="1028">
+                                    <items>
+                                        <menuItem title="Item" id="1029">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Compile (external shell)" image="compile-external_16" id="606">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxCompileExternal:" target="-1" id="743"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Compile (external shell) with Additional Options" image="compile-external_16" id="1030">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Menu" id="1031">
+                                    <items>
+                                        <menuItem title="Item" id="1032">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Use WinXound Flags" state="on" keyEquivalent="u" id="605">
+                                <connections>
+                                    <action selector="wxUseWinxoundFlags:" target="530" id="893"/>
+                                    <binding destination="831" name="value" keyPath="values.UseWinxoundFlags" id="889"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="597"/>
+                            <menuItem title="Run External GUI" id="604">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="wxCallExternalGui:" target="-1" id="748"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Cabbage" id="997">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Menu" id="998">
+                                    <items>
+                                        <menuItem title="Update Cabbage" keyEquivalent="i" id="999">
+                                            <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES"/>
+                                            <connections>
+                                                <action selector="wxCabbageUpdate:" target="-1" id="1011"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="1003"/>
+                                        <menuItem title="Export as VSTi" id="1002">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxCabbageExportVSTI:" target="-1" id="1010"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export as VST" id="1001">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxCabbageExportVST:" target="-1" id="1009"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export as AU" id="1000">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="wxCabbageExportAU:" target="-1" id="1008"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="596"/>
+                            <menuItem title="CSound Analysis" keyEquivalent="A" id="602">
+                                <connections>
+                                    <action selector="wxShowAnalysisTool:" target="530" id="937"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="595"/>
+                            <menuItem title="Media Player" keyEquivalent="p" id="603">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="wxCallMediaPlayer:" target="530" id="746"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="External Wave Editor" id="601">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxCallWaveEditor:" target="530" id="747"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Calculator" id="600">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxCallCalculator:" target="530" id="744"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Command Line Shell" id="599">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxCallCommandLine:" target="530" id="745"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="594"/>
+                            <menuItem title="WinXound Audio Test" id="593">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxWinXoundTest:" target="530" id="913"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="19">
+                    <menu key="submenu" title="Window" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="239">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="240"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="491">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="492">
+                        <items>
+                            <menuItem title="WinXound Help" keyEquivalent="?" id="493">
+                                <connections>
+                                    <action selector="wxShowWinXoundHelp:" target="530" id="822"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="992"/>
+                            <menuItem title="Opcode Help" id="616">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                                <connections>
+                                    <action selector="wxShowOpcodeHelp:" target="-1" id="823"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="CSound Help" keyEquivalent="?" id="617">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="wxShowCSoundHelp:" target="530" id="824"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="CSound Opcodes Help" id="991">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxShowCSoundOpcodesHelp:" target="530" id="993"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="CSound Flags Help" id="983">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxShowCSoundFlagsHelp:" target="530" id="985"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="973"/>
+                            <menuItem title="CSound Tutorials (at csounds.com)" id="974">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxHelpShowTutorials:" target="530" id="975"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="CSound Manual (at Floss Manuals)" id="984">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="wxHelpShowFlossManual:" target="530" id="986"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="139" y="154"/>
+        </menu>
+        <customObject id="419" customClass="NSFontManager"/>
+        <customObject id="530" customClass="wxMainController">
+            <connections>
+                <outlet property="HelpWindow" destination="850" id="877"/>
+                <outlet property="RecentFiles" destination="712" id="730"/>
+                <outlet property="StartWindow" destination="697" id="728"/>
+                <outlet property="buttonBack" destination="860" id="878"/>
+                <outlet property="buttonForward" destination="859" id="879"/>
+                <outlet property="helpBrowser" destination="854" id="880"/>
+                <outlet property="helpSearchField" destination="917" id="925"/>
+                <outlet property="menuCompileExternalWithAdditionalOptions" destination="1031" id="1036"/>
+                <outlet property="menuCompileWithAdditionalOptions" destination="1028" id="1035"/>
+                <outlet property="version" destination="703" id="846"/>
+            </connections>
+        </customObject>
+        <window title="WinXound Startup Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="697" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="320" y="453" width="623" height="362"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1710" height="1073"/>
+            <view key="contentView" id="698">
+                <rect key="frame" x="0.0" y="0.0" width="623" height="362"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button imageHugsTitle="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="699">
+                        <rect key="frame" x="18" y="184" width="272" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title=" Create a new CSound Csd File (C)" bezelStyle="regularSquare" image="csound" imagePosition="leading" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="722">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">c</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxNewCsoundFile:" target="530" id="726"/>
+                        </connections>
+                    </button>
+                    <button imageHugsTitle="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1018">
+                        <rect key="frame" x="18" y="79" width="272" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title=" Create a new Cabbage File (B)" bezelStyle="regularSquare" image="Cabbage_48" imagePosition="leading" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1019">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">b</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxNewCabbageFile:" target="530" id="1023"/>
+                        </connections>
+                    </button>
+                    <button imageHugsTitle="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1012">
+                        <rect key="frame" x="18" y="149" width="272" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title=" Create a new CSound Orc File (O)" bezelStyle="regularSquare" image="orchestra" imagePosition="leading" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1013">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">o</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxNewOrcFile:" target="530" id="1021"/>
+                        </connections>
+                    </button>
+                    <button imageHugsTitle="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="700">
+                        <rect key="frame" x="18" y="44" width="272" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title=" Create a new Python File (P)" bezelStyle="regularSquare" image="python_48" imagePosition="leading" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="721">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">p</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxNewPythonFile:" target="530" id="723"/>
+                        </connections>
+                    </button>
+                    <button imageHugsTitle="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="701">
+                        <rect key="frame" x="18" y="9" width="272" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title=" Create a new Lua File (L)" bezelStyle="regularSquare" image="lua_48" imagePosition="leading" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="720">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">l</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxNewLuaFile:" target="530" id="727"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="702">
+                        <rect key="frame" x="17" y="251" width="274" height="47"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="WinXound" bezelStyle="round" id="719">
+                            <font key="font" metaFont="systemBold" size="39"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="703">
+                        <rect key="frame" x="17" y="234" width="274" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="version" bezelStyle="round" id="718">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.2908163265" green="0.2908163265" blue="0.2908163265" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="705">
+                        <rect key="frame" x="336" y="142" width="267" height="208"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" id="P9Y-xS-Gdh">
+                            <rect key="frame" x="1" y="29" width="265" height="178"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" autosaveColumns="NO" headerView="711" id="712">
+                                    <rect key="frame" x="0.0" y="0.0" width="265" height="178"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="gridColor" name="separatorColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn editable="NO" width="253" minWidth="40" maxWidth="1000" id="715">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Recent files">
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" alignment="left" title="Text Cell" id="716">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        </tableColumn>
+                                    </tableColumns>
+                                </tableView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="713">
+                            <rect key="frame" x="1" y="119" width="223" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="714">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <tableHeaderView key="headerView" id="711">
+                            <rect key="frame" x="0.0" y="0.0" width="265" height="28"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </tableHeaderView>
+                    </scrollView>
+                    <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="706">
+                        <rect key="frame" x="330" y="110" width="279" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Open Recent(s)" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="710">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxOpenRecent:" target="530" id="724"/>
+                        </connections>
+                    </button>
+                    <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="932">
+                        <rect key="frame" x="330" y="82" width="279" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Clear Recent List" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="933">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clearRecentDocuments:" target="-1" id="935"/>
+                        </connections>
+                    </button>
+                    <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="707">
+                        <rect key="frame" x="330" y="5" width="279" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Open Other(s) ..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="709">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxOpen:" target="530" id="725"/>
+                        </connections>
+                    </button>
+                    <box autoresizesSubviews="NO" horizontalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="708">
+                        <rect key="frame" x="309" y="13" width="5" height="337"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </box>
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="848">
+                        <rect key="frame" x="120" y="289" width="64" height="72"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="WinXound2" id="849"/>
+                    </imageView>
+                    <webView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="936">
+                        <rect key="frame" x="20" y="-91" width="598" height="33"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO"/>
+                    </webView>
+                    <button imageHugsTitle="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1015">
+                        <rect key="frame" x="18" y="114" width="272" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title=" Create a new CSound Sco File (S)" bezelStyle="regularSquare" image="score" imagePosition="leading" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1016">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">s</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="wxNewScoFile:" target="530" id="1022"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="initialFirstResponder" destination="699" id="731"/>
+            </connections>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="831"/>
+        <window title="WinXound Help" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="850">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="225" y="275" width="822" height="497"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1710" height="1073"/>
+            <value key="minSize" type="size" width="600" height="200"/>
+            <view key="contentView" id="851">
+                <rect key="frame" x="0.0" y="0.0" width="822" height="497"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="852">
+                        <rect key="frame" x="0.0" y="0.0" width="822" height="497"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="854">
+                                <rect key="frame" x="0.0" y="20" width="822" height="454"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO"/>
+                                <connections>
+                                    <outlet property="UIDelegate" destination="530" id="874"/>
+                                    <outlet property="frameLoadDelegate" destination="530" id="875"/>
+                                    <outlet property="resourceLoadDelegate" destination="530" id="873"/>
+                                </connections>
+                            </webView>
+                            <box autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="861">
+                                <rect key="frame" x="0.0" y="472" width="822" height="5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </box>
+                            <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="860">
+                                <rect key="frame" x="9" y="477" width="37" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoLeftTemplate" catalog="system" imagePosition="overlaps" alignment="center" controlSize="small" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="862">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goBack:" target="854" id="872"/>
+                                </connections>
+                            </button>
+                            <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="859">
+                                <rect key="frame" x="48" y="477" width="37" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoRightTemplate" catalog="system" imagePosition="overlaps" alignment="center" controlSize="small" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="863">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goForward:" target="854" id="870"/>
+                                </connections>
+                            </button>
+                            <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="858">
+                                <rect key="frame" x="87" y="477" width="49" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="home" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="864">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goHome:" target="530" id="876"/>
+                                </connections>
+                            </button>
+                            <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="857">
+                                <rect key="frame" x="170" y="477" width="49" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="font -" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="865">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="makeTextSmaller:" target="854" id="868"/>
+                                </connections>
+                            </button>
+                            <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="856">
+                                <rect key="frame" x="221" y="477" width="49" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="font +" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="866">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="makeTextLarger:" target="854" id="871"/>
+                                </connections>
+                            </button>
+                            <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="855">
+                                <rect key="frame" x="272" y="477" width="64" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="font reset" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="867">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="makeTextStandardSize:" target="854" id="869"/>
+                                </connections>
+                            </button>
+                            <button imageHugsTitle="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="881">
+                                <rect key="frame" x="9" y="2" width="70" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="Close" bezelStyle="texturedRounded" imagePosition="overlaps" alignment="center" controlSize="mini" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="882">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="performClose:" target="850" id="884"/>
+                                </connections>
+                            </button>
+                            <box autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="853">
+                                <rect key="frame" x="0.0" y="17" width="822" height="5"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </box>
+                            <searchField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="917">
+                                <rect key="frame" x="583" y="477" width="172" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <searchFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" bezelStyle="round" sendsWholeSearchString="YES" id="918">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <action selector="wxHelpFindNext:" target="530" id="923"/>
+                                    </connections>
+                                </searchFieldCell>
+                            </searchField>
+                            <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="921">
+                                <rect key="frame" x="759" y="476" width="55" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <segmentedCell key="cell" state="on" borderStyle="border" alignment="left" segmentDistribution="fill" style="roundRect" trackingMode="momentary" id="922">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <segments>
+                                        <segment image="NSGoLeftTemplate" catalog="system" width="24"/>
+                                        <segment image="NSGoRightTemplate" catalog="system" width="24" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="wxHelpFindButtons:" target="530" id="926"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                    </view>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="initialFirstResponder" destination="854" id="924"/>
+            </connections>
+        </window>
+    </objects>
+    <resources>
+        <image name="Cabbage_48" width="23" height="23"/>
+        <image name="NSGoLeftTemplate" catalog="system" width="12" height="17"/>
+        <image name="NSGoRightTemplate" catalog="system" width="12" height="17"/>
+        <image name="WinXound2" width="512" height="512"/>
+        <image name="compile-external_16" width="12.800000190734863" height="12.800000190734863"/>
+        <image name="compile_16" width="12.800000190734863" height="12.800000190734863"/>
+        <image name="csound" width="64" height="64"/>
+        <image name="lua_48" width="288" height="288"/>
+        <image name="orchestra" width="64" height="64"/>
+        <image name="python_48" width="288" height="288"/>
+        <image name="score" width="64" height="64"/>
+    </resources>
+</document>

@@ -112,10 +112,10 @@
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>Text Files</string>
-			<key>LSHandlerRank</key>
-			<string>Alternate</string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
 			<key>NSDocumentClass</key>
 			<string>wxDocument</string>
 		</dict>
@@ -126,10 +126,10 @@
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>Others</string>
-			<key>LSHandlerRank</key>
-			<string>Alternate</string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
 			<key>NSDocumentClass</key>
 			<string>wxDocument</string>
 		</dict>
@@ -139,7 +139,7 @@
 	<key>CFBundleIconFile</key>
 	<string>WinXound2.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.winxound.WinXound</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -147,7 +147,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.4.0</string>
+	<string>4.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>

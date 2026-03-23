@@ -6,8 +6,7 @@
  *
  */
 
-
-//Various
+// Various
 #define wxMAIN [wxMainController sharedInstance]
 #define wxFIND [wxFindAndReplace sharedInstance]
 #define wxIMPEXP [wxImportExport sharedInstance]
@@ -18,4 +17,5 @@
 
 #define FIND_STRUCTURE_INTERVAL 6
 
-#define wxDefaults [[NSUserDefaultsController sharedUserDefaultsController] values]
+#define wxDefaults                                                             \
+    [[NSUserDefaultsController sharedUserDefaultsController] values]

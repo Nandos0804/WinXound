@@ -1215,7 +1215,7 @@ static void notification(intptr_t windowid, unsigned int iMessage, uintptr_t wPa
     
     // Establish a connection from the back end to this container so we can handle situations
     // which require our attention.
-    mBackend->RegisterNotifyCallback(nil, notification);
+    mBackend->RegisterNotifyCallback(0, notification);
     
     // Setup a special indicator used in the editor to provide visual feedback for 
     // input composition, depending on language, keyboard etc.
@@ -1256,7 +1256,7 @@ static void notification(intptr_t windowid, unsigned int iMessage, uintptr_t wPa
  */
 - (void) layout
 {
-  int scrollerWidth = [NSScroller scrollerWidth];
+  CGFloat scrollerWidth = [NSScroller scrollerWidth];
 
   NSSize size = [self frame].size;
   NSRect hScrollerRect = {0, 0, size.width, scrollerWidth};
@@ -1266,7 +1266,7 @@ static void notification(intptr_t windowid, unsigned int iMessage, uintptr_t wPa
   
   // Horizontal offset of the content. Almost always 0 unless the vertical scroller
   // is on the left side.
-  int contentX = 0;
+  CGFloat contentX = 0;
   
   // Vertical scroller frame calculation.
   if (![mVerticalScroller isHidden])

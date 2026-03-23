@@ -13,20 +13,51 @@ Windows/bin/WinXound_Net.exe
 Windows/bin/WinXound_Net.pdb
 Windows/bin/WinXound_Net.vshost.exe
 Windows/bin/WinXound_Net.vshost.exe.manifest
+
 # macOS
+
+# General
 .DS_Store
-**/.DS_Store
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon[]
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 # Xcode user-specific files
 MacOs/WinXound.xcodeproj/xcuserdata/
 MacOs/WinXound.xcodeproj/project.xcworkspace/xcuserdata/
 MacOs/WinXound.xcodeproj/*.mode1v3
 MacOs/WinXound.xcodeproj/*.pbxuser
+## User settings
+xcuserdata/
 
 # Xcode build output
 MacOs/build/
 MacOs/DerivedData/
 
+## Linux
+
+# Anjuta
+# Local configuration folder and symbol database
 Linux/.DS_Store
 Linux/.anjuta/
 Linux/.anjuta_sym_db.db

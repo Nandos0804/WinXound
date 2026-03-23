@@ -11,30 +11,25 @@
 @class TextEditorView;
 @class wxNode;
 
-
 @interface wxCSoundRepository : NSObject {
 
-	//IBOutlet NSTableView* codeList;
-	IBOutlet NSOutlineView* treeViewCSound;
-	IBOutlet NSPanel* CSoundRepositoryWindow;
-	IBOutlet NSTextField* labelDescription;
-	IBOutlet NSTextField* labelSynopsis;
+    // IBOutlet NSTableView* codeList;
+    IBOutlet NSOutlineView *treeViewCSound;
+    IBOutlet NSPanel *CSoundRepositoryWindow;
+    IBOutlet NSTextField *labelDescription;
+    IBOutlet NSTextField *labelSynopsis;
 
-	@private
-	TextEditorView* textEditor;
-	wxNode*			rootNode;
-	
-	
+  @private
+    TextEditorView *textEditor;
+    wxNode *rootNode;
 }
 
++ (wxCSoundRepository *)sharedInstance;
 
-+ (wxCSoundRepository*) sharedInstance;
+- (IBAction)codeInsertText:(id)sender;
+- (IBAction)codeInsertSynopsis:(id)sender;
 
-- (IBAction) codeInsertText:(id)sender;
-- (IBAction) codeInsertSynopsis:(id)sender;
-
-
-- (void)setOwner:(TextEditorView*)editor;
+- (void)setOwner:(TextEditorView *)editor;
 - (void)refreshList;
 - (void)FillTreeViewOpcodes;
 - (void)displayCSoundRepository;

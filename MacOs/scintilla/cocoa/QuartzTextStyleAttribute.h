@@ -1,142 +1,77 @@
-/**
+/*
  *  QuartzTextStyleAttribute.h
- *
- *  Original Code by Evan Jones on Wed Oct 02 2002.
- *  Contributors:
- *  Shane Caraveo, ActiveState
- *  Bernd Paradies, Adobe
- *
  */
-
 
 #ifndef _QUARTZ_TEXT_STYLE_ATTRIBUTE_H
 #define _QUARTZ_TEXT_STYLE_ATTRIBUTE_H
+
+#include <Cocoa/Cocoa.h>
+
+#include <cassert>
+#include <string>
 
 class QuartzTextStyleAttribute
 {
 public:
     QuartzTextStyleAttribute() {}
     virtual ~QuartzTextStyleAttribute() {}
-    virtual ByteCount getSize() const = 0;
-    virtual ATSUAttributeValuePtr getValuePtr() = 0;
-    virtual ATSUAttributeTag getTag() const = 0;
 };
 
 class QuartzTextSize : public QuartzTextStyleAttribute
 {
-public: 
-    QuartzTextSize( float points )
-    {
-        size = X2Fix( points );
-    }
-    
-    ByteCount getSize() const
-    {
-        return sizeof( size );
-    }
+public:
+    explicit QuartzTextSize(float points) : pointSize(points) {}
+    CGFloat getPointSize() const { return pointSize; }
 
-    ATSUAttributeValuePtr getValuePtr()
-    {
-        return &size;
-    }
-
-    ATSUAttributeTag getTag() const
-    {
-        return kATSUSizeTag;
-    }
-    
 private:
-        Fixed size;
+    CGFloat pointSize;
 };
 
 class QuartzTextStyleAttributeBoolean : public QuartzTextStyleAttribute
 {
 public:
-    QuartzTextStyleAttributeBoolean( bool newVal ) : value( newVal ) {}
+    explicit QuartzTextStyleAttributeBoolean(bool newVal) : value(newVal) {}
+    bool getValue() const { return value; }
 
-    ByteCount getSize() const
-    {
-        return sizeof( value );
-    }
-    ATSUAttributeValuePtr getValuePtr()
-    {
-        return &value;
-    }
-    
-    virtual ATSUAttributeTag getTag() const = 0;
-    
 private:
-        Boolean value;
+    bool value;
 };
 
 class QuartzTextBold : public QuartzTextStyleAttributeBoolean
 {
 public:
-    QuartzTextBold( bool newVal ) : QuartzTextStyleAttributeBoolean( newVal ) {}
-    ATSUAttributeTag getTag() const
-    {
-        return kATSUQDBoldfaceTag;
-    }
+    explicit QuartzTextBold(bool newVal) : QuartzTextStyleAttributeBoolean(newVal) {}
 };
 
 class QuartzTextItalic : public QuartzTextStyleAttributeBoolean
 {
 public:
-    QuartzTextItalic( bool newVal ) : QuartzTextStyleAttributeBoolean( newVal ) {}
-    ATSUAttributeTag getTag() const
-    {
-        return kATSUQDItalicTag;
-    }
+    explicit QuartzTextItalic(bool newVal) : QuartzTextStyleAttributeBoolean(newVal) {}
 };
 
 class QuartzTextUnderline : public QuartzTextStyleAttributeBoolean
 {
 public:
-    QuartzTextUnderline( bool newVal ) : QuartzTextStyleAttributeBoolean( newVal ) {}
-    ATSUAttributeTag getTag() const {
-        return kATSUQDUnderlineTag;
-    }
+    explicit QuartzTextUnderline(bool newVal) : QuartzTextStyleAttributeBoolean(newVal) {}
 };
 
 class QuartzFont : public QuartzTextStyleAttribute
 {
 public:
-    /** Create a font style from a name. */
-    QuartzFont( const char* name, int length )
+    QuartzFont(const char *name, int length)
     {
-        assert( name != NULL && length > 0 && name[length] == '\0' );
-        // try to create font
-        OSStatus err = ATSUFindFontFromName( const_cast<char*>( name ), length, kFontFullName, (unsigned) kFontNoPlatform, kFontRomanScript, (unsigned) kFontNoLanguage, &fontid );
-
-        // need a fallback if font isn't installed
-        if( err != noErr || fontid == kATSUInvalidFontID )
-                ::ATSUFindFontFromName( "Lucida Grande", 13, kFontFullName, (unsigned) kFontNoPlatform, kFontRomanScript, (unsigned) kFontNoLanguage, &fontid );
+        assert(name != NULL && length > 0 && name[length] == '\0');
+        fontName.assign(name, static_cast<size_t>(length));
     }
 
-    ByteCount getSize() const
+    const std::string &getName() const
     {
-        return sizeof( fontid );
-    }
-
-    ATSUAttributeValuePtr getValuePtr()
-    {
-        return &fontid;
-    }
-
-    ATSUAttributeTag getTag() const
-    {
-        return kATSUFontTag;
-    }
-
-    ATSUFontID getFontID() const
-    {
-        return fontid;
+        return fontName;
     }
 
 private:
-    ATSUFontID fontid;
+    std::string fontName;
 };
-
 
 #endif
 

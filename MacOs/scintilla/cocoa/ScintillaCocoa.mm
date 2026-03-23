@@ -357,7 +357,7 @@ sptr_t ScintillaCocoa::WndProc(unsigned int iMessage, uptr_t wParam, sptr_t lPar
       return 0;
       
     default:
-      unsigned int r = ScintillaBase::WndProc(iMessage, wParam, lParam);
+      sptr_t r = ScintillaBase::WndProc(iMessage, wParam, lParam);
       
       return r;
   }
@@ -1347,7 +1347,7 @@ void ScintillaCocoa::NotifyParent(SCNotification scn)
   if (notifyProc != NULL)
   {
     scn.nmhdr.hwndFrom = (void*) this;
-    scn.nmhdr.idFrom = (unsigned int) wMain.GetID();
+    scn.nmhdr.idFrom = reinterpret_cast<uptr_t>(wMain.GetID());
     notifyProc(notifyObj, WM_NOTIFY, (uintptr_t) 0, (uintptr_t) &scn);
   }
 }
