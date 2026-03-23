@@ -25,7 +25,8 @@
 {
 	NSLog(@"TextEditorView: initWithFrame CALLED.");
 	
-	if (!(self == [super initWithFrame:frameRect])) 
+	self = [super initWithFrame:frameRect];
+	if (!self)
 	{
 		return nil;
     }
@@ -48,9 +49,10 @@
 	
 	
 	//Set Scintilla DocPointer for secondary view equal to first view
-	[textView2 setGeneralProperty: SCI_SETDOCPOINTER 
-						parameter:0 
-							value:[textView1 getGeneralProperty:SCI_GETDOCPOINTER parameter:0]];
+	const void *sharedDocPointer = [textView1 getReferenceProperty: SCI_GETDOCPOINTER parameter: 0];
+	[textView2 setReferenceProperty: SCI_SETDOCPOINTER
+						parameter: 0
+							value: sharedDocPointer];
 	
 	//SET CODEPAGE TO UTF8
 	[textView1 setGeneralProperty:SCI_SETCODEPAGE parameter:SC_CP_UTF8 value:0];

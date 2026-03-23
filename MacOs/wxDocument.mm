@@ -5059,7 +5059,7 @@
 				mFsStart = mFsFindPos.location + [stringToFind length];		
 				//mFsCurLine = [_editor getLineNumberFromPosition:mFsFindPos];
 				mFsCurLineEnd = [_text rangeOfCharacterFromSet:[NSCharacterSet newlineCharacterSet] 
-													   options:nil 
+												   options:0 
 														 range:NSMakeRange(mFsStart, mFsEnd - mFsStart)].location;
 				
 				//[_editor getTextOfLine:mFsCurLine];

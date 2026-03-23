@@ -364,7 +364,7 @@
 	
 	@try
 	{
-		float redFloatValue, greenFloatValue, blueFloatValue;
+		CGFloat redFloatValue, greenFloatValue, blueFloatValue;
 		int redIntValue, greenIntValue, blueIntValue;
 		NSString *redHexValue, *greenHexValue, *blueHexValue;
 		
