@@ -27,6 +27,46 @@
 #include <fstream>
 #include <vector>
 
+static bool IsExistingDirectory(const Glib::ustring& path)
+{
+	if(path.empty())
+		return false;
+	return Glib::file_test(path, Glib::FILE_TEST_EXISTS | Glib::FILE_TEST_IS_DIR);
+}
+
+static Glib::ustring FindOpcodePluginDirForCsound(const Glib::ustring& compilerName)
+{
+	std::vector<Glib::ustring> candidates;
+
+	if(IsExistingDirectory(wxSETTINGS->Directory.OPCODE7DIR64))
+		return wxSETTINGS->Directory.OPCODE7DIR64;
+	if(IsExistingDirectory(wxSETTINGS->Directory.OPCODE7DIR))
+		return wxSETTINGS->Directory.OPCODE7DIR;
+	if(IsExistingDirectory(wxSETTINGS->Directory.OPCODEDIR))
+		return wxSETTINGS->Directory.OPCODEDIR;
+
+	if(!compilerName.empty())
+	{
+		Glib::ustring compilerDir = Glib::path_get_dirname(compilerName);
+		candidates.push_back(Glib::build_filename(compilerDir, "Opcodes"));
+		candidates.push_back(Glib::build_filename(compilerDir, "../lib/csound/plugins64-7.0"));
+		candidates.push_back(Glib::build_filename(compilerDir, "../lib64/csound/plugins64-7.0"));
+		candidates.push_back(Glib::build_filename(compilerDir, "../plugins64-7.0"));
+	}
+
+	candidates.push_back("/usr/lib/csound/plugins64-7.0");
+	candidates.push_back("/usr/lib64/csound/plugins64-7.0");
+	candidates.push_back("/usr/local/lib/csound/plugins64-7.0");
+
+	for(const auto& candidate : candidates)
+	{
+		if(IsExistingDirectory(candidate))
+			return candidate;
+	}
+
+	return "";
+}
+
 #ifdef WINXOUND_MODERN_DEPS
 static pid_t vte_terminal_fork_command_compat(VteTerminal* terminal,
 	                                          const char* command,
@@ -80,11 +120,16 @@ static pid_t vte_terminal_fork_command_compat(VteTerminal* terminal,
 #define VTE_TERMINAL_WRITE_DEFAULT VTE_WRITE_DEFAULT
 #endif
 
+struct PipeOutputData {
+	wxTerminal* terminal;
+};
 
 wxTerminal::wxTerminal(bool isCompiler)  	
 {
+	pid = 0;
 	paused = false;
 	ProcessActive = false;
+	m_open_channels = 0;
 	currentOutputPath = "";
 	currentFilename = "";
 	mIsCompiler = isCompiler;
@@ -206,11 +251,6 @@ bool wxTerminal::CreateNewCompiler()
 	
 	
 	ConfigureTerminalForCompiler();
-	g_signal_connect(vte, 
-	                 "child-exited",//"cursor-moved",//"contents-changed", //"child-exited",
-	                 G_CALLBACK(&wxTerminal::on_child_exited),
-	                 this);
-
 	g_signal_connect(buttonStop, 
 	                 "clicked",//"cursor-moved",//"contents-changed", //"child-exited",
 	                 G_CALLBACK(&wxTerminal::on_buttonStop_clicked),
@@ -239,7 +279,7 @@ bool wxTerminal::CreateNewCompiler()
 	
 
 	//vte_terminal_fork_command(VTE_TERMINAL(vte), NULL, NULL, NULL, dir, TRUE, TRUE, TRUE);
-	vte_terminal_fork_command(VTE_TERMINAL(vte), NULL, NULL, NULL, "/usr/bin", TRUE, TRUE, TRUE);
+	// Note: compiler terminal does not pre-spawn a shell; output is fed via vte_terminal_feed()
 
 	g_signal_connect(frame, 
 	                 "size-allocate",//"size-request", //"check-resize",
@@ -368,7 +408,7 @@ void wxTerminal::RestartTerminalPage()
 		                      Glib::get_home_dir().c_str(), TRUE, TRUE,TRUE);
 }
 
-void wxTerminal::on_RestartTerminalPage(GtkWidget *widget, gpointer data)
+void wxTerminal::on_RestartTerminalPage(VteTerminal */*vte*/, gint /*status*/, gpointer data)
 {
 	//wxGLOBAL->DebugPrint("TERMINAL", "RestartTerminalPage"); 
 	wxTerminal* _this = reinterpret_cast<wxTerminal*>(data);
@@ -518,45 +558,39 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 
 	
 	//2. SET ENVIRONMENT FOR CSOUND
-	//If SFDIR is not defined or SFDIR checkbox is unchecked 
-	//we redirect the compiled soundfile to the csd file directory
-	std::vector<gchar*> env_vector;
-	
+	// Start from the full parent environment so Csound can find its audio
+	// plugins (ALSA, etc.) and all system paths remain intact.
+	// Then overlay the WinXound-specific variables.
+	gchar** envv = g_get_environ();
+
 	//Build SFDIR
-	Glib::ustring sfdir_str;
+	Glib::ustring sfdir_val;
 	if (wxSETTINGS->Directory.SFDIR == "" ||
 	    wxSETTINGS->Directory.UseSFDIR == false)
+		sfdir_val = Glib::path_get_dirname(filename1);
+	else
+		sfdir_val = wxSETTINGS->Directory.SFDIR;
+	envv = g_environ_setenv(envv, "SFDIR", sfdir_val.c_str(), TRUE);
+
+	//Add OPCODE7DIR for Csound 7 (if configured)
+	Glib::ustring opcodePluginDir = FindOpcodePluginDirForCsound(compilerName);
+	if(!opcodePluginDir.empty())
 	{
-		sfdir_str = "SFDIR=";
-		sfdir_str.append(Glib::path_get_dirname(filename1));
+		envv = g_environ_setenv(envv, "OPCODE7DIR", opcodePluginDir.c_str(), TRUE);
+		envv = g_environ_setenv(envv, "OPCODE7DIR64", opcodePluginDir.c_str(), TRUE);
+		envv = g_environ_setenv(envv, "OPCODEDIR", opcodePluginDir.c_str(), TRUE);
+		envv = g_environ_setenv(envv, "OPCODEDIR64", opcodePluginDir.c_str(), TRUE);
 	}
 	else
 	{
-		sfdir_str = "SFDIR=";
-		sfdir_str.append(wxSETTINGS->Directory.SFDIR);
+		// Prevent inherited stale plugin paths (for example missing /usr/local/...)
+		// from forcing Csound to skip valid runtime modules.
+		envv = g_environ_unsetenv(envv, "OPCODE7DIR");
+		envv = g_environ_unsetenv(envv, "OPCODE7DIR64");
+		envv = g_environ_unsetenv(envv, "OPCODEDIR");
+		envv = g_environ_unsetenv(envv, "OPCODEDIR64");
 	}
-	env_vector.push_back(g_strdup(sfdir_str.c_str()));
-	
-	//Add OPCODE7DIR for Csound 7 (if configured)
-	if (!wxSETTINGS->Directory.OPCODE7DIR.empty())
-	{
-		Glib::ustring opcode7dir_str = "OPCODE7DIR=";
-		opcode7dir_str.append(wxSETTINGS->Directory.OPCODE7DIR);
-		env_vector.push_back(g_strdup(opcode7dir_str.c_str()));
-	}
-	
-	//Add OPCODE7DIR64 for Csound 7 (if configured)
-	if (!wxSETTINGS->Directory.OPCODE7DIR64.empty())
-	{
-		Glib::ustring opcode7dir64_str = "OPCODE7DIR64=";
-		opcode7dir64_str.append(wxSETTINGS->Directory.OPCODE7DIR64);
-		env_vector.push_back(g_strdup(opcode7dir64_str.c_str()));
-	}
-	
-	//Terminate the environment array
-	env_vector.push_back(NULL);
-	gchar** envv = env_vector.data();
-	
+
 
 	
 	////////
@@ -569,27 +603,71 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 			std::cout << argv[i] << std::endl;
 		}
 	}
-	if(envv != NULL)
-	{
-		std::cout << "ENVIRONMENT:" << std::endl;
-		for(int i=0; i < StringLength(envv); i++)
-		{
-			std::cout << envv[i] << std::endl;
-		}
-	}
+	std::cout << "SFDIR=" << sfdir_val << std::endl;
+	if(!opcodePluginDir.empty())
+		std::cout << "OPCODE7DIR64=" << opcodePluginDir << std::endl;
 	////////
 	
 
 	//Store filename
 	currentFilename = Glib::path_get_basename(filename1);
 	
-	//3. COMPILE: FORK COMMAND
-	pid = vte_terminal_fork_command(VTE_TERMINAL(vte), 
-	                                compilerName.c_str(), 
-	                                argv, envv, 
-	                                NULL, 
-	                                FALSE, FALSE, FALSE);
+	//3. COMPILE: SPAWN COMMAND WITH PIPES FOR OUTPUT CAPTURE
+	{
+		gint stdout_fd = -1;
+		gint stderr_fd = -1;
+		GPid child_pid = 0;
+		GError* spawn_err = NULL;
 
+		gboolean ok = g_spawn_async_with_pipes(
+			NULL,           // working directory (inherit)
+			argv,
+			envv,
+			(GSpawnFlags)(G_SPAWN_SEARCH_PATH | G_SPAWN_DO_NOT_REAP_CHILD),
+			NULL, NULL,     // child setup / user_data
+			&child_pid,
+			NULL,           // no stdin pipe
+			&stdout_fd,
+			&stderr_fd,
+			&spawn_err);
+
+		if (!ok || spawn_err != NULL)
+		{
+			std::cerr << "Spawn error: "
+			          << (spawn_err ? spawn_err->message : "unknown") << std::endl;
+			if (spawn_err) g_error_free(spawn_err);
+			g_strfreev(parSep);
+			g_strfreev(argv);
+			g_strfreev(envv);
+			return;
+		}
+
+		pid = child_pid;
+		m_open_channels = 2; // stdout + stderr
+
+		// Watch stdout
+		GIOChannel* out_ch = g_io_channel_unix_new(stdout_fd);
+		g_io_channel_set_encoding(out_ch, NULL, NULL);
+		g_io_channel_set_buffered(out_ch, FALSE);
+		g_io_channel_set_close_on_unref(out_ch, TRUE);
+		PipeOutputData* out_pd = new PipeOutputData{this};
+		g_io_add_watch(out_ch, (GIOCondition)(G_IO_IN | G_IO_HUP | G_IO_ERR),
+		               on_compiler_output_cb, out_pd);
+		g_io_channel_unref(out_ch);
+
+		// Watch stderr
+		GIOChannel* err_ch = g_io_channel_unix_new(stderr_fd);
+		g_io_channel_set_encoding(err_ch, NULL, NULL);
+		g_io_channel_set_buffered(err_ch, FALSE);
+		g_io_channel_set_close_on_unref(err_ch, TRUE);
+		PipeOutputData* err_pd = new PipeOutputData{this};
+		g_io_add_watch(err_ch, (GIOCondition)(G_IO_IN | G_IO_HUP | G_IO_ERR),
+		               on_compiler_output_cb, err_pd);
+		g_io_channel_unref(err_ch);
+
+		// Reap child PID when process exits
+		g_child_watch_add(child_pid, on_child_close_pid_cb, NULL);
+	}
 
 	//4. SET WIDGETS
 	ProcessActive = true;
@@ -602,12 +680,7 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 	//5. Free array pointers
 	g_strfreev(parSep);
 	g_strfreev(argv);
-	//Free environment strings (we allocated them with g_strdup)
-	for(gchar* env_str : env_vector)
-	{
-		if(env_str != NULL)
-			g_free(env_str);
-	}
+	g_strfreev(envv);
 }
 
 
@@ -683,11 +756,42 @@ bool wxTerminal::TimerCheck_Tick()
 }
 */
 
-void wxTerminal::on_child_exited(GtkWidget *widget, gpointer data)
+void wxTerminal::on_child_close_pid_cb(GPid child_pid, gint /*status*/, gpointer /*data*/)
 {
-	//wxGLOBAL->DebugPrint("COMPILER", "on_child_exited");
-	wxTerminal* _this = reinterpret_cast<wxTerminal*>(data);
-	_this->CompilerCompleted();
+	g_spawn_close_pid(child_pid);
+}
+
+gboolean wxTerminal::on_compiler_output_cb(GIOChannel *source, GIOCondition condition, gpointer data)
+{
+	auto* pd = static_cast<PipeOutputData*>(data);
+	wxTerminal* _this = pd->terminal;
+
+	if (condition & G_IO_IN)
+	{
+		gchar buf[4096];
+		gsize bytes_read = 0;
+		GIOStatus status;
+		do {
+			status = g_io_channel_read_chars(source, buf, sizeof(buf), &bytes_read, NULL);
+			if (bytes_read > 0)
+			{
+				// Feed bytes to VTE widget for display
+				vte_terminal_feed(VTE_TERMINAL(_this->vte), buf, (gssize)bytes_read);
+					gtk_widget_queue_draw(GTK_WIDGET(_this->vte));
+			}
+		} while (status == G_IO_STATUS_NORMAL && bytes_read > 0);
+	}
+
+	if (condition & (G_IO_HUP | G_IO_ERR))
+	{
+		delete pd;
+		_this->m_open_channels--;
+		if (_this->m_open_channels <= 0)
+			_this->CompilerCompleted();
+		return FALSE;
+	}
+
+	return TRUE;
 }
 
 void wxTerminal::CompilerCompleted()
@@ -930,6 +1034,7 @@ void wxTerminal::ForceKill()
 
 void wxTerminal::PauseCompiler()
 {
+	if(pid <= 0) return;
 	if(paused == false)
 	{
 		int ret = kill(pid, SIGSTOP);
@@ -954,8 +1059,10 @@ void wxTerminal::StopCompiler()
 {
 	try
 	{
-		if(paused == true) kill(pid, SIGCONT);
-		kill(pid, SIGQUIT);  //SIGTERM
+		if (pid > 0) {
+			if(paused == true) kill(pid, SIGCONT);
+			kill(pid, SIGQUIT);  //SIGTERM
+		}
 	}
 	catch(...){}
 }

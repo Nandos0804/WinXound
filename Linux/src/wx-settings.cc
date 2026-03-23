@@ -1703,7 +1703,7 @@ void wxSettings::CreateDefaultWinXoundSettings()
 	////ToolBar Items (checked in FormMain)
 	General.CompilerFontName = "Monospace";
 	General.CompilerFontSize = 10;
-	General.CSoundDefaultFlags = "-B4096 --displays --asciidisplay";
+	General.CSoundDefaultFlags = "-B4096 --displays --asciidisplay -odac";
 	General.OpenSoundFileWith = 1;
 	General.PythonDefaultFlags = "-u";
 	General.LuaDefaultFlags = "";

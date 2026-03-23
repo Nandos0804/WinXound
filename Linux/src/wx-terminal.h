@@ -22,6 +22,10 @@
 #ifndef _WX_TERMINAL_H_
 #define _WX_TERMINAL_H_
 
+// Forward declarations for VTE types used in callback signatures
+struct _VteTerminal;
+typedef struct _VteTerminal VteTerminal;
+
 class wxTerminal //: public Gtk::Box
 {
   public:
@@ -49,8 +53,9 @@ class wxTerminal //: public Gtk::Box
     bool ProcessActive;
     bool mIsCompiler;
 
-    static void on_RestartTerminalPage(GtkWidget *widget, gpointer data);
-    static void on_child_exited(GtkWidget *widget, gpointer data);
+    static void on_RestartTerminalPage(VteTerminal *vte, gint status, gpointer data);
+    static void on_child_close_pid_cb(GPid pid, gint status, gpointer data);
+    static gboolean on_compiler_output_cb(GIOChannel *source, GIOCondition condition, gpointer data);
     static void on_buttonStop_clicked(GtkWidget *widget, gpointer data);
     static void on_buttonPause_clicked(GtkWidget *widget, gpointer data);
     static void on_buttonPanic_clicked(GtkWidget *widget, gpointer data);
@@ -88,6 +93,7 @@ class wxTerminal //: public Gtk::Box
 
     Glib::ustring currentFilename;
     Glib::ustring currentOutputPath;
+    int m_open_channels;
 
   private:
 };
