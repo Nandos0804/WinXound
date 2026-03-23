@@ -50,8 +50,10 @@ wxTextEditor::~wxTextEditor(void)
 	//textView1_Widget = NULL;
 
 	
-	g_object_unref(G_OBJECT(textView2));
-	g_object_unref(G_OBJECT(textView1));
+	if(textView2 != NULL)
+		g_object_unref(G_OBJECT(textView2));
+	if(textView1 != NULL)
+		g_object_unref(G_OBJECT(textView1));
 
 	//gtk_widget_unref(GTK_WIDGET(textView1));
 	//gtk_widget_unref(GTK_WIDGET(textView2));
@@ -80,8 +82,8 @@ void wxTextEditor::CreateNewTextEditor(void)
 	
 	textView1 = SCINTILLA(scintilla_new());
 	textView2 = SCINTILLA(scintilla_new());
-	//g_object_ref_sink(textView1);
-	//g_object_ref_sink(textView2);
+	g_object_ref_sink(textView1);
+	g_object_ref_sink(textView2);
 	
 
 	//gtk_widget_show(GTK_WIDGET(textView1));

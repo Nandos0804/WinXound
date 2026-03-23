@@ -649,6 +649,17 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 		GIOChannel* out_ch = g_io_channel_unix_new(stdout_fd);
 		g_io_channel_set_encoding(out_ch, NULL, NULL);
 		g_io_channel_set_buffered(out_ch, FALSE);
+		GError* out_flags_err = NULL;
+		GIOFlags out_flags = g_io_channel_get_flags(out_ch);
+		g_io_channel_set_flags(out_ch,
+		                       (GIOFlags)(out_flags | G_IO_FLAG_NONBLOCK),
+		                       &out_flags_err);
+		if(out_flags_err != NULL)
+		{
+			std::cerr << "Failed to set stdout channel non-blocking: "
+			          << out_flags_err->message << std::endl;
+			g_error_free(out_flags_err);
+		}
 		g_io_channel_set_close_on_unref(out_ch, TRUE);
 		PipeOutputData* out_pd = new PipeOutputData{this};
 		g_io_add_watch(out_ch, (GIOCondition)(G_IO_IN | G_IO_HUP | G_IO_ERR),
@@ -659,6 +670,17 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 		GIOChannel* err_ch = g_io_channel_unix_new(stderr_fd);
 		g_io_channel_set_encoding(err_ch, NULL, NULL);
 		g_io_channel_set_buffered(err_ch, FALSE);
+		GError* err_flags_err = NULL;
+		GIOFlags err_flags = g_io_channel_get_flags(err_ch);
+		g_io_channel_set_flags(err_ch,
+		                       (GIOFlags)(err_flags | G_IO_FLAG_NONBLOCK),
+		                       &err_flags_err);
+		if(err_flags_err != NULL)
+		{
+			std::cerr << "Failed to set stderr channel non-blocking: "
+			          << err_flags_err->message << std::endl;
+			g_error_free(err_flags_err);
+		}
 		g_io_channel_set_close_on_unref(err_ch, TRUE);
 		PipeOutputData* err_pd = new PipeOutputData{this};
 		g_io_add_watch(err_ch, (GIOCondition)(G_IO_IN | G_IO_HUP | G_IO_ERR),

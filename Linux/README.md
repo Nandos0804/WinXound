@@ -1,211 +1,127 @@
 # Building WinXound on Linux
 
-This folder contains the Linux version of WinXound.
+This folder contains the Linux version of WinXound built with CMake and C++17.
 
-The Linux build now supports a CMake-based workflow and builds two main parts:
+The build compiles two components:
 
-1. The bundled Scintilla static library under `scintilla/gtk`.
-2. The WinXound Gtkmm application under `src`.
+1. A bundled Scintilla static library from `scintilla/`.
+2. The WinXound Gtkmm application from `src/`.
 
-The final runnable app is assembled with `make standalone` into the `Linux/WinXound` folder.
+The final runnable app is assembled with `make standalone` into `WinXound/`.
 
-## Projects and Layout
+## Layout
 
-- `CMakeLists.txt`: Linux CMake entry point.
-- `configure.ac`: legacy autotools configure source file (`configure` is generated).
-- `Makefile.am`: legacy top-level autotools rules, including the `standalone` target.
-- `src/`: WinXound Gtkmm application source.
-- `scintilla/`: bundled Scintilla source used by the editor.
-- `WinXound/`: runtime folder containing resources and the standalone app layout.
+| Path              | Description                                        |
+| ----------------- | -------------------------------------------------- |
+| `CMakeLists.txt`  | CMake entry point                                  |
+| `install-deps.sh` | Dependency installer (apt / dnf / pacman / zypper) |
+| `src/`            | WinXound application source (C++17, Gtkmm)         |
+| `scintilla/`      | Bundled Scintilla editor component                 |
+| `WinXound/`       | Runtime folder — binary + resources                |
+| `scripts/`        | `format.sh` and `lint.sh` helpers                  |
 
 ## Prerequisites
 
-- A Linux distribution with development tools installed.
-- `g++`, `make`, `pkg-config`, and standard autotools utilities.
-- Development packages required by `configure.ac`:
-  - `gtkmm-2.4 >= 2.12`
-  - `vte`
-  - `webkit-1.0`
-- Csound installed if you want to use WinXound with Csound.
-- Optional: Python if you want Python integration.
+- `g++` (C++17), `make`, `cmake >= 3.16`, `pkg-config`
+- One of the supported dependency profiles (auto-detected):
 
-Notes:
+| Profile              | Packages                                                              |
+| -------------------- | --------------------------------------------------------------------- |
+| **modern** (default) | `gtkmm-3.0 >= 3.22`, `vte-2.91`, `webkit2gtk-4.1` or `webkit2gtk-4.0` |
+| **legacy**           | `gtkmm-2.4 >= 2.12`, `vte`, `webkit-1.0`                              |
 
-- This is an older Gtkmm 2.x codebase, so package names and availability depend on the Linux distribution.
-- On modern systems, these libraries may require compatibility packages or manual package-name mapping.
+- Csound installed for runtime audio features.
 
-## Build Flow (CMake)
+## Build
 
-Build in this order:
-
-1. Install dependencies.
-2. Configure from a build directory.
-3. Build with `make`.
-4. Assemble runtime folder with `make standalone`.
-5. Start the app from `Linux/WinXound/winxound`.
-
-## 0. Install Dependencies
-
-From the repository root:
+### 1. Install dependencies
 
 ```sh
-./install-deps.sh
+./install-deps.sh          # modern profile, interactive
+./install-deps.sh --legacy # legacy profile
+./install-deps.sh -y       # non-interactive
 ```
 
-Optional:
+Supported distributions: Debian/Ubuntu (`apt`), Fedora/RHEL (`dnf`), Arch (`pacman`), openSUSE (`zypper`).
 
-- `./install-deps.sh --modern` (default)
-- `./install-deps.sh --legacy`
-- `./install-deps.sh -y` (non-interactive)
-
-## 1. Configure
-
-From the repository root:
+### 2. Configure
 
 ```sh
-mkdir -p build
-cd build
+mkdir -p build && cd build
 cmake ..
 ```
 
-## 2. Compile
-
-Run:
+To force a specific profile:
 
 ```sh
-cd build
+cmake -DWINXOUND_DEP_PROFILE=modern ..
+cmake -DWINXOUND_DEP_PROFILE=legacy ..
+```
+
+### 3. Compile
+
+```sh
 make -j$(nproc)
 ```
 
-This builds:
-
-- the Scintilla static library used by the Linux editor
-- the `winxound` executable target
-
-## 3. Assemble the Standalone Runtime Folder
-
-Run:
+### 4. Assemble the runtime folder
 
 ```sh
-cd build
 make standalone
 ```
 
-This target copies the compiled application and required UI/resource files into the runtime folder layout under `Linux/WinXound`.
+Copies into `WinXound/`:
 
-The standalone target copies at least:
+- `winxound` — the compiled binary
+- `src/*.ui` — GTK UI definition files
+- `src/*.png` — icons
+- `src/opcodes.txt` — Csound opcode list
 
-- `src/winxound` to `WinXound/winxound`
-- `src/*.ui` to `WinXound/src`
-- `src/*.png` to `WinXound/src`
-- `src/opcodes.txt` to `WinXound/src/opcodes.txt`
-
-## 4. Run
-
-Start the application with:
+### 5. Run
 
 ```sh
-cd Linux
 ./WinXound/winxound
 ```
 
-The `Linux/WinXound` folder should remain in a location where the user has read and write permission.
+The `WinXound/` folder must remain in a location with read and write permission.
 
-## Runtime Layout
+## Additional make targets
 
-The Linux runtime folder in this repository is:
+| Target        | Description                              |
+| ------------- | ---------------------------------------- |
+| `make format` | Auto-format sources with `clang-format`  |
+| `make lint`   | Lint check with `clang-format --dry-run` |
 
-- `Linux/WinXound/Help`
-- `Linux/WinXound/Repository`
-- `Linux/WinXound/Settings`
-- `Linux/WinXound/Cabbage`
-- `Linux/WinXound/src`
+These targets are only available if `clang-format` is installed.
 
-These are runtime assets and should remain tracked.
+## Runtime layout
 
-## Clean Rebuild
+```bash
+WinXound/
+  winxound        ← binary
+  src/            ← UI files, opcodes.txt, icons
+  Help/
+  Repository/
+  Cabbage/
+```
 
-For a clean CMake rebuild, run:
+## Clean rebuild
 
 ```sh
 rm -rf build
-mkdir build
-cd build
+mkdir build && cd build
 cmake ..
-make
+make -j$(nproc)
 make standalone
 ```
-
-## Legacy Autotools Workflow
-
-If you need the historical build system:
-
-```sh
-cd Linux
-./autogen.sh
-make
-make standalone
-```
-
-If you want to remove generated files manually, the main rebuildable paths are:
-
-- `Linux/autom4te.cache`
-- `Linux/aclocal.m4`
-- `Linux/configure`
-- `Linux/config.h.in`
-- `Linux/config.guess`
-- `Linux/config.sub`
-- `Linux/depcomp`
-- `Linux/install-sh`
-- `Linux/ltmain.sh`
-- `Linux/missing`
-- `Linux/Makefile.in`
-- `Linux/config.h`
-- `Linux/config.log`
-- `Linux/config.status`
-- `Linux/libtool`
-- `Linux/Makefile`
-- `Linux/src/Makefile.in`
-- `Linux/src/Makefile`
-- `Linux/src/.deps`
-- `Linux/scintilla/.deps`
-- `Linux/scintilla/bin`
 
 ## Troubleshooting
 
-### `cmake ..` fails on missing packages
+**`cmake ..` fails with "No supported dependency profile found"**
+Install the modern or legacy package set for your distribution using `install-deps.sh`, or pass `-DWINXOUND_DEP_PROFILE=modern|legacy` explicitly.
 
-Cause:
+**App does not start after `make standalone`**
+Run `make standalone` again and launch from `WinXound/winxound` — do not copy just the binary.
 
-- One or more required development packages are missing.
-- The CMake build first attempts modern packages (`gtkmm-3.0`, `vte-2.91`, `webkit2gtk`) and falls back to legacy (`gtkmm-2.4`, `vte`, `webkit-1.0`).
-
-Fix:
-
-- Install the matching development packages for your distribution.
-- If legacy packages are unavailable, use modern package variants and then fix API differences reported by the compiler.
-
-### `make standalone` succeeds but the app does not start correctly
-
-Cause:
-
-- The standalone runtime folder is incomplete or moved incorrectly.
-
-Fix:
-
-- Re-run `make standalone`.
-- Launch the executable from the `Linux/WinXound` layout instead of copying only the binary.
-
-### `autogen.sh` fails
-
-Cause:
-
-- Missing autotools utilities such as `autoconf`, `automake`, `aclocal`, or `libtool`.
-
-Fix:
-
-- Install the missing autotools packages and retry.
-
-## Legacy Notes
-
-The original historical Linux instructions are still available in `Linux/README`. This `Linux/README.md` file is the maintained build guide for current contributors.
+**`clang-format` not found**
+The `format` and `lint` targets are skipped silently. Install `clang-format` to enable them.

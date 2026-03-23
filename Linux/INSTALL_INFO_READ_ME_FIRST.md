@@ -1,45 +1,34 @@
-﻿WinXound
-========
+﻿# WinXound
 
-NOTE (2026): This file is kept for historical reference.
-The maintained Linux build guide is Linux/README.md and uses CMake:
-   mkdir build
-   cd build
-   cmake ..
-   make
-
-WinXound is a free and open-source Front-End GUI Editor for CSound 5, CSoundAV, 
-CSoundAC, with Python and Lua support, developed by Stefano Bonetti. 
+WinXound is a free and open-source Front-End GUI Editor for CSound 5, CSoundAV,
+CSoundAC, with Python and Lua support, developed by Stefano Bonetti.
 It runs on Microsoft Windows, Apple Mac OsX and Linux.
 WinXound is optimized to work with the new CSound 5 compiler.
 
+## FEATURES
 
-FEATURES:
-=========
 - Edit CSound, Python and Lua files (csd, orc, sco, py, lua) with Syntax Highlight and Rectangular Selection;
 - Run CSound, CSoundAV, CSoundAC, Python and Lua compilers;
 - Run external language tools (CSoundGUI or QuteCsound, Idle, or other GUI Editors);
 - CSound analysis user friendly GUI;
 - Integrated CSound manual help;
-- Possibilities to set personal colors for the syntax highlighter; 
-- Convert orc/sco to csd or csd to orc/sco; 
+- Possibilities to set personal colors for the syntax highlighter;
+- Convert orc/sco to csd or csd to orc/sco;
 - Split code into two windows horizontally or vertically;
 - CSound csd explorer (File structure for Tags and Instruments)
-- Line numbers; 
+- Line numbers;
 - Bookmarks;
-- Code repository to store your preferred code; 
+- Code repository to store your preferred code;
 And much more ...
 
+## SYSTEM REQUIREMENTS
 
-SYSTEM REQUIREMENTS:
-==================== 
-- CSound 5: http://sourceforge.net/projects/csound
-- Requested to work with Python: Python compiler 
-  (http://www.python.org/download/)
+- CSound 5: <http://sourceforge.net/projects/csound>
+- Requested to work with Python: Python compiler
+  (<http://www.python.org/download/>)
 
+## INSTALLATION AND USAGE
 
-INSTALLATION AND USAGE:
-=======================
 1) Before to compile WinXound you need to install:
    - gtkmm-2.4 (libgtkmm-2.4-dev)
    - vte (libvte-dev)
@@ -61,21 +50,16 @@ INSTALLATION AND USAGE:
    where you have full Read and Write permission, for example
    in your Home folder, and double click the winxound executable file.
 
+## WEB SITE AND CONTACTS
 
-WEB SITE AND CONTACTS:
-======================
 - Web: winxound.codeplex.com
-- Email: stefano_bonetti@tin.it (or stefano_bonetti@alice.it)
+- Email: <stefano_bonetti@tin.it> (or <stefano_bonetti@alice.it>)
 
+## SOURCE CODE
 
-SOURCE CODE:
-============
 - The source code is written in C++.
 
+## CREDITS
 
-CREDITS:
-========
 - The TextEditor is entirely based on the wonderful SCINTILLA text control by Neil Hodgson
-(www.scintilla.org).
-
-
+(<www.scintilla.org>).
