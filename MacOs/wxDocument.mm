@@ -238,7 +238,7 @@
                                           getLineNumberFromPosition:ret]];
                     //[textEditor ReplaceTarget:ret - 1
                     //				   length:[textEditor
-                    //getLineLength:[textEditor getLineNumberFromPosition:ret]]
+                    // getLineLength:[textEditor getLineNumberFromPosition:ret]]
                     //+ 1 			ReplaceString:@""];
 
                     [textEditor
@@ -322,7 +322,7 @@
         //									[textEditorHost frame].origin.y,
         //									[textEditorHost frame].size.width,
         //									[textEditorHost frame].size.height -
-        //57)];
+        // 57)];
         [linkBoxHost setHidden:false];
 
         //[linkBoxComboBox setStringValue:@"PROVA PROVA"];
@@ -399,7 +399,8 @@
         if ([[wxDefaults valueForKey:@"SaveBookmarks"] boolValue]) {
 
             // NSInteger ret = [wxMAIN ShowMessage:@"The document contains
-            // bookmarks." 					informativeText:@"Would you like to save them?"
+            // bookmarks." 					informativeText:@"Would you like to
+            // save them?"
             //					  defaultButton:@"YES"
             //					alternateButton:@"NO"
             //						otherButton:nil];
@@ -768,7 +769,7 @@
     NSString *value = nil;
     NSString *currentFileName =
         [self displayName]; //[[[[self fileURL] path] lastPathComponent]
-                            //stringByDeletingPathExtension]
+                            // stringByDeletingPathExtension]
     for (NSInteger index = 0; index < [linkBoxComboBox numberOfItems];
          index++) {
         value = [[[linkBoxComboBox itemObjectValueAtIndex:index]
@@ -815,7 +816,7 @@
                                  arrayWithObjects:
                                      linkFile,
                                      nil] //[NSArray
-                                          //arrayWithObjects:@"wav",@"aiff",@"aif",nil]
+                                          // arrayWithObjects:@"wav",@"aiff",@"aif",nil]
                 modalForWindow:[self windowForSheet]
                  modalDelegate:self
                 didEndSelector:@selector(openPanelDidEnd:
@@ -947,9 +948,10 @@
         //		if ([description length] > 0)
         //		{
         //			[intelliTipTitle setStringValue: [NSString
-        //stringWithFormat:@"[%@] - %@", currentWord, [items objectAtIndex:1]]];
-        //			[intelliTipParams setStringValue: [NSString
-        //stringWithFormat:@"Parameters: %@", [items objectAtIndex:2]]];
+        // stringWithFormat:@"[%@] - %@", currentWord, [items
+        // objectAtIndex:1]]]; 			[intelliTipParams setStringValue:
+        // [NSString stringWithFormat:@"Parameters: %@", [items
+        // objectAtIndex:2]]];
         //		}
         [self setIntelliTipTextForOpcode:currentWord];
     } @catch (NSException *e) {
@@ -973,7 +975,8 @@
     //	{
     //		int index = ListBoxAutoComplete.FindString(gCurWord);
     //		// Determine if a valid index is returned. Select the item if it is
-    //valid. 		if (index != -1) 			ListBoxAutoComplete.SetSelected(index, true);
+    // valid. 		if (index != -1)
+    // ListBoxAutoComplete.SetSelected(index, true);
     //
     //	}
 }
@@ -1189,7 +1192,7 @@
 
             //			for (Int32 c = mCaretPosition;
             //				 c >
-            //tEditor.textEditor.GetPositionFromLineNumber(mCurrentLineNumber);
+            // tEditor.textEditor.GetPositionFromLineNumber(mCurrentLineNumber);
             //				 c--)
             for (NSInteger c = mCaretPosition; c >= mLineStart; c--) {
                 // if (tEditor.textEditor.GetCharAt(c) == '"')
@@ -1201,7 +1204,7 @@
 
             //			for (Int32 c = mCaretPosition;
             //				 c >
-            //tEditor.textEditor.GetPositionFromLineNumber(mCurrentLineNumber);
+            // tEditor.textEditor.GetPositionFromLineNumber(mCurrentLineNumber);
             //				 c++)
             for (NSInteger c = mCaretPosition; c <= mLineEnd; c++) {
                 // if (tEditor.textEditor.GetCharAt(c) == '"')
@@ -1368,10 +1371,11 @@
 
             } else {
                 //				MessageBox.Show("Cannot find External Wave
-                //Editor Path!" + newline + 								"Please select a valid path in
-                //File->Settings->Wave Editor executable", 								"Compiler error!",
-                //								MessageBoxButtons.OK,
-                //								MessageBoxIcon.Error);
+                // Editor Path!" + newline +
+                // "Please select a valid path in File->Settings->Wave Editor
+                // executable", 								"Compiler
+                // error!", MessageBoxButtons.OK,
+                // MessageBoxIcon.Error);
                 [wxMAIN ShowMessage:@"Cannot find External Wave Editor Path!"
                     informativeText:@"Please select a valid path in "
                                     @"File->Settings->Wave Editor executable"
@@ -1582,7 +1586,7 @@
 }
 
 //- (BOOL) splitView:(NSSplitView *)splitView
-//shouldHideDividerAtIndex:(NSInteger)dividerIndex
+// shouldHideDividerAtIndex:(NSInteger)dividerIndex
 //{
 //	return true;
 //}
@@ -1651,8 +1655,8 @@
         // if(downFrame.size.height <= SplitMargins)
         //{
         //	NSInteger height = newFrame.size.height - upFrame.size.height -
-        //dividerThickness; 	downFrame.size.height = (height <= SplitMargins ?
-        //SplitMargins : height);
+        // dividerThickness; 	downFrame.size.height = (height <= SplitMargins
+        // ? SplitMargins : height);
         // }
 
         // downFrame.origin.y = leftFrame.size.width + dividerThickness;
@@ -1669,8 +1673,8 @@
 }
 
 //- (CGFloat) splitView:(NSSplitView *)splitView
-//constrainSplitPosition:(CGFloat)proposedPosition
-//ofSubviewAt:(NSInteger)dividerIndex
+// constrainSplitPosition:(CGFloat)proposedPosition
+// ofSubviewAt:(NSInteger)dividerIndex
 //{
 //	if(dividerIndex == 0)
 //	return proposedPosition + 100;
@@ -1682,7 +1686,7 @@
 //}
 
 //-(NSRect)splitView:(NSSplitView *)splitView
-//additionalEffectiveRectOfDividerAtIndex:(NSInteger)dividerIndex { 	return
+// additionalEffectiveRectOfDividerAtIndex:(NSInteger)dividerIndex { 	return
 //[[self resizeView] convertRect:[[self resizeView] bounds] toView:splitView];
 //}
 
@@ -1874,7 +1878,7 @@
         else if ([[[treeViewStructure parentForItem:item] name]
                      isEqualToString:@"<CsInstruments>"]) {
             ////[textEditor GoToLine:[textEditor
-            ///getLineNumberFromPosition:item.location]];
+            /// getLineNumberFromPosition:item.location]];
             NSInteger mStart = 0;
             do {
                 ret = [textEditor FindTextEx:item.extendedname
@@ -2032,7 +2036,7 @@
 }
 
 //- (void)sheetDidFinish:(NSWindow *)sheet returnCode:(NSInteger)returnCode
-//contextInfo:(void *)contextInfo;
+// contextInfo:(void *)contextInfo;
 //{
 //	NSLog(@"Return code %d", returnCode);
 //	//[sheet close];
@@ -2063,7 +2067,7 @@
     if ([[textEditor getSelectedText] length] > 0) {
         [textEditor ScrollCaret];
         //[textEditor GoToLine:[textEditor getLineNumberFromPosition:[textEditor
-        //getSelectionStart]]];
+        // getSelectionStart]]];
     }
 }
 
@@ -2114,8 +2118,9 @@
             if (mLineEnd > mLineStart) // if multiple lines selected
             {
                 NSInteger curPosition =
-                    [textEditor getSelectionEnd] - // GetFocusedEditor.GetSelectionEnd()
-                                                   // -
+                    [textEditor
+                        getSelectionEnd] - // GetFocusedEditor.GetSelectionEnd()
+                                           // -
                     [textEditor
                         getPositionFromLineNumber:
                             mLineEnd]; // GetFocusedEditor.PositionFromLine(mLineEnd);
@@ -2284,8 +2289,9 @@
                 //				Int32 mPos =
                 //				ActiveEditor.textEditor.FindText(
                 //												 Definition,
-                //true, true, 												 false, true, false, true, 												 0,
-                //ActiveEditor.textEditor.GetTextLength());
+                // true, true,
+                // false, true, false, true,
+                // 0, ActiveEditor.textEditor.GetTextLength());
                 NSInteger mPos =
                     [textEditor FindTextEx:Definition
                             MatchWholeWord:true
@@ -2315,7 +2321,8 @@
                 // Search INSTR
                 //				mFindPos = ActiveEditor.textEditor.FindText(
                 //															"instr",
-                //true, true, true, 															false, false, true);
+                // true, true, true,
+                // false, false, true);
                 mFindPos = [textEditor FindText:@"instr"
                                  MatchWholeWord:true
                                       MatchCase:true
@@ -2332,7 +2339,9 @@
                 //				mFindPos =
                 //				ActiveEditor.textEditor.FindText(
                 //												 Definition,
-                //true, true, 												 false, true, false, true, 												 posINSTR, curPos - 1);
+                // true, true,
+                // false, true, false, true,
+                // posINSTR, curPos - 1);
                 ////Definition.Length);
                 mFindPos = [textEditor FindTextEx:Definition
                                    MatchWholeWord:true
@@ -2358,7 +2367,7 @@
         //	ArrayList mc =
         //	ActiveEditor.textEditor.SearchText(
         //									   Definition, true, true, false,
-        //true); 	foreach (Int32 mPos in mc)
+        // true); 	foreach (Int32 mPos in mc)
         //	{
         //		string mLine = ActiveEditor.textEditor.GetTextLine(
         //														   ActiveEditor.textEditor.GetLineNumberFromPosition(
@@ -2370,7 +2379,7 @@
         //		{
         //			ActiveEditor.textEditor.SetCaretPosition(mPos);
         //			ActiveEditor.textEditor.SetSelectionEnd(mPos +
-        //Definition.Length);
+        // Definition.Length);
         //			//ActiveEditor.StoreCursorPos(mPos);
         //			break;
         //		}
@@ -2406,10 +2415,12 @@
                     [NSString stringWithFormat:@"$%@", Definition];
 
                 //				NSInteger mPos =
-                //ActiveEditor.textEditor.FindText( 												 Definition, true, true,
-                //false, 												 true, false, true,
-                //												 ActiveEditor.textEditor.GetCaretPosition()
-                //+ 1, 												 ActiveEditor.textEditor.GetTextLength());
+                // ActiveEditor.textEditor.FindText(
+                // Definition, true, true, false,
+                // true, false, true,
+                // ActiveEditor.textEditor.GetCaretPosition()
+                //+ 1,
+                // ActiveEditor.textEditor.GetTextLength());
 
                 NSInteger mPos =
                     [textEditor FindTextEx:NewDefinition
@@ -2465,7 +2476,8 @@
                 // Search ENDIN
                 //				mFindPos = ActiveEditor.textEditor.FindText(
                 //															"endin",
-                //true, true, 															false, false, false, true);
+                // true, true,
+                // false, false, false, true);
                 mFindPos = [textEditor FindText:@"endin"
                                  MatchWholeWord:true
                                       MatchCase:true
@@ -2482,7 +2494,9 @@
                 // Search reference
                 //				mFindPos = ActiveEditor.textEditor.FindText(
                 //															Definition,
-                //true, true, 															false, true, false, true, 															curPos + 1, posENDIN);
+                // true, true,
+                // false, true, false, true,
+                // curPos + 1, posENDIN);
                 mFindPos = [textEditor FindTextEx:Definition
                                    MatchWholeWord:true
                                         MatchCase:true
@@ -2506,7 +2520,8 @@
         //{
         //	Int32 mFindPos = ActiveEditor.textEditor.FindText(
         //													  Definition, true,
-        //true, 													  false, true, false, true);
+        // true, 													  false,
+        // true, false, true);
         //	//ActiveEditor.StoreCursorPos(mFindPos);
         // }
 
@@ -2668,13 +2683,13 @@
 
 - (IBAction)wxShowCodeRepositoryWindow:(id)sender {
     //	NSPoint p = NSMakePoint([[textEditor getPrimaryView]
-    //getGeneralProperty:SCI_POINTXFROMPOSITION parameter:0 extra:[textEditor
-    //getCaretPosition]],
+    // getGeneralProperty:SCI_POINTXFROMPOSITION parameter:0 extra:[textEditor
+    // getCaretPosition]],
     //							[[textEditor getPrimaryView]
-    //getGeneralProperty:SCI_POINTYFROMPOSITION parameter:0 extra:[textEditor
-    //getCaretPosition]]); 	p.x += [[self windowForSheet] frame].origin.x; 	p.y =
-    //[textEditor frame].size.height - p.y; 	p.y += [[self windowForSheet]
-    //frame].origin.y - 100;
+    // getGeneralProperty:SCI_POINTYFROMPOSITION parameter:0 extra:[textEditor
+    // getCaretPosition]]); 	p.x += [[self windowForSheet] frame].origin.x;
+    // p.y = [textEditor frame].size.height - p.y; 	p.y += [[self
+    // windowForSheet] frame].origin.y - 100;
 
     // Set window position
     NSPoint p =
@@ -2699,13 +2714,13 @@
 
 - (IBAction)wxShowCSoundRepositoryWindow:(id)sender {
     //	NSPoint p = NSMakePoint([[textEditor getPrimaryView]
-    //getGeneralProperty:SCI_POINTXFROMPOSITION parameter:0 extra:[textEditor
-    //getCaretPosition]],
+    // getGeneralProperty:SCI_POINTXFROMPOSITION parameter:0 extra:[textEditor
+    // getCaretPosition]],
     //							[[textEditor getPrimaryView]
-    //getGeneralProperty:SCI_POINTYFROMPOSITION parameter:0 extra:[textEditor
-    //getCaretPosition]]); 	p.x += [[self windowForSheet] frame].origin.x; 	p.y =
-    //[textEditor frame].size.height - p.y; 	p.y += [[self windowForSheet]
-    //frame].origin.y - 100;
+    // getGeneralProperty:SCI_POINTYFROMPOSITION parameter:0 extra:[textEditor
+    // getCaretPosition]]); 	p.x += [[self windowForSheet] frame].origin.x;
+    // p.y = [textEditor frame].size.height - p.y; 	p.y += [[self
+    // windowForSheet] frame].origin.y - 100;
 
     // Set window position
     NSPoint p =
@@ -2822,8 +2837,8 @@
         // Old behaviour:
         //[wxMAIN ShowMessage:@"File not saved!"
         //	informativeText:@"Please save the document before to call the
-        //compiler." 	  defaultButton:@"OK" 	alternateButton:nil 		otherButton:nil];
-        //[self saveDocument:self];
+        // compiler." 	  defaultButton:@"OK" 	alternateButton:nil
+        // otherButton:nil]; [self saveDocument:self];
         // return @"";
 
         NSString *tempFilename = @"";
@@ -2985,42 +3000,125 @@
                      owner:self];
     } else // COMPILE EXTERNALLY (TERMINAL)
     {
-        NSString *scriptName = nil;
+        BOOL isCsoundCompiler = ([TextEditorFileName hasSuffix:@".csd"] ||
+                                 [TextEditorFileName hasSuffix:@".orc"] ||
+                                 [TextEditorFileName hasSuffix:@".sco"]);
+
+        // Keep external-shell compile behavior aligned with the internal
+        // compiler launch path for Csound runtime/audio modules.
+        if (isCsoundCompiler) {
+            if ([parameters rangeOfString:@"msg_color"
+                                  options:NSCaseInsensitiveSearch]
+                    .location == NSNotFound) {
+                parameters = [NSString
+                    stringWithFormat:@"-+msg_color=false %@", parameters];
+            }
+            if ([parameters rangeOfString:@"rtaudio"
+                                  options:NSCaseInsensitiveSearch]
+                    .location == NSNotFound) {
+                parameters = [NSString
+                    stringWithFormat:@"-+rtaudio=auhal %@", parameters];
+            }
+        }
+
+        NSString *sfDir = nil;
+        if ([[wxDefaults valueForKey:@"SFDIRPath"] length] == 0 ||
+            [[wxDefaults valueForKey:@"UseSFDIR"] boolValue] == false) {
+            sfDir = [FirstFilename stringByDeletingLastPathComponent];
+        } else {
+            sfDir = [wxDefaults valueForKey:@"SFDIRPath"];
+        }
+        NSString *ssDir = [wxDefaults valueForKey:@"SSDIRPath"];
+        NSString *saDir = [wxDefaults valueForKey:@"SADIRPath"];
+        NSString *mfDir = [wxDefaults valueForKey:@"MFDIRPath"];
+        NSString *incDir = [wxDefaults valueForKey:@"INCDIRPath"];
+        NSString *opcodeDir = [wxDefaults valueForKey:@"OPCODEDIRPath"];
+
+        if (opcodeDir != nil && [opcodeDir length] > 0) {
+            NSString *opcode64Dir =
+                [opcodeDir stringByAppendingPathComponent:@"Opcodes64"];
+            BOOL isDir = NO;
+            if ([[NSFileManager defaultManager] fileExistsAtPath:opcode64Dir
+                                                     isDirectory:&isDir] &&
+                isDir) {
+                opcodeDir = opcode64Dir;
+            }
+        }
+
+        NSMutableString *envPrefix = [NSMutableString string];
+        if (sfDir != nil && [sfDir length] > 0)
+            [envPrefix appendFormat:@"export SFDIR=\"%@\"; ", sfDir];
+        if (ssDir != nil && [ssDir length] > 0)
+            [envPrefix appendFormat:@"export SSDIR=\"%@\"; ", ssDir];
+        if (saDir != nil && [saDir length] > 0)
+            [envPrefix appendFormat:@"export SADIR=\"%@\"; ", saDir];
+        if (mfDir != nil && [mfDir length] > 0)
+            [envPrefix appendFormat:@"export MFDIR=\"%@\"; ", mfDir];
+        if (incDir != nil && [incDir length] > 0)
+            [envPrefix appendFormat:@"export INCDIR=\"%@\"; ", incDir];
+        if (opcodeDir != nil && [opcodeDir length] > 0) {
+            [envPrefix appendFormat:@"export OPCODEDIR=\"%@\"; ", opcodeDir];
+            [envPrefix appendFormat:@"export OPCODEDIR64=\"%@\"; ", opcodeDir];
+            [envPrefix appendFormat:@"export OPCODE7DIR=\"%@\"; ", opcodeDir];
+            [envPrefix appendFormat:@"export OPCODE7DIR64=\"%@\"; ", opcodeDir];
+        }
+
+        NSString *scriptCommand = nil;
         if (SecondFilename == nil)
-            scriptName = [NSString
-                stringWithFormat:@"\"%@ %@ \\\"%@\\\"\"", compiler, parameters,
-                                 TextEditorFileName]; //[self fileName]];
+            scriptCommand = [NSString
+                stringWithFormat:@"%@\"%@\" %@ \"%@\"", envPrefix, compiler,
+                                 parameters, TextEditorFileName];
         else
-            scriptName = [NSString
-                stringWithFormat:@"\"%@ %@ \\\"%@\\\" \\\"%@\\\"\"", compiler,
-                                 parameters, FirstFilename, SecondFilename];
+            scriptCommand =
+                [NSString stringWithFormat:@"%@\"%@\" %@ \"%@\" \"%@\"",
+                                           envPrefix, compiler, parameters,
+                                           FirstFilename, SecondFilename];
 
-        // tell application \"Terminal\" to do script "%@ %@ \"%@\""
-        //	NSString *s = [NSString stringWithFormat:
-        //				   @"tell application \"Terminal\" to do script %@
-        //activate", scriptName];
+        NSString *tempScriptPath = [NSString
+            stringWithFormat:@"%@winxound_external_compile_%d.command",
+                             NSTemporaryDirectory(), getpid()];
+        NSString *scriptBody =
+            [NSString stringWithFormat:@"#!/bin/zsh\n%@\n", scriptCommand];
 
-        NSString *s = [NSString
-            stringWithFormat:
-                @"tell application \"System Events\" \n"
-                 "if (count(processes whose name is \"Terminal\")) is 0 then \n"
-                 "tell application \"Terminal\" \n"
-                 "activate \n"
-                 "do script %@ in window 1 \n"
-                 "end tell \n"
-                 "else \n"
-                 "tell application \"Terminal\" \n"
-                 "activate \n"
-                 "do script %@ \n"
-                 "end tell \n"
-                 "end if \n"
-                 "end tell",
-                scriptName, scriptName];
+        NSError *scriptWriteError = nil;
+        BOOL scriptWritten = [scriptBody writeToFile:tempScriptPath
+                                          atomically:YES
+                                            encoding:NSUTF8StringEncoding
+                                               error:&scriptWriteError];
+        if (!scriptWritten) {
+            [wxMAIN
+                ShowMessageError:@"wxDocument -> Compile External"
+                           error:[NSString stringWithFormat:
+                                               @"Unable to create temporary "
+                                               @"compile script.\n%@",
+                                               [scriptWriteError
+                                                   localizedDescription]]];
+            return;
+        }
 
-        NSAppleScript *as =
-            [[[NSAppleScript alloc] initWithSource:s] autorelease];
-        [as executeAndReturnError:nil];
-        //[as release];
+        NSDictionary *attributes =
+            [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:0700]
+                                        forKey:NSFilePosixPermissions];
+        [[NSFileManager defaultManager] setAttributes:attributes
+                                         ofItemAtPath:tempScriptPath
+                                                error:nil];
+
+        NSTask *openTask = [[NSTask alloc] init];
+        [openTask setLaunchPath:@"/usr/bin/open"];
+        [openTask setArguments:[NSArray arrayWithObject:tempScriptPath]];
+
+        @try {
+            [openTask launch];
+        } @catch (NSException *e) {
+            [wxMAIN
+                ShowMessageError:@"wxDocument -> Compile External"
+                           error:[NSString
+                                     stringWithFormat:
+                                         @"Unable to launch Terminal compile "
+                                         @"script.\n%@\n%@",
+                                         [e name], [e reason]]];
+        }
+        [openTask release];
     }
 }
 
@@ -3281,7 +3379,8 @@
     }
     // else
     //	additionalParams = [additionalParams
-    //stringByReplacingOccurrencesOfString:@"\"" 																   withString:@""];
+    // stringByReplacingOccurrencesOfString:@"\""
+    // withString:@""];
 
     return additionalParams;
 }
@@ -3358,7 +3457,7 @@
     // The following method doesn't function for qutecsound probably because it
     // expect argv arguments passed:
     //[[NSWorkspace sharedWorkspace] openFile:[self fileName]
-    //withApplication:compiler];
+    // withApplication:compiler];
 }
 
 //----------------------------------------------------------------------------------------------------------
@@ -3444,7 +3543,7 @@
     //		[textEditor setEolMode:SC_EOL_CRLF];
     //	}
     //	else if([[textEditor getText] rangeOfString:@"\r"].location !=
-    //NSNotFound)
+    // NSNotFound)
     //	{
     //		[textEditor setEolMode:SC_EOL_CR];
     //	}
@@ -3625,7 +3724,7 @@
 
         [textEditor setKeyWords:0 keyWordList:[KeyWordList copy]];
         //[textEditor setKeyWords:0 keyWordList:[NSString
-        //stringWithString:KeyWordList]]; textEditor.SetKeyWords(0,
+        // stringWithString:KeyWordList]]; textEditor.SetKeyWords(0,
         // KeyWordList);
         [KeyWordList release];
 
@@ -3830,7 +3929,7 @@
     // TEXT SELECTION (style 256)
     //	[textEditor setSelFore:true
     //				 htmlcolor:[[wxMAIN getSettings] StyleGetForeColor:_Language
-    //stylenumber:256]];
+    // stylenumber:256]];
     [textEditor setSelBack:true
                  htmlcolor:[[wxMAIN getSettings] StyleGetBackColor:_Language
                                                        stylenumber:256]];
@@ -3858,8 +3957,8 @@
 
     //	// Line number style.
     //	[mEditor setColorProperty: SCI_STYLESETFORE parameter: STYLE_LINENUMBER
-    //fromHTML: @"#F0F0F0"]; 	[mEditor setColorProperty: SCI_STYLESETBACK
-    //parameter: STYLE_LINENUMBER fromHTML: @"#808080"];
+    // fromHTML: @"#F0F0F0"]; 	[mEditor setColorProperty: SCI_STYLESETBACK
+    // parameter: STYLE_LINENUMBER fromHTML: @"#808080"];
 }
 
 - (void)configureCompiler {
@@ -4067,8 +4166,8 @@
             if (ret > -1) {
                 // NSString* lineText = [textEditor getTextOfLine:[textEditor
                 // getLineNumberFromPosition:ret]]; [textEditor
-                //ReplaceTarget:ret - 1 				   length:[textEditor
-                //getLineLength:[textEditor getLineNumberFromPosition:ret]] + 1
+                // ReplaceTarget:ret - 1 				   length:[textEditor
+                // getLineLength:[textEditor getLineNumberFromPosition:ret]] + 1
                 //			ReplaceString:@""];
                 [textEditor
                     ReplaceTarget:ret
@@ -4081,7 +4180,7 @@
 
             ////[textEditor AppendText:@"\n;[winxound_bookmarks"];
             ////[textEditor AppendText:[NSString
-            ///stringWithFormat:@"\n%@[winxound_bookmarks", languagecomment]];
+            /// stringWithFormat:@"\n%@[winxound_bookmarks", languagecomment]];
             if ([[textEditor getText] hasSuffix:@"\n"] ||
                 [[textEditor getText] hasSuffix:@"\r"]) {
                 // editor.textEditor.AppendText(languagecomment +

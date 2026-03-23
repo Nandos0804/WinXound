@@ -54,7 +54,9 @@
 
     // Start Async Compiler task
     _output = output;
-    _envVariables = [[NSMutableDictionary alloc] init];
+    // Start from the current process environment so runtime loaders and
+    // user-level Csound settings are preserved.
+    _envVariables = [[[NSProcessInfo processInfo] environment] mutableCopy];
     _fontName = [wxDefaults valueForKey:@"CompilerFontName"];
     _fontSize = [[wxDefaults valueForKey:@"CompilerFontSize"] integerValue];
     _font = [NSFont fontWithName:_fontName size:_fontSize];
@@ -72,41 +74,67 @@
 
     task = [[NSTask alloc] init];
 
-    // TASK SET ENVIRONMENT
-    // If SFDIR is not defined or SFDIR checkbox is unchecked
-    // we redirect the compiled soundfile to the csd file directory
-    // NSLog(@"UseSFDIR: %d", [[wxDefaults valueForKey:@"UseSFDIR"] boolValue]);
+    BOOL isCsoundCompiler =
+        ([[_compilerName lowercaseString] rangeOfString:@"csound"].location !=
+         NSNotFound);
+
+    // Resolve directory preferences once; these are exported only when needed.
+    NSString *sfDir = nil;
     if ([[wxDefaults valueForKey:@"SFDIRPath"] length] == 0 ||
         [[wxDefaults valueForKey:@"UseSFDIR"] boolValue] == false) {
-        [_envVariables setValue:[filename1 stringByDeletingLastPathComponent]
-                         forKey:@"SFDIR"];
-        // NSLog(@"SFDIR: %@", [filename1 stringByDeletingLastPathComponent]);
+        sfDir = [filename1 stringByDeletingLastPathComponent];
     } else {
-        [_envVariables setValue:[wxDefaults valueForKey:@"SFDIRPath"]
-                         forKey:@"SFDIR"];
+        sfDir = [wxDefaults valueForKey:@"SFDIRPath"];
     }
-    [_envVariables setValue:[wxDefaults valueForKey:@"SSDIRPath"]
-                     forKey:@"SSDIR"];
-    [_envVariables setValue:[wxDefaults valueForKey:@"SADIRPath"]
-                     forKey:@"SADIR"];
-    [_envVariables setValue:[wxDefaults valueForKey:@"MFDIRPath"]
-                     forKey:@"MFDIR"];
-    [_envVariables setValue:[wxDefaults valueForKey:@"INCDIRPath"]
-                     forKey:@"INCDIR"];
-    // OPCODEDIR and OPCODEDIR64
-    if ([[wxDefaults valueForKey:@"OPCODEDIRPath"] length] > 0) {
-        ////stringByTrimmingCharactersInSet:[NSCharacterSet
-        ///whitespaceAndNewlineCharacterSet]
-        [_envVariables setValue:[wxDefaults valueForKey:@"OPCODEDIRPath"]
-                         forKey:@"OPCODEDIR"];
-        [_envVariables setValue:[wxDefaults valueForKey:@"OPCODEDIRPath"]
-                         forKey:@"OPCODEDIR64"];
+    NSString *ssDir = [wxDefaults valueForKey:@"SSDIRPath"];
+    NSString *saDir = [wxDefaults valueForKey:@"SADIRPath"];
+    NSString *mfDir = [wxDefaults valueForKey:@"MFDIRPath"];
+    NSString *incDir = [wxDefaults valueForKey:@"INCDIRPath"];
+    NSString *opcodeDir = [wxDefaults valueForKey:@"OPCODEDIRPath"];
+
+    // Csound 7 builds on macOS commonly place runtime modules under
+    // <build>/Opcodes64. If present, prefer that folder.
+    if (opcodeDir != nil && [opcodeDir length] > 0) {
+        NSString *opcode64Dir =
+            [opcodeDir stringByAppendingPathComponent:@"Opcodes64"];
+        BOOL isDir = NO;
+        if ([[NSFileManager defaultManager] fileExistsAtPath:opcode64Dir
+                                                 isDirectory:&isDir] &&
+            isDir) {
+            opcodeDir = opcode64Dir;
+        }
+    }
+
+    // Export env vars in the process environment as well. Some Csound
+    // runtimes may query plugin paths before or independently of --env args.
+    if (sfDir != nil && [sfDir length] > 0)
+        [_envVariables setValue:sfDir forKey:@"SFDIR"];
+    if (ssDir != nil && [ssDir length] > 0)
+        [_envVariables setValue:ssDir forKey:@"SSDIR"];
+    if (saDir != nil && [saDir length] > 0)
+        [_envVariables setValue:saDir forKey:@"SADIR"];
+    if (mfDir != nil && [mfDir length] > 0)
+        [_envVariables setValue:mfDir forKey:@"MFDIR"];
+    if (incDir != nil && [incDir length] > 0)
+        [_envVariables setValue:incDir forKey:@"INCDIR"];
+    if (opcodeDir != nil && [opcodeDir length] > 0) {
+        [_envVariables setValue:opcodeDir forKey:@"OPCODEDIR"];
+        [_envVariables setValue:opcodeDir forKey:@"OPCODEDIR64"];
+        [_envVariables setValue:opcodeDir forKey:@"OPCODE7DIR"];
+        [_envVariables setValue:opcodeDir forKey:@"OPCODE7DIR64"];
     }
     [task setEnvironment:_envVariables];
 
     // TASK SET LAUNCH PATH
     //[task setLaunchPath: @"/usr/local/bin/csound"];
     [task setLaunchPath:compilerName];
+    NSLog(@"Compiler executable path: %@", compilerName);
+    if (isCsoundCompiler) {
+        NSLog(@"Compiler env OPCODE7DIR64: %@",
+              [_envVariables valueForKey:@"OPCODE7DIR64"]);
+        NSLog(@"Compiler env OPCODE7DIR: %@",
+              [_envVariables valueForKey:@"OPCODE7DIR"]);
+    }
 
     // TASK ARGUMENTS
     NSMutableArray *arguments = [[NSMutableArray alloc] init];
@@ -114,9 +142,51 @@
     // ONLY FOR CSOUND COMPILER !!!
     // DISABLE ANSI ESCAPE SEQUENCES FOR COLOR OUTPUT (Otherwise strange chars
     // will appear)
-    if ([[_compilerName lowercaseString] rangeOfString:@"csound"].location !=
-        NSNotFound) {
+    if (isCsoundCompiler) {
         [arguments addObject:@"-+msg_color=false"];
+
+        // Force CoreAudio/AUHAL on macOS when the user has not specified an
+        // explicit rtaudio backend.
+        if ([parameters rangeOfString:@"rtaudio"
+                              options:NSCaseInsensitiveSearch]
+                .location == NSNotFound) {
+            [arguments addObject:@"-+rtaudio=auhal"];
+        }
+
+        if (sfDir != nil && [sfDir length] > 0)
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:SFDIR=%@", sfDir]];
+        if (ssDir != nil && [ssDir length] > 0)
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:SSDIR=%@", ssDir]];
+        if (saDir != nil && [saDir length] > 0)
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:SADIR=%@", saDir]];
+        if (mfDir != nil && [mfDir length] > 0)
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:MFDIR=%@", mfDir]];
+        if (incDir != nil && [incDir length] > 0)
+            [arguments addObject:[NSString stringWithFormat:@"--env:INCDIR=%@",
+                                                            incDir]];
+
+        // Pass opcode search paths explicitly to Csound as command-line env
+        // overrides so they are applied reliably across Csound versions.
+        // Csound 7 uses OPCODE7DIR/OPCODE7DIR64; older versions use
+        // OPCODEDIR/OPCODEDIR64. Pass all four for maximum compatibility.
+        if (opcodeDir != nil && [opcodeDir length] > 0) {
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:OPCODEDIR=%@",
+                                                     opcodeDir]];
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:OPCODEDIR64=%@",
+                                                     opcodeDir]];
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:OPCODE7DIR=%@",
+                                                     opcodeDir]];
+            [arguments
+                addObject:[NSString stringWithFormat:@"--env:OPCODE7DIR64=%@",
+                                                     opcodeDir]];
+        }
     }
 
     // PARAMETERS:
@@ -281,7 +351,7 @@
         // a properly terminated string. -initWithData:encoding: on the other
         // hand checks -[data length]
         //[controller appendOutput: [[[NSString alloc] initWithData:data
-        //encoding:NSUTF8StringEncoding] autorelease]];
+        // encoding:NSUTF8StringEncoding] autorelease]];
 
         @try {
             if (_output != nil) {
@@ -295,7 +365,7 @@
                                      autorelease]];
 
                 //[textEditor AppendText:[[[NSString alloc] initWithData:data
-                //encoding:NSUTF8StringEncoding] autorelease]];
+                // encoding:NSUTF8StringEncoding] autorelease]];
 
                 NSRange range;
                 range = NSMakeRange([[_output string] length], 0);
@@ -359,10 +429,10 @@
 
                         //[[[_output textStorage] mutableString] appendString:
                         //	[[[NSString alloc] initWithData:data
-                        //encoding:NSUTF8StringEncoding] autorelease]];
+                        // encoding:NSUTF8StringEncoding] autorelease]];
                         //[textEditor AppendText:[[[NSString alloc]
-                        //initWithData:data encoding:NSUTF8StringEncoding]
-                        //autorelease]];
+                        // initWithData:data encoding:NSUTF8StringEncoding]
+                        // autorelease]];
 
                         NSRange range;
                         range = NSMakeRange([[_output string] length], 0);
@@ -506,7 +576,7 @@
                                 NSTask *itask = [[NSTask alloc] init];
                                 [itask setLaunchPath:@"/usr/bin/open"];
                                 //[itask
-                                //setCurrentDirectoryPath:@"/Users/Teto/Desktop"];
+                                // setCurrentDirectoryPath:@"/Users/Teto/Desktop"];
                                 [itask setArguments:
                                            [NSArray arrayWithObjects:
                                                         @"-a",
@@ -531,7 +601,7 @@
                                 NSTask *itask = [[NSTask alloc] init];
                                 [itask setLaunchPath:@"/usr/bin/open"];
                                 //[itask
-                                //setCurrentDirectoryPath:@"/Users/Teto/Desktop"];
+                                // setCurrentDirectoryPath:@"/Users/Teto/Desktop"];
                                 [itask
                                     setArguments:
                                         [NSArray arrayWithObjects:
@@ -694,7 +764,7 @@
                         substringFromIndex:
                             mFindStart +
                             11]; //[NSString stringWithFormat:@"%@.wav", [mLine
-                                 //substringFromIndex:mFindStart + 11]];
+                                 // substringFromIndex:mFindStart + 11]];
                     return tempString;
                 } else {
                     mFindStart =

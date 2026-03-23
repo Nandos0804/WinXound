@@ -173,9 +173,9 @@ wxAnalysis *Analysis = nil;
     //[self goHome:self];
     // NSString* path = [[NSBundle mainBundle] pathForResource: @"winxound_help"
     //												 ofType: @"html"
-    //inDirectory: nil];
+    // inDirectory: nil];
     //[[helpBrowser mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL
-    //URLWithString:path]]];
+    // URLWithString:path]]];
 
     // Display WinXound version
     NSString *versionStr =
@@ -343,7 +343,7 @@ wxAnalysis *Analysis = nil;
             if ([[NSFileManager defaultManager]
                     fileExistsAtPath:winxoundPath]) {
                 //[[NSFileManager defaultManager] removeItemAtPath:winxoundPath
-                //error:nil]; NSFileManager* fm = [[[NSFileManager alloc] init]
+                // error:nil]; NSFileManager* fm = [[[NSFileManager alloc] init]
                 // autorelease];
                 NSDirectoryEnumerator *en = [[NSFileManager defaultManager]
                     enumeratorAtPath:winxoundPath];
@@ -542,7 +542,7 @@ wxAnalysis *Analysis = nil;
     //	NSAlertAlternateReturn means the user pressed the alternate button.
     //	NSAlertOtherReturn means the user pressed the other button.
     //	NSAlertErrorReturn means an error occurred while running the alert
-    //panel.
+    // panel.
     //  NSAlertFirstButtonReturn  = 1000,
     //  NSAlertSecondButtonReturn  = 1001,
     //  NSAlertThirdButtonReturn  = 1002
@@ -819,8 +819,8 @@ wxAnalysis *Analysis = nil;
     //
     //	if([self checkForOrcSco:[[files objectAtIndex:index] path]] == false)
     //		[[NSDocumentController sharedDocumentController]
-    //openDocumentWithContentsOfURL:[files objectAtIndex:index] display:YES
-    //error:nil];
+    // openDocumentWithContentsOfURL:[files objectAtIndex:index] display:YES
+    // error:nil];
 
     NSIndexSet *indexSet = [RecentFiles selectedRowIndexes];
     NSUInteger bufSize = [indexSet count];
@@ -938,12 +938,12 @@ wxAnalysis *Analysis = nil;
     BOOL newValue =
         ![[wxDefaults valueForKey:@"EditorShowLineNumbers"] boolValue];
     //[wxDefaults setValue:[NSNumber numberWithBool:newValue]
-    //forKey:@"EditorShowLineNumbers"];
+    // forKey:@"EditorShowLineNumbers"];
 
     for (wxDocument *doc in
          [[NSDocumentController sharedDocumentController] documents]) {
         //[wxDefaults setValue:[NSNumber numberWithBool:true]
-        //forKey:@"EditorShowMatchingBracket"];
+        // forKey:@"EditorShowMatchingBracket"];
         [doc showLineNumbers:newValue];
     }
 
@@ -955,7 +955,7 @@ wxAnalysis *Analysis = nil;
     // boolValue];
     BOOL newValue = ![[wxDefaults valueForKey:@"EditorShowExplorer"] boolValue];
     //[wxDefaults setValue:[NSNumber numberWithBool:newValue]
-    //forKey:@"EditorShowExplorer"];
+    // forKey:@"EditorShowExplorer"];
 
     for (wxDocument *doc in
          [[NSDocumentController sharedDocumentController] documents]) {
@@ -972,7 +972,7 @@ wxAnalysis *Analysis = nil;
     BOOL newValue =
         ![[wxDefaults valueForKey:@"EditorShowIntellitip"] boolValue];
     //[wxDefaults setValue:[NSNumber numberWithBool:newValue]
-    //forKey:@"EditorShowIntellitip"];
+    // forKey:@"EditorShowIntellitip"];
 
     for (wxDocument *doc in
          [[NSDocumentController sharedDocumentController] documents]) {
@@ -988,7 +988,7 @@ wxAnalysis *Analysis = nil;
     // boolValue];
     BOOL newValue = ![[wxDefaults valueForKey:@"EditorShowToolbar"] boolValue];
     //[wxDefaults setValue:[NSNumber numberWithBool:newValue]
-    //forKey:@"EditorShowIntellitip"];
+    // forKey:@"EditorShowIntellitip"];
 
     for (wxDocument *doc in
          [[NSDocumentController sharedDocumentController] documents]) {
@@ -1105,18 +1105,7 @@ wxAnalysis *Analysis = nil;
 }
 
 - (IBAction)wxCallCommandLine:(id)sender {
-
-    if (![[NSFileManager defaultManager]
-            fileExistsAtPath:@"/Applications/Utilities/Terminal.app"])
-        return;
-
-    NSTask *task = [[NSTask alloc] init];
-    [task setLaunchPath:@"/usr/bin/open"];
-    [task setArguments:
-              [NSArray arrayWithObjects:@"/Applications/Utilities/Terminal.app",
-                                        nil]];
-    [task launch];
-    [task release];
+    [[NSWorkspace sharedWorkspace] launchApplication:@"Terminal"];
 }
 
 - (IBAction)wxShowHelp:(id)sender {
@@ -1151,7 +1140,7 @@ wxAnalysis *Analysis = nil;
 
     //	if(path != nil && [path length] > 0)
     //		[[helpBrowser mainFrame] loadRequest:[NSURLRequest
-    //requestWithURL:[NSURL URLWithString:path]]]; 	[self wxShowHelp:self];
+    // requestWithURL:[NSURL URLWithString:path]]]; 	[self wxShowHelp:self];
 
     [[NSWorkspace sharedWorkspace] openFile:path];
 }
@@ -1216,8 +1205,9 @@ wxAnalysis *Analysis = nil;
                 //"\\tb.html";
             }
             // PyAssign family
-            if ([opcode hasPrefix:@"pyassign"] || //(gCurWord.StartsWith("pyassign")
-                                                  //||
+            if ([opcode
+                    hasPrefix:@"pyassign"] || //(gCurWord.StartsWith("pyassign")
+                                              //||
                 [opcode hasPrefix:
                             @"pylassign"]) // gCurWord.StartsWith("pylassign"))
             {
@@ -1439,7 +1429,7 @@ wxAnalysis *Analysis = nil;
 - (IBAction)wxFindSetSelection:(id)sender {
     // if([[[helpBrowser selectedDOMRange] markupString] length] > 0)
     //	[helpSearchField setStringValue:[[helpBrowser selectedDOMRange]
-    //markupString]];
+    // markupString]];
     NSString *sel;
     sel = [helpBrowser
         stringByEvaluatingJavaScriptFromString:
@@ -1498,12 +1488,12 @@ wxAnalysis *Analysis = nil;
 // Implement the protocol method to retrieve the object value for a table
 // column.
 //- (id)tableView:(NSTableView *)tableView
-//objectValueForTableColumn:(NSTableColumn *)tableColumn row:(int)row
+// objectValueForTableColumn:(NSTableColumn *)tableColumn row:(int)row
 //{
 //	NSString* path = [[[NSDocumentController sharedDocumentController]
-//recentDocumentURLs] objectAtIndex:row]; 	NSString* fileName = [path
-//lastPathComponent];  //[[path lastPathComponent]
-//stringByDeletingPathExtension]; 	return fileName;
+// recentDocumentURLs] objectAtIndex:row]; 	NSString* fileName = [path
+// lastPathComponent];  //[[path lastPathComponent]
+// stringByDeletingPathExtension]; 	return fileName;
 // }
 
 // Implement the protocol method to retrieve the object value for a table
@@ -1593,7 +1583,7 @@ wxAnalysis *Analysis = nil;
                 fileExistsAtPath:[wxDefaults valueForKey:@"CabbagePath"]]) {
             // Without passing filename as argument:
             //[[NSWorkspace sharedWorkspace] launchApplication:[wxDefaults
-            //valueForKey:@"CabbagePath"]];
+            // valueForKey:@"CabbagePath"]];
 
             // Passing filename as argument:
             // System.Diagnostics.Process.Start("wmplayer", "\"" + mWaveFile +
@@ -1767,7 +1757,7 @@ wxAnalysis *Analysis = nil;
 //{
 //	if(_Timer == nil)
 //		_Timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self
-//selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
+// selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
 // }
 //
 //- (void) stopTimer
@@ -1785,7 +1775,7 @@ wxAnalysis *Analysis = nil;
 //	if([StartWindow isVisible])
 //	{
 //		if([[[NSDocumentController sharedDocumentController] recentDocumentURLs]
-//count] != 		   [RecentFiles numberOfRows])
+// count] != 		   [RecentFiles numberOfRows])
 //		{
 //			[RecentFiles reloadData];
 //		}
