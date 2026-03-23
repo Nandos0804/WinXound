@@ -25,12 +25,111 @@
 //#include <sys/wait.h> 
 
 #include <fstream>
+#include <vector>
 
+static bool IsExistingDirectory(const Glib::ustring& path)
+{
+	if(path.empty())
+		return false;
+	return Glib::file_test(path, Glib::FILE_TEST_EXISTS | Glib::FILE_TEST_IS_DIR);
+}
+
+static Glib::ustring FindOpcodePluginDirForCsound(const Glib::ustring& compilerName)
+{
+	std::vector<Glib::ustring> candidates;
+
+	if(IsExistingDirectory(wxSETTINGS->Directory.OPCODE7DIR64))
+		return wxSETTINGS->Directory.OPCODE7DIR64;
+	if(IsExistingDirectory(wxSETTINGS->Directory.OPCODE7DIR))
+		return wxSETTINGS->Directory.OPCODE7DIR;
+	if(IsExistingDirectory(wxSETTINGS->Directory.OPCODEDIR))
+		return wxSETTINGS->Directory.OPCODEDIR;
+
+	if(!compilerName.empty())
+	{
+		Glib::ustring compilerDir = Glib::path_get_dirname(compilerName);
+		candidates.push_back(Glib::build_filename(compilerDir, "Opcodes"));
+		candidates.push_back(Glib::build_filename(compilerDir, "../lib/csound/plugins64-7.0"));
+		candidates.push_back(Glib::build_filename(compilerDir, "../lib64/csound/plugins64-7.0"));
+		candidates.push_back(Glib::build_filename(compilerDir, "../plugins64-7.0"));
+	}
+
+	candidates.push_back("/usr/lib/csound/plugins64-7.0");
+	candidates.push_back("/usr/lib64/csound/plugins64-7.0");
+	candidates.push_back("/usr/local/lib/csound/plugins64-7.0");
+
+	for(const auto& candidate : candidates)
+	{
+		if(IsExistingDirectory(candidate))
+			return candidate;
+	}
+
+	return "";
+}
+
+#ifdef WINXOUND_MODERN_DEPS
+static pid_t vte_terminal_fork_command_compat(VteTerminal* terminal,
+	                                          const char* command,
+	                                          char** argv,
+	                                          char** envv,
+	                                          const char* directory,
+	                                          gboolean /*lastlog*/,
+	                                          gboolean /*utmp*/,
+	                                          gboolean /*wtmp*/)
+{
+	const char* spawn_dir = directory ? directory : Glib::get_home_dir().c_str();
+	const char* spawn_cmd = command ? command : g_getenv("SHELL");
+	if(spawn_cmd == NULL)
+		spawn_cmd = "/bin/sh";
+
+	std::vector<char*> local_argv;
+	if(argv != NULL)
+	{
+		for(int i = 0; argv[i] != NULL; ++i)
+			local_argv.push_back(argv[i]);
+	}
+	if(local_argv.empty())
+		local_argv.push_back(const_cast<char*>(spawn_cmd));
+	local_argv.push_back(NULL);
+
+	GPid child_pid = -1;
+	GError* err = NULL;
+	vte_terminal_spawn_sync(terminal,
+	                        VTE_PTY_DEFAULT,
+	                        spawn_dir,
+	                        local_argv.data(),
+	                        envv,
+	                        G_SPAWN_SEARCH_PATH,
+	                        NULL,
+	                        NULL,
+	                        &child_pid,
+	                        NULL,
+	                        &err);
+	if(err != NULL)
+	{
+		std::cerr << "VTE spawn error: " << err->message << " (domain=" << g_quark_to_string(err->domain) 
+		          << ", code=" << err->code << ")" << std::endl;
+		g_error_free(err);
+		return -1;
+	}
+	return child_pid;
+}
+
+#define vte_terminal_fork_command vte_terminal_fork_command_compat
+#define vte_terminal_write_contents vte_terminal_write_contents_sync
+#define VTE_TERMINAL_WRITE_DEFAULT VTE_WRITE_DEFAULT
+#endif
+
+struct PipeOutputData {
+	wxTerminal* terminal;
+};
 
 wxTerminal::wxTerminal(bool isCompiler)  	
 {
+	pid = 0;
 	paused = false;
 	ProcessActive = false;
+	m_open_channels = 0;
 	currentOutputPath = "";
 	currentFilename = "";
 	mIsCompiler = isCompiler;
@@ -93,9 +192,10 @@ bool wxTerminal::CreateNewCompiler()
 	//GtkWidget* scrollbar;
 	//GtkAdjustment* adj = GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment);
 	//gtk_adjustment_set_lower(GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment), 1);
-	scrollbar = gtk_vscrollbar_new(GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment));
-	GTK_WIDGET_UNSET_FLAGS(scrollbar, GTK_CAN_FOCUS);
-	GTK_WIDGET_UNSET_FLAGS(vte, GTK_CAN_FOCUS);
+	scrollbar = gtk_scrollbar_new(GTK_ORIENTATION_VERTICAL,
+	                              gtk_scrollable_get_vadjustment(GTK_SCROLLABLE(vte)));
+	gtk_widget_set_can_focus(scrollbar, FALSE);
+	gtk_widget_set_can_focus(vte, FALSE);
 	//GTK_WIDGET_SET_FLAGS(vte, GTK_CAN_FOCUS);
 
 	/* set the default widget size first to prevent VTE expanding too much,
@@ -103,8 +203,8 @@ bool wxTerminal::CreateNewCompiler()
 	gtk_widget_set_size_request(GTK_WIDGET(vte), 10, 10);
 	vte_terminal_set_size(VTE_TERMINAL(vte), 30, 1);	
 
-	GtkWidget* hbox = gtk_hbox_new(FALSE, 1);
-	GtkWidget* vbox = gtk_vbox_new(FALSE, 1);
+	GtkWidget* hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 1);
+	GtkWidget* vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	
 	buttonStop = gtk_button_new_with_label("Stop (Esc)");
 	buttonPause = gtk_button_new_with_label("Pause");
@@ -114,9 +214,9 @@ bool wxTerminal::CreateNewCompiler()
 	gtk_widget_set_size_request(GTK_WIDGET(buttonPause), -1, 28);
 	gtk_widget_set_size_request(GTK_WIDGET(buttonPanic), -1, 28);
 	gtk_widget_set_size_request(GTK_WIDGET(buttonSave), -1, 28);
-	GTK_WIDGET_UNSET_FLAGS(buttonPanic, GTK_CAN_FOCUS);
+	gtk_widget_set_can_focus(buttonPanic, FALSE);
 	
-	GtkWidget* vboxButtons = gtk_vbox_new(FALSE, 1);
+	GtkWidget* vboxButtons = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	gtk_box_pack_start(GTK_BOX(vboxButtons), buttonStop, FALSE, FALSE, 0);
 	gtk_box_pack_start(GTK_BOX(vboxButtons), buttonPause, FALSE, FALSE, 0);
 	gtk_box_pack_start(GTK_BOX(vboxButtons), gtk_label_new(""), FALSE, FALSE, 0);
@@ -135,7 +235,7 @@ bool wxTerminal::CreateNewCompiler()
 	gtk_box_pack_start(GTK_BOX(hbox), scrollbar, FALSE, FALSE, 0);
 
 
-	GtkWidget* preframe = gtk_vbox_new(FALSE, 1);
+	GtkWidget* preframe = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	GtkWidget* minilabel = gtk_label_new("");
 	gtk_widget_set_size_request(GTK_WIDGET(minilabel), 0, 1);
 	gtk_box_pack_start(GTK_BOX(preframe), 
@@ -151,11 +251,6 @@ bool wxTerminal::CreateNewCompiler()
 	
 	
 	ConfigureTerminalForCompiler();
-	g_signal_connect(vte, 
-	                 "child-exited",//"cursor-moved",//"contents-changed", //"child-exited",
-	                 G_CALLBACK(&wxTerminal::on_child_exited),
-	                 this);
-
 	g_signal_connect(buttonStop, 
 	                 "clicked",//"cursor-moved",//"contents-changed", //"child-exited",
 	                 G_CALLBACK(&wxTerminal::on_buttonStop_clicked),
@@ -184,7 +279,7 @@ bool wxTerminal::CreateNewCompiler()
 	
 
 	//vte_terminal_fork_command(VTE_TERMINAL(vte), NULL, NULL, NULL, dir, TRUE, TRUE, TRUE);
-	vte_terminal_fork_command(VTE_TERMINAL(vte), NULL, NULL, NULL, "/usr/bin", TRUE, TRUE, TRUE);
+	// Note: compiler terminal does not pre-spawn a shell; output is fed via vte_terminal_feed()
 
 	g_signal_connect(frame, 
 	                 "size-allocate",//"size-request", //"check-resize",
@@ -207,7 +302,7 @@ bool wxTerminal::CreateNewCompiler()
 }
 
 void  wxTerminal::on_check_resize (GtkWidget      *widget,
-                                   GtkRequisition *requisition,
+								   GtkAllocation  *allocation,
                                    gpointer        data) 
 {
 	wxTerminal* _this = reinterpret_cast<wxTerminal*>(data);
@@ -240,8 +335,9 @@ bool wxTerminal::CreateNewTerminal()
 	GtkWidget *hbox; //, *frame;
 	vte = vte_terminal_new();
 	
-	scrollbar = gtk_vscrollbar_new(GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment));
-	GTK_WIDGET_UNSET_FLAGS(scrollbar, GTK_CAN_FOCUS);
+	scrollbar = gtk_scrollbar_new(GTK_ORIENTATION_VERTICAL,
+	                              gtk_scrollable_get_vadjustment(GTK_SCROLLABLE(vte)));
+	gtk_widget_set_can_focus(scrollbar, FALSE);
 	/* set the default widget size first to prevent VTE expanding too much,
 	 * sometimes causing the hscrollbar to be too big or out of view. */
 	gtk_widget_set_size_request(GTK_WIDGET(vte), 10, 10);
@@ -249,12 +345,12 @@ bool wxTerminal::CreateNewTerminal()
 
 	//frame = gtk_frame_new(NULL);
 	frame = gtk_event_box_new();
-	hbox = gtk_hbox_new(FALSE, 1);
+	hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 1);
 	gtk_box_pack_start(GTK_BOX(hbox), vte, TRUE, TRUE, 0);
 	gtk_box_pack_start(GTK_BOX(hbox), scrollbar, FALSE, FALSE, 0);
 
 	
-	GtkWidget* preframe = gtk_vbox_new(FALSE, 1);
+	GtkWidget* preframe = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	GtkWidget* minilabel = gtk_label_new("");
 	gtk_widget_set_size_request(GTK_WIDGET(minilabel), 0, 1);
 	gtk_box_pack_start(GTK_BOX(preframe), 
@@ -312,7 +408,7 @@ void wxTerminal::RestartTerminalPage()
 		                      Glib::get_home_dir().c_str(), TRUE, TRUE,TRUE);
 }
 
-void wxTerminal::on_RestartTerminalPage(GtkWidget *widget, gpointer data)
+void wxTerminal::on_RestartTerminalPage(VteTerminal */*vte*/, gint /*status*/, gpointer data)
 {
 	//wxGLOBAL->DebugPrint("TERMINAL", "RestartTerminalPage"); 
 	wxTerminal* _this = reinterpret_cast<wxTerminal*>(data);
@@ -385,28 +481,25 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 		if(wxGLOBAL->Trim(parameters).size() > 0)
 		{	
 			//parSep = g_strsplit(parameters.c_str(), " ", 0);
-			//parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
-			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " -", 0);
+			//Split on single space only, not " -"
+			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
 			
 			int length = StringLength(parSep);
 			argv = g_new(gchar*, length + 3);
 			argv[0] = g_strdup(compilerName.c_str());
 			for(int i=0; i < length; i++)
 			{
-				if(strlen(parSep[i]) > 0)
+				if(parSep[i] != NULL && strlen(parSep[i]) > 0)
 				{
-					if(i == 0) //First value
-						argv[i+1] = g_strdup(parSep[i]);
-					else
-					{
-						Glib::ustring temp = parSep[i];
-						temp.insert(0, "-");
-						argv[i+1] = g_strdup(temp.c_str());
-					}
-						
+					//Directly copy the parameter as-is (it already includes any dashes)
+					argv[i+1] = g_strdup(parSep[i]);
 				}
 				else
-					argv[i+1] = g_strdup("");
+				{
+					//Skip empty parameters
+					argv[i+1] = NULL;
+					break;
+				}
 			}
 			argv[length+1] = g_strdup(filename1.c_str());
 			argv[length+2] = NULL;
@@ -427,30 +520,25 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 		if(wxGLOBAL->Trim(parameters).size() > 0)
 		{
 			//parSep = g_strsplit(parameters.c_str(), " ", 0);
-			//parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
-			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " -", 0);
+			//Split on single space only, not " -"
+			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
 			
 			int length = StringLength(parSep);
 			argv = g_new(gchar*, length + 4);
 			argv[0] = g_strdup(compilerName.c_str());
 			for(int i = 0; i < length; i++)
 			{
-				//OLD: argv[i+1] = g_strdup(parSep[i]);
-
-				if(strlen(parSep[i]) > 0)
+				//Directly copy the parameter as-is (it already includes any dashes)
+				if(parSep[i] != NULL && strlen(parSep[i]) > 0)
 				{
-					if(i == 0) //First value
-						argv[i+1] = g_strdup(parSep[i]);
-					else
-					{
-						Glib::ustring temp = parSep[i];
-						temp.insert(0, "-");
-						argv[i+1] = g_strdup(temp.c_str());
-					}
-						
+					argv[i+1] = g_strdup(parSep[i]);
 				}
 				else
-					argv[i+1] = g_strdup("");
+				{
+					//Skip empty parameters
+					argv[i+1] = NULL;
+					break;
+				}
 			}
 			argv[length+1] = g_strdup(filename1.c_str());
 			argv[length+2] = g_strdup(filename2.c_str());
@@ -470,29 +558,39 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 
 	
 	//2. SET ENVIRONMENT FOR CSOUND
-	//If SFDIR is not defined or SFDIR checkbox is unchecked 
-	//we redirect the compiled soundfile to the csd file directory
-	Glib::ustring environment = "";
-	gchar** envv = NULL;
+	// Start from the full parent environment so Csound can find its audio
+	// plugins (ALSA, etc.) and all system paths remain intact.
+	// Then overlay the WinXound-specific variables.
+	gchar** envv = g_get_environ();
 
-	
-	//if(compilerName.find("csound") != Glib::ustring::npos)
+	//Build SFDIR
+	Glib::ustring sfdir_val;
+	if (wxSETTINGS->Directory.SFDIR == "" ||
+	    wxSETTINGS->Directory.UseSFDIR == false)
+		sfdir_val = Glib::path_get_dirname(filename1);
+	else
+		sfdir_val = wxSETTINGS->Directory.SFDIR;
+	envv = g_environ_setenv(envv, "SFDIR", sfdir_val.c_str(), TRUE);
+
+	//Add OPCODE7DIR for Csound 7 (if configured)
+	Glib::ustring opcodePluginDir = FindOpcodePluginDirForCsound(compilerName);
+	if(!opcodePluginDir.empty())
 	{
-		Glib::ustring divider = "*?*";
-		if (wxSETTINGS->Directory.SFDIR == "" ||
-		    wxSETTINGS->Directory.UseSFDIR == false)
-		{
-			environment = "SFDIR=";
-			environment.append(Glib::path_get_dirname(filename1));
-		}
-		else
-		{
-			environment = wxSETTINGS->Directory.SFDIR;
-		}
-
-		envv = g_strsplit(environment.c_str(), divider.c_str(), 0);
+		envv = g_environ_setenv(envv, "OPCODE7DIR", opcodePluginDir.c_str(), TRUE);
+		envv = g_environ_setenv(envv, "OPCODE7DIR64", opcodePluginDir.c_str(), TRUE);
+		envv = g_environ_setenv(envv, "OPCODEDIR", opcodePluginDir.c_str(), TRUE);
+		envv = g_environ_setenv(envv, "OPCODEDIR64", opcodePluginDir.c_str(), TRUE);
 	}
-	
+	else
+	{
+		// Prevent inherited stale plugin paths (for example missing /usr/local/...)
+		// from forcing Csound to skip valid runtime modules.
+		envv = g_environ_unsetenv(envv, "OPCODE7DIR");
+		envv = g_environ_unsetenv(envv, "OPCODE7DIR64");
+		envv = g_environ_unsetenv(envv, "OPCODEDIR");
+		envv = g_environ_unsetenv(envv, "OPCODEDIR64");
+	}
+
 
 	
 	////////
@@ -505,27 +603,93 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 			std::cout << argv[i] << std::endl;
 		}
 	}
-	if(envv != NULL)
-	{
-		std::cout << "ENVIRONMENT:" << std::endl;
-		for(int i=0; i < StringLength(envv); i++)
-		{
-			std::cout << envv[i] << std::endl;
-		}
-	}
+	std::cout << "SFDIR=" << sfdir_val << std::endl;
+	if(!opcodePluginDir.empty())
+		std::cout << "OPCODE7DIR64=" << opcodePluginDir << std::endl;
 	////////
 	
 
 	//Store filename
 	currentFilename = Glib::path_get_basename(filename1);
 	
-	//3. COMPILE: FORK COMMAND
-	pid = vte_terminal_fork_command(VTE_TERMINAL(vte), 
-	                                compilerName.c_str(), 
-	                                argv, envv, 
-	                                NULL, 
-	                                FALSE, FALSE, FALSE);
+	//3. COMPILE: SPAWN COMMAND WITH PIPES FOR OUTPUT CAPTURE
+	{
+		gint stdout_fd = -1;
+		gint stderr_fd = -1;
+		GPid child_pid = 0;
+		GError* spawn_err = NULL;
 
+		gboolean ok = g_spawn_async_with_pipes(
+			NULL,           // working directory (inherit)
+			argv,
+			envv,
+			(GSpawnFlags)(G_SPAWN_SEARCH_PATH | G_SPAWN_DO_NOT_REAP_CHILD),
+			NULL, NULL,     // child setup / user_data
+			&child_pid,
+			NULL,           // no stdin pipe
+			&stdout_fd,
+			&stderr_fd,
+			&spawn_err);
+
+		if (!ok || spawn_err != NULL)
+		{
+			std::cerr << "Spawn error: "
+			          << (spawn_err ? spawn_err->message : "unknown") << std::endl;
+			if (spawn_err) g_error_free(spawn_err);
+			g_strfreev(parSep);
+			g_strfreev(argv);
+			g_strfreev(envv);
+			return;
+		}
+
+		pid = child_pid;
+		m_open_channels = 2; // stdout + stderr
+
+		// Watch stdout
+		GIOChannel* out_ch = g_io_channel_unix_new(stdout_fd);
+		g_io_channel_set_encoding(out_ch, NULL, NULL);
+		g_io_channel_set_buffered(out_ch, FALSE);
+		GError* out_flags_err = NULL;
+		GIOFlags out_flags = g_io_channel_get_flags(out_ch);
+		g_io_channel_set_flags(out_ch,
+		                       (GIOFlags)(out_flags | G_IO_FLAG_NONBLOCK),
+		                       &out_flags_err);
+		if(out_flags_err != NULL)
+		{
+			std::cerr << "Failed to set stdout channel non-blocking: "
+			          << out_flags_err->message << std::endl;
+			g_error_free(out_flags_err);
+		}
+		g_io_channel_set_close_on_unref(out_ch, TRUE);
+		PipeOutputData* out_pd = new PipeOutputData{this};
+		g_io_add_watch(out_ch, (GIOCondition)(G_IO_IN | G_IO_HUP | G_IO_ERR),
+		               on_compiler_output_cb, out_pd);
+		g_io_channel_unref(out_ch);
+
+		// Watch stderr
+		GIOChannel* err_ch = g_io_channel_unix_new(stderr_fd);
+		g_io_channel_set_encoding(err_ch, NULL, NULL);
+		g_io_channel_set_buffered(err_ch, FALSE);
+		GError* err_flags_err = NULL;
+		GIOFlags err_flags = g_io_channel_get_flags(err_ch);
+		g_io_channel_set_flags(err_ch,
+		                       (GIOFlags)(err_flags | G_IO_FLAG_NONBLOCK),
+		                       &err_flags_err);
+		if(err_flags_err != NULL)
+		{
+			std::cerr << "Failed to set stderr channel non-blocking: "
+			          << err_flags_err->message << std::endl;
+			g_error_free(err_flags_err);
+		}
+		g_io_channel_set_close_on_unref(err_ch, TRUE);
+		PipeOutputData* err_pd = new PipeOutputData{this};
+		g_io_add_watch(err_ch, (GIOCondition)(G_IO_IN | G_IO_HUP | G_IO_ERR),
+		               on_compiler_output_cb, err_pd);
+		g_io_channel_unref(err_ch);
+
+		// Reap child PID when process exits
+		g_child_watch_add(child_pid, on_child_close_pid_cb, NULL);
+	}
 
 	//4. SET WIDGETS
 	ProcessActive = true;
@@ -578,10 +742,8 @@ void wxTerminal::ConfigureTerminalForCompiler()
 	vte_terminal_set_cursor_blink_mode (VTE_TERMINAL(vte), VTE_CURSOR_BLINK_SYSTEM);
 
 	
-	GdkColor colour;
-	colour.red = 65535;
-	colour.green = 65535;
-	colour.blue = 65535;
+	GdkRGBA colour;
+	gdk_rgba_parse(&colour, "#ffffff");
 	vte_terminal_set_color_foreground (VTE_TERMINAL(vte), &colour);
 
 	//vte_terminal_set_colors (term, foreground, background, NULL, 0);
@@ -616,16 +778,51 @@ bool wxTerminal::TimerCheck_Tick()
 }
 */
 
-void wxTerminal::on_child_exited(GtkWidget *widget, gpointer data)
+void wxTerminal::on_child_close_pid_cb(GPid child_pid, gint /*status*/, gpointer /*data*/)
 {
-	//wxGLOBAL->DebugPrint("COMPILER", "on_child_exited");
-	wxTerminal* _this = reinterpret_cast<wxTerminal*>(data);
-	_this->CompilerCompleted();
+	g_spawn_close_pid(child_pid);
+}
+
+gboolean wxTerminal::on_compiler_output_cb(GIOChannel *source, GIOCondition condition, gpointer data)
+{
+	auto* pd = static_cast<PipeOutputData*>(data);
+	wxTerminal* _this = pd->terminal;
+
+	if (condition & G_IO_IN)
+	{
+		gchar buf[4096];
+		gsize bytes_read = 0;
+		GIOStatus status;
+		do {
+			status = g_io_channel_read_chars(source, buf, sizeof(buf), &bytes_read, NULL);
+			if (bytes_read > 0)
+			{
+				// Feed bytes to VTE widget for display
+				vte_terminal_feed(VTE_TERMINAL(_this->vte), buf, (gssize)bytes_read);
+					gtk_widget_queue_draw(GTK_WIDGET(_this->vte));
+			}
+		} while (status == G_IO_STATUS_NORMAL && bytes_read > 0);
+	}
+
+	if (condition & (G_IO_HUP | G_IO_ERR))
+	{
+		delete pd;
+		_this->m_open_channels--;
+		if (_this->m_open_channels <= 0)
+			_this->CompilerCompleted();
+		return FALSE;
+	}
+
+	return TRUE;
 }
 
 void wxTerminal::CompilerCompleted()
 {
 	//wxGLOBAL->DebugPrint("wxTerminal::CompilerCompleted");
+	
+	// Add safety checks to prevent crashes during shutdown or destruction
+	if(!vte || !buttonStop || !buttonPause || !buttonPanic || !buttonSave)
+		return;
 	
 	gtk_widget_set_sensitive (GTK_WIDGET (buttonStop), FALSE);
 	gtk_widget_set_sensitive (GTK_WIDGET (buttonPause), FALSE);
@@ -636,59 +833,58 @@ void wxTerminal::CompilerCompleted()
 
 
 	//Refresh vte (sometimes it doesn't paint/redraw correctly)
-	gtk_widget_draw(GTK_WIDGET(vte), NULL);	
-	//Needed to refresh scrollbar!!!
-	vte_terminal_fork_command(VTE_TERMINAL(vte), 
-	                          NULL, NULL, NULL, 
-	                          "/usr/bin", 
-	                          TRUE, TRUE,TRUE);
+	//Use gtk_widget_queue_draw instead of the old gtk_widget_draw which is deprecated
+	gtk_widget_queue_draw(GTK_WIDGET(vte));
 	
 	
 	//GET COMPILER TEXT
 	gchar* text = NULL;
-	try
-	{
-		//This method retrieve all the text
-		GOutputStream* os = g_memory_output_stream_new(NULL, 0, g_realloc, g_free);;
-		vte_terminal_write_contents(VTE_TERMINAL(vte),
-		                            G_OUTPUT_STREAM(os),
-		                            VTE_TERMINAL_WRITE_DEFAULT,
-		                            NULL,
-		                            NULL);
-		gpointer p = g_memory_output_stream_get_data(G_MEMORY_OUTPUT_STREAM(os));
-		text = (gchar*)p;   
-		
-		g_output_stream_close (G_OUTPUT_STREAM(os), NULL, NULL);
-
-	}
-	catch(...)
-	{
-		//This method retrieve only the visible text
-		wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Get Compiler Text 2nd method.");
+	Glib::ustring errorline = "";
+	Glib::ustring soundfile = "";
+	
+	try {
+		// Try to get text from the terminal using the async method (safer)
+		// Note: We're in a signal handler context here, so we need to be careful
 		try
 		{
+			// Use the simpler method first - vte_terminal_get_text
+			// This is safer than trying to write to a stream in a signal handler
 			text = vte_terminal_get_text(VTE_TERMINAL(vte),
 			                             NULL,
 			                             NULL,
 			                             NULL);
 		}
-		catch(...){}		
+		catch(...)
+		{
+			wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Failed to get compiler text.");
+		}
+
+		if(text != NULL)
+		{
+			try {
+				Glib::ustring compilerText = text;
+				g_free(text);
+
+				//SEARCH FOR ERROR and SOUNDFILE
+				errorline = FindError(compilerText);
+				soundfile = FindSounds(compilerText);
+			}
+			catch(...) {
+				wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Failed to parse compiler output.");
+			}
+		}
+	}
+	catch(...) {
+		wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Unexpected exception in text retrieval.");
 	}
 	
-
-	Glib::ustring errorline = "";
-	Glib::ustring soundfile = "";
-	if(text != NULL)
-	{
-		Glib::ustring compilerText = text;
-		g_free(text);
-
-		//SEARCH FOR ERROR and SOUNDFILE
-		errorline = FindError(compilerText);
-		soundfile = FindSounds(compilerText);
+	try {
+		// Emit the signal
+		m_compiler_completed.emit(errorline, soundfile);
 	}
-	
-	m_compiler_completed.emit(errorline, soundfile);
+	catch(...) {
+		wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Failed to emit compiler_completed signal.");
+	}
 
 }
 
@@ -860,6 +1056,7 @@ void wxTerminal::ForceKill()
 
 void wxTerminal::PauseCompiler()
 {
+	if(pid <= 0) return;
 	if(paused == false)
 	{
 		int ret = kill(pid, SIGSTOP);
@@ -884,8 +1081,10 @@ void wxTerminal::StopCompiler()
 {
 	try
 	{
-		if(paused == true) kill(pid, SIGCONT);
-		kill(pid, SIGQUIT);  //SIGTERM
+		if (pid > 0) {
+			if(paused == true) kill(pid, SIGCONT);
+			kill(pid, SIGQUIT);  //SIGTERM
+		}
 	}
 	catch(...){}
 }
@@ -909,7 +1108,12 @@ void wxTerminal::SetCompilerFont(Glib::ustring name, gint size)
 		Glib::ustring font = name;
 		font.append(" ");
 		font.append(wxGLOBAL->IntToString(size));
-		vte_terminal_set_font_from_string(VTE_TERMINAL(vte), font.c_str());
+		PangoFontDescription* pfd = pango_font_description_from_string(font.c_str());
+		if(pfd != NULL)
+		{
+			vte_terminal_set_font(VTE_TERMINAL(vte), pfd);
+			pango_font_description_free(pfd);
+		}
 	}			
 }
 

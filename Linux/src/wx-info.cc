@@ -87,7 +87,7 @@ void wxInfo::showWindowAt(gint x, gint y)
 void wxInfo::hideWindow()
 {
 	//GTK_WINDOW_TOPLEVEL
-	hide_all();
+	hide();
 }
 
 void wxInfo::setLabelText(Glib::ustring text)
@@ -99,7 +99,7 @@ void wxInfo::setLabelText(Glib::ustring text)
 bool wxInfo::on_key_press_event(GdkEventKey* event)
 {
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
-	if (event->keyval == GDK_Escape)
+	if (event->keyval == GDK_KEY_Escape)
 	{
 		this->hideWindow();
 	}

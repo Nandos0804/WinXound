@@ -584,7 +584,7 @@ void wxCodeFormatter::on_buttonReset_Clicked()
 bool wxCodeFormatter::on_key_press_event(GdkEventKey* event)
 {
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
-	if (event->keyval == GDK_Escape)
+	if (event->keyval == GDK_KEY_Escape)
 	{
 		on_buttonCancel_Clicked();
 	}
@@ -709,7 +709,7 @@ void wxCodeFormatter::ConfigureTextView()
 		textView->setSavePoint();
 		textView->setReadOnly(TRUE);
 
-		textView->setHighlight("winxound");
+		textView->setHighlight("csound");
 
 		
 

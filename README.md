@@ -39,7 +39,7 @@ WinXound was originally developed using different native frameworks for each pla
 | :--- | :--- | :--- |
 | **Windows** | C# / .NET | Visual Studio |
 | **macOS** | Objective-C / Cocoa | Xcode |
-| **Linux** | C++ / Gtkmm | Anjuta |
+| **Linux** | C++ / Gtkmm | Autotools / Make |
 
 **Note:** The TextEditor component is based on the **Scintilla** text control by Neil Hodgson.
 

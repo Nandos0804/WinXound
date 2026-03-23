@@ -56,19 +56,53 @@ MacOs/DerivedData/
 
 ## Linux
 
-# Anjuta
-# Local configuration folder and symbol database
 Linux/.DS_Store
-Linux/.anjuta/
-Linux/.anjuta_sym_db.db
 Linux/autom4te.cache/
+Linux/aclocal.m4
+Linux/config.guess
+Linux/config.h.in
+Linux/config.sub
+Linux/configure
 Linux/config.h
 Linux/config.log
 Linux/config.status
+Linux/depcomp
+Linux/install-sh
 Linux/libtool
+Linux/ltmain.sh
 Linux/Makefile
+Linux/Makefile.in
+Linux/missing
 Linux/stamp-h1
 Linux/src/.deps/
 Linux/src/Makefile
+Linux/src/Makefile.in
 Linux/scintilla/.deps/
 Linux/scintilla/bin/
+Linux/**/.libs/
+Linux/**/.deps/
+Linux/.tm_project*
+Linux/.nautilus-metafile.xml
+Linux/**/*.swp
+Linux/**/*.autosave
+Linux/**/*.pws
+Linux/**/#*#
+Linux/**/*.gladep
+Linux/**/*.la
+Linux/**/*.lo
+Linux/**/*.o
+Linux/**/*~
+Linux/**/*.bak
+Linux/CMakeLists.txt.user
+Linux/CMakeCache.txt
+Linux/CMakeFiles
+Linux/CMakeScripts
+Linux/Testing
+Linux/Makefile
+Linux/cmake_install.cmake
+Linux/install_manifest.txt
+Linux/compile_commands.json
+Linux/CTestTestfile.cmake
+Linux/_deps
+Linux/CMakeUserPresets.json
+Linux/build

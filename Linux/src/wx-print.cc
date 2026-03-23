@@ -73,7 +73,7 @@ void wxPrint::hideWindow()
 bool wxPrint::on_key_press_event(GdkEventKey* event)
 {
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
-	if (event->keyval == GDK_Escape)
+	if (event->keyval == GDK_KEY_Escape)
 	{
 		this->hideWindow();
 	}

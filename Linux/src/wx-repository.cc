@@ -20,6 +20,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 
 
@@ -42,10 +43,17 @@ wxRepository::wxRepository()
 
 	//Select Instructions Node
 	Glib::RefPtr<Gtk::TreeSelection> sel = repStructure->get_selection();
-	Gtk::TreeModel::Row row = rRefTreeModel->children()[0]->children()[0];
-	if (row) sel->select(row);
-
-	on_rep_cursor_changed();
+	Gtk::TreeModel::Children roots = rRefTreeModel->children();
+	if(!roots.empty())
+	{
+		Gtk::TreeModel::Children firstChildren = roots.begin()->children();
+		if(!firstChildren.empty())
+		{
+			Gtk::TreeModel::Row row = *firstChildren.begin();
+			sel->select(row);
+			on_rep_cursor_changed();
+		}
+	}
 
 }
 
@@ -67,15 +75,15 @@ void wxRepository::UpdateUdoList()
 
 	
 	//Create the Tree model:
-	if(rRefTreeModel != NULL)
+	if(rRefTreeModel)
 		rRefTreeModel.clear();	
 	rRefTreeModel = Gtk::TreeStore::create(rColumns);
 	
 	Glib::ustring directory_path = wxGLOBAL->getRepositoryPath();
-	
-	Glib::Dir dir (directory_path);
 
 	if (Glib::file_test(directory_path, Glib::FILE_TEST_IS_DIR) == FALSE) return;
+
+	Glib::Dir dir (directory_path);
 
 
 	
@@ -97,6 +105,8 @@ void wxRepository::UpdateUdoList()
 
 	for (uint index=0; index < dirList.size(); index++)
 	{
+		if (Glib::file_test(dirList[index], Glib::FILE_TEST_IS_DIR) == FALSE) continue;
+
 		parent = *(rRefTreeModel->append());
 		parent[rColumns.category] = Glib::path_get_basename(dirList[index]);
 		parent[rColumns.name] = "NODE";
@@ -178,7 +188,7 @@ void wxRepository::CreateNewRepository()
 		sigc::mem_fun(*this, &wxRepository::on_rep_cursor_changed), false);
 
 	//SET DRAG SOURCE
-	std::list<Gtk::TargetEntry> listTargets;
+	std::vector<Gtk::TargetEntry> listTargets;
 	listTargets.push_back( Gtk::TargetEntry("STRING") );
 	listTargets.push_back( Gtk::TargetEntry("text/plain") );
 	//listTargets.push_back( Gtk::TargetEntry("text/uri-list") );
@@ -208,7 +218,7 @@ void wxRepository::CreateNewRepository()
 	//TEXTVIEW
 	textView = SCINTILLA(scintilla_new());
    	scintilla_set_id(textView, 0);
-   	gtk_widget_set_usize(GTK_WIDGET(textView), 300, 100);
+	gtk_widget_set_size_request(GTK_WIDGET(textView), 300, 100);
 	//SET CODEPAGE TO UTF8
 	SSM(textView, SCI_SETCODEPAGE, SC_CP_UTF8, 0);
 	textView_Widget = Glib::wrap(GTK_WIDGET(textView));
@@ -238,7 +248,7 @@ void wxRepository::CreateNewRepository()
 
 	g_signal_connect(textView, 
 	                 SCINTILLA_NOTIFY, 
-	                 GtkSignalFunc(&wxRepository::on_SCI_NOTIFY),
+	                 G_CALLBACK(&wxRepository::on_SCI_NOTIFY),
 	                 this);
 
 
@@ -454,7 +464,7 @@ void wxRepository::on_rep_cursor_changed()
 		if(category == "Instructions.udo")
 			SSM(textView, SCI_SETLEXERLANGUAGE, 0, (sptr_t)"none");
 		else
-			SSM(textView, SCI_SETLEXERLANGUAGE, 0, (sptr_t)"winxound");
+			SSM(textView, SCI_SETLEXERLANGUAGE, 0, (sptr_t)"csound");
 		//SSM(textView, SCI_COLOURISE, 0, -1);
 	}
 
@@ -582,14 +592,16 @@ void wxRepository::SciEditSetFontsAndStyles()
 
 gint wxRepository::getColorFromString(const gchar* stringColor)
 {
-	GdkColor color;
+	GdkRGBA color;
 
-	//color range = 65535;
-	gdk_color_parse (stringColor, &color);
+	if(!gdk_rgba_parse(&color, stringColor))
+	{
+		return 0;
+	}
 
-	int r = color.red * 255 / 65535;
-	int g = color.green * 255 / 65535;
-	int b = color.blue * 255 / 65535;
+	int r = static_cast<int>(color.red * 255.0);
+	int g = static_cast<int>(color.green * 255.0);
+	int b = static_cast<int>(color.blue * 255.0);
 	
 	return r | (g << 8) | (b << 16);
 	
@@ -708,9 +720,9 @@ void wxRepository::Rename()
 
 	if(Glib::file_test(filename, Glib::FILE_TEST_EXISTS))
 	{
-		Gtk::Dialog dialog("Rename Udo as ...", TRUE, FALSE);
+		Gtk::Dialog dialog("Rename Udo as ...", TRUE);
 
-		Gtk::VBox* vbox = dialog.get_vbox();
+		Gtk::Box* vbox = dialog.get_content_area();
 
 
 		//FILENAME
@@ -777,18 +789,16 @@ void wxRepository::CreateTreePopupMenu()
 	Gtk::MenuItem   treeRemove;
 	*/
 
-	Gtk::Menu::MenuList& menulist = treePopupMenu.items();
+	treeRemove.set_label("Rename");
+	treeRemove.signal_activate().connect(sigc::mem_fun(*this, &wxRepository::Rename));
+	treePopupMenu.append(treeRemove);
 
-	//RENAME
-	menulist.push_back(Gtk::Menu_Helpers::MenuElem("Rename",
-		sigc::mem_fun(*this, &wxRepository::Rename)));
+	Gtk::SeparatorMenuItem* separator = Gtk::manage(new Gtk::SeparatorMenuItem());
+	treePopupMenu.append(*separator);
 
-	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
-
-	//DELETE
-	menulist.push_back(Gtk::Menu_Helpers::MenuElem("Delete",
-		sigc::mem_fun(*this, &wxRepository::Delete)));
+	treeDelete.set_label("Delete");
+	treeDelete.signal_activate().connect(sigc::mem_fun(*this, &wxRepository::Delete));
+	treePopupMenu.append(treeDelete);
 
 	treePopupMenu.show_all();
 
@@ -861,9 +871,9 @@ void wxRepository::on_drop_data_received(const Glib::RefPtr<Gdk::DragContext>& c
 void wxRepository::InsertText(Glib::ustring& text)
 {
 
-	Gtk::Dialog dialog("Save Code as ...", TRUE, FALSE);
+	Gtk::Dialog dialog("Save Code as ...", TRUE);
 
-	Gtk::VBox* vbox = dialog.get_vbox();
+	Gtk::Box* vbox = dialog.get_content_area();
 
 
 	//FILENAME
@@ -896,7 +906,7 @@ void wxRepository::InsertText(Glib::ustring& text)
 
 	for (uint index=0; index < dirList.size(); index++)
 	{
-		listboxNodes->append_text(dirList[index]);
+		listboxNodes->append(dirList[index]);
 	}
 
 	//Select First Node

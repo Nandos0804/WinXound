@@ -44,8 +44,6 @@ void wxBrowser::CreateNewBrowser()
 	zoomValue = DEFAULT_ZOOM_VALUE;
 	
 	web_view = WEBKIT_WEB_VIEW (webkit_web_view_new ());
-	if(History)
-		webkit_web_view_set_maintains_back_forward_list(web_view, true);
 
 	
 	scrolled_window = gtk_scrolled_window_new (NULL, NULL);
@@ -56,11 +54,11 @@ void wxBrowser::CreateNewBrowser()
 	//gtk_widget_set_has_tooltip(GTK_WIDGET(web_view), FALSE);
 	
 	
-	vbox = gtk_vbox_new(FALSE, 1);
+	vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 
 	if(History)
 	{
-		GtkWidget* hbox = gtk_hbox_new(FALSE, 1);
+		GtkWidget* hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 1);
 		buttonBackward = gtk_button_new_with_label("<<"); //gtk_button_new_from_stock(GTK_STOCK_GO_BACK);
 		buttonForward = gtk_button_new_with_label(">>"); //gtk_button_new_from_stock(GTK_STOCK_GO_FORWARD);
 		GtkWidget* buttonHome = gtk_button_new_with_label("Home"); //gtk_button_new_from_stock(GTK_STOCK_HOME);
@@ -157,8 +155,8 @@ void wxBrowser::CreateNewBrowser()
 	//load-finished
 	
 	g_signal_connect(web_view, 
-	                 "notify::load-status",
-	                 G_CALLBACK(&wxBrowser::on_load_status),
+	                 "load-changed",
+	                 G_CALLBACK(&wxBrowser::on_load_changed),
 	                 this);
 
 	g_signal_connect(frame, 
@@ -205,8 +203,8 @@ void wxBrowser::on_buttonZoomReset_clicked(GtkWidget *widget, gpointer data)
 
 
 void  wxBrowser::on_check_resize_browser (GtkWidget      *widget,
-                                  GtkRequisition *requisition,
-                                  gpointer        data) 
+								  GtkAllocation  *allocation,
+								  gpointer        data) 
 {
 
 	wxBrowser* _this = reinterpret_cast<wxBrowser*>(data);
@@ -288,13 +286,16 @@ void wxBrowser::on_entry_activate(GtkWidget *widget, gpointer data)
 void wxBrowser::Find(const gchar* text)
 {
 	//wxGLOBAL->DebugPrint("wxBrowser", "Find");
-	bool ret;
+	WebKitFindController *findController = webkit_web_view_get_find_controller(web_view);
 	if(g_str_equal(text, ""))
 	{
-		webkit_web_view_execute_script(web_view, "document.execCommand('Unselect')");
+		webkit_find_controller_search_finish(findController);
 	}
 	else
-		ret = webkit_web_view_search_text(web_view, text, FALSE, TRUE, TRUE);
+		webkit_find_controller_search(findController,
+		                              text,
+		                              static_cast<WebKitFindOptions>(WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE | WEBKIT_FIND_OPTIONS_WRAP_AROUND),
+		                              G_MAXUINT);
 
 }
 
@@ -356,39 +357,25 @@ void wxBrowser::goHome()
 	//LoadUri("http://www.google.com/");
 }
 
-void wxBrowser::on_load_status(WebKitWebView  *web_view,
-                               WebKitWebFrame *frame,
-                               gpointer        user_data)
+void wxBrowser::on_load_changed(WebKitWebView  *web_view,
+                                WebKitLoadEvent load_event,
+                                gpointer        user_data)
 {
-	WebKitLoadStatus stat = webkit_web_view_get_load_status(web_view);
-
-	/*
-	if (stat == WEBKIT_LOAD_COMMITTED) //WEBKIT_LOAD_PROVISIONAL
-	{
-		//wxGLOBAL->DebugPrint("wxBrowser", webkit_web_view_get_uri(web_view));
-		if(g_str_has_suffix(webkit_web_view_get_uri(web_view), ".csd"))
-		{
-			wxGLOBAL->DebugPrint("wxBrowser", "FILE_CSD");
-			webkit_web_view_stop_loading (web_view);
-		}
-	}
-	*/
-	
-	
-	//WEBKIT_LOAD_FINISHED
-	if (stat == WEBKIT_LOAD_FINISHED)
+	if (load_event == WEBKIT_LOAD_FINISHED)
 	{
 		wxBrowser* _this = reinterpret_cast<wxBrowser*>(user_data);
 		if(_this->History == false) return;
 		
 		_this->refreshButtonState();
 
-		////if(g_str_has_suffix(webkit_web_view_get_uri(web_view), ".csd"))
-		Glib::ustring temp = webkit_web_view_get_uri(web_view);
-		if(Glib::str_has_suffix(temp.lowercase(), ".csd"))
+		const gchar* uri = webkit_web_view_get_uri(web_view);
+		if(uri != NULL)
 		{
-			//wxGLOBAL->DebugPrint("wxBrowser", "FILE_CSD");
-			_this->m_signal_csound_file_clicked.emit(webkit_web_view_get_uri(web_view));
+			Glib::ustring temp = uri;
+			if(Glib::str_has_suffix(temp.lowercase(), ".csd"))
+			{
+				_this->m_signal_csound_file_clicked.emit(uri);
+			}
 		}
 	}
 }

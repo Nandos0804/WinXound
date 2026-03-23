@@ -241,51 +241,51 @@ void wxAnalysis::associateWidgets(Glib::RefPtr<Gtk::Builder> builder)
 	h_Pvanal_vbox->pack_start(*h_Pvanal,TRUE,TRUE,0);
 	window_Pvanal_vbox->pack_start(*window_Pvanal,TRUE,TRUE,0);
 
-	w_Atsa->append_text("Blackmann");
-	w_Atsa->append_text("Blackmann_H");
-	w_Atsa->append_text("Hamming");
-	w_Atsa->append_text("Von Hann");
+	w_Atsa->append("Blackmann");
+	w_Atsa->append("Blackmann_H");
+	w_Atsa->append("Hamming");
+	w_Atsa->append("Von Hann");
 
-	F_File_Atsa->append_text("1=amp and freq only");
-	F_File_Atsa->append_text("2=amp, freq and phase");
-	F_File_Atsa->append_text("3=amp, freq and residual");
-	F_File_Atsa->append_text("4=amp, freq, phase and residual");
+	F_File_Atsa->append("1=amp and freq only");
+	F_File_Atsa->append("2=amp, freq and phase");
+	F_File_Atsa->append("3=amp, freq and residual");
+	F_File_Atsa->append("4=amp, freq, phase and residual");
 	
-	v_Lpanal->append_text("none");
-	v_Lpanal->append_text("verbose");
-	v_Lpanal->append_text("debug");
+	v_Lpanal->append("none");
+	v_Lpanal->append("verbose");
+	v_Lpanal->append("debug");
 	
-	n_Pvanal->append_text("16");
-	n_Pvanal->append_text("32");
-	n_Pvanal->append_text("64");
-	n_Pvanal->append_text("128");
-	n_Pvanal->append_text("256");
-	n_Pvanal->append_text("512");
-	n_Pvanal->append_text("1024");
-	n_Pvanal->append_text("2048");
-	n_Pvanal->append_text("4096");
-	n_Pvanal->append_text("8192");
-	n_Pvanal->append_text("16384");
+	n_Pvanal->append("16");
+	n_Pvanal->append("32");
+	n_Pvanal->append("64");
+	n_Pvanal->append("128");
+	n_Pvanal->append("256");
+	n_Pvanal->append("512");
+	n_Pvanal->append("1024");
+	n_Pvanal->append("2048");
+	n_Pvanal->append("4096");
+	n_Pvanal->append("8192");
+	n_Pvanal->append("16384");
 	
-	w_Pvanal->append_text("Use Hop Size");
-	w_Pvanal->append_text("2");
-	w_Pvanal->append_text("4");
-	w_Pvanal->append_text("8");
-	w_Pvanal->append_text("16");
+	w_Pvanal->append("Use Hop Size");
+	w_Pvanal->append("2");
+	w_Pvanal->append("4");
+	w_Pvanal->append("8");
+	w_Pvanal->append("16");
 	
-	h_Pvanal->append_text("16");
-	h_Pvanal->append_text("32");
-	h_Pvanal->append_text("64");
-	h_Pvanal->append_text("128");
-	h_Pvanal->append_text("256");
-	h_Pvanal->append_text("512");
-	h_Pvanal->append_text("1024");
-	h_Pvanal->append_text("2048");
-	h_Pvanal->append_text("4096");
+	h_Pvanal->append("16");
+	h_Pvanal->append("32");
+	h_Pvanal->append("64");
+	h_Pvanal->append("128");
+	h_Pvanal->append("256");
+	h_Pvanal->append("512");
+	h_Pvanal->append("1024");
+	h_Pvanal->append("2048");
+	h_Pvanal->append("4096");
 	
-	window_Pvanal->append_text("Hamming");
-	window_Pvanal->append_text("Von Hann");
-	window_Pvanal->append_text("Kaiser");
+	window_Pvanal->append("Hamming");
+	window_Pvanal->append("Von Hann");
+	window_Pvanal->append("Kaiser");
 
 	
 	
@@ -323,7 +323,7 @@ void wxAnalysis::on_buttonExit_Clicked()
 bool wxAnalysis::on_key_press_event(GdkEventKey* event)
 {
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
-	if (event->keyval == GDK_Escape)
+	if (event->keyval == GDK_KEY_Escape)
 	{
 		//on_buttonExit_Clicked();
 		closeWindow();
@@ -1148,7 +1148,7 @@ void wxAnalysis::on_buttonInput_Clicked()
 
 		if(r == Gtk::RESPONSE_NO)
 		{
-			comboboxentryInputFile->clear_items ();
+			comboboxentryInputFile->remove_all();
 			entryOutputPath->set_text(""); //output.Clear();
 		}
 	}
@@ -1171,9 +1171,9 @@ void wxAnalysis::on_buttonInput_Clicked()
 	
 	dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
-	Gtk::FileFilter filter_any;
-	filter_any.set_name("Any files");
-	filter_any.add_pattern("*");
+	Glib::RefPtr<Gtk::FileFilter> filter_any = Gtk::FileFilter::create();
+	filter_any->set_name("Any files");
+	filter_any->add_pattern("*");
 	dialog.add_filter(filter_any);
 
 	//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
@@ -1192,7 +1192,7 @@ void wxAnalysis::on_buttonInput_Clicked()
 	
 	if(notebook1->get_current_page() == 5) //SNDINFO
 	{
-		comboboxentryInputFile->clear_items ();
+		comboboxentryInputFile->remove_all();
 		entryOutputPath->set_text(""); //output.Clear();
 	}
 	
@@ -1204,7 +1204,7 @@ void wxAnalysis::on_buttonInput_Clicked()
 	std::vector<std::string> files = dialog.get_filenames();
 	for (uint i = 0; i < files.size(); i++)
 	{
-		comboboxentryInputFile->append_text(files[i]);
+		comboboxentryInputFile->append(files[i]);
 	}
 
 	if(entryOutputPath->get_text() == "" &&
@@ -1234,9 +1234,9 @@ void wxAnalysis::on_buttonOutput_Clicked()
 	//dialog.set_select_multiple(TRUE);
 	dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
-	Gtk::FileFilter filter_any;
-	filter_any.set_name("Any files");
-	filter_any.add_pattern("*");
+	Glib::RefPtr<Gtk::FileFilter> filter_any = Gtk::FileFilter::create();
+	filter_any->set_name("Any files");
+	filter_any->add_pattern("*");
 	dialog.add_filter(filter_any);
 
 	//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
@@ -1256,7 +1256,7 @@ void wxAnalysis::on_buttonOutput_Clicked()
 	entryOutputPath->set_text(dialog.get_current_folder());
 }
 
-void wxAnalysis::on_notebook1_switch_page(GtkNotebookPage* page, guint page_num)
+void wxAnalysis::on_notebook1_switch_page(Gtk::Widget* page, guint page_num)
 {
 	notebook2->set_current_page(0);
 
@@ -1309,7 +1309,7 @@ void wxAnalysis::on_notebook1_switch_page(GtkNotebookPage* page, guint page_num)
 
 void wxAnalysis::on_buttonClear_Clicked()
 {
-	comboboxentryInputFile->clear_items();
+	comboboxentryInputFile->remove_all();
 	//entryOutputPath->set_text("");
 }
 

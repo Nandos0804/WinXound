@@ -108,11 +108,11 @@ void wxFindLine::on_buttonFindLine_Clicked()
 bool wxFindLine::on_key_press_event(GdkEventKey* event)
 {
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
-	if (event->keyval == GDK_Escape)
+	if (event->keyval == GDK_KEY_Escape)
 	{
 		on_buttonExit_Clicked();
 	}
-	if (event->keyval == GDK_Return)
+	if (event->keyval == GDK_KEY_Return)
 	{
 		on_buttonFindLine_Clicked();
 	}
