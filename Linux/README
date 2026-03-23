@@ -1,5 +1,13 @@
 ﻿WinXound
 ========
+
+NOTE (2026): This file is kept for historical reference.
+The maintained Linux build guide is Linux/README.md and uses CMake:
+   mkdir build
+   cd build
+   cmake ..
+   make
+
 WinXound is a free and open-source Front-End GUI Editor for CSound 5, CSoundAV, 
 CSoundAC, with Python and Lua support, developed by Stefano Bonetti. 
 It runs on Microsoft Windows, Apple Mac OsX and Linux.

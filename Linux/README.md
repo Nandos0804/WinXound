@@ -2,7 +2,7 @@
 
 This folder contains the Linux version of WinXound.
 
-The Linux build uses an autotools-based workflow and builds two main parts:
+The Linux build now supports a CMake-based workflow and builds two main parts:
 
 1. The bundled Scintilla static library under `scintilla/gtk`.
 2. The WinXound Gtkmm application under `src`.
@@ -11,8 +11,9 @@ The final runnable app is assembled with `make standalone` into the `Linux/WinXo
 
 ## Projects and Layout
 
-- `configure.ac`: autotools configure source file (`configure` is generated).
-- `Makefile.am`: top-level build rules, including the `standalone` target.
+- `CMakeLists.txt`: Linux CMake entry point.
+- `configure.ac`: legacy autotools configure source file (`configure` is generated).
+- `Makefile.am`: legacy top-level autotools rules, including the `standalone` target.
 - `src/`: WinXound Gtkmm application source.
 - `scintilla/`: bundled Scintilla source used by the editor.
 - `WinXound/`: runtime folder containing resources and the standalone app layout.
@@ -33,46 +34,60 @@ Notes:
 - This is an older Gtkmm 2.x codebase, so package names and availability depend on the Linux distribution.
 - On modern systems, these libraries may require compatibility packages or manual package-name mapping.
 
-## Build Flow
+## Build Flow (CMake)
 
 Build in this order:
 
-1. Run `autogen.sh` (generates autotools files and runs `configure`).
-2. Run `make`.
-3. Run `make standalone`.
-4. Start the app from `Linux/WinXound/winxound`.
+1. Install dependencies.
+2. Configure from a build directory.
+3. Build with `make`.
+4. Assemble runtime folder with `make standalone`.
+5. Start the app from `Linux/WinXound/winxound`.
 
-## 1. Generate and Configure
+## 0. Install Dependencies
 
 From the repository root:
 
 ```sh
-cd Linux
-./autogen.sh
+./install-deps.sh
 ```
 
-This script regenerates autotools files from `configure.ac` and then runs `configure`.
+Optional:
+
+- `./install-deps.sh --modern` (default)
+- `./install-deps.sh --legacy`
+- `./install-deps.sh -y` (non-interactive)
+
+## 1. Configure
+
+From the repository root:
+
+```sh
+mkdir -p build
+cd build
+cmake ..
+```
 
 ## 2. Compile
 
 Run:
 
 ```sh
-cd Linux
-make
+cd build
+make -j$(nproc)
 ```
 
 This builds:
 
 - the Scintilla static library used by the Linux editor
-- the `src/winxound` executable
+- the `winxound` executable target
 
 ## 3. Assemble the Standalone Runtime Folder
 
 Run:
 
 ```sh
-cd Linux
+cd build
 make standalone
 ```
 
@@ -110,11 +125,23 @@ These are runtime assets and should remain tracked.
 
 ## Clean Rebuild
 
-Generated Linux build outputs are ignored by git. For a clean rebuild, run:
+For a clean CMake rebuild, run:
+
+```sh
+rm -rf build
+mkdir build
+cd build
+cmake ..
+make
+make standalone
+```
+
+## Legacy Autotools Workflow
+
+If you need the historical build system:
 
 ```sh
 cd Linux
-make distclean || true
 ./autogen.sh
 make
 make standalone
@@ -146,16 +173,17 @@ If you want to remove generated files manually, the main rebuildable paths are:
 
 ## Troubleshooting
 
-### `./configure` fails on missing packages
+### `cmake ..` fails on missing packages
 
 Cause:
 
-- One or more of `gtkmm-2.4`, `vte`, or `webkit-1.0` development packages are missing.
+- One or more required development packages are missing.
+- The CMake build first attempts modern packages (`gtkmm-3.0`, `vte-2.91`, `webkit2gtk`) and falls back to legacy (`gtkmm-2.4`, `vte`, `webkit-1.0`).
 
 Fix:
 
 - Install the matching development packages for your distribution.
-- If your distribution no longer ships these versions, use compatibility packages or build in an environment that still provides Gtkmm 2.x and WebKit 1.0.
+- If legacy packages are unavailable, use modern package variants and then fix API differences reported by the compiler.
 
 ### `make standalone` succeeds but the app does not start correctly
 
