@@ -44,19 +44,19 @@ void wxAbout::CreateNewAboutWindow()
 	//TITLE
 	//Gtk::Label* title = new Gtk::Label(TITLE, 0.50, 0.50, false);
 	Gtk::Label* title = Gtk::manage(new Gtk::Label("WinXound", 0.50, 0.50, false));
-	title->modify_font(Pango::FontDescription("bold 20"));                               
+	title->override_font(Pango::FontDescription("bold 20"));                               
 	vbox->pack_start(*title, FALSE, FALSE, 0);
 
 
 	//SUBTITLE1
 	Gtk::Label* subtitle1 = Gtk::manage(new Gtk::Label("an open source editor for CSound",
 	                                                   0.50, 0.50, false));
-	subtitle1->modify_font(Pango::FontDescription("normal 14"));  
+	subtitle1->override_font(Pango::FontDescription("normal 14"));  
 	vbox->pack_start(*subtitle1, FALSE, FALSE, 0);
 	//SUBTITLE2
 	Gtk::Label* subtitle2 = Gtk::manage(new Gtk::Label("developed by Stefano Bonetti",
 	                                                   0.50, 0.50, false));
-	subtitle2->modify_font(Pango::FontDescription("normal 14"));  
+	subtitle2->override_font(Pango::FontDescription("normal 14"));  
 	vbox->pack_start(*subtitle2, FALSE, FALSE, 0);
 
 	
@@ -65,7 +65,7 @@ void wxAbout::CreateNewAboutWindow()
 	ver.append(VERSION);
 	ver.append("\n");
 	Gtk::Label* version = Gtk::manage(new Gtk::Label(ver, 0.50, 0.50, false));
-	version->modify_font(Pango::FontDescription("normal 12")); 
+	version->override_font(Pango::FontDescription("normal 12")); 
 	vbox->pack_start(*version, FALSE, FALSE, 0);
 
 	
@@ -85,7 +85,7 @@ void wxAbout::CreateNewAboutWindow()
         "If you use this software in a product, an acknowledgment in\n"
         "the product documentation would be appreciated.\n";
 	Gtk::Label* info = Gtk::manage(new Gtk::Label(infoText, 0.0, 0.50, false));
-	info->modify_font(Pango::FontDescription("normal 8"));  
+	info->override_font(Pango::FontDescription("normal 8"));  
 	vbox->pack_start(*info, FALSE, FALSE, 0);
 
 
@@ -96,14 +96,14 @@ void wxAbout::CreateNewAboutWindow()
 	//MAILS
 	Gtk::Label* mailTo = Gtk::manage(new Gtk::Label("\nFor any problem or suggestion please Mail to:", 
 	                                                0.50, 0.50, false));
-	mailTo->modify_font(Pango::FontDescription("normal 10")); 
+	mailTo->override_font(Pango::FontDescription("normal 10")); 
 	//mailTo->set_track_visited_links(FALSE);
 	vbox->pack_start(*mailTo, FALSE, FALSE, 0);
 	
 	Gtk::Label* mails = Gtk::manage(new Gtk::Label("", 0.50, 0.50, false));
 	mails->set_markup("<a href=\"mailto:stefano_bonetti@tin.it\">stefano_bonetti@tin.it</a>  or  "
 	                  "<a href=\"mailto:stefano_bonetti@alice.it\">stefano_bonetti@alice.it</a>");
-	mails->modify_font(Pango::FontDescription("normal 10")); 
+	mails->override_font(Pango::FontDescription("normal 10")); 
 	//mails->set_track_visited_links(FALSE);
 	vbox->pack_start(*mails, FALSE, FALSE, 0);
 
@@ -111,7 +111,7 @@ void wxAbout::CreateNewAboutWindow()
 	//WEBSITE
 	Gtk::Label* webSite = Gtk::manage(new Gtk::Label("", 0.50, 0.50, false));
 	webSite->set_markup("\nWinXound Website: <a href=\"http://winxound.codeplex.com\">winxound.codeplex.com</a>");
-	webSite->modify_font(Pango::FontDescription("normal 10")); 
+	webSite->override_font(Pango::FontDescription("normal 10")); 
 	//webSite->set_track_visited_links(FALSE);
 	vbox->pack_start(*webSite, FALSE, FALSE, 0);
 	                  
@@ -146,14 +146,14 @@ void wxAbout::showWindowAt(gint x, gint y)
 }
 void wxAbout::hideWindow()
 {
-	hide_all();
+	hide();
 }
 
 
 bool wxAbout::on_key_press_event(GdkEventKey* event)
 {
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
-	if (event->keyval == GDK_Escape)
+	if (event->keyval == GDK_KEY_Escape)
 	{
 		this->hideWindow();
 	}

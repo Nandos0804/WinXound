@@ -18,6 +18,7 @@
  */
 
 #include <gtkmm.h>
+#include "gtkmm_compat.h"
 
 class wxAbout;
 class wxEditor;
@@ -215,8 +216,8 @@ private:
 	wxEditor* ActiveEditor();
 	void setMenuSignals(Glib::RefPtr<Gtk::Builder> builder);
 	bool on_main_quit_signal();
-	void on_notebookEditor_switch_page(GtkNotebookPage* page, guint page_num);
-	void on_notebookCompiler_switch_page(GtkNotebookPage* page, guint page_num);
+	void on_notebookEditor_switch_page(Gtk::Widget* page, guint page_num);
+	void on_notebookCompiler_switch_page(Gtk::Widget* page, guint page_num);
 	void on_notebookCompiler_resize(Gdk::Rectangle& rect);
 	//bool on_wxMainWindow_configure_event(GdkEventConfigure* event);
 	void CreateNotebookCompilerTabs();

@@ -18,7 +18,7 @@
  */
 
 #include <gtkmm.h>
-#include <webkit/webkit.h>
+#include <webkit2/webkit2.h>
 
 
 #ifndef _WX_BROWSER_H_
@@ -36,9 +36,9 @@ public:
 	static void on_buttonBackward_clicked(GtkWidget *widget, gpointer data);
 	static void on_buttonForward_clicked(GtkWidget *widget, gpointer data);
 	static void on_buttonHome_clicked(GtkWidget *widget, gpointer data);
-	static void on_load_status(WebKitWebView  *web_view,
-	                           WebKitWebFrame *frame,
-	                           gpointer        user_data);
+	static void on_load_changed(WebKitWebView  *web_view,
+	                            WebKitLoadEvent load_event,
+	                            gpointer        user_data);
 	static void on_entry_activate(GtkWidget *widget, gpointer data);
 	static void on_buttonZoomMinus_clicked(GtkWidget *widget, gpointer data);
 	static void on_buttonZoomPlus_clicked(GtkWidget *widget, gpointer data);
@@ -82,7 +82,7 @@ protected:
 	//GtkWidget*		labelEsc;
 
 	static void on_check_resize_browser (GtkWidget      *widget,
-	                                     GtkRequisition *requisition,
+	                                     GtkAllocation  *allocation,
 	                                     gpointer        data);
 	void check_resize();
 	

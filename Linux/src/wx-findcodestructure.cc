@@ -112,7 +112,7 @@ void wxFindCodeStructure::FindStructure()
 	{
 
 		//Create the Tree model:
-		if(MyRefTreeModel != NULL)
+		if(MyRefTreeModel)
 			MyRefTreeModel.clear();	
 		MyRefTreeModel = Gtk::TreeStore::create(MyColumns);
 

@@ -61,7 +61,7 @@ wxCSoundRepository::wxCSoundRepository()
 
 	
 	//Create the Tree model:
-	if(csRefTreeModel != NULL)
+	if(csRefTreeModel)
 		csRefTreeModel.clear();	
 	csRefTreeModel = Gtk::TreeStore::create(csColumns);
 
@@ -272,9 +272,9 @@ void wxCSoundRepository::CreateNewCSoundRepository()
 		sigc::mem_fun(*this, &wxCSoundRepository::on_my_cursor_changed), false);
 
 	//SET DRAG SOURCE
-	std::list<Gtk::TargetEntry> listTargets;
-	listTargets.push_back( Gtk::TargetEntry("STRING") );
-	listTargets.push_back( Gtk::TargetEntry("text/plain") );
+	std::vector<Gtk::TargetEntry> listTargets;
+	listTargets.push_back(Gtk::TargetEntry("STRING"));
+	listTargets.push_back(Gtk::TargetEntry("text/plain"));
 	//listTargets.push_back( Gtk::TargetEntry("text/uri-list") );
 	
 	treeStructure->drag_source_set(listTargets);

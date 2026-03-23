@@ -49,7 +49,11 @@ wxIntellitip::wxIntellitip()
 	//GdkColor color;
 	//Yellow: FromArgb(255, 255, 220); #ffffdd
 	//Grey: FromArgb(230, 230, 230); #e6e6e6
+#ifdef WINXOUND_MODERN_DEPS
+	override_background_color(Gdk::RGBA("#ffffdd"));
+#else
 	this->modify_bg(Gtk::STATE_NORMAL, Gdk::Color("#ffffdd"));
+#endif
 
 	//set_border_width(2);
 	add(*vbox);

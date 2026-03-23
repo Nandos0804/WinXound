@@ -18,7 +18,7 @@
  */
 
 #include <gtkmm.h>
-
+#include "gtkmm_compat.h"
 
 #include "../scintilla/Scintilla.h"
 #include "../scintilla/SciLexer.h"

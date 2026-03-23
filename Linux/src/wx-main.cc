@@ -587,7 +587,7 @@ void wxMain::AddRecentFilesToMenu(const gchar* filename)
 
 
 
-void wxMain::on_notebookEditor_switch_page(GtkNotebookPage* page, guint page_num)
+void wxMain::on_notebookEditor_switch_page(Gtk::Widget* page, guint page_num)
 {
 	//std::cout << "SWITCH PAGE" << std::endl;
 	if(ActiveEditor() == NULL) return;
@@ -603,7 +603,7 @@ void wxMain::on_notebookEditor_switch_page(GtkNotebookPage* page, guint page_num
 	ActiveEditor()->SetFocus();	
 }
 
-void wxMain::on_notebookCompiler_switch_page(GtkNotebookPage* page, guint page_num)
+void wxMain::on_notebookCompiler_switch_page(Gtk::Widget* page, guint page_num)
 {
 	if(isDragAndDrop)
 	{
@@ -1605,7 +1605,8 @@ void wxMain::on_menuitemSaveAll_Clicked()
 
 			gint oldIndex = notebookCode->get_current_page();
 			for(int i = 0; i < notebookCode->get_n_pages(); i++)
-			{				notebookCode->set_current_page(i);
+			{
+				notebookCode->set_current_page(i);
 				this->on_menuitemSave_Clicked();
 			}
 			notebookCode->set_current_page(oldIndex);
@@ -5792,7 +5793,7 @@ void wxMain::SetHighlightLanguage(wxEditor* editor, bool refresh)
 	         Glib::str_has_suffix(filename.lowercase(),".sco"))
 	{
 		//CSound syntax
-		editor->textEditor->setHighlight("winxound");
+		editor->textEditor->setHighlight("csound");
 		editor->ConfigureEditorForCSound(Opcodes, mRepository->GetUdoOpcodesList());
 	}
 	else

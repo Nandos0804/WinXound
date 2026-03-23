@@ -441,7 +441,7 @@ void wxCabbageRepository::on_rep_cursor_changed()
 		if(category == "Instructions.udo")
 			SSM(textView, SCI_SETLEXERLANGUAGE, 0, (sptr_t)"none");
 		else
-			SSM(textView, SCI_SETLEXERLANGUAGE, 0, (sptr_t)"winxound");
+			SSM(textView, SCI_SETLEXERLANGUAGE, 0, (sptr_t)"csound");
 		//SSM(textView, SCI_COLOURISE, 0, -1);
 	}
 

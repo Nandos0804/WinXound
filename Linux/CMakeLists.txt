@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 project(WinXoundLinux LANGUAGES C CXX)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(PkgConfig REQUIRED)
@@ -84,16 +84,28 @@ file(GLOB SCINTILLA_CORE_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/scintilla/src/*.cxx"
 )
 
+file(GLOB SCINTILLA_LEXLIB_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/scintilla/lexlib/*.cxx"
+)
+
+file(GLOB SCINTILLA_LEXER_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/scintilla/lexers/*.cxx"
+)
+
 add_library(scintilla STATIC
     ${SCINTILLA_CXX_SOURCES}
     ${SCINTILLA_C_SOURCES}
     ${SCINTILLA_CORE_SOURCES}
+    ${SCINTILLA_LEXLIB_SOURCES}
+    ${SCINTILLA_LEXER_SOURCES}
 )
 
 target_include_directories(scintilla
     PRIVATE
         ${GTK_FOR_SCINTILLA_INCLUDE_DIRS}
         ${CMAKE_CURRENT_SOURCE_DIR}/scintilla/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/scintilla/lexlib
+        ${CMAKE_CURRENT_SOURCE_DIR}/scintilla/lexers
         ${CMAKE_CURRENT_SOURCE_DIR}/scintilla/src
 )
 
@@ -112,6 +124,11 @@ target_link_libraries(scintilla PRIVATE ${GTK_FOR_SCINTILLA_LIBRARIES})
 
 file(GLOB WINXOUND_APP_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cc"
+)
+
+list(REMOVE_ITEM WINXOUND_APP_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/wx-cabbage.cc"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/wx-cabbagerepository.cc"
 )
 
 add_executable(winxound ${WINXOUND_APP_SOURCES})
@@ -138,6 +155,7 @@ target_compile_options(winxound
 )
 
 target_compile_definitions(winxound PRIVATE GTK SCI_LEXER)
+target_compile_definitions(winxound PRIVATE "PACKAGE_DATA_DIR=\"${STANDALONE_DIR}/src\"")
 if(WINXOUND_SELECTED_PROFILE STREQUAL "modern")
     target_compile_definitions(winxound PRIVATE WINXOUND_MODERN_DEPS=1)
 else()

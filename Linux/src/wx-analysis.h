@@ -60,7 +60,7 @@ public:
 	void on_buttonOutput_Clicked();
 	void on_buttonClear_Clicked();
 	void on_buttonReset_Clicked();
-	void on_notebook1_switch_page(GtkNotebookPage* page, guint page_num);
+	void on_notebook1_switch_page(Gtk::Widget* page, guint page_num);
 
 	Gtk::Window*		analysisWindow;
 	Gtk::SpinButton*	spinbuttonLineNumber;

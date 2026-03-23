@@ -272,11 +272,11 @@ bool wxEditor::CreateNewEditor()
 
 	g_signal_connect(textEditor->getPrimaryView(), 
 	                 SCINTILLA_NOTIFY, 
-	                 GtkSignalFunc(&wxEditor::on_SCI_NOTIFY),
+	                 G_CALLBACK(&wxEditor::on_SCI_NOTIFY),
 	                 this);
 	g_signal_connect(textEditor->getSecondaryView(), 
 	                 SCINTILLA_NOTIFY, 
-	                 GtkSignalFunc(&wxEditor::on_SCI_NOTIFY),
+	                 G_CALLBACK(&wxEditor::on_SCI_NOTIFY),
 	                 this);
 
 
@@ -354,14 +354,14 @@ void wxEditor::on_toolbuttonBrowseOrcSco_Clicked()
 		Glib::str_has_suffix(FileName.lowercase(),".orc") ? "*.sco" : "*.orc";
 	
 	//Add filters, so that only certain file types can be selected:
-	Gtk::FileFilter filter_csound_files;
-	filter_csound_files.set_name("CSound files");
-	filter_csound_files.add_pattern(extension);
+	Glib::RefPtr<Gtk::FileFilter> filter_csound_files = Gtk::FileFilter::create();
+	filter_csound_files->set_name("CSound files");
+	filter_csound_files->add_pattern(extension);
 	dialog.add_filter(filter_csound_files);
 
-	Gtk::FileFilter filter_any;
-	filter_any.set_name("Any files");
-	filter_any.add_pattern("*");
+	Glib::RefPtr<Gtk::FileFilter> filter_any = Gtk::FileFilter::create();
+	filter_any->set_name("Any files");
+	filter_any->add_pattern("*");
 	dialog.add_filter(filter_any);
 
 	//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
@@ -420,14 +420,14 @@ bool wxEditor::on_editor_key_press_before(GdkEventKey* event)
 {
 	
 	if(textEditor->AutocActive() && 
-	   event->keyval == GDK_Tab)
+	   event->keyval == GDK_KEY_Tab)
 	{
 		textEditor->AutocComplete();
 		textEditor->AddText("\t");
 		return true;
 	}
 	else if(textEditor->AutocActive() && 
-	        event->keyval == GDK_Return &&
+	        event->keyval == GDK_KEY_Return &&
 	        event->state == GDK_SHIFT_MASK)
 	{
 		//Raise event for Synopsis insertion
@@ -1464,7 +1464,7 @@ void wxEditor::RefreshListBoxBookmarks()
 			//ListBoxBookmarks.Items.Add(String.Format("{0:G}", mIndex) + ". " + mText);
 			mText.insert(0, 
 			             Glib::ustring::compose("%1. ", wxGLOBAL->IntToString(mIndex)));
-			listBoxBookmarks->append_text(ParseLine(mText));
+			listBoxBookmarks->append(ParseLine(mText));
 			CurLine = mBookLine + 1;
 
 		}while (true);
