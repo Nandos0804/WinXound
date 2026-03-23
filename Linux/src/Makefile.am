@@ -1,7 +1,5 @@
 ## Process this file with automake to produce Makefile.in
 
-## Created by Anjuta
-
 INCLUDES = -I ../scintilla
 INCLUDEDIRS = -I ../scintilla -I ../src
 

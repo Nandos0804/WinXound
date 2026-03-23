@@ -11,7 +11,7 @@ The final runnable app is assembled with `make standalone` into the `Linux/WinXo
 
 ## Projects and Layout
 
-- `configure` and `configure.ac`: autotools configure entry points.
+- `configure.ac`: autotools configure source file (`configure` is generated).
 - `Makefile.am`: top-level build rules, including the `standalone` target.
 - `src/`: WinXound Gtkmm application source.
 - `scintilla/`: bundled Scintilla source used by the editor.
@@ -37,28 +37,21 @@ Notes:
 
 Build in this order:
 
-1. Run `configure`.
+1. Run `autogen.sh` (generates autotools files and runs `configure`).
 2. Run `make`.
 3. Run `make standalone`.
 4. Start the app from `Linux/WinXound/winxound`.
 
-## 1. Configure
+## 1. Generate and Configure
 
 From the repository root:
-
-```sh
-cd Linux
-./configure
-```
-
-If you need to regenerate the autotools files first, use:
 
 ```sh
 cd Linux
 ./autogen.sh
 ```
 
-Use `autogen.sh` only if you need to rebuild the configure machinery from `configure.ac`. For a normal checkout, `./configure` should be enough.
+This script regenerates autotools files from `configure.ac` and then runs `configure`.
 
 ## 2. Compile
 
@@ -117,12 +110,12 @@ These are runtime assets and should remain tracked.
 
 ## Clean Rebuild
 
-Generated Linux build outputs are ignored by git. For a clean rebuild from an already configured tree, run:
+Generated Linux build outputs are ignored by git. For a clean rebuild, run:
 
 ```sh
 cd Linux
 make distclean || true
-./configure
+./autogen.sh
 make
 make standalone
 ```
@@ -130,11 +123,22 @@ make standalone
 If you want to remove generated files manually, the main rebuildable paths are:
 
 - `Linux/autom4te.cache`
+- `Linux/aclocal.m4`
+- `Linux/configure`
+- `Linux/config.h.in`
+- `Linux/config.guess`
+- `Linux/config.sub`
+- `Linux/depcomp`
+- `Linux/install-sh`
+- `Linux/ltmain.sh`
+- `Linux/missing`
+- `Linux/Makefile.in`
 - `Linux/config.h`
 - `Linux/config.log`
 - `Linux/config.status`
 - `Linux/libtool`
 - `Linux/Makefile`
+- `Linux/src/Makefile.in`
 - `Linux/src/Makefile`
 - `Linux/src/.deps`
 - `Linux/scintilla/.deps`

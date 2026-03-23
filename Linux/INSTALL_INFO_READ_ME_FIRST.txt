@@ -62,7 +62,7 @@ WEB SITE AND CONTACTS:
 
 SOURCE CODE:
 ============
-- The source code is written in C++ using Anjuta.
+- The source code is written in C++.
 
 
 CREDITS:
