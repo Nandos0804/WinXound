@@ -308,7 +308,7 @@
                                                                                                     <rect key="frame" x="1" y="1" width="531" height="305"/>
                                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                                     <subviews>
-                                                                                                        <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="241">
+                                                                                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="241">
                                                                                                             <rect key="frame" x="0.0" y="108" width="531" height="305"/>
                                                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -351,7 +351,7 @@
                                                                                                     <rect key="frame" x="1" y="1" width="531" height="305"/>
                                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                                     <subviews>
-                                                                                                        <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="259">
+                                                                                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="259">
                                                                                                             <rect key="frame" x="0.0" y="108" width="531" height="305"/>
                                                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -394,7 +394,7 @@
                                                                                                     <rect key="frame" x="1" y="1" width="531" height="305"/>
                                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                                     <subviews>
-                                                                                                        <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="263">
+                                                                                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="263">
                                                                                                             <rect key="frame" x="0.0" y="108" width="531" height="305"/>
                                                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -437,7 +437,7 @@
                                                                                                     <rect key="frame" x="1" y="1" width="531" height="305"/>
                                                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                                                     <subviews>
-                                                                                                        <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="678">
+                                                                                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="678">
                                                                                                             <rect key="frame" x="0.0" y="108" width="531" height="305"/>
                                                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1376,7 +1376,7 @@
                                                                     <rect key="frame" x="1" y="1" width="507" height="121"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="735">
+                                                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" id="735">
                                                                             <rect key="frame" x="0.0" y="0.0" width="507" height="121"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>

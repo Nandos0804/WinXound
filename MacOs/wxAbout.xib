@@ -87,7 +87,7 @@ Credits:
                             <rect key="frame" x="0.0" y="0.0" width="220" height="17"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView wantsLayer="YES" editable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="33">
+                                <textView editable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="33">
                                     <rect key="frame" x="0.0" y="0.0" width="220" height="18"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -132,7 +132,7 @@ Credits:
                             <rect key="frame" x="0.0" y="0.0" width="351" height="17"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView wantsLayer="YES" editable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="35">
+                                <textView editable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="35">
                                     <rect key="frame" x="0.0" y="0.0" width="351" height="18"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
