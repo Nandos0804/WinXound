@@ -43,10 +43,17 @@ wxRepository::wxRepository()
 
 	//Select Instructions Node
 	Glib::RefPtr<Gtk::TreeSelection> sel = repStructure->get_selection();
-	Gtk::TreeModel::Row row = rRefTreeModel->children()[0]->children()[0];
-	if (row) sel->select(row);
-
-	on_rep_cursor_changed();
+	Gtk::TreeModel::Children roots = rRefTreeModel->children();
+	if(!roots.empty())
+	{
+		Gtk::TreeModel::Children firstChildren = roots.begin()->children();
+		if(!firstChildren.empty())
+		{
+			Gtk::TreeModel::Row row = *firstChildren.begin();
+			sel->select(row);
+			on_rep_cursor_changed();
+		}
+	}
 
 }
 
@@ -68,15 +75,15 @@ void wxRepository::UpdateUdoList()
 
 	
 	//Create the Tree model:
-	if(rRefTreeModel != NULL)
+	if(rRefTreeModel)
 		rRefTreeModel.clear();	
 	rRefTreeModel = Gtk::TreeStore::create(rColumns);
 	
 	Glib::ustring directory_path = wxGLOBAL->getRepositoryPath();
-	
-	Glib::Dir dir (directory_path);
 
 	if (Glib::file_test(directory_path, Glib::FILE_TEST_IS_DIR) == FALSE) return;
+
+	Glib::Dir dir (directory_path);
 
 
 	
@@ -98,6 +105,8 @@ void wxRepository::UpdateUdoList()
 
 	for (uint index=0; index < dirList.size(); index++)
 	{
+		if (Glib::file_test(dirList[index], Glib::FILE_TEST_IS_DIR) == FALSE) continue;
+
 		parent = *(rRefTreeModel->append());
 		parent[rColumns.category] = Glib::path_get_basename(dirList[index]);
 		parent[rColumns.name] = "NODE";
@@ -583,14 +592,16 @@ void wxRepository::SciEditSetFontsAndStyles()
 
 gint wxRepository::getColorFromString(const gchar* stringColor)
 {
-	GdkColor color;
+	GdkRGBA color;
 
-	//color range = 65535;
-	gdk_color_parse (stringColor, &color);
+	if(!gdk_rgba_parse(&color, stringColor))
+	{
+		return 0;
+	}
 
-	int r = color.red * 255 / 65535;
-	int g = color.green * 255 / 65535;
-	int b = color.blue * 255 / 65535;
+	int r = static_cast<int>(color.red * 255.0);
+	int g = static_cast<int>(color.green * 255.0);
+	int b = static_cast<int>(color.blue * 255.0);
 	
 	return r | (g << 8) | (b << 16);
 	

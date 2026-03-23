@@ -265,6 +265,7 @@ wxMain::wxMain(int argc, char *argv[])
 	////////////////////////////////////////////////////////////////////////////
 	//LOAD SETTINGS AND INITIALIZE THE VARIABLES (ALSO ENVIRONMENT VARIABLES)
 	//wxGLOBAL->ShowMessageBox(wxGLOBAL->getSettingsPath().c_str(), "SETTINGS", Gtk::BUTTONS_OK);
+	wxGLOBAL->CheckWinXoundDirectories();
 	wxSETTINGS->LoadSettings(false);	
 	this->on_menuitemScreenPositionRESET_Clicked(); //set main window position
 

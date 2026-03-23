@@ -90,8 +90,8 @@ void wxTextEditor::CreateNewTextEditor(void)
    	scintilla_set_id(textView1, 0);
 	scintilla_set_id(textView2, 1);
 
-   	gtk_widget_set_usize(GTK_WIDGET(textView1), 500, 100);
-	gtk_widget_set_usize(GTK_WIDGET(textView2), 500, 100);
+	   	gtk_widget_set_size_request(GTK_WIDGET(textView1), 500, 100);
+	gtk_widget_set_size_request(GTK_WIDGET(textView2), 500, 100);
 	
 	//Set Scintilla DocPointer for secondary view equal to first view
 	SSM(textView2, SCI_SETDOCPOINTER, 0, SSM(textView1, SCI_GETDOCPOINTER, 0, 0));
@@ -818,8 +818,8 @@ void wxTextEditor::Split()
 	
 
 	//Add reference to textView widgets before remove them
-	g_object_ref(GTK_OBJECT(textView1));
-	g_object_ref(GTK_OBJECT(textView2));
+	g_object_ref(textView1);
+	g_object_ref(textView2);
 
 	remove(); //remove current View
 	Gtk::VPaned* VPane = Gtk::manage(new Gtk::VPaned());
@@ -842,8 +842,8 @@ void wxTextEditor::RemoveSplit()	//OK
 {	
 	if(this->getIsSplitted() == false) return;
 
-	g_object_ref(GTK_OBJECT(textView1));
-	g_object_ref(GTK_OBJECT(textView2));
+	g_object_ref(textView1);
+	g_object_ref(textView2);
 	
 	gtk_widget_hide(GTK_WIDGET(textView2));
 
@@ -869,8 +869,8 @@ void wxTextEditor::SplitVertical()
 		this->RemoveSplit();
 
 	//Add reference to textView widgets before remove them
-	g_object_ref(GTK_OBJECT(textView1));
-	g_object_ref(GTK_OBJECT(textView2));
+	g_object_ref(textView1);
+	g_object_ref(textView2);
 
 	remove(); //remove current View
 	Gtk::HPaned* HPane = Gtk::manage(new Gtk::HPaned());

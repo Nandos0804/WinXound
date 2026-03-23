@@ -74,6 +74,7 @@ message(STATUS "WinXound dependency profile: ${WINXOUND_SELECTED_PROFILE}")
 set(SCINTILLA_CXX_SOURCES
     scintilla/gtk/PlatGTK.cxx
     scintilla/gtk/ScintillaGTK.cxx
+    scintilla/gtk/ScintillaGTKAccessible.cxx
 )
 
 set(SCINTILLA_C_SOURCES
@@ -155,7 +156,7 @@ target_compile_options(winxound
 )
 
 target_compile_definitions(winxound PRIVATE GTK SCI_LEXER)
-target_compile_definitions(winxound PRIVATE "PACKAGE_DATA_DIR=\"${STANDALONE_DIR}/src\"")
+target_compile_definitions(winxound PRIVATE "PACKAGE_DATA_DIR=\"${CMAKE_CURRENT_SOURCE_DIR}\"")
 if(WINXOUND_SELECTED_PROFILE STREQUAL "modern")
     target_compile_definitions(winxound PRIVATE WINXOUND_MODERN_DEPS=1)
 else()

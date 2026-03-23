@@ -42,10 +42,17 @@ wxCabbageRepository::wxCabbageRepository()
 
 	//Select Instructions Node
 	Glib::RefPtr<Gtk::TreeSelection> sel = repStructure->get_selection();
-	Gtk::TreeModel::Row row = rRefTreeModel->children()[0]->children()[0];
-	if (row) sel->select(row);
-
-	on_rep_cursor_changed();
+	Gtk::TreeModel::Children roots = rRefTreeModel->children();
+	if(!roots.empty())
+	{
+		Gtk::TreeModel::Children firstChildren = roots.begin()->children();
+		if(!firstChildren.empty())
+		{
+			Gtk::TreeModel::Row row = *firstChildren.begin();
+			sel->select(row);
+			on_rep_cursor_changed();
+		}
+	}
 
 }
 
@@ -67,15 +74,15 @@ void wxCabbageRepository::UpdateUdoList()
 
 	
 	//Create the Tree model:
-	if(rRefTreeModel != NULL)
+	if(rRefTreeModel)
 		rRefTreeModel.clear();	
 	rRefTreeModel = Gtk::TreeStore::create(rColumns);
 	
 	Glib::ustring directory_path = wxGLOBAL->getCabbageRepositoryPath();
-	
-	Glib::Dir dir (directory_path);
 
 	if (Glib::file_test(directory_path, Glib::FILE_TEST_IS_DIR) == FALSE) return;
+
+	Glib::Dir dir (directory_path);
 
 
 
@@ -95,6 +102,8 @@ void wxCabbageRepository::UpdateUdoList()
 
 	for (uint index=0; index < dirList.size(); index++)
 	{
+		if (Glib::file_test(dirList[index], Glib::FILE_TEST_IS_DIR) == FALSE) continue;
+
 		parent = *(rRefTreeModel->append());
 		parent[rColumns.category] = Glib::path_get_basename(dirList[index]);
 		parent[rColumns.name] = "NODE";
@@ -195,7 +204,7 @@ void wxCabbageRepository::CreateNewRepository()
 	//TEXTVIEW
 	textView = SCINTILLA(scintilla_new());
    	scintilla_set_id(textView, 0);
-   	gtk_widget_set_usize(GTK_WIDGET(textView), 300, 100);
+	   	gtk_widget_set_size_request(GTK_WIDGET(textView), 300, 100);
 	//SET CODEPAGE TO UTF8
 	SSM(textView, SCI_SETCODEPAGE, SC_CP_UTF8, 0);
 	textView_Widget = Glib::wrap(GTK_WIDGET(textView));

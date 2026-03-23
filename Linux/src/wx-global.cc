@@ -220,9 +220,13 @@ Glib::ustring wxGlobal::getIconsPath()
 
 	if(!Glib::file_test(iconPath, Glib::FILE_TEST_EXISTS))
 	{
-		//return "/usr/local/share/winxound/src";
-		iconPath = PACKAGE_DATA_DIR;
-		iconPath.append("/winxound/src");
+		Glib::ustring packagePath = PACKAGE_DATA_DIR;
+		if(Glib::file_test(packagePath + "/src", Glib::FILE_TEST_EXISTS))
+			iconPath = packagePath + "/src";
+		else if(Glib::file_test(packagePath + "/WinXound/src", Glib::FILE_TEST_EXISTS))
+			iconPath = packagePath + "/WinXound/src";
+		else
+			iconPath = packagePath + "/winxound/src";
 	}
 	
 	//DebugPrint("ICON_PATH",iconPath.c_str());
@@ -274,9 +278,16 @@ Glib::ustring wxGlobal::getHelpPath()
 
 	if(!Glib::file_test(helpPath, Glib::FILE_TEST_EXISTS))
 	{
-		//return "/home/teto/winxound/Help";
-		helpPath = getHomePath();
-		helpPath.append("/winxound/Help");
+		Glib::ustring packagePath = PACKAGE_DATA_DIR;
+		if(Glib::file_test(packagePath + "/Help", Glib::FILE_TEST_EXISTS))
+			helpPath = packagePath + "/Help";
+		else if(Glib::file_test(packagePath + "/WinXound/Help", Glib::FILE_TEST_EXISTS))
+			helpPath = packagePath + "/WinXound/Help";
+		else
+		{
+			helpPath = getHomePath();
+			helpPath.append("/winxound/Help");
+		}
 	}
 	
 	//DebugPrint("HELP_PATH", helpPath.c_str());
@@ -292,9 +303,13 @@ Glib::ustring wxGlobal::getSrcPath()
 
 	if(!Glib::file_test(srcPath, Glib::FILE_TEST_EXISTS))
 	{
-		//return "/usr/local/share/winxound/src";
-		srcPath = PACKAGE_DATA_DIR;
-		srcPath.append("/winxound/src");
+		Glib::ustring packagePath = PACKAGE_DATA_DIR;
+		if(Glib::file_test(packagePath + "/src", Glib::FILE_TEST_EXISTS))
+			srcPath = packagePath + "/src";
+		else if(Glib::file_test(packagePath + "/WinXound/src", Glib::FILE_TEST_EXISTS))
+			srcPath = packagePath + "/WinXound/src";
+		else
+			srcPath = packagePath + "/winxound/src";
 	}
 	
 	//DebugPrint("SRC_PATH", srcPath.c_str());
@@ -310,9 +325,13 @@ Glib::ustring wxGlobal::getCabbagePath()
 
 	if(!Glib::file_test(cabbagePath, Glib::FILE_TEST_EXISTS))
 	{
-		//return "/usr/local/share/winxound/Cabbage";
-		cabbagePath = PACKAGE_DATA_DIR;
-		cabbagePath.append("/winxound/Cabbage");
+		Glib::ustring packagePath = PACKAGE_DATA_DIR;
+		if(Glib::file_test(packagePath + "/Cabbage", Glib::FILE_TEST_EXISTS))
+			cabbagePath = packagePath + "/Cabbage";
+		else if(Glib::file_test(packagePath + "/WinXound/Cabbage", Glib::FILE_TEST_EXISTS))
+			cabbagePath = packagePath + "/WinXound/Cabbage";
+		else
+			cabbagePath = packagePath + "/winxound/Cabbage";
 	}
 	
 	//DebugPrint("CABBAGE_PATH", cabbagePath.c_str());
