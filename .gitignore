@@ -79,5 +79,17 @@ Linux/src/Makefile
 Linux/src/Makefile.in
 Linux/scintilla/.deps/
 Linux/scintilla/bin/
+Linux/**/.libs/
+Linux/**/.deps/
+Linux/.tm_project*
+Linux/.nautilus-metafile.xml
+Linux/**/*.swp
+Linux/**/*.autosave
+Linux/**/*.pws
+Linux/**/#*#
+Linux/**/*.gladep
+Linux/**/*.la
+Linux/**/*.lo
+Linux/**/*.o
 Linux/**/*~
 Linux/**/*.bak
