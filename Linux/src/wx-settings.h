@@ -93,6 +93,8 @@ class wxSettings {
         Glib::ustring MFDIR;
         Glib::ustring INCDIR;
         Glib::ustring OPCODEDIR;
+        Glib::ustring OPCODE7DIR;
+        Glib::ustring OPCODE7DIR64;
         bool UseSFDIR;
         // Python
         Glib::ustring PythonConsolePath;

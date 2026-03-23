@@ -67,6 +67,8 @@ static pid_t vte_terminal_fork_command_compat(VteTerminal* terminal,
 	                        &err);
 	if(err != NULL)
 	{
+		std::cerr << "VTE spawn error: " << err->message << " (domain=" << g_quark_to_string(err->domain) 
+		          << ", code=" << err->code << ")" << std::endl;
 		g_error_free(err);
 		return -1;
 	}
@@ -439,28 +441,25 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 		if(wxGLOBAL->Trim(parameters).size() > 0)
 		{	
 			//parSep = g_strsplit(parameters.c_str(), " ", 0);
-			//parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
-			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " -", 0);
+			//Split on single space only, not " -"
+			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
 			
 			int length = StringLength(parSep);
 			argv = g_new(gchar*, length + 3);
 			argv[0] = g_strdup(compilerName.c_str());
 			for(int i=0; i < length; i++)
 			{
-				if(strlen(parSep[i]) > 0)
+				if(parSep[i] != NULL && strlen(parSep[i]) > 0)
 				{
-					if(i == 0) //First value
-						argv[i+1] = g_strdup(parSep[i]);
-					else
-					{
-						Glib::ustring temp = parSep[i];
-						temp.insert(0, "-");
-						argv[i+1] = g_strdup(temp.c_str());
-					}
-						
+					//Directly copy the parameter as-is (it already includes any dashes)
+					argv[i+1] = g_strdup(parSep[i]);
 				}
 				else
-					argv[i+1] = g_strdup("");
+				{
+					//Skip empty parameters
+					argv[i+1] = NULL;
+					break;
+				}
 			}
 			argv[length+1] = g_strdup(filename1.c_str());
 			argv[length+2] = NULL;
@@ -481,30 +480,25 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 		if(wxGLOBAL->Trim(parameters).size() > 0)
 		{
 			//parSep = g_strsplit(parameters.c_str(), " ", 0);
-			//parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
-			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " -", 0);
+			//Split on single space only, not " -"
+			parSep = g_strsplit(wxGLOBAL->RemoveDoubleSpaces(parameters).c_str(), " ", 0);
 			
 			int length = StringLength(parSep);
 			argv = g_new(gchar*, length + 4);
 			argv[0] = g_strdup(compilerName.c_str());
 			for(int i = 0; i < length; i++)
 			{
-				//OLD: argv[i+1] = g_strdup(parSep[i]);
-
-				if(strlen(parSep[i]) > 0)
+				//Directly copy the parameter as-is (it already includes any dashes)
+				if(parSep[i] != NULL && strlen(parSep[i]) > 0)
 				{
-					if(i == 0) //First value
-						argv[i+1] = g_strdup(parSep[i]);
-					else
-					{
-						Glib::ustring temp = parSep[i];
-						temp.insert(0, "-");
-						argv[i+1] = g_strdup(temp.c_str());
-					}
-						
+					argv[i+1] = g_strdup(parSep[i]);
 				}
 				else
-					argv[i+1] = g_strdup("");
+				{
+					//Skip empty parameters
+					argv[i+1] = NULL;
+					break;
+				}
 			}
 			argv[length+1] = g_strdup(filename1.c_str());
 			argv[length+2] = g_strdup(filename2.c_str());
@@ -526,26 +520,42 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 	//2. SET ENVIRONMENT FOR CSOUND
 	//If SFDIR is not defined or SFDIR checkbox is unchecked 
 	//we redirect the compiled soundfile to the csd file directory
-	Glib::ustring environment = "";
-	gchar** envv = NULL;
-
+	std::vector<gchar*> env_vector;
 	
-	//if(compilerName.find("csound") != Glib::ustring::npos)
+	//Build SFDIR
+	Glib::ustring sfdir_str;
+	if (wxSETTINGS->Directory.SFDIR == "" ||
+	    wxSETTINGS->Directory.UseSFDIR == false)
 	{
-		Glib::ustring divider = "*?*";
-		if (wxSETTINGS->Directory.SFDIR == "" ||
-		    wxSETTINGS->Directory.UseSFDIR == false)
-		{
-			environment = "SFDIR=";
-			environment.append(Glib::path_get_dirname(filename1));
-		}
-		else
-		{
-			environment = wxSETTINGS->Directory.SFDIR;
-		}
-
-		envv = g_strsplit(environment.c_str(), divider.c_str(), 0);
+		sfdir_str = "SFDIR=";
+		sfdir_str.append(Glib::path_get_dirname(filename1));
 	}
+	else
+	{
+		sfdir_str = "SFDIR=";
+		sfdir_str.append(wxSETTINGS->Directory.SFDIR);
+	}
+	env_vector.push_back(g_strdup(sfdir_str.c_str()));
+	
+	//Add OPCODE7DIR for Csound 7 (if configured)
+	if (!wxSETTINGS->Directory.OPCODE7DIR.empty())
+	{
+		Glib::ustring opcode7dir_str = "OPCODE7DIR=";
+		opcode7dir_str.append(wxSETTINGS->Directory.OPCODE7DIR);
+		env_vector.push_back(g_strdup(opcode7dir_str.c_str()));
+	}
+	
+	//Add OPCODE7DIR64 for Csound 7 (if configured)
+	if (!wxSETTINGS->Directory.OPCODE7DIR64.empty())
+	{
+		Glib::ustring opcode7dir64_str = "OPCODE7DIR64=";
+		opcode7dir64_str.append(wxSETTINGS->Directory.OPCODE7DIR64);
+		env_vector.push_back(g_strdup(opcode7dir64_str.c_str()));
+	}
+	
+	//Terminate the environment array
+	env_vector.push_back(NULL);
+	gchar** envv = env_vector.data();
 	
 
 	
@@ -592,7 +602,12 @@ void wxTerminal::Compile(Glib::ustring compilerName,
 	//5. Free array pointers
 	g_strfreev(parSep);
 	g_strfreev(argv);
-	g_strfreev(envv);
+	//Free environment strings (we allocated them with g_strdup)
+	for(gchar* env_str : env_vector)
+	{
+		if(env_str != NULL)
+			g_free(env_str);
+	}
 }
 
 
@@ -679,6 +694,10 @@ void wxTerminal::CompilerCompleted()
 {
 	//wxGLOBAL->DebugPrint("wxTerminal::CompilerCompleted");
 	
+	// Add safety checks to prevent crashes during shutdown or destruction
+	if(!vte || !buttonStop || !buttonPause || !buttonPanic || !buttonSave)
+		return;
+	
 	gtk_widget_set_sensitive (GTK_WIDGET (buttonStop), FALSE);
 	gtk_widget_set_sensitive (GTK_WIDGET (buttonPause), FALSE);
 	gtk_widget_set_sensitive (GTK_WIDGET (buttonPanic), FALSE);
@@ -688,59 +707,58 @@ void wxTerminal::CompilerCompleted()
 
 
 	//Refresh vte (sometimes it doesn't paint/redraw correctly)
-	gtk_widget_draw(GTK_WIDGET(vte), NULL);	
-	//Needed to refresh scrollbar!!!
-	vte_terminal_fork_command(VTE_TERMINAL(vte), 
-	                          NULL, NULL, NULL, 
-	                          "/usr/bin", 
-	                          TRUE, TRUE,TRUE);
+	//Use gtk_widget_queue_draw instead of the old gtk_widget_draw which is deprecated
+	gtk_widget_queue_draw(GTK_WIDGET(vte));
 	
 	
 	//GET COMPILER TEXT
 	gchar* text = NULL;
-	try
-	{
-		//This method retrieve all the text
-		GOutputStream* os = g_memory_output_stream_new(NULL, 0, g_realloc, g_free);;
-		vte_terminal_write_contents(VTE_TERMINAL(vte),
-		                            G_OUTPUT_STREAM(os),
-		                            VTE_TERMINAL_WRITE_DEFAULT,
-		                            NULL,
-		                            NULL);
-		gpointer p = g_memory_output_stream_get_data(G_MEMORY_OUTPUT_STREAM(os));
-		text = (gchar*)p;   
-		
-		g_output_stream_close (G_OUTPUT_STREAM(os), NULL, NULL);
-
-	}
-	catch(...)
-	{
-		//This method retrieve only the visible text
-		wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Get Compiler Text 2nd method.");
+	Glib::ustring errorline = "";
+	Glib::ustring soundfile = "";
+	
+	try {
+		// Try to get text from the terminal using the async method (safer)
+		// Note: We're in a signal handler context here, so we need to be careful
 		try
 		{
+			// Use the simpler method first - vte_terminal_get_text
+			// This is safer than trying to write to a stream in a signal handler
 			text = vte_terminal_get_text(VTE_TERMINAL(vte),
 			                             NULL,
 			                             NULL,
 			                             NULL);
 		}
-		catch(...){}		
+		catch(...)
+		{
+			wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Failed to get compiler text.");
+		}
+
+		if(text != NULL)
+		{
+			try {
+				Glib::ustring compilerText = text;
+				g_free(text);
+
+				//SEARCH FOR ERROR and SOUNDFILE
+				errorline = FindError(compilerText);
+				soundfile = FindSounds(compilerText);
+			}
+			catch(...) {
+				wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Failed to parse compiler output.");
+			}
+		}
+	}
+	catch(...) {
+		wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Unexpected exception in text retrieval.");
 	}
 	
-
-	Glib::ustring errorline = "";
-	Glib::ustring soundfile = "";
-	if(text != NULL)
-	{
-		Glib::ustring compilerText = text;
-		g_free(text);
-
-		//SEARCH FOR ERROR and SOUNDFILE
-		errorline = FindError(compilerText);
-		soundfile = FindSounds(compilerText);
+	try {
+		// Emit the signal
+		m_compiler_completed.emit(errorline, soundfile);
 	}
-	
-	m_compiler_completed.emit(errorline, soundfile);
+	catch(...) {
+		wxGLOBAL->DebugPrint("CompilerCompleted", "[Warning] Failed to emit compiler_completed signal.");
+	}
 
 }
 

@@ -23,8 +23,8 @@
 #define _WX_GLOBAL_H_
 
 #define wxGLOBAL wxGlobal::getInstance()
-#define TITLE "WinXound 3.4.0"
-#define VERSION "Version 3.4.0"
+#define TITLE "WinXound 4.0.0"
+#define VERSION "Version 4.0.0"
 
 #define CABBAGE_NAME "cabbage"
 
