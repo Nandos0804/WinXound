@@ -22,12 +22,23 @@
 
 
 #include <iostream>
+#include <initializer_list>
 #include "wx-settings.h"
 #include "wx-global.h"
 
 using namespace Glib;
 
 #define MAX_RECENT_FILES 6
+
+static Glib::RefPtr<Gtk::FileFilter> make_settings_filter(const Glib::ustring& name,
+	                                                    std::initializer_list<const char*> patterns)
+{
+	Glib::RefPtr<Gtk::FileFilter> filter = Gtk::FileFilter::create();
+	filter->set_name(name);
+	for(const char* pattern : patterns)
+		filter->add_pattern(pattern);
+	return filter;
+}
 
 
 
@@ -2895,7 +2906,7 @@ void wxSettings::ApplySettings()
 bool wxSettings::on_key_press_event(GdkEventKey* event)
 {
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
-	if (event->keyval == GDK_Escape)
+	if (event->keyval == GDK_KEY_Escape)
 	{
 		on_buttonCancel_Clicked();
 	}
@@ -2988,10 +2999,7 @@ void wxSettings::on_buttonExportSettings_Clicked()
 		dialog.add_button(Gtk::Stock::CANCEL, Gtk::RESPONSE_CANCEL);
 		dialog.add_button(Gtk::Stock::SAVE, Gtk::RESPONSE_OK);
 
-		Gtk::FileFilter filter_supported_files;
-		filter_supported_files.set_name("WinXound Settings Files");
-		filter_supported_files.add_pattern("*.wxs");
-		dialog.add_filter(filter_supported_files);
+		dialog.add_filter(make_settings_filter("WinXound Settings Files", {"*.wxs"}));
 
 		//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 		if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -3018,7 +3026,8 @@ void wxSettings::on_buttonExportSettings_Clicked()
 			                         Gtk::BUTTONS_OK);
 		}
 		else
-		{			wxGLOBAL->ShowMessageBox(settingsWindow,
+		{
+			wxGLOBAL->ShowMessageBox(settingsWindow,
 			                         "An error has occurred during export!",
 			                         "WinXound Information",
 			                         Gtk::BUTTONS_OK);
@@ -3049,10 +3058,7 @@ void wxSettings::on_buttonImportSettings_Clicked()
 		dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
 		//Add filters, so that only certain file types can be selected:
-		Gtk::FileFilter filter_supported_files;
-		filter_supported_files.set_name("WinXound Settings Files");
-		filter_supported_files.add_pattern("*.wxs");
-		dialog.add_filter(filter_supported_files);
+		dialog.add_filter(make_settings_filter("WinXound Settings Files", {"*.wxs"}));
 
 		//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 		if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -3203,104 +3209,56 @@ void wxSettings::on_buttonBrowse_Clicked(Glib::ustring name)
 		dialog.set_current_folder("/usr/bin");
 
 	//Add filters
-	Gtk::FileFilter filter_supported_files;
-	Gtk::FileFilter filter_any;
 	if(name == "CSoundExecutable")
 	{
-		filter_supported_files.set_name("CSound Binary");
-		filter_supported_files.add_pattern("csound");			
-
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_supported_files);
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("CSound Binary", {"csound"}));
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "CSoundHelp")
 	{
-		filter_supported_files.set_name("CSound Help");
-		filter_supported_files.add_pattern("index.html");			
-
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_supported_files);
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("CSound Help", {"index.html"}));
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "CSoundExternalGUI")
 	{
-		filter_supported_files.set_name("External GUI binary");
-		filter_supported_files.add_pattern("qutecsound");			
-
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_supported_files);
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("External GUI binary", {"qutecsound"}));
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "WavePlayer")
 	{		
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "WaveEditor")
 	{
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "Calculator")
 	{
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "PythonCompiler")
 	{
-		filter_supported_files.set_name("Python binary");
-		filter_supported_files.add_pattern("python");			
-
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_supported_files);
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Python binary", {"python"}));
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "PythonExternalGUI")
 	{
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "LuaCompiler")
 	{
 		//filter_supported_files.set_name("Lua binary");
 		//filter_supported_files.add_pattern("lua");			
-
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
 		//dialog.add_filter(filter_supported_files);
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "LuaExternalGUI")
 	{
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 	else if(name == "CabbageExe")
 	{
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_settings_filter("Any files", {"*"}));
 	}
 
 	////dialog.add_filter(filter_supported_files);
@@ -4057,11 +4015,10 @@ bool wxSettings::on_syntax_colors_Clicked(GdkEventButton* event)
 
 		//std::cout << name << "Title: " << col->get_title() << std::endl;
 
-		std::vector<int> indexes = path.get_indices();
 		if(col->get_title() == "Fore") 
-			PickColor(indexes[0], pixbufFORE, language);
+			PickColor(path[0], pixbufFORE, language);
 		else if(col->get_title() == "Back") 
-			PickColor(indexes[0], pixbufBACK, language);
+			PickColor(path[0], pixbufBACK, language);
 
 	}
 	
@@ -4085,7 +4042,7 @@ void wxSettings::PickColor(gint index, Glib::RefPtr<Gdk::Pixbuf> pixbuf, Glib::u
 	Gtk::ColorSelectionDialog dialog("Pick color");
     dialog.set_transient_for(*settingsWindow);
 
-    Gtk::ColorSelection* colorsel = dialog.get_colorsel();
+	Gtk::ColorSelection* colorsel = dialog.get_color_selection();
 
 	
 	//Retrieve old color

@@ -25,6 +25,58 @@
 //#include <sys/wait.h> 
 
 #include <fstream>
+#include <vector>
+
+#ifdef WINXOUND_MODERN_DEPS
+static pid_t vte_terminal_fork_command_compat(VteTerminal* terminal,
+	                                          const char* command,
+	                                          char** argv,
+	                                          char** envv,
+	                                          const char* directory,
+	                                          gboolean /*lastlog*/,
+	                                          gboolean /*utmp*/,
+	                                          gboolean /*wtmp*/)
+{
+	const char* spawn_dir = directory ? directory : Glib::get_home_dir().c_str();
+	const char* spawn_cmd = command ? command : g_getenv("SHELL");
+	if(spawn_cmd == NULL)
+		spawn_cmd = "/bin/sh";
+
+	std::vector<char*> local_argv;
+	if(argv != NULL)
+	{
+		for(int i = 0; argv[i] != NULL; ++i)
+			local_argv.push_back(argv[i]);
+	}
+	if(local_argv.empty())
+		local_argv.push_back(const_cast<char*>(spawn_cmd));
+	local_argv.push_back(NULL);
+
+	GPid child_pid = -1;
+	GError* err = NULL;
+	vte_terminal_spawn_sync(terminal,
+	                        VTE_PTY_DEFAULT,
+	                        spawn_dir,
+	                        local_argv.data(),
+	                        envv,
+	                        G_SPAWN_SEARCH_PATH,
+	                        NULL,
+	                        NULL,
+	                        &child_pid,
+	                        NULL,
+	                        &err);
+	if(err != NULL)
+	{
+		g_error_free(err);
+		return -1;
+	}
+	return child_pid;
+}
+
+#define vte_terminal_fork_command vte_terminal_fork_command_compat
+#define vte_terminal_write_contents vte_terminal_write_contents_sync
+#define VTE_TERMINAL_WRITE_DEFAULT VTE_WRITE_DEFAULT
+#endif
 
 
 wxTerminal::wxTerminal(bool isCompiler)  	
@@ -93,9 +145,10 @@ bool wxTerminal::CreateNewCompiler()
 	//GtkWidget* scrollbar;
 	//GtkAdjustment* adj = GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment);
 	//gtk_adjustment_set_lower(GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment), 1);
-	scrollbar = gtk_vscrollbar_new(GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment));
-	GTK_WIDGET_UNSET_FLAGS(scrollbar, GTK_CAN_FOCUS);
-	GTK_WIDGET_UNSET_FLAGS(vte, GTK_CAN_FOCUS);
+	scrollbar = gtk_scrollbar_new(GTK_ORIENTATION_VERTICAL,
+	                              gtk_scrollable_get_vadjustment(GTK_SCROLLABLE(vte)));
+	gtk_widget_set_can_focus(scrollbar, FALSE);
+	gtk_widget_set_can_focus(vte, FALSE);
 	//GTK_WIDGET_SET_FLAGS(vte, GTK_CAN_FOCUS);
 
 	/* set the default widget size first to prevent VTE expanding too much,
@@ -103,8 +156,8 @@ bool wxTerminal::CreateNewCompiler()
 	gtk_widget_set_size_request(GTK_WIDGET(vte), 10, 10);
 	vte_terminal_set_size(VTE_TERMINAL(vte), 30, 1);	
 
-	GtkWidget* hbox = gtk_hbox_new(FALSE, 1);
-	GtkWidget* vbox = gtk_vbox_new(FALSE, 1);
+	GtkWidget* hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 1);
+	GtkWidget* vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	
 	buttonStop = gtk_button_new_with_label("Stop (Esc)");
 	buttonPause = gtk_button_new_with_label("Pause");
@@ -114,9 +167,9 @@ bool wxTerminal::CreateNewCompiler()
 	gtk_widget_set_size_request(GTK_WIDGET(buttonPause), -1, 28);
 	gtk_widget_set_size_request(GTK_WIDGET(buttonPanic), -1, 28);
 	gtk_widget_set_size_request(GTK_WIDGET(buttonSave), -1, 28);
-	GTK_WIDGET_UNSET_FLAGS(buttonPanic, GTK_CAN_FOCUS);
+	gtk_widget_set_can_focus(buttonPanic, FALSE);
 	
-	GtkWidget* vboxButtons = gtk_vbox_new(FALSE, 1);
+	GtkWidget* vboxButtons = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	gtk_box_pack_start(GTK_BOX(vboxButtons), buttonStop, FALSE, FALSE, 0);
 	gtk_box_pack_start(GTK_BOX(vboxButtons), buttonPause, FALSE, FALSE, 0);
 	gtk_box_pack_start(GTK_BOX(vboxButtons), gtk_label_new(""), FALSE, FALSE, 0);
@@ -135,7 +188,7 @@ bool wxTerminal::CreateNewCompiler()
 	gtk_box_pack_start(GTK_BOX(hbox), scrollbar, FALSE, FALSE, 0);
 
 
-	GtkWidget* preframe = gtk_vbox_new(FALSE, 1);
+	GtkWidget* preframe = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	GtkWidget* minilabel = gtk_label_new("");
 	gtk_widget_set_size_request(GTK_WIDGET(minilabel), 0, 1);
 	gtk_box_pack_start(GTK_BOX(preframe), 
@@ -207,7 +260,7 @@ bool wxTerminal::CreateNewCompiler()
 }
 
 void  wxTerminal::on_check_resize (GtkWidget      *widget,
-                                   GtkRequisition *requisition,
+								   GtkAllocation  *allocation,
                                    gpointer        data) 
 {
 	wxTerminal* _this = reinterpret_cast<wxTerminal*>(data);
@@ -240,8 +293,9 @@ bool wxTerminal::CreateNewTerminal()
 	GtkWidget *hbox; //, *frame;
 	vte = vte_terminal_new();
 	
-	scrollbar = gtk_vscrollbar_new(GTK_ADJUSTMENT(VTE_TERMINAL(vte)->adjustment));
-	GTK_WIDGET_UNSET_FLAGS(scrollbar, GTK_CAN_FOCUS);
+	scrollbar = gtk_scrollbar_new(GTK_ORIENTATION_VERTICAL,
+	                              gtk_scrollable_get_vadjustment(GTK_SCROLLABLE(vte)));
+	gtk_widget_set_can_focus(scrollbar, FALSE);
 	/* set the default widget size first to prevent VTE expanding too much,
 	 * sometimes causing the hscrollbar to be too big or out of view. */
 	gtk_widget_set_size_request(GTK_WIDGET(vte), 10, 10);
@@ -249,12 +303,12 @@ bool wxTerminal::CreateNewTerminal()
 
 	//frame = gtk_frame_new(NULL);
 	frame = gtk_event_box_new();
-	hbox = gtk_hbox_new(FALSE, 1);
+	hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 1);
 	gtk_box_pack_start(GTK_BOX(hbox), vte, TRUE, TRUE, 0);
 	gtk_box_pack_start(GTK_BOX(hbox), scrollbar, FALSE, FALSE, 0);
 
 	
-	GtkWidget* preframe = gtk_vbox_new(FALSE, 1);
+	GtkWidget* preframe = gtk_box_new(GTK_ORIENTATION_VERTICAL, 1);
 	GtkWidget* minilabel = gtk_label_new("");
 	gtk_widget_set_size_request(GTK_WIDGET(minilabel), 0, 1);
 	gtk_box_pack_start(GTK_BOX(preframe), 
@@ -578,10 +632,8 @@ void wxTerminal::ConfigureTerminalForCompiler()
 	vte_terminal_set_cursor_blink_mode (VTE_TERMINAL(vte), VTE_CURSOR_BLINK_SYSTEM);
 
 	
-	GdkColor colour;
-	colour.red = 65535;
-	colour.green = 65535;
-	colour.blue = 65535;
+	GdkRGBA colour;
+	gdk_rgba_parse(&colour, "#ffffff");
 	vte_terminal_set_color_foreground (VTE_TERMINAL(vte), &colour);
 
 	//vte_terminal_set_colors (term, foreground, background, NULL, 0);
@@ -909,7 +961,12 @@ void wxTerminal::SetCompilerFont(Glib::ustring name, gint size)
 		Glib::ustring font = name;
 		font.append(" ");
 		font.append(wxGLOBAL->IntToString(size));
-		vte_terminal_set_font_from_string(VTE_TERMINAL(vte), font.c_str());
+		PangoFontDescription* pfd = pango_font_description_from_string(font.c_str());
+		if(pfd != NULL)
+		{
+			vte_terminal_set_font(VTE_TERMINAL(vte), pfd);
+			pango_font_description_free(pfd);
+		}
 	}			
 }
 

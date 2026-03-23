@@ -20,6 +20,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 
 
@@ -178,7 +179,7 @@ void wxRepository::CreateNewRepository()
 		sigc::mem_fun(*this, &wxRepository::on_rep_cursor_changed), false);
 
 	//SET DRAG SOURCE
-	std::list<Gtk::TargetEntry> listTargets;
+	std::vector<Gtk::TargetEntry> listTargets;
 	listTargets.push_back( Gtk::TargetEntry("STRING") );
 	listTargets.push_back( Gtk::TargetEntry("text/plain") );
 	//listTargets.push_back( Gtk::TargetEntry("text/uri-list") );
@@ -208,7 +209,7 @@ void wxRepository::CreateNewRepository()
 	//TEXTVIEW
 	textView = SCINTILLA(scintilla_new());
    	scintilla_set_id(textView, 0);
-   	gtk_widget_set_usize(GTK_WIDGET(textView), 300, 100);
+	gtk_widget_set_size_request(GTK_WIDGET(textView), 300, 100);
 	//SET CODEPAGE TO UTF8
 	SSM(textView, SCI_SETCODEPAGE, SC_CP_UTF8, 0);
 	textView_Widget = Glib::wrap(GTK_WIDGET(textView));
@@ -238,7 +239,7 @@ void wxRepository::CreateNewRepository()
 
 	g_signal_connect(textView, 
 	                 SCINTILLA_NOTIFY, 
-	                 GtkSignalFunc(&wxRepository::on_SCI_NOTIFY),
+	                 G_CALLBACK(&wxRepository::on_SCI_NOTIFY),
 	                 this);
 
 
@@ -708,9 +709,9 @@ void wxRepository::Rename()
 
 	if(Glib::file_test(filename, Glib::FILE_TEST_EXISTS))
 	{
-		Gtk::Dialog dialog("Rename Udo as ...", TRUE, FALSE);
+		Gtk::Dialog dialog("Rename Udo as ...", TRUE);
 
-		Gtk::VBox* vbox = dialog.get_vbox();
+		Gtk::Box* vbox = dialog.get_content_area();
 
 
 		//FILENAME
@@ -777,18 +778,16 @@ void wxRepository::CreateTreePopupMenu()
 	Gtk::MenuItem   treeRemove;
 	*/
 
-	Gtk::Menu::MenuList& menulist = treePopupMenu.items();
+	treeRemove.set_label("Rename");
+	treeRemove.signal_activate().connect(sigc::mem_fun(*this, &wxRepository::Rename));
+	treePopupMenu.append(treeRemove);
 
-	//RENAME
-	menulist.push_back(Gtk::Menu_Helpers::MenuElem("Rename",
-		sigc::mem_fun(*this, &wxRepository::Rename)));
+	Gtk::SeparatorMenuItem* separator = Gtk::manage(new Gtk::SeparatorMenuItem());
+	treePopupMenu.append(*separator);
 
-	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
-
-	//DELETE
-	menulist.push_back(Gtk::Menu_Helpers::MenuElem("Delete",
-		sigc::mem_fun(*this, &wxRepository::Delete)));
+	treeDelete.set_label("Delete");
+	treeDelete.signal_activate().connect(sigc::mem_fun(*this, &wxRepository::Delete));
+	treePopupMenu.append(treeDelete);
 
 	treePopupMenu.show_all();
 
@@ -861,9 +860,9 @@ void wxRepository::on_drop_data_received(const Glib::RefPtr<Gdk::DragContext>& c
 void wxRepository::InsertText(Glib::ustring& text)
 {
 
-	Gtk::Dialog dialog("Save Code as ...", TRUE, FALSE);
+	Gtk::Dialog dialog("Save Code as ...", TRUE);
 
-	Gtk::VBox* vbox = dialog.get_vbox();
+	Gtk::Box* vbox = dialog.get_content_area();
 
 
 	//FILENAME
@@ -896,7 +895,7 @@ void wxRepository::InsertText(Glib::ustring& text)
 
 	for (uint index=0; index < dirList.size(); index++)
 	{
-		listboxNodes->append_text(dirList[index]);
+		listboxNodes->append(dirList[index]);
 	}
 
 	//Select First Node

@@ -186,3 +186,21 @@ add_custom_target(standalone
     DEPENDS winxound
     VERBATIM
 )
+
+find_program(CLANG_FORMAT_BIN NAMES clang-format)
+
+if(CLANG_FORMAT_BIN)
+    add_custom_target(format
+        COMMAND "${CMAKE_CURRENT_SOURCE_DIR}/scripts/format.sh"
+        WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
+        VERBATIM
+    )
+
+    add_custom_target(lint
+        COMMAND "${CMAKE_CURRENT_SOURCE_DIR}/scripts/lint.sh"
+        WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
+        VERBATIM
+    )
+else()
+    message(WARNING "clang-format not found; 'format' and 'lint' targets will not be available.")
+endif()

@@ -17,9 +17,9 @@ namespace Menu_Helpers {
 // Helper to create and store menu items with signals
 // This creates a temporary that will be moved into the menu list
 class MenuElemHelper {
-public:
-    template<typename SlotType>
-    static Gtk::MenuItem create_with_signal(const Glib::ustring& label, const SlotType& slot) {
+  public:
+    template <typename SlotType>
+    static Gtk::MenuItem create_with_signal(const Glib::ustring &label, const SlotType &slot) {
         Gtk::MenuItem item(label);
         item.signal_activate().connect(slot);
         return item;
@@ -27,17 +27,15 @@ public:
 };
 
 // Store menu item signals in a static map since gtkmm3 doesn't auto-preserve them
-template<typename SlotType>
-inline Gtk::MenuItem MenuElem(const Glib::ustring& label, const SlotType& slot) {
+template <typename SlotType>
+inline Gtk::MenuItem MenuElem(const Glib::ustring &label, const SlotType &slot) {
     Gtk::MenuItem item(label);
     item.signal_activate().connect(slot);
     return item;
 }
 
 // SeparatorElem replacement for gtkmm3
-inline Gtk::SeparatorMenuItem SeparatorElem() {
-    return Gtk::SeparatorMenuItem();
-}
+inline Gtk::SeparatorMenuItem SeparatorElem() { return Gtk::SeparatorMenuItem(); }
 
 } // namespace Menu_Helpers
 } // namespace Gtk

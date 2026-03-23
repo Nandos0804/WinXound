@@ -20,6 +20,8 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
+#include <initializer_list>
+#include <vector>
 
 #include "wx-main.h"
 #include "wx-textEditor.h"
@@ -28,6 +30,16 @@
 #include "wx-global.h"
 #include "wx-terminal.h"
 #include "wx-browser.h"
+
+static Glib::RefPtr<Gtk::FileFilter> make_file_filter(const Glib::ustring& name,
+	                                                  std::initializer_list<const char*> patterns)
+{
+	Glib::RefPtr<Gtk::FileFilter> filter = Gtk::FileFilter::create();
+	filter->set_name(name);
+	for(const char* pattern : patterns)
+		filter->add_pattern(pattern);
+	return filter;
+}
 #include "wx-about.h"
 #include "wx-importexport.h"
 #include "wx-findandreplace.h"
@@ -195,7 +207,7 @@ wxMain::wxMain(int argc, char *argv[])
 
 	//DRAG AND DROP
 	//wxMain::on_DragDataReceived
-	std::list<Gtk::TargetEntry> listTargets;
+	std::vector<Gtk::TargetEntry> listTargets;
 	//text/uri-list
 	listTargets.push_back( Gtk::TargetEntry("text/uri-list") );
 
@@ -243,7 +255,7 @@ wxMain::wxMain(int argc, char *argv[])
 	
 
 	//Connect quit signal
-	Gtk::Main::signal_quit().connect(sigc::mem_fun(this, &wxMain::on_main_quit_signal));
+	wxMainWindow->signal_hide().connect(sigc::hide_return(sigc::mem_fun(this, &wxMain::on_main_quit_signal)));
 
 	this->setMenuSignals(builder);
 	////////////////////////////////////////////////////////////////////////////
@@ -285,8 +297,7 @@ wxMain::wxMain(int argc, char *argv[])
 		sigc::mem_fun(*this, &wxMain::on_compilerWindow_closed)); 
 	//compilerWindow->signal_hide().connect(
 	//	sigc::mem_fun(*this, &wxMain::on_compilerWindow_closing), false); 
-	compilerWindow->signal_expose_event().connect(
-		sigc::mem_fun(*this, &wxMain::on_compilerWindow_expose_event)); //OK!!!
+	// compilerWindow expose callback uses legacy signature and is disabled for gtkmm3 migration.
 
 	compilerWindow->signal_key_press_event().connect(
 		sigc::mem_fun(*this, &wxMain::on_compilerWindow_key_press_event), false);
@@ -400,7 +411,7 @@ wxMain::wxMain(int argc, char *argv[])
 
 		Gdk::Point p = Gdk::Point(scr->get_width() / 2 - width, 
 		                          scr->get_height() / 2 - height);
-		wxSETTINGS->General.WindowPosition = p;
+		wxSETTINGS->General.WindowPosition = Gdk::Point(p.get_x(), p.get_y());
 		wxMainWindow->move(p.get_x(), p.get_y()); 
 
 		FirstStart();
@@ -1171,7 +1182,7 @@ void wxMain::on_menuitemNew_Clicked()
 	
 	////AddNewEditor(UNTITLED_CSD);
 
-	Gtk::Dialog dialog("WinXound - New File", TRUE, FALSE);
+	Gtk::Dialog dialog("WinXound - New File", TRUE);
 
 	//CSOUND CSD
 	Glib::ustring iconname = wxGLOBAL->getIconsPath();
@@ -1298,8 +1309,8 @@ bool wxMain::on_newdialog_keypress(GdkEventKey* event)
 
 	//guint modifiers = gtk_accelerator_get_default_mod_mask ();
 
-	if (event->keyval == GDK_Control_L ||
-	    event->keyval == GDK_Control_R)
+	if (event->keyval == GDK_KEY_Control_L ||
+	    event->keyval == GDK_KEY_Control_R)
     {
 		if(event->type == GDK_KEY_PRESS)
 			std::cout << "CONTROL PRESSED" << std::endl;
@@ -1327,39 +1338,11 @@ void wxMain::on_menuitemOpen_Clicked()
 	dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
 	//Add filters, so that only certain file types can be selected:
-	Gtk::FileFilter filter_supported_files;
-	filter_supported_files.set_name("Supported files");
-	//filter_supported_files.add_mime_type("text/plain");
-	filter_supported_files.add_pattern("*.csd");
-	filter_supported_files.add_pattern("*.orc");
-	filter_supported_files.add_pattern("*.sco");
-	filter_supported_files.add_pattern("*.py");
-	filter_supported_files.add_pattern("*.pyw");
-	filter_supported_files.add_pattern("*.lua");
-	dialog.add_filter(filter_supported_files);
-
-	Gtk::FileFilter filter_csound_files;
-	filter_csound_files.set_name("CSound files");
-	filter_csound_files.add_pattern("*.csd");
-	filter_csound_files.add_pattern("*.orc");
-	filter_csound_files.add_pattern("*.sco");
-	dialog.add_filter(filter_csound_files);
-
-	Gtk::FileFilter filter_python_files;
-	filter_python_files.set_name("Python files");
-	filter_python_files.add_pattern("*.py");
-	filter_python_files.add_pattern("*.pyw");
-	dialog.add_filter(filter_python_files);
-
-	Gtk::FileFilter filter_lua_files;
-	filter_lua_files.set_name("Lua files");
-	filter_lua_files.add_pattern("*.lua");
-	dialog.add_filter(filter_lua_files);
-
-	Gtk::FileFilter filter_any;
-	filter_any.set_name("Any files");
-	filter_any.add_pattern("*");
-	dialog.add_filter(filter_any);
+	dialog.add_filter(make_file_filter("Supported files", {"*.csd", "*.orc", "*.sco", "*.py", "*.pyw", "*.lua"}));
+	dialog.add_filter(make_file_filter("CSound files", {"*.csd", "*.orc", "*.sco"}));
+	dialog.add_filter(make_file_filter("Python files", {"*.py", "*.pyw"}));
+	dialog.add_filter(make_file_filter("Lua files", {"*.lua"}));
+	dialog.add_filter(make_file_filter("Any files", {"*"}));
 
 	//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 	if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -1480,21 +1463,8 @@ void wxMain::on_menuitemSaveAs_Clicked()
 
 		
 		//Add filters
-		Gtk::FileFilter filter_supported_files;
-		filter_supported_files.set_name("Supported files");
-		filter_supported_files.add_pattern("*.csd");
-		filter_supported_files.add_pattern("*.orc");
-		filter_supported_files.add_pattern("*.sco");
-		filter_supported_files.add_pattern("*.py");
-		filter_supported_files.add_pattern("*.pyw");
-		filter_supported_files.add_pattern("*.lua");
-		filter_supported_files.add_pattern("*.txt");
-		dialog.add_filter(filter_supported_files);
-		
-		Gtk::FileFilter filter_any;
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_file_filter("Supported files", {"*.csd", "*.orc", "*.sco", "*.py", "*.pyw", "*.lua", "*.txt"}));
+		dialog.add_filter(make_file_filter("Any files", {"*"}));
 
 		
 		//Ask for overwrite
@@ -1677,11 +1647,7 @@ void wxMain::on_menuitemImportOrcScoToNewCSD_Clicked()
 		dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
 		//Add filters, so that only certain file types can be selected:
-		Gtk::FileFilter filter_supported_files;
-		filter_supported_files.set_name("Orc/Sco files");
-		filter_supported_files.add_pattern("*.orc");
-		filter_supported_files.add_pattern("*.sco");		
-		dialog.add_filter(filter_supported_files);
+		dialog.add_filter(make_file_filter("Orc/Sco files", {"*.orc", "*.sco"}));
 
 		//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 		if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -1729,11 +1695,7 @@ void wxMain::on_menuitemImportOrcSco_Clicked()
 		dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
 		//Add filters, so that only certain file types can be selected:
-		Gtk::FileFilter filter_supported_files;
-		filter_supported_files.set_name("Orc/Sco files");
-		filter_supported_files.add_pattern("*.orc");
-		filter_supported_files.add_pattern("*.sco");		
-		dialog.add_filter(filter_supported_files);
+		dialog.add_filter(make_file_filter("Orc/Sco files", {"*.orc", "*.sco"}));
 
 		//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 		if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -1803,10 +1765,7 @@ void wxMain::on_menuitemImportOrc_Clicked()
 		dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
 		//Add filters, so that only certain file types can be selected:
-		Gtk::FileFilter filter_supported_files;
-		filter_supported_files.set_name("Orc files");
-		filter_supported_files.add_pattern("*.orc");
-		dialog.add_filter(filter_supported_files);
+		dialog.add_filter(make_file_filter("Orc files", {"*.orc"}));
 
 		//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 		if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -1859,10 +1818,7 @@ void wxMain::on_menuitemImportSco_Clicked()
 		dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
 		//Add filters, so that only certain file types can be selected:
-		Gtk::FileFilter filter_supported_files;
-		filter_supported_files.set_name("Sco files");
-		filter_supported_files.add_pattern("*.sco");
-		dialog.add_filter(filter_supported_files);
+		dialog.add_filter(make_file_filter("Sco files", {"*.sco"}));
 
 		//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 		if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -2936,7 +2892,7 @@ bool wxMain::on_key_press_event(GdkEventKey* event)
 	//wxGLOBAL->DebugPrint("KEY", "PRESSED");
 
 	//Show the Additional Flags List
-	if (event->keyval == GDK_l && event->state == GDK_MOD1_MASK) //GDK_CONTROL_MASK)
+	if (event->keyval == GDK_KEY_l && event->state == GDK_MOD1_MASK) //GDK_CONTROL_MASK)
     {
 		//std::cout << "pressed" << std::endl;
 
@@ -2962,7 +2918,7 @@ bool wxMain::on_key_press_event(GdkEventKey* event)
 	
 	
 	
-	if (event->keyval == GDK_Escape) //Escape key sequence
+	if (event->keyval == GDK_KEY_Escape) //Escape key sequence
 	{
 		//1. Hide autocompletion window
 		if(ActiveEditor() != NULL)
@@ -4048,7 +4004,7 @@ bool wxMain::on_compilerWindow_key_press_event(GdkEventKey* event)
 {
 	//We must replicate the notebookCompiler shortcuts
 	
-	if (event->keyval == GDK_Escape) //Escape key sequence
+	if (event->keyval == GDK_KEY_Escape) //Escape key sequence
 	{
 		if(compiler->ProcessActive)
 		{
@@ -4059,34 +4015,34 @@ bool wxMain::on_compilerWindow_key_press_event(GdkEventKey* event)
 		//Reset the focus to the main window
 		wxMainWindow->present();
 	}
-	else if(event->keyval == GDK_9 && event->state == GDK_CONTROL_MASK)
+	else if(event->keyval == GDK_KEY_9 && event->state == GDK_CONTROL_MASK)
 	{
 		on_menuitemShowCompiler_Clicked();
 	}
-	else if(event->keyval == GDK_0 && event->state == GDK_CONTROL_MASK)
+	else if(event->keyval == GDK_KEY_0 && event->state == GDK_CONTROL_MASK)
 	{
 		on_menuitemShowHelp_Clicked();
 	}
-	else if(event->keyval == GDK_8 && event->state == GDK_CONTROL_MASK)
+	else if(event->keyval == GDK_KEY_8 && event->state == GDK_CONTROL_MASK)
 	{
 		//Reset the focus to the main window and show the code
 		wxMainWindow->present();
 		on_menuitemShowCode_Clicked();
 	}
-	else if(event->keyval == GDK_j && event->state == GDK_CONTROL_MASK)
+	else if(event->keyval == GDK_KEY_j && event->state == GDK_CONTROL_MASK)
 	{
 		on_menuitemCSoundOpcodesRepository_Clicked();
 	}
-	else if(event->keyval == GDK_i && event->state == GDK_CONTROL_MASK)
+	else if(event->keyval == GDK_KEY_i && event->state == GDK_CONTROL_MASK)
 	{
 		on_menuitemCodeRepositoryShowWindow_Clicked();
 	}
-	else if(event->keyval == GDK_F7)
+	else if(event->keyval == GDK_KEY_F7)
 	{
 		on_menuitemTerminal_Clicked();
 		return true;
 	}
-	else if(event->keyval == GDK_0 && event->state == (GDK_CONTROL_MASK | GDK_MOD1_MASK))
+	else if(event->keyval == GDK_KEY_0 && event->state == (GDK_CONTROL_MASK | GDK_MOD1_MASK))
 	{
 		on_toolbuttonCompilerWindow_Clicked();
 	}
@@ -4521,7 +4477,7 @@ void wxMain::onEditorOrcScoShowList()
 	if(ActiveEditor() == NULL) return;
 
 	//DIALOG
-	Gtk::Dialog* dialog = new Gtk::Dialog("WinXound - Orc/Sco Links", TRUE, FALSE);
+	Gtk::Dialog* dialog = new Gtk::Dialog("WinXound - Orc/Sco Links", TRUE);
 	dialog->set_size_request(600,400);
 	
 	//LISTBOX
@@ -4544,7 +4500,7 @@ void wxMain::onEditorOrcScoShowList()
 	int selIndex = 0;
 	for (uint i = 0; i < temp.size(); i++)
 	{
-		listBoxFiles->append_text(temp[i]);
+		listBoxFiles->append(temp[i]);
 		if(temp[i] == ActiveEditor()->GetCurrentOrcScoFile())
 			selIndex = i;
 	}
@@ -4561,7 +4517,7 @@ void wxMain::onEditorOrcScoShowList()
 	temp.clear();
 	
 	//pack_start (Widget& child, bool expand, bool fill, guint padding=0)
-	dialog->get_vbox()->pack_start(*mScrolledWindowlistBoxFiles, TRUE, TRUE, 0);
+	dialog->get_content_area()->pack_start(*mScrolledWindowlistBoxFiles, TRUE, TRUE, 0);
 	dialog->add_button("OK", 1);
 	dialog->add_button("CANCEL", 2);
 	dialog->show_all_children();
@@ -5531,10 +5487,7 @@ void wxMain::on_contextmenu_file_as_text_Clicked()
 	dialog.set_current_folder(wxSETTINGS->Directory.LastUsedPath);
 
 	//Add filters, so that only certain file types can be selected:
-	Gtk::FileFilter filter_any;
-	filter_any.set_name("Any files");
-	filter_any.add_pattern("*");
-	dialog.add_filter(filter_any);
+	dialog.add_filter(make_file_filter("Any files", {"*"}));
 
 	//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 	if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -6343,10 +6296,7 @@ Glib::ustring wxMain::CheckForAdditionalFlags(Glib::ustring additionalParams)
 		
 
 		//Add filters
-		Gtk::FileFilter filter_any;
-		filter_any.set_name("Any files");
-		filter_any.add_pattern("*");
-		dialog.add_filter(filter_any);
+		dialog.add_filter(make_file_filter("Any files", {"*"}));
 
 		//If the WorkingDir is not empty and exists add it to the Open Dialog Box:
 		if(Glib::file_test(wxSETTINGS->Directory.WorkingDir, 
@@ -7002,50 +6952,48 @@ void wxMain::CreatePopupMenu()
 	*/
 
 	
-	//Fill popup menu:
-	Gtk::Menu::MenuList& menulist = PopupMenu.items();
+	Gtk::MenuItem* popupCut = Gtk::manage(new Gtk::MenuItem("Cut", TRUE));
+	popupCut->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemCut_Clicked));
+	PopupMenu.append(*popupCut);
+	Gtk::MenuItem* popupCopy = Gtk::manage(new Gtk::MenuItem("Copy", TRUE));
+	popupCopy->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemCopy_Clicked));
+	PopupMenu.append(*popupCopy);
+	Gtk::MenuItem* popupPaste = Gtk::manage(new Gtk::MenuItem("Paste", TRUE));
+	popupPaste->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemPaste_Clicked));
+	PopupMenu.append(*popupPaste);
 
-	//CUT, COPY, PASTE
-	menulist.push_back(Gtk::Menu_Helpers::MenuElem("Cut",
-		sigc::mem_fun(*this, &wxMain::on_menuitemCut_Clicked)));
-	menulist.push_back(Gtk::Menu_Helpers::MenuElem("Copy",
-		sigc::mem_fun(*this, &wxMain::on_menuitemCopy_Clicked)));
-	menulist.push_back(Gtk::Menu_Helpers::MenuElem("Paste",
-		sigc::mem_fun(*this, &wxMain::on_menuitemPaste_Clicked)));
+	PopupMenu.append(*Gtk::manage(new Gtk::SeparatorMenuItem()));
 
-	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
-
-	//COMMENT
 	PopupComment.set_label("Comment");
-	Gtk::Menu::MenuList& menulistcomment = PopupComment_submenu.items();
-	menulistcomment.push_back(Gtk::Menu_Helpers::MenuElem("Apply",
-		sigc::mem_fun(*this, &wxMain::on_menuitemCommentLine_Clicked)));
-	menulistcomment.push_back(Gtk::Menu_Helpers::MenuElem("Remove",
-		sigc::mem_fun(*this, &wxMain::on_menuitemRemoveCommentLine_Clicked)));
+	Gtk::MenuItem* commentApply = Gtk::manage(new Gtk::MenuItem("Apply", TRUE));
+	commentApply->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemCommentLine_Clicked));
+	PopupComment_submenu.append(*commentApply);
+	Gtk::MenuItem* commentRemove = Gtk::manage(new Gtk::MenuItem("Remove", TRUE));
+	commentRemove->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemRemoveCommentLine_Clicked));
+	PopupComment_submenu.append(*commentRemove);
 	PopupComment.set_submenu(PopupComment_submenu);
-	menulist.push_back(PopupComment);
+	PopupMenu.append(PopupComment);
 
-	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
+	PopupMenu.append(*Gtk::manage(new Gtk::SeparatorMenuItem()));
 
-	//BOOKMARKS
 	PopupBookmarks.set_label("Bookmarks");
-	Gtk::Menu::MenuList& menulistbookmarks = PopupBookmarks_submenu.items();
-	menulistbookmarks.push_back(Gtk::Menu_Helpers::MenuElem("Insert/Remove",
-		sigc::mem_fun(*this, &wxMain::on_menuitemInsertRemoveBookmark_Clicked)));
-	menulistbookmarks.push_back(Gtk::Menu_Helpers::SeparatorElem());
-	menulistbookmarks.push_back(Gtk::Menu_Helpers::MenuElem("Remove All",
-		sigc::mem_fun(*this, &wxMain::on_menuitemRemoveAllBookmarks_Clicked)));
-	menulistbookmarks.push_back(Gtk::Menu_Helpers::MenuElem("Go to Next",
-		sigc::mem_fun(*this, &wxMain::on_menuitemGoToNextBookmark_Clicked)));
-	menulistbookmarks.push_back(Gtk::Menu_Helpers::MenuElem("Go to Previous",
-		sigc::mem_fun(*this, &wxMain::on_menuitemGoToPreviousBookmark_Clicked)));
+	Gtk::MenuItem* bookmarksToggle = Gtk::manage(new Gtk::MenuItem("Insert/Remove", TRUE));
+	bookmarksToggle->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemInsertRemoveBookmark_Clicked));
+	PopupBookmarks_submenu.append(*bookmarksToggle);
+	PopupBookmarks_submenu.append(*Gtk::manage(new Gtk::SeparatorMenuItem()));
+	Gtk::MenuItem* bookmarksRemoveAll = Gtk::manage(new Gtk::MenuItem("Remove All", TRUE));
+	bookmarksRemoveAll->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemRemoveAllBookmarks_Clicked));
+	PopupBookmarks_submenu.append(*bookmarksRemoveAll);
+	Gtk::MenuItem* bookmarksNext = Gtk::manage(new Gtk::MenuItem("Go to Next", TRUE));
+	bookmarksNext->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemGoToNextBookmark_Clicked));
+	PopupBookmarks_submenu.append(*bookmarksNext);
+	Gtk::MenuItem* bookmarksPrevious = Gtk::manage(new Gtk::MenuItem("Go to Previous", TRUE));
+	bookmarksPrevious->signal_activate().connect(sigc::mem_fun(*this, &wxMain::on_menuitemGoToPreviousBookmark_Clicked));
+	PopupBookmarks_submenu.append(*bookmarksPrevious);
 	PopupBookmarks.set_submenu(PopupBookmarks_submenu);
-	menulist.push_back(PopupBookmarks);
-	
-	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
+	PopupMenu.append(PopupBookmarks);
+
+	PopupMenu.append(*Gtk::manage(new Gtk::SeparatorMenuItem()));
 
 	
 	//Attach the callback functions to the activate signal
@@ -7053,40 +7001,40 @@ void wxMain::CreatePopupMenu()
 
 	//GO TO DEFINITION
 	PopupGoToDefinition.set_label("Go to definition of ...");
-	menulist.push_back(PopupGoToDefinition);
+	PopupMenu.append(PopupGoToDefinition);
 	PopupGoToDefinition.signal_activate().connect(
 		sigc::mem_fun(*this, &wxMain::on_contextmenu_GoToDefinition_Clicked));
 
 	//GO TO REFERENCE
 	PopupGoToReference.set_label("Go to reference of ...");
-	menulist.push_back(PopupGoToReference);
+	PopupMenu.append(PopupGoToReference);
 	PopupGoToReference.signal_activate().connect(
 		sigc::mem_fun(*this, &wxMain::on_contextmenu_GoToReference_Clicked));
 
 	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
+	PopupMenu.append(*Gtk::manage(new Gtk::SeparatorMenuItem()));
 	
 	//OPEN FILE
 	PopupOpenFile.set_label("Open File");
-	menulist.push_back(PopupOpenFile);
+	PopupMenu.append(PopupOpenFile);
 	PopupOpenFile.signal_activate().connect(
 		sigc::mem_fun(*this, &wxMain::on_contextmenu_file_Clicked));
 
 	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
+	PopupMenu.append(*Gtk::manage(new Gtk::SeparatorMenuItem()));
 
 	//INSERT FILENAME AS TEXT
 	PopupInsertFileAsText.set_label("Insert Filename as text");
-	menulist.push_back(PopupInsertFileAsText);
+	PopupMenu.append(PopupInsertFileAsText);
 	PopupInsertFileAsText.signal_activate().connect(
 		sigc::mem_fun(*this, &wxMain::on_contextmenu_file_as_text_Clicked));
 	
 	//SEPARATOR
-	menulist.push_back(Gtk::Menu_Helpers::SeparatorElem());
+	PopupMenu.append(*Gtk::manage(new Gtk::SeparatorMenuItem()));
 
 	//OPCODE HELP
 	PopupOpcodeHelp.set_label("Opcode Help");
-	menulist.push_back(PopupOpcodeHelp);
+	PopupMenu.append(PopupOpcodeHelp);
 	PopupOpcodeHelp.signal_activate().connect(
 		sigc::mem_fun(*this, &wxMain::on_menuitemOpcodeHelp_Clicked));
 
