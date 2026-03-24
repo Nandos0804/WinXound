@@ -424,7 +424,7 @@ namespace WinXound_Net
         //USEFUL METHOD TO RETRIEVE THE CURRENT LOCAL IP
         public static string GetLocalIP()
         {
-            System.Net.IPHostEntry h = System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName());
+            System.Net.IPHostEntry h = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
             return ((System.Net.IPAddress)h.AddressList.GetValue(0)).ToString();
         }
 

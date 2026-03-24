@@ -56,7 +56,7 @@ namespace WinXound_Net
                 Disconnect();
                 System.Diagnostics.Debug.WriteLine("wxNamedPipe disposed");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }
@@ -199,7 +199,7 @@ namespace WinXound_Net
                     this.handle.Close();
                     this.connected = false;
                 }
-                catch (Exception ex_int)
+                catch (Exception)
                 {
                 }
 

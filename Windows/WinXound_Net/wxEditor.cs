@@ -44,7 +44,9 @@ namespace WinXound_Net
         public event EventHandler FontHasChanged;
         public event EventHandler SavePointReached;
         public event EventHandler SavePointLeft;
+#pragma warning disable CS0067
         public event EventHandler EditorError;
+#pragma warning restore CS0067
         public event EventHandler OrcScoShowList;
         public event EventHandler OrcScoSwitchRequest;
         public event MouseEventHandler TextEditorMouseDown;

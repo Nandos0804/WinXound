@@ -17,9 +17,11 @@ namespace WinXound_Net
             public Int32 DefaultTabSize;
             public bool ShowVerticalRuler;
             public bool ShowMatchingBracket;
+#pragma warning disable CS0649
             public bool ShowLineNumbers;
             public bool ShowIntelliTip;
             public bool ShowExplorer;
+#pragma warning restore CS0649
             public bool MarkCaretLine;
 
             public Int32 TextForeColor;

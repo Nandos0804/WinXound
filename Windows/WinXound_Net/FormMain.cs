@@ -82,7 +82,7 @@ namespace WinXound_Net
                     MessageBoxIcon.Information);
                 mWinXoundIsReadOnly = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //wxGlobal.wxMessageError(ex.Message,
                 System.Diagnostics.Debug.WriteLine(
@@ -6147,16 +6147,14 @@ namespace WinXound_Net
         {
             try
             {
-                //http://www.csounds.com/resources/learning/
-                //http://www.csounds.com/tutorials
-                System.Diagnostics.Process.Start("http://www.csounds.com/resources/learning/");
+                System.Diagnostics.Process.Start("https://csound.com/docs/manual/index.html");
             }
             catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                 {
                     //MessageBox.Show(noBrowser.Message);
-                    MessageBox.Show("Could not open 'http://www.csounds.com/resources/learning/'!" + newline +
+                    MessageBox.Show("Could not open 'https://csound.com/docs/manual/index.html'!" + newline +
                                     "Internet browser not found.",
                                     "WinXound error!",
                                     MessageBoxButtons.OK,
@@ -6165,7 +6163,7 @@ namespace WinXound_Net
             }
             catch (System.Exception other)
             {
-                MessageBox.Show("Could not open 'http://www.csounds.com/resources/learning/'!" + newline +
+                MessageBox.Show("Could not open 'https://csound.com/docs/manual/index.html'!" + newline +
                                 other.Message,
                                 "WinXound error!",
                                 MessageBoxButtons.OK,

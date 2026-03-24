@@ -53,11 +53,15 @@ namespace ScintillaTextEditor
         public event EventHandler TextEditorUpdateUI;
         //public event EventHandler TextEditorTextHasChanged;
         public event TextView.OnSCI_Modified TextEditorTextHasChanged;
+#pragma warning disable CS0067
         public event EventHandler TextEditorFontHasChanged;
+#pragma warning restore CS0067
         public event EventHandler TextEditorSavePointReached;
         public event EventHandler TextEditorSavePointLeft;
         //public event EventHandler TextEditorModContainer;
+#pragma warning disable CS0067
         public event EventHandler TextEditorError;
+#pragma warning restore CS0067
         public event KeyEventHandler TextEditorKeyAction;
         public event MouseEventHandler TextEditorMouseDown;
         public event MouseEventHandler TextEditorMouseZoom;
@@ -1111,7 +1115,7 @@ namespace ScintillaTextEditor
 
 
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     //wxGlobal.wxMessageError(ex.Message, "Form Find and Replace - ButtonReplaceAll_Click Error");
                 }
@@ -1400,7 +1404,7 @@ namespace ScintillaTextEditor
             //for the moment we skip here
             return false;
 
-
+#pragma warning disable CS0162
             //2. Search for multi line rem "/*" and "*/"
             Int32 mStart = -1;
             Int32 mEnd = -1;
@@ -1437,6 +1441,7 @@ namespace ScintillaTextEditor
 
             //3. if not found
             return false;
+#pragma warning restore CS0162
         }
 
         //int GetLineEndPosition(int linenumber);

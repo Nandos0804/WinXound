@@ -129,14 +129,14 @@ namespace WinXound_Net
                 }
 
             }
-            catch (SocketException ex)
+            catch (SocketException)
             {
                 ChangeState(WinsockStates.Error);
                 //OnHandleError(ex.ErrorCode, ex.Message);
                 //MyDebug("[CSocket.Close]" & vbCrLf & ex.Message)
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //MyDebug("[CSocket.Close]" & vbCrLf & ex.Message)
 
@@ -194,7 +194,7 @@ namespace WinXound_Net
                     return 0;
 
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     //MyDebug("[CSocket.SendLine]" & vbCrLf & ex.Message)
                     return 0;
@@ -250,7 +250,7 @@ namespace WinXound_Net
                 ///'MyDebug("[ReadCallback]" & vbCrLf & ex.Message)
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //MyDebug("[CSocket.Close]" & vbCrLf & ex.Message)
 
@@ -328,8 +328,6 @@ namespace WinXound_Net
                 case WinsockStates.HostResolved:
                 case WinsockStates.Connecting:
                     return;
-
-                    break;
             }
 
             if (!string.IsNullOrEmpty(RemoteIP))
@@ -369,7 +367,7 @@ namespace WinXound_Net
                 OnHandleError(this, ex.ErrorCode, ex.Message);
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //MyDebug("[CSocket.Close]" & vbCrLf & ex.Message)
 
@@ -407,11 +405,12 @@ namespace WinXound_Net
                 OnHandleError(this, ex.ErrorCode, ex.Message);
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //MyDebug("[CSocket.Close]" & vbCrLf & ex.Message)
 
             }
+
         }
 
 
@@ -502,8 +501,6 @@ namespace WinXound_Net
                 case WinsockStates.Connected:
                     ///'Debug.WriteLine(_State)
                     return;
-
-                    break;
             }
 
 
@@ -528,7 +525,7 @@ namespace WinXound_Net
                 //MyDebug("[CSocket.StartListening]" & vbCrLf & ex.Message)
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //MyDebug("[CSocket.StartListening]" & vbCrLf & ex.Message)
 
@@ -560,7 +557,7 @@ namespace WinXound_Net
                 //MyDebug("[CSocket.AcceptCallback]" & vbCrLf & ex.Message)
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //MyDebug("[CSocket.AcceptCallback]" & vbCrLf & ex.Message)
 

@@ -170,7 +170,9 @@ namespace ScintillaTextEditor
         public delegate void OnSCI_Modified(object sender, Int32 position, Int32 length);
         public event OnSCI_Modified SCI_Modified;
         public event MouseEventHandler SCI_MouseZoom;
+#pragma warning disable CS0067
         public event KeyEventHandler KeyAction;
+#pragma warning restore CS0067
 
         //EVENT for Autocomplete
         public delegate void OnAutocomplete(object sender, string command);

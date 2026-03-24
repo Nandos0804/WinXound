@@ -13,7 +13,6 @@ namespace ScintillaTextEditor
         private int mPosition;
         private int mPrintEnd;
         private int mCurrentPage;
-        private int mLineCount = 0;
 
 
 
