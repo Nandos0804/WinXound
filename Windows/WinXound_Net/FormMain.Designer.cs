@@ -279,10 +279,8 @@
             this.tsBrowserHome = new System.Windows.Forms.ToolStripButton();
             this.ToolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.tabOpcodes = new System.Windows.Forms.TabPage();
-            this.tabRepository = new System.Windows.Forms.TabPage();
-            this.wxCompilerConsole1 = new WinXound_Net.wxCompilerConsole();
-            this.wxCodeRepository1 = new WinXound_Net.wxCodeRepository();
             this.wxCSoundOpcodesRepository1 = new WinXound_Net.wxCSoundOpcodesRepository();
+            this.tabRepository = new System.Windows.Forms.TabPage();
             this.ListBoxAutoComplete = new System.Windows.Forms.ListBox();
             this.wxTabCode = new WinXound_Net.wxDraggableTabControl();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -313,11 +311,9 @@
             this.menuStrip1.SuspendLayout();
             this.ToolStrip1.SuspendLayout();
             this.tabControlBuild.SuspendLayout();
-            this.tabCompiler.SuspendLayout();
             this.tabHelp.SuspendLayout();
             this.ToolStripBrowser.SuspendLayout();
             this.tabOpcodes.SuspendLayout();
-            this.tabRepository.SuspendLayout();
             this.mContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2436,7 +2432,6 @@
             // 
             // tabCompiler
             // 
-            this.tabCompiler.Controls.Add(this.wxCompilerConsole1);
             this.tabCompiler.Location = new System.Drawing.Point(4, 22);
             this.tabCompiler.Name = "tabCompiler";
             this.tabCompiler.Padding = new System.Windows.Forms.Padding(3);
@@ -2531,32 +2526,6 @@
             this.tabOpcodes.Text = "CSound Opcodes";
             this.tabOpcodes.UseVisualStyleBackColor = true;
             // 
-            // tabRepository
-            // 
-            this.tabRepository.Controls.Add(this.wxCodeRepository1);
-            this.tabRepository.Location = new System.Drawing.Point(4, 22);
-            this.tabRepository.Name = "tabRepository";
-            this.tabRepository.Size = new System.Drawing.Size(792, 0);
-            this.tabRepository.TabIndex = 2;
-            this.tabRepository.Text = "UDO & User Code Repository";
-            this.tabRepository.UseVisualStyleBackColor = true;
-            // 
-            // wxCompilerConsole1
-            // 
-            this.wxCompilerConsole1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wxCompilerConsole1.Location = new System.Drawing.Point(3, 3);
-            this.wxCompilerConsole1.Name = "wxCompilerConsole1";
-            this.wxCompilerConsole1.Size = new System.Drawing.Size(786, 0);
-            this.wxCompilerConsole1.TabIndex = 0;
-            // 
-            // wxCodeRepository1
-            // 
-            this.wxCodeRepository1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wxCodeRepository1.Location = new System.Drawing.Point(0, 0);
-            this.wxCodeRepository1.Name = "wxCodeRepository1";
-            this.wxCodeRepository1.Size = new System.Drawing.Size(792, 0);
-            this.wxCodeRepository1.TabIndex = 0;
-            // 
             // wxCSoundOpcodesRepository1
             // 
             this.wxCSoundOpcodesRepository1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2565,12 +2534,14 @@
             this.wxCSoundOpcodesRepository1.Size = new System.Drawing.Size(792, 0);
             this.wxCSoundOpcodesRepository1.TabIndex = 0;
             // 
-            // wxTabCode
+            // tabRepository
             // 
-            this.wxTabCode.AllowDrop = true;
-            this.wxTabCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wxTabCode.Name = "wxTabCode";
-            this.wxTabCode.TabIndex = 19;
+            this.tabRepository.Location = new System.Drawing.Point(4, 22);
+            this.tabRepository.Name = "tabRepository";
+            this.tabRepository.Size = new System.Drawing.Size(792, 0);
+            this.tabRepository.TabIndex = 2;
+            this.tabRepository.Text = "UDO & User Code Repository";
+            this.tabRepository.UseVisualStyleBackColor = true;
             // 
             // ListBoxAutoComplete
             // 
@@ -2582,6 +2553,16 @@
             this.ListBoxAutoComplete.Visible = false;
             this.ListBoxAutoComplete.Click += new System.EventHandler(this.ListBoxAutoComplete_Click);
             this.ListBoxAutoComplete.DoubleClick += new System.EventHandler(this.ListBoxAutoComplete_DoubleClick);
+            // 
+            // wxTabCode
+            // 
+            this.wxTabCode.AllowDrop = true;
+            this.wxTabCode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wxTabCode.Location = new System.Drawing.Point(0, 49);
+            this.wxTabCode.Name = "wxTabCode";
+            this.wxTabCode.SelectedIndex = 0;
+            this.wxTabCode.Size = new System.Drawing.Size(800, 389);
+            this.wxTabCode.TabIndex = 19;
             // 
             // splitter1
             // 
@@ -2793,13 +2774,11 @@
             this.ToolStrip1.ResumeLayout(false);
             this.ToolStrip1.PerformLayout();
             this.tabControlBuild.ResumeLayout(false);
-            this.tabCompiler.ResumeLayout(false);
             this.tabHelp.ResumeLayout(false);
             this.tabHelp.PerformLayout();
             this.ToolStripBrowser.ResumeLayout(false);
             this.ToolStripBrowser.PerformLayout();
             this.tabOpcodes.ResumeLayout(false);
-            this.tabRepository.ResumeLayout(false);
             this.mContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
