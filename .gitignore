@@ -1,6 +1,12 @@
 Windows/**/*.user
 Windows/**/*.suo
 Windows/**/obj/
+Windows/**/bin/
+Windows/**/[Dd]ebug/
+Windows/**/[Rr]elease/
+Windows/**/x64/
+Windows/**/x86/
+Windows/**/TestResults/
 Windows/ScintillaTextEditor/bin/
 Windows/Utility/OpcodesParser/OpcodesParser/bin/
 Windows/scintilla211_for_winxound/bin/
