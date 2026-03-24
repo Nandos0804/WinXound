@@ -1,16 +1,11 @@
-﻿using System;
+﻿using ScintillaTextEditor;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
+using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.IO;
-
-using ScintillaTextEditor;
-using System.Xml;
 
 
 namespace WinXound_Net

@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Collections;
+using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-using System.Collections;
-using System.Text.RegularExpressions;
-using System.IO;
 
 
 namespace WinXound_Net

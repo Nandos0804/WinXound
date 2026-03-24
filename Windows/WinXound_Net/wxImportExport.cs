@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
+﻿using ScintillaTextEditor;
+using System;
 using System.IO;
 using System.Windows.Forms;
-
-using ScintillaTextEditor;
 
 
 namespace WinXound_Net

@@ -1,18 +1,11 @@
-﻿using System;
+﻿using ScintillaTextEditor;
+using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
+using System.Drawing.Printing;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Drawing.Printing;
-using System.Runtime.InteropServices;
-using System.Reflection;
-
-using ScintillaTextEditor;
+using System.Windows.Forms;
 
 
 namespace WinXound_Net
@@ -1201,7 +1194,7 @@ namespace WinXound_Net
             {
                 //Open document 
                 OpenFileDialog openFileDialog1 = new OpenFileDialog();
-                string mExtension = 
+                string mExtension =
                     this.FileName.ToLower().EndsWith(".orc") ? "*.sco" : "*.orc";
 
                 openFileDialog1.Filter =

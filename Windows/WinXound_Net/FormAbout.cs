@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Reflection;
 using System.Windows.Forms;
 
 
@@ -19,7 +16,7 @@ namespace WinXound_Net
 
         private void FormAbout_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -27,7 +24,7 @@ namespace WinXound_Net
             try
             {
                 String EmailLink = "mailto:" + LinkLabel1.Text.Trim() +
-                                   @"?body=" + 
+                                   @"?body=" +
                                    @"&subject=WinXound Info";
                 System.Diagnostics.Process.Start(EmailLink);
             }

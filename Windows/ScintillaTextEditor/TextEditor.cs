@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using System.Collections;
 using System.Drawing;
 using System.Drawing.Printing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
-using System.Collections;
 using System.IO;
-using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 
 namespace ScintillaTextEditor
@@ -354,7 +349,7 @@ namespace ScintillaTextEditor
 
             textView1.SCI_ModContainer +=
                 new TextView.OnSciModContainer(textViews_SCI_ModContainer);
-                //new EventHandler(textViews_SCI_ModContainer);
+            //new EventHandler(textViews_SCI_ModContainer);
 
             textView1.SCI_MouseZoom +=
                 new MouseEventHandler(textViews_SCI_MouseZoom);
@@ -392,7 +387,7 @@ namespace ScintillaTextEditor
                 this.SetEolMode(eolModeReal);
             }
 
-            if(token == 2)
+            if (token == 2)
             {
                 //System.Diagnostics.Debug.WriteLine(
                 //    "SC_MOD_CONTAINER:CONVERT_EOL!!! -> TOKEN: " + token);

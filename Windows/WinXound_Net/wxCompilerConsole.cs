@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
-using System.Data;
+using System.Globalization;
+using System.Management;
 using System.Text;
 using System.Windows.Forms;
-using System.Management;
-using System.Globalization;
-using System.Diagnostics;
 
 
 
@@ -187,7 +184,7 @@ namespace WinXound_Net
 
         public void SetEnvironment(string NameValue)
         {
-            if(!process1.StartInfo.EnvironmentVariables.ContainsKey("SFDIR"))
+            if (!process1.StartInfo.EnvironmentVariables.ContainsKey("SFDIR"))
                 process1.StartInfo.EnvironmentVariables.Add("SFDIR", NameValue);
         }
 
@@ -326,7 +323,7 @@ namespace WinXound_Net
                 {
                     _paused = mIsPaused;
                 }
-                
+
 
                 foreach (ProcessThread thread in p.Threads)
                 {
@@ -366,7 +363,7 @@ namespace WinXound_Net
             */
 
 
-            
+
         }
 
 

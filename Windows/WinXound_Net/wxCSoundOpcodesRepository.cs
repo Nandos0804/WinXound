@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
 using System.Collections;
+using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
 
 namespace WinXound_Net
 {
@@ -56,7 +52,7 @@ namespace WinXound_Net
             mOpcodes = new Hashtable();
 
             //OLD: using (StreamReader reader = wxGlobal.GetResource("Resources.opcodes.txt"))
-            using (StreamReader reader = new StreamReader(Application.StartupPath + "\\Utility\\opcodes.txt")) 
+            using (StreamReader reader = new StreamReader(Application.StartupPath + "\\Utility\\opcodes.txt"))
             {
                 while (!(reader.Peek() == -1))
                 {

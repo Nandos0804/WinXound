@@ -9,14 +9,11 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.Collections.Specialized;
 using System.IO;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Windows.Forms;
 
 
 namespace ScintillaTextEditor
@@ -163,7 +160,7 @@ namespace ScintillaTextEditor
         //public event EventHandler SCI_ModContainer;
         public delegate void OnSciModContainer(object sender, Int32 token);
         public event OnSciModContainer SCI_ModContainer;
-        
+
         //public event EventHandler SCI_GotFocus;
         //public event EventHandler SCI_LostFocus;
         public event MouseEventHandler SCI_MouseEvent;
@@ -241,8 +238,8 @@ namespace ScintillaTextEditor
             //Set Scintilla ModeEventMask (to filter SCN_MODIFIED event)
             this.SetModeEventMask((int)SciConst.SC_MOD_INSERTTEXT |
                                   (int)SciConst.SC_MOD_DELETETEXT |
-                //(int)SciConst.SC_PERFORMED_REDO |
-                //(int)SciConst.SC_PERFORMED_UNDO |
+                                  //(int)SciConst.SC_PERFORMED_REDO |
+                                  //(int)SciConst.SC_PERFORMED_UNDO |
                                   (int)SciConst.SC_MOD_CONTAINER);
 
             //Set Eol conversion on Paste (and on drag_and_drop)
@@ -961,14 +958,14 @@ namespace ScintillaTextEditor
                             case Keys.K:
                                 return base.PreProcessMessage(ref msg);
 
-                            //case Keys.Enter:
-                            //    if (mRemoveKeyDown)
-                            //    {
-                            //        if (SCI_AutoComplete != null)
-                            //            SCI_AutoComplete(this, "ctrl+shift+enter");
-                            //        return true;
-                            //    }
-                            //    break;
+                                //case Keys.Enter:
+                                //    if (mRemoveKeyDown)
+                                //    {
+                                //        if (SCI_AutoComplete != null)
+                                //            SCI_AutoComplete(this, "ctrl+shift+enter");
+                                //        return true;
+                                //    }
+                                //    break;
 
                         }
 
