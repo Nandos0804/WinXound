@@ -1,12 +1,228 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GitHub\\WinXound\\Windows\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formsettingsautosearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formsettingsautosearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formorcscolinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formorcscolinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\forminsertheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\forminsertheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\forminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\forminputbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formfindline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formfindline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formfindandreplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formfindandreplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|d:\\github\\winxound\\windows\\winxound_net\\formabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{404F9597-D148-40E1-AA08-293449DED8B6}|WinXound_Net\\WinXound_Net.csproj|solutionrelative:winxound_net\\formabout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormSettingsAutoSearch.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormSettingsAutoSearch.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormSettingsAutoSearch.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormSettingsAutoSearch.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormSettingsAutoSearch.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:27:00.234Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormSettings.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormSettings.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormSettings.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormSettings.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormSettings.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:58.99Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormPlayer.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormPlayer.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormPlayer.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormPlayer.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormPlayer.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:56.887Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormOrcScoLinks.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormOrcScoLinks.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormOrcScoLinks.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormOrcScoLinks.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormOrcScoLinks.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:55.838Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormNew.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormNew.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormNew.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormNew.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormNew.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:54.431Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormMain.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormMain.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormMain.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormMain.cs [Progettazione]*",
+              "RelativeToolTip": "WinXound_Net\\FormMain.cs [Progettazione]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:47.284Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormInsertHeader.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormInsertHeader.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormInsertHeader.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormInsertHeader.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormInsertHeader.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:44.568Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormInputBox.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormInputBox.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormInputBox.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormInputBox.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormInputBox.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:43.702Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormInfo.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormInfo.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormInfo.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormInfo.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormInfo.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:42.527Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormFindLine.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormFindLine.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormFindLine.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormFindLine.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormFindLine.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:41.578Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormFindAndReplace.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormFindAndReplace.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormFindAndReplace.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormFindAndReplace.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormFindAndReplace.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:40.681Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormAnalysis.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormAnalysis.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormAnalysis.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormAnalysis.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormAnalysis.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:16.458Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormAbout.cs [Progettazione]",
+              "DocumentMoniker": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormAbout.cs",
+              "RelativeDocumentMoniker": "WinXound_Net\\FormAbout.cs",
+              "ToolTip": "D:\\GitHub\\WinXound\\Windows\\WinXound_Net\\FormAbout.cs [Progettazione]",
+              "RelativeToolTip": "WinXound_Net\\FormAbout.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:26:11.887Z",
+              "EditorCaption": " [Progettazione]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
