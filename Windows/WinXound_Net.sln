@@ -1,7 +1,12 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11612.150 stable
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinXound_Net", "WinXound_Net\WinXound_Net.csproj", "{404F9597-D148-40E1-AA08-293449DED8B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C20F9F04-16F3-4ECE-9886-8CBF18751A8A} = {C20F9F04-16F3-4ECE-9886-8CBF18751A8A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScintillaTextEditor", "ScintillaTextEditor\ScintillaTextEditor.csproj", "{B7F0C8F4-9380-4F57-BB06-03D57D62D0C6}"
 EndProject
