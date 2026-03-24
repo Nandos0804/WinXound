@@ -296,7 +296,7 @@ namespace WinXound_Net
                            "'SET THE PATH TO THE WINDOWS DESKTOP FOLDER & MY DOCUMENTS FOLDER" + newline +
                            "desktopPath = shell.SpecialFolders(\"Desktop\")" + newline +
                            "'CREATE A SHORTCUT ON THE USER'S DESKTOP" + newline +
-                    //"Set link = shell.CreateShortcut(desktopPath & "\WinXound.lnk")
+                           //"Set link = shell.CreateShortcut(desktopPath & "\WinXound.lnk")
                            "Set link = shell.CreateShortcut(desktopPath & \"\\" + TITLE + ".lnk\")" + newline +
                            "'SET THE PROPERTIES FOR THE SHORTCUT" + newline +
                            "link.Description = \"WinXound\"" + newline +
@@ -329,7 +329,8 @@ namespace WinXound_Net
                                     "WinXound Error",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
-                };
+                }
+                ;
             }
             catch (Exception ex)
             {
@@ -391,11 +392,11 @@ namespace WinXound_Net
                 ProgramsFolder =
                     System.Environment.GetFolderPath(
                         Environment.SpecialFolder.ProgramFiles);
-                if(!ProgramsFolder.EndsWith("(x86)"))
+                if (!ProgramsFolder.EndsWith("(x86)"))
                     ProgramsFolder += "(x86)";
             }
 
-            if(string.IsNullOrEmpty(ProgramsFolder))
+            if (string.IsNullOrEmpty(ProgramsFolder))
                 return "";
 
             return ProgramsFolder;

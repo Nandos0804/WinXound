@@ -147,7 +147,7 @@ namespace WinXound_Net
                 }
             }
 
-            
+
             //clean up resource
             this.stream.Close();
             this.handle.Close();
@@ -203,7 +203,7 @@ namespace WinXound_Net
                 catch (Exception ex_int)
                 {
                 }
-                
+
                 System.Diagnostics.Debug.WriteLine(
                     "wxNamedPipe - SendMessage Error: " + ex.Message);
 
@@ -211,7 +211,7 @@ namespace WinXound_Net
             }
 
             return true;
-            
+
         }
     }
 }

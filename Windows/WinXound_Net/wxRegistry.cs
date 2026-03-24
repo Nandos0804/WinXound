@@ -199,12 +199,12 @@ namespace WinXound_Net
                 sKeyName = Identifier;
                 if (!string.IsNullOrEmpty(Parameters))
                 {
-                    sKeyValue = "\"" + path + OpenWith + "\"" + " " + 
+                    sKeyValue = "\"" + path + OpenWith + "\"" + " " +
                                 Parameters.Trim();
                 }
                 else
                 {
-                    sKeyValue = "\"" + path + OpenWith + "\"" + " " + 
+                    sKeyValue = "\"" + path + OpenWith + "\"" + " " +
                                 "\"" + "%1" + "\"";
                 }
 

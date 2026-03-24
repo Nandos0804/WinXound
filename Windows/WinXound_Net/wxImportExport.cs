@@ -52,7 +52,7 @@ namespace WinXound_Net
                 }
 
                 string tempString = "<CsoundSynthesizer>" + newline + newline +
-                                    "<CsOptions>" + newline + 
+                                    "<CsOptions>" + newline +
                                     "</CsOptions>" + newline + newline +
                                     "<CsInstruments>" + newline + newline +
                                     tempOrc + newline + newline +
@@ -95,7 +95,7 @@ namespace WinXound_Net
                 if (startInstr == -1)
                 {
                     MessageBox.Show("<CsInstruments> tag not found!" + newline +
-                                    "Please insert it in the code and retry.", 
+                                    "Please insert it in the code and retry.",
                                     "Import Orc Error!",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
@@ -288,7 +288,7 @@ namespace WinXound_Net
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.FileName = Path.GetFileNameWithoutExtension(SciEditFileName);
             saveFileDialog1.RestoreDirectory = true;
- 
+
             if ((saveFileDialog1.ShowDialog() == DialogResult.OK) &&
                 (saveFileDialog1.FileName.Length) > 0)
             {
@@ -431,7 +431,7 @@ namespace WinXound_Net
             saveFileDialog1.Filter = "CSound Sco Files (*.sco)|*.sco|All files (*.*)|*.*";
             saveFileDialog1.FilterIndex = 1;
             saveFileDialog1.RestoreDirectory = true;
- 
+
             if ((saveFileDialog1.ShowDialog() == DialogResult.OK) &&
                 (saveFileDialog1.FileName.Length) > 0)
             {

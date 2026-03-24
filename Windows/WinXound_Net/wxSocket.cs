@@ -149,7 +149,7 @@ namespace WinXound_Net
         {
             _State = new_state;
             //if (OnStateChanged != null)
-                OnStateChanged(this, _State);
+            OnStateChanged(this, _State);
         }
 
         public Int32 SendLine(string Data)

@@ -467,7 +467,7 @@ namespace WinXound_Net
 
 
             //New: for Orc and Sco
-            if (mTextEditor.FileName.EndsWith(".orc") && isScore == true) 
+            if (mTextEditor.FileName.EndsWith(".orc") && isScore == true)
                 return false;
 
             if (mTextEditor.FileName.EndsWith(".orc") ||
@@ -475,7 +475,7 @@ namespace WinXound_Net
             {
                 mFsStart = 0;
                 mFsEnd = mTextEditor.GetTextLength();
-		    }
+            }
 
 
 
