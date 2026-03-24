@@ -263,7 +263,7 @@ namespace ScintillaTextEditor
 
 
         //Various class overrides
-        bool sciLexerLoaded = false;
+        private static bool sciLexerLoaded = false;
         protected override CreateParams CreateParams
         {
             get
@@ -273,18 +273,32 @@ namespace ScintillaTextEditor
 
                 if (!sciLexerLoaded)
                 {
-                    /*mLib =*/
-                    WinApi.LoadLibrary("SciLexer.dll");
+                    EnsureSciLexerLoaded();
                 }
 
                 CreateParams cp = base.CreateParams;
                 cp.ClassName = "Scintilla";
                 cp.Style = (int)WinApi.WS_CHILD | (int)WinApi.WS_VISIBLE | (int)WinApi.WS_TABSTOP;
 
-                sciLexerLoaded = true;
-
                 return cp;
             }
+        }
+
+        private static void EnsureSciLexerLoaded()
+        {
+            IntPtr moduleHandle = WinApi.LoadLibrary("SciLexer.dll");
+            if (moduleHandle != IntPtr.Zero)
+            {
+                sciLexerLoaded = true;
+                return;
+            }
+
+            int win32Error = Marshal.GetLastWin32Error();
+            string bitness = IntPtr.Size == 8 ? "x64" : "x86";
+            throw new DllNotFoundException(
+                "Unable to load SciLexer.dll. " +
+                "Make sure the native dependency exists next to the executable and matches process architecture (" + bitness + "). " +
+                "Win32Error=" + win32Error + ".");
         }
 
 

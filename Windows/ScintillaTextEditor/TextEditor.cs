@@ -31,8 +31,6 @@ namespace ScintillaTextEditor
 
             //textView1.SetMarginSensitiveN(0, true);
             //textView2.SetMarginSensitiveN(0, true);
-
-
         }
 
 
