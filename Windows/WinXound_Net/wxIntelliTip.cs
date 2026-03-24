@@ -44,6 +44,6 @@ namespace WinXound_Net
             LabelParams.BackColor = Color.FromArgb(230, 230, 230); ;
         }
 
-        
+
     }
 }

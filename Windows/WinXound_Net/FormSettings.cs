@@ -382,7 +382,7 @@ namespace WinXound_Net
                 TextBoxAlternativeCSoundFlags.Clear();
                 foreach (string s in wxGlobal.Settings.General.CSoundAdditionalFlags)
                 {
-                    if(!string.IsNullOrEmpty(s))
+                    if (!string.IsNullOrEmpty(s))
                         TextBoxAlternativeCSoundFlags.AppendText(s + newline);
                 }
 
@@ -484,19 +484,19 @@ namespace WinXound_Net
                     wxGlobal.Settings.General.StartupAction = 2;
                 else if (radioButtonSANewCSound.Checked == true)
                     wxGlobal.Settings.General.StartupAction = 1;
-                else 
+                else
                     wxGlobal.Settings.General.StartupAction = 0;
                 //ORC SCO IMPORT
                 if (radioButtonOSIOpenSeparately.Checked == true)
                     wxGlobal.Settings.General.OrcScoImport = 2;
                 else if (radioButtonOSIConvertToCsd.Checked == true)
                     wxGlobal.Settings.General.OrcScoImport = 1;
-                else 
+                else
                     wxGlobal.Settings.General.OrcScoImport = 0;
                 //DEFAULT WAVE PLAYER
                 if (radioButtonWavePlayerInternal.Checked == true)
                     wxGlobal.Settings.General.DefaultWavePlayer = 0;
-                else if(radioButtonWavePlayerExternal.Checked == true)
+                else if (radioButtonWavePlayerExternal.Checked == true)
                     wxGlobal.Settings.General.DefaultWavePlayer = 1;
                 //Templates
                 wxGlobal.Settings.Templates.CSound = RtbTemplateCSound.Text;
@@ -549,7 +549,7 @@ namespace WinXound_Net
                 //Additional CSound Flags
                 wxGlobal.Settings.General.CSoundAdditionalFlags.Clear();
                 TextBoxAlternativeCSoundFlags.Text = TextBoxAlternativeCSoundFlags.Text.Trim();
-                foreach(string s in TextBoxAlternativeCSoundFlags.Lines)
+                foreach (string s in TextBoxAlternativeCSoundFlags.Lines)
                 {
                     if (!string.IsNullOrEmpty(s))
                         wxGlobal.Settings.General.CSoundAdditionalFlags.Add(s);
@@ -718,9 +718,9 @@ namespace WinXound_Net
                         LabelLuaGUI.Text = "";
                         break;
 
-                    //case "buttonClearCabbageExe":
-                    //    LabelCabbageExe.Text = "";
-                    //    break;
+                        //case "buttonClearCabbageExe":
+                        //    LabelCabbageExe.Text = "";
+                        //    break;
 
 
 
@@ -1518,7 +1518,7 @@ namespace WinXound_Net
         ///////////////////////////////////////////////////////////////////////////////////////////
         private void ButtonDefaultAlternativeCSoundFlags_Click(object sender, EventArgs e)
         {
-            TextBoxAlternativeCSoundFlags.Text = 
+            TextBoxAlternativeCSoundFlags.Text =
                 wxGlobal.Settings.GetAdditionalCSoundFlags();
 
             TextBoxAlternativeCSoundFlags.Focus();

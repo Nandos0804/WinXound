@@ -1184,7 +1184,7 @@ namespace WinXound_Net
                        report + newline + newline +
                        "WinXound will normalize all line endings to " + eol + ".",
                        "WinXound Information",
-                //MessageBoxButtons.YesNo,
+                       //MessageBoxButtons.YesNo,
                        MessageBoxButtons.OK,
                        MessageBoxIcon.Information);
         }
@@ -6854,7 +6854,7 @@ namespace WinXound_Net
             string link = "http://en.flossmanuals.net/csound/";
 
             try
-            {       
+            {
                 System.Diagnostics.Process.Start(link);
             }
             catch (System.ComponentModel.Win32Exception noBrowser)

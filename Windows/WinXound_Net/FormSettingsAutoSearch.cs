@@ -228,7 +228,7 @@ namespace WinXound_Net
                         }
                     }
                 }
-                
+
                 else //Look in root path
                 {
                     //Retrieve System Folder
@@ -245,7 +245,7 @@ namespace WinXound_Net
                         }
                     }
                 }
-                
+
                 if (File.Exists(PythonPath + "\\python.exe"))
                 {
                     python_paths.Add(

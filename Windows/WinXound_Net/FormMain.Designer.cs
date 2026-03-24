@@ -572,7 +572,7 @@
             this.MenuFileSettings.Image = ((System.Drawing.Image)(resources.GetObject("MenuFileSettings.Image")));
             this.MenuFileSettings.Name = "MenuFileSettings";
             this.MenuFileSettings.ShortcutKeyDisplayString = "(Ctrl+Alt+P)";
-            this.MenuFileSettings.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            this.MenuFileSettings.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt)
             | System.Windows.Forms.Keys.P)));
             this.MenuFileSettings.Size = new System.Drawing.Size(180, 22);
             this.MenuFileSettings.Text = "Se&ttings";
@@ -749,7 +749,7 @@
             // 
             this.FindJumpToSelection.Name = "FindJumpToSelection";
             this.FindJumpToSelection.ShortcutKeyDisplayString = "(Ctrl+Alt+J)";
-            this.FindJumpToSelection.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            this.FindJumpToSelection.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt)
             | System.Windows.Forms.Keys.J)));
             this.FindJumpToSelection.Size = new System.Drawing.Size(255, 22);
             this.FindJumpToSelection.Text = "Jump to Caret/Selection";
@@ -794,7 +794,7 @@
             this.MenuEditRemoveComment.Image = ((System.Drawing.Image)(resources.GetObject("MenuEditRemoveComment.Image")));
             this.MenuEditRemoveComment.Name = "MenuEditRemoveComment";
             this.MenuEditRemoveComment.ShortcutKeyDisplayString = "(Ctrl+Shift+R)";
-            this.MenuEditRemoveComment.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuEditRemoveComment.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.R)));
             this.MenuEditRemoveComment.Size = new System.Drawing.Size(268, 22);
             this.MenuEditRemoveComment.Text = "Rem&ove line(s) comment";
@@ -825,7 +825,7 @@
             // 
             this.MenuRemoveAllBookmark.Name = "MenuRemoveAllBookmark";
             this.MenuRemoveAllBookmark.ShortcutKeyDisplayString = "(Ctrl+Shift+B)";
-            this.MenuRemoveAllBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuRemoveAllBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.B)));
             this.MenuRemoveAllBookmark.Size = new System.Drawing.Size(256, 22);
             this.MenuRemoveAllBookmark.Text = "Remove &all Bookmarks";
@@ -879,7 +879,7 @@
             // 
             this.MenuEditFormatAllCode.Name = "MenuEditFormatAllCode";
             this.MenuEditFormatAllCode.ShortcutKeyDisplayString = "(Ctrl+Shift+K)";
-            this.MenuEditFormatAllCode.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuEditFormatAllCode.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.K)));
             this.MenuEditFormatAllCode.Size = new System.Drawing.Size(243, 22);
             this.MenuEditFormatAllCode.Text = "Format &All Lines";
@@ -894,7 +894,7 @@
             // 
             this.MenuEditFormatOptions.Name = "MenuEditFormatOptions";
             this.MenuEditFormatOptions.ShortcutKeyDisplayString = "(Ctrl+Alt+K)";
-            this.MenuEditFormatOptions.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            this.MenuEditFormatOptions.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt)
             | System.Windows.Forms.Keys.K)));
             this.MenuEditFormatOptions.Size = new System.Drawing.Size(243, 22);
             this.MenuEditFormatOptions.Text = "Format Code &Options";
@@ -922,7 +922,7 @@
             // 
             this.MenuEditStoreSelectedText.Name = "MenuEditStoreSelectedText";
             this.MenuEditStoreSelectedText.ShortcutKeyDisplayString = "(Ctrl+Shift+I)";
-            this.MenuEditStoreSelectedText.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuEditStoreSelectedText.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.I)));
             this.MenuEditStoreSelectedText.Size = new System.Drawing.Size(240, 22);
             this.MenuEditStoreSelectedText.Text = "Store selected text";
@@ -1097,7 +1097,7 @@
             this.MenuViewFullCode.Image = ((System.Drawing.Image)(resources.GetObject("MenuViewFullCode.Image")));
             this.MenuViewFullCode.Name = "MenuViewFullCode";
             this.MenuViewFullCode.ShortcutKeyDisplayString = "(Ctrl+Shift+1)";
-            this.MenuViewFullCode.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuViewFullCode.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.D1)));
             this.MenuViewFullCode.Size = new System.Drawing.Size(296, 22);
             this.MenuViewFullCode.Text = "&Full Code";
@@ -1108,7 +1108,7 @@
             this.MenuViewSplitHorizontal.Image = ((System.Drawing.Image)(resources.GetObject("MenuViewSplitHorizontal.Image")));
             this.MenuViewSplitHorizontal.Name = "MenuViewSplitHorizontal";
             this.MenuViewSplitHorizontal.ShortcutKeyDisplayString = "(Ctrl+Shift+2)";
-            this.MenuViewSplitHorizontal.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuViewSplitHorizontal.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.D2)));
             this.MenuViewSplitHorizontal.Size = new System.Drawing.Size(296, 22);
             this.MenuViewSplitHorizontal.Text = "Split &Horizontal";
@@ -1119,7 +1119,7 @@
             this.MenuViewSplitHorizontalOrcSco.Image = ((System.Drawing.Image)(resources.GetObject("MenuViewSplitHorizontalOrcSco.Image")));
             this.MenuViewSplitHorizontalOrcSco.Name = "MenuViewSplitHorizontalOrcSco";
             this.MenuViewSplitHorizontalOrcSco.ShortcutKeyDisplayString = "(Ctrl+Shift+3)";
-            this.MenuViewSplitHorizontalOrcSco.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuViewSplitHorizontalOrcSco.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.D3)));
             this.MenuViewSplitHorizontalOrcSco.Size = new System.Drawing.Size(296, 22);
             this.MenuViewSplitHorizontalOrcSco.Text = "Split Horizontal (Orc/Sco)";
@@ -1130,7 +1130,7 @@
             this.MenuViewSplitVertical.Image = ((System.Drawing.Image)(resources.GetObject("MenuViewSplitVertical.Image")));
             this.MenuViewSplitVertical.Name = "MenuViewSplitVertical";
             this.MenuViewSplitVertical.ShortcutKeyDisplayString = "(Ctrl+Shift+4)";
-            this.MenuViewSplitVertical.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuViewSplitVertical.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.D4)));
             this.MenuViewSplitVertical.Size = new System.Drawing.Size(296, 22);
             this.MenuViewSplitVertical.Text = "Split &Vertical";
@@ -1141,7 +1141,7 @@
             this.MenuViewSplitVerticalOrcSco.Image = ((System.Drawing.Image)(resources.GetObject("MenuViewSplitVerticalOrcSco.Image")));
             this.MenuViewSplitVerticalOrcSco.Name = "MenuViewSplitVerticalOrcSco";
             this.MenuViewSplitVerticalOrcSco.ShortcutKeyDisplayString = "(Ctrl+Shift+5)";
-            this.MenuViewSplitVerticalOrcSco.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.MenuViewSplitVerticalOrcSco.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
             | System.Windows.Forms.Keys.D5)));
             this.MenuViewSplitVerticalOrcSco.Size = new System.Drawing.Size(296, 22);
             this.MenuViewSplitVerticalOrcSco.Text = "Split Vertical (Orc/Sco)";
@@ -1188,7 +1188,7 @@
             // 
             this.MenuViewAttachDetachCompiler.Name = "MenuViewAttachDetachCompiler";
             this.MenuViewAttachDetachCompiler.ShortcutKeyDisplayString = "(Ctrl+Alt+0)";
-            this.MenuViewAttachDetachCompiler.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            this.MenuViewAttachDetachCompiler.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt)
             | System.Windows.Forms.Keys.D0)));
             this.MenuViewAttachDetachCompiler.Size = new System.Drawing.Size(296, 22);
             this.MenuViewAttachDetachCompiler.Text = "Attach/Detach Compiler Window";

@@ -46,7 +46,7 @@ namespace WinXound_Net
 
         private void ListBoxOrcSco_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Return)
+            if (e.KeyCode == Keys.Return)
                 buttonOK_Click(this, null);
         }
     }
