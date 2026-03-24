@@ -281,6 +281,8 @@
             this.tabOpcodes = new System.Windows.Forms.TabPage();
             this.wxCSoundOpcodesRepository1 = new WinXound_Net.wxCSoundOpcodesRepository();
             this.tabRepository = new System.Windows.Forms.TabPage();
+            this.wxCompilerConsole1 = new WinXound_Net.wxCompilerConsole();
+            this.wxCodeRepository1 = new WinXound_Net.wxCodeRepository();
             this.ListBoxAutoComplete = new System.Windows.Forms.ListBox();
             this.wxTabCode = new WinXound_Net.wxDraggableTabControl();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -2432,6 +2434,7 @@
             // 
             // tabCompiler
             // 
+            this.tabCompiler.Controls.Add(this.wxCompilerConsole1);
             this.tabCompiler.Location = new System.Drawing.Point(4, 22);
             this.tabCompiler.Name = "tabCompiler";
             this.tabCompiler.Padding = new System.Windows.Forms.Padding(3);
@@ -2536,6 +2539,7 @@
             // 
             // tabRepository
             // 
+            this.tabRepository.Controls.Add(this.wxCodeRepository1);
             this.tabRepository.Location = new System.Drawing.Point(4, 22);
             this.tabRepository.Name = "tabRepository";
             this.tabRepository.Size = new System.Drawing.Size(792, 0);

@@ -419,4 +419,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Copy RTConsole to output Utility\ so it can be found at runtime for all build configs -->
+  <Target Name="CopyRTConsole" AfterTargets="Build">
+    <MakeDir Directories="$(OutputPath)Utility" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\bin\Utility\WinXound_RTConsole.exe"
+          DestinationFolder="$(OutputPath)Utility\"
+          SkipUnchangedFiles="true"
+          ContinueOnError="WarnAndContinue" />
+  </Target>
 </Project>
