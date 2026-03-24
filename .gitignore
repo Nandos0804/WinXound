@@ -1,28 +1,130 @@
-Windows/**/*.user
-Windows/**/*.suo
-Windows/**/obj/
-Windows/**/bin/
+# =============================================================================
+# WinXound .gitignore
+# =============================================================================
+
+
+# =============================================================================
+# Windows  (Visual Studio / .NET / MSBuild)
+# =============================================================================
+
+# ----- Visual Studio / MSBuild build outputs -----
+# Covers all sub-projects: WinXound_Net, ScintillaTextEditor, RTConsole, Utility
+Windows/**/[Bb]in/
+Windows/**/[Oo]bj/
 Windows/**/[Dd]ebug/
 Windows/**/[Rr]elease/
 Windows/**/x64/
 Windows/**/x86/
 Windows/**/TestResults/
-Windows/ScintillaTextEditor/bin/
-Windows/Utility/OpcodesParser/OpcodesParser/bin/
-Windows/scintilla211_for_winxound/bin/
-Windows/SciLexer.dll
+
+# ----- BUT keep the runtime data assets shipped in Windows/bin/ -----
+# History, ReadMe, CodeRepository, Help, Icons are hand-curated resources.
+# Settings/ and *.exe.config are build outputs (copied from source) — NOT whitelisted.
+!Windows/bin/
+!Windows/bin/History.txt
+!Windows/bin/ReadMe.txt
+!Windows/bin/CodeRepository/
+!Windows/bin/CodeRepository/**
+!Windows/bin/Help/
+!Windows/bin/Help/**
+!Windows/bin/Icons/
+!Windows/bin/Icons/**
+!Windows/bin/Utility/
+!Windows/bin/Utility/opcodes.txt
+
+# ----- Compiled binaries inside Windows/bin/ (rebuilt from source) -----
 Windows/bin/SciLexer.dll
+Windows/bin/Lexilla.dll
 Windows/bin/ScintillaTextEditor.dll
 Windows/bin/ScintillaTextEditor.pdb
-Windows/bin/Utility/WinXound_RTConsole.exe
 Windows/bin/WinXound_Net.exe
 Windows/bin/WinXound_Net.pdb
-Windows/bin/WinXound_Net.vshost.exe
-Windows/bin/WinXound_Net.vshost.exe.manifest
-Windows/.vs
-# macOS
+Windows/bin/Utility/WinXound_RTConsole.exe
+Windows/bin/Utility/WinXound_RTConsole.pdb
 
-# General
+# ----- Build outputs copied to Windows/bin/ (have source-of-truth in project dirs) -----
+# Settings/ is copied from WinXound_Net/Settings Default/ during build
+Windows/bin/Settings/
+# *.exe.config are generated from app.config by MSBuild
+Windows/bin/*.exe.config
+Windows/bin/Utility/*.exe.config
+
+# ----- BUT keep the native Scintilla DLLs needed at build time -----
+# These pre-built DLLs live in ScintillaTextEditor/native/ and are checked in.
+!Windows/ScintillaTextEditor/native/
+!Windows/ScintillaTextEditor/native/SciLexer.dll
+!Windows/ScintillaTextEditor/native/Lexilla.dll
+
+# ----- Visual Studio IDE / user-specific files -----
+Windows/.vs/
+Windows/**/*.suo
+Windows/**/*.user
+Windows/**/*.userosscache
+Windows/**/*.sln.docstates
+
+# ----- Build artifacts (global patterns scoped to Windows/) -----
+Windows/**/*.exe
+Windows/**/*.dll
+Windows/**/*.pdb
+Windows/**/*.cache
+Windows/**/*.ilk
+Windows/**/*.log
+Windows/**/*.lib
+Windows/**/*.exp
+Windows/**/*.obj
+Windows/**/*.o
+
+# Re-allow the whitelisted items above (negations must follow the broad rules)
+!Windows/bin/History.txt
+!Windows/bin/ReadMe.txt
+!Windows/bin/Utility/opcodes.txt
+!Windows/ScintillaTextEditor/native/SciLexer.dll
+!Windows/ScintillaTextEditor/native/Lexilla.dll
+
+# ----- Loose Scintilla DLL at the Windows/ root (legacy leftover) -----
+Windows/SciLexer.dll
+
+# ----- NuGet -----
+Windows/**/packages/
+Windows/**/*.nupkg
+Windows/**/project.lock.json
+
+# ----- ReSharper / Rider -----
+Windows/**/_ReSharper*/
+Windows/**/*.DotSettings.user
+Windows/**/.idea/
+
+# ----- NCrunch -----
+Windows/**/*.ncrunch*
+Windows/**/_NCrunch_*
+
+# ----- Windows junk -----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ----- Temp files from Scintilla downloads -----
+wscite32_*.zip
+wscite32_*_temp/
+wscite32_temp/
+
+# ----- OS / editor temp files -----
+*.tmp
+*.bak
+*.swp
+*~
+*.orig
+
+# ----- Crash diagnostics (generated at runtime) -----
+crash.log
+
+
+# =============================================================================
+# macOS  (Xcode / Cocoa)
+# =============================================================================
+
+# ----- General macOS junk -----
 .DS_Store
 __MACOSX/
 .AppleDouble
@@ -60,7 +162,10 @@ xcuserdata/
 MacOs/build/
 MacOs/DerivedData/
 
-## Linux
+
+# =============================================================================
+# Linux  (CMake / GTK)
+# =============================================================================
 
 Linux/.DS_Store
 Linux/autom4te.cache/
