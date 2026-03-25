@@ -1,18 +1,11 @@
-﻿using System;
+﻿using ScintillaTextEditor;
+using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
+using System.Drawing.Printing;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Drawing.Printing;
-using System.Runtime.InteropServices;
-using System.Reflection;
-
-using ScintillaTextEditor;
+using System.Windows.Forms;
 
 
 namespace WinXound_Net
@@ -51,7 +44,9 @@ namespace WinXound_Net
         public event EventHandler FontHasChanged;
         public event EventHandler SavePointReached;
         public event EventHandler SavePointLeft;
+#pragma warning disable CS0067
         public event EventHandler EditorError;
+#pragma warning restore CS0067
         public event EventHandler OrcScoShowList;
         public event EventHandler OrcScoSwitchRequest;
         public event MouseEventHandler TextEditorMouseDown;
@@ -1201,7 +1196,7 @@ namespace WinXound_Net
             {
                 //Open document 
                 OpenFileDialog openFileDialog1 = new OpenFileDialog();
-                string mExtension = 
+                string mExtension =
                     this.FileName.ToLower().EndsWith(".orc") ? "*.sco" : "*.orc";
 
                 openFileDialog1.Filter =

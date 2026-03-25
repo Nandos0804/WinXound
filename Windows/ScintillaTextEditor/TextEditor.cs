@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using System.Collections;
 using System.Drawing;
 using System.Drawing.Printing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
-using System.Collections;
 using System.IO;
-using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 
 namespace ScintillaTextEditor
@@ -36,8 +31,6 @@ namespace ScintillaTextEditor
 
             //textView1.SetMarginSensitiveN(0, true);
             //textView2.SetMarginSensitiveN(0, true);
-
-
         }
 
 
@@ -60,11 +53,15 @@ namespace ScintillaTextEditor
         public event EventHandler TextEditorUpdateUI;
         //public event EventHandler TextEditorTextHasChanged;
         public event TextView.OnSCI_Modified TextEditorTextHasChanged;
+#pragma warning disable CS0067
         public event EventHandler TextEditorFontHasChanged;
+#pragma warning restore CS0067
         public event EventHandler TextEditorSavePointReached;
         public event EventHandler TextEditorSavePointLeft;
         //public event EventHandler TextEditorModContainer;
+#pragma warning disable CS0067
         public event EventHandler TextEditorError;
+#pragma warning restore CS0067
         public event KeyEventHandler TextEditorKeyAction;
         public event MouseEventHandler TextEditorMouseDown;
         public event MouseEventHandler TextEditorMouseZoom;
@@ -354,7 +351,7 @@ namespace ScintillaTextEditor
 
             textView1.SCI_ModContainer +=
                 new TextView.OnSciModContainer(textViews_SCI_ModContainer);
-                //new EventHandler(textViews_SCI_ModContainer);
+            //new EventHandler(textViews_SCI_ModContainer);
 
             textView1.SCI_MouseZoom +=
                 new MouseEventHandler(textViews_SCI_MouseZoom);
@@ -392,7 +389,7 @@ namespace ScintillaTextEditor
                 this.SetEolMode(eolModeReal);
             }
 
-            if(token == 2)
+            if (token == 2)
             {
                 //System.Diagnostics.Debug.WriteLine(
                 //    "SC_MOD_CONTAINER:CONVERT_EOL!!! -> TOKEN: " + token);
@@ -1118,7 +1115,7 @@ namespace ScintillaTextEditor
 
 
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     //wxGlobal.wxMessageError(ex.Message, "Form Find and Replace - ButtonReplaceAll_Click Error");
                 }
@@ -1407,7 +1404,7 @@ namespace ScintillaTextEditor
             //for the moment we skip here
             return false;
 
-
+#pragma warning disable CS0162
             //2. Search for multi line rem "/*" and "*/"
             Int32 mStart = -1;
             Int32 mEnd = -1;
@@ -1444,6 +1441,7 @@ namespace ScintillaTextEditor
 
             //3. if not found
             return false;
+#pragma warning restore CS0162
         }
 
         //int GetLineEndPosition(int linenumber);

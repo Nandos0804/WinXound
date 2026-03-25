@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
-using System.IO;
+﻿using ScintillaTextEditor;
+using System;
 using System.Collections;
-
-using ScintillaTextEditor;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
 
 namespace WinXound_Net
@@ -22,9 +17,11 @@ namespace WinXound_Net
             public Int32 DefaultTabSize;
             public bool ShowVerticalRuler;
             public bool ShowMatchingBracket;
+#pragma warning disable CS0649
             public bool ShowLineNumbers;
             public bool ShowIntelliTip;
             public bool ShowExplorer;
+#pragma warning restore CS0649
             public bool MarkCaretLine;
 
             public Int32 TextForeColor;

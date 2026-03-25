@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Runtime.InteropServices;
+using System.Text;
 
 
 
@@ -105,9 +104,9 @@ namespace WinXound_RTConsole
 
         }
 
-        private int WAIT_TIMEOUT = 0x00000102;
-        private int WAIT_OBJECT_0 = 0;
-        private int WAIT_ABANDONED = 0x00000080;
+        private const int WAIT_TIMEOUT = 0x00000102;
+        private const int WAIT_OBJECT_0 = 0;
+        private const int WAIT_ABANDONED = 0x00000080;
 
 
 
@@ -354,7 +353,7 @@ namespace WinXound_RTConsole
                 else
                     return;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return;
             }

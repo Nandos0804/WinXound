@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.IO;
-using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 
 namespace WinXound_Net
@@ -136,14 +133,23 @@ namespace WinXound_Net
                 ////preceding the symbol is successful. 
                 ////Cmd.exe runs the first command, and then runs the second command 
                 ////only if the first command completed successfully.
+                // Inject OPCODEDIR and OPCODEDIR64 into the external terminal session.
+                string envSetup = "";
+                string opcodedir = wxGlobal.Settings.Directory.OPCODEDIR;
+                if (!string.IsNullOrEmpty(opcodedir))
+                {
+                    envSetup = "SET \"OPCODE7DIR=" + opcodedir + "\" && " +
+                               "SET \"OPCODE7DIR64=" + opcodedir + "\" && ";
+                }
+
                 Process mtProc = new Process();
                 mtProc.StartInfo.FileName = "cmd.exe";
                 //With Python send temp files to WorkingDirectory
                 mtProc.StartInfo.WorkingDirectory = Directory.GetParent(FileName1).ToString();
-                mtProc.StartInfo.Arguments = "/K cls && " +
+                mtProc.StartInfo.Arguments = "/K cls && " + envSetup +
                                              "\"" + CompilerPath + "\" " +
                                              Arguments + " " +
-                                             "\"" + FileName1 + "\"";
+                                             "\"" + FileName1 + "\""; 
 
                 if (!string.IsNullOrEmpty(FileName2))
                 {
@@ -151,7 +157,7 @@ namespace WinXound_Net
                 }
 
                 System.Diagnostics.Debug.WriteLine(mtProc.StartInfo.Arguments);
-                
+
                 mtProc.Start();
 
 

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 //using System.Linq;
 using System.Windows.Forms;
 
@@ -15,7 +14,21 @@ namespace WinXound_Net
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.ThrowException);
+
+            try
+            {
+                Application.Run(new FormMain());
+            }
+            catch (Exception ex)
+            {
+                string msg = ex.ToString();
+                System.IO.File.WriteAllText(
+                    System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "crash.log"),
+                    DateTime.Now + Environment.NewLine + msg);
+                MessageBox.Show(msg, "WinXound - Fatal Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

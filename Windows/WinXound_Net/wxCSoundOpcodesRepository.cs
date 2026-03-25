@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
 using System.Collections;
+using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
 
 namespace WinXound_Net
 {
@@ -37,18 +33,21 @@ namespace WinXound_Net
         public Hashtable FillTreeViewAndReturnOpcodes()
         {
             string mString = null;
+            string utilityDirectory = Path.Combine(Application.StartupPath, "Utility");
+            string opcodesPath = Path.Combine(utilityDirectory, "opcodes.txt");
 
             Int32 index = -1;
             string itemText = "";
             string oldItemText = "";
 
             //Check if file exists; if not use the default one included inside resources.
-            if (!File.Exists(Application.StartupPath + "\\Utility\\opcodes.txt"))
+            if (!File.Exists(opcodesPath))
             {
+                Directory.CreateDirectory(utilityDirectory);
                 using (StreamReader sr = wxGlobal.GetResource("Resources.opcodes.txt"))
                 {
                     string text = sr.ReadToEnd();
-                    File.WriteAllText(Application.StartupPath + "\\Utility\\opcodes.txt", text);
+                    File.WriteAllText(opcodesPath, text);
                 }
             }
 
@@ -56,7 +55,7 @@ namespace WinXound_Net
             mOpcodes = new Hashtable();
 
             //OLD: using (StreamReader reader = wxGlobal.GetResource("Resources.opcodes.txt"))
-            using (StreamReader reader = new StreamReader(Application.StartupPath + "\\Utility\\opcodes.txt")) 
+            using (StreamReader reader = new StreamReader(opcodesPath))
             {
                 while (!(reader.Peek() == -1))
                 {

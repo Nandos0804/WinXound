@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security;
 using System.Security.AccessControl;
 using System.Security.Principal;
 
@@ -146,7 +145,8 @@ namespace WinXound_Net
         /// </summary>
         /// <param name="path"></param>
         public FileAccessRights(string path) :
-            this(path, System.Security.Principal.WindowsIdentity.GetCurrent()) { }
+            this(path, System.Security.Principal.WindowsIdentity.GetCurrent())
+        { }
 
 
         /// <summary>

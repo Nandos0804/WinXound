@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Text;
-using System.Xml.Serialization;
-using System.IO;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace WinXound_Net

@@ -271,7 +271,6 @@
             this.ToolStripCompilerWindow = new System.Windows.Forms.ToolStripButton();
             this.tabControlBuild = new System.Windows.Forms.TabControl();
             this.tabCompiler = new System.Windows.Forms.TabPage();
-            this.wxCompilerConsole1 = new WinXound_Net.wxCompilerConsole();
             this.tabHelp = new System.Windows.Forms.TabPage();
             this.HelpBrowser = new System.Windows.Forms.WebBrowser();
             this.ToolStripBrowser = new System.Windows.Forms.ToolStrip();
@@ -282,8 +281,10 @@
             this.tabOpcodes = new System.Windows.Forms.TabPage();
             this.wxCSoundOpcodesRepository1 = new WinXound_Net.wxCSoundOpcodesRepository();
             this.tabRepository = new System.Windows.Forms.TabPage();
+            this.wxCompilerConsole1 = new WinXound_Net.wxCompilerConsole();
             this.wxCodeRepository1 = new WinXound_Net.wxCodeRepository();
             this.ListBoxAutoComplete = new System.Windows.Forms.ListBox();
+            this.wxTabCode = new WinXound_Net.wxDraggableTabControl();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.mContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ContextCut = new System.Windows.Forms.ToolStripMenuItem();
@@ -309,15 +310,12 @@
             this.ContextHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.FirstStartTimer = new System.Windows.Forms.Timer(this.components);
             this.TimerMod = new System.Windows.Forms.Timer(this.components);
-            this.wxTabCode = new WinXound_Net.wxDraggableTabControl();
             this.menuStrip1.SuspendLayout();
             this.ToolStrip1.SuspendLayout();
             this.tabControlBuild.SuspendLayout();
-            this.tabCompiler.SuspendLayout();
             this.tabHelp.SuspendLayout();
             this.ToolStripBrowser.SuspendLayout();
             this.tabOpcodes.SuspendLayout();
-            this.tabRepository.SuspendLayout();
             this.mContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -365,7 +363,7 @@
             this.toolStripSeparator21,
             this.MenuFileExit});
             this.MenuFile.Name = "MenuFile";
-            this.MenuFile.Size = new System.Drawing.Size(35, 20);
+            this.MenuFile.Size = new System.Drawing.Size(37, 20);
             this.MenuFile.Text = "&File";
             // 
             // MenuFileNew
@@ -374,7 +372,7 @@
             this.MenuFileNew.Name = "MenuFileNew";
             this.MenuFileNew.ShortcutKeyDisplayString = "(Ctrl+N)";
             this.MenuFileNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.MenuFileNew.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileNew.Size = new System.Drawing.Size(188, 22);
             this.MenuFileNew.Text = "&New";
             this.MenuFileNew.Click += new System.EventHandler(this.MenuFileNew_Click);
             // 
@@ -384,14 +382,14 @@
             this.MenuFileOpen.Name = "MenuFileOpen";
             this.MenuFileOpen.ShortcutKeyDisplayString = "(Ctrl+O)";
             this.MenuFileOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.MenuFileOpen.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileOpen.Size = new System.Drawing.Size(188, 22);
             this.MenuFileOpen.Text = "&Open";
             this.MenuFileOpen.Click += new System.EventHandler(this.MenuFileOpen_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFileSave
             // 
@@ -399,7 +397,7 @@
             this.MenuFileSave.Name = "MenuFileSave";
             this.MenuFileSave.ShortcutKeyDisplayString = "(Ctrl+S)";
             this.MenuFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.MenuFileSave.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileSave.Size = new System.Drawing.Size(188, 22);
             this.MenuFileSave.Text = "&Save";
             this.MenuFileSave.Click += new System.EventHandler(this.MenuFileSave_Click);
             // 
@@ -407,35 +405,35 @@
             // 
             this.MenuFileSaveAs.Image = ((System.Drawing.Image)(resources.GetObject("MenuFileSaveAs.Image")));
             this.MenuFileSaveAs.Name = "MenuFileSaveAs";
-            this.MenuFileSaveAs.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileSaveAs.Size = new System.Drawing.Size(188, 22);
             this.MenuFileSaveAs.Text = "Save &as ...";
             this.MenuFileSaveAs.Click += new System.EventHandler(this.MenuFileSaveAs_Click);
             // 
             // MenuFileSaveAll
             // 
             this.MenuFileSaveAll.Name = "MenuFileSaveAll";
-            this.MenuFileSaveAll.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileSaveAll.Size = new System.Drawing.Size(188, 22);
             this.MenuFileSaveAll.Text = "Save A&ll";
             this.MenuFileSaveAll.Click += new System.EventHandler(this.MenuFileSaveAll_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFileClose
             // 
             this.MenuFileClose.Name = "MenuFileClose";
             this.MenuFileClose.ShortcutKeyDisplayString = "(Ctrl+W)";
             this.MenuFileClose.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.MenuFileClose.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileClose.Size = new System.Drawing.Size(188, 22);
             this.MenuFileClose.Text = "&Close";
             this.MenuFileClose.Click += new System.EventHandler(this.MenuFileClose_Click);
             // 
             // MenuFileCloseAll
             // 
             this.MenuFileCloseAll.Name = "MenuFileCloseAll";
-            this.MenuFileCloseAll.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileCloseAll.Size = new System.Drawing.Size(188, 22);
             this.MenuFileCloseAll.Text = "Clos&e All";
             this.MenuFileCloseAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MenuFileCloseAll.Click += new System.EventHandler(this.MenuFileCloseAll_Click);
@@ -443,19 +441,19 @@
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator15.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFileInfo
             // 
             this.MenuFileInfo.Name = "MenuFileInfo";
-            this.MenuFileInfo.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileInfo.Size = new System.Drawing.Size(188, 22);
             this.MenuFileInfo.Text = "File In&fo";
             this.MenuFileInfo.Click += new System.EventHandler(this.MenuFileInfo_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFileImport
             // 
@@ -466,39 +464,39 @@
             this.MenuFileImportOrcToExistingCsd,
             this.MenuFileImportScoToExistingCsd});
             this.MenuFileImport.Name = "MenuFileImport";
-            this.MenuFileImport.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileImport.Size = new System.Drawing.Size(188, 22);
             this.MenuFileImport.Text = "&Import";
             // 
             // MenuFileImportOrcSco
             // 
             this.MenuFileImportOrcSco.Name = "MenuFileImportOrcSco";
-            this.MenuFileImportOrcSco.Size = new System.Drawing.Size(237, 22);
+            this.MenuFileImportOrcSco.Size = new System.Drawing.Size(253, 22);
             this.MenuFileImportOrcSco.Text = "ORC/SCO into a new Csd file";
             this.MenuFileImportOrcSco.Click += new System.EventHandler(this.MenuFileImportOrcSco_Click);
             // 
             // MenuFileSeparatorImport
             // 
             this.MenuFileSeparatorImport.Name = "MenuFileSeparatorImport";
-            this.MenuFileSeparatorImport.Size = new System.Drawing.Size(234, 6);
+            this.MenuFileSeparatorImport.Size = new System.Drawing.Size(250, 6);
             // 
             // MenuFileImportOrcScoToExistingCsd
             // 
             this.MenuFileImportOrcScoToExistingCsd.Name = "MenuFileImportOrcScoToExistingCsd";
-            this.MenuFileImportOrcScoToExistingCsd.Size = new System.Drawing.Size(237, 22);
+            this.MenuFileImportOrcScoToExistingCsd.Size = new System.Drawing.Size(253, 22);
             this.MenuFileImportOrcScoToExistingCsd.Text = "ORC/SCO into the current Csd file";
             this.MenuFileImportOrcScoToExistingCsd.Click += new System.EventHandler(this.MenuFileImportOrcSco_Click);
             // 
             // MenuFileImportOrcToExistingCsd
             // 
             this.MenuFileImportOrcToExistingCsd.Name = "MenuFileImportOrcToExistingCsd";
-            this.MenuFileImportOrcToExistingCsd.Size = new System.Drawing.Size(237, 22);
+            this.MenuFileImportOrcToExistingCsd.Size = new System.Drawing.Size(253, 22);
             this.MenuFileImportOrcToExistingCsd.Text = "ORC into the current Csd file";
             this.MenuFileImportOrcToExistingCsd.Click += new System.EventHandler(this.MenuFileImportOrc_Click);
             // 
             // MenuFileImportScoToExistingCsd
             // 
             this.MenuFileImportScoToExistingCsd.Name = "MenuFileImportScoToExistingCsd";
-            this.MenuFileImportScoToExistingCsd.Size = new System.Drawing.Size(237, 22);
+            this.MenuFileImportScoToExistingCsd.Size = new System.Drawing.Size(253, 22);
             this.MenuFileImportScoToExistingCsd.Text = "SCO into the current Csd file";
             this.MenuFileImportScoToExistingCsd.Click += new System.EventHandler(this.MenuFileImportSco_Click);
             // 
@@ -509,46 +507,46 @@
             this.MenuFileExportOrc,
             this.MenuFileExportSco});
             this.MenuFileExport.Name = "MenuFileExport";
-            this.MenuFileExport.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileExport.Size = new System.Drawing.Size(188, 22);
             this.MenuFileExport.Text = "&Export";
             // 
             // MenuFileExportOrcSco
             // 
             this.MenuFileExportOrcSco.Name = "MenuFileExportOrcSco";
-            this.MenuFileExportOrcSco.Size = new System.Drawing.Size(112, 22);
+            this.MenuFileExportOrcSco.Size = new System.Drawing.Size(117, 22);
             this.MenuFileExportOrcSco.Text = "Orc/Sco";
             this.MenuFileExportOrcSco.Click += new System.EventHandler(this.MenuFileExportOrcSco_Click);
             // 
             // MenuFileExportOrc
             // 
             this.MenuFileExportOrc.Name = "MenuFileExportOrc";
-            this.MenuFileExportOrc.Size = new System.Drawing.Size(112, 22);
+            this.MenuFileExportOrc.Size = new System.Drawing.Size(117, 22);
             this.MenuFileExportOrc.Text = "Orc";
             this.MenuFileExportOrc.Click += new System.EventHandler(this.MenuFileExportOrc_Click);
             // 
             // MenuFileExportSco
             // 
             this.MenuFileExportSco.Name = "MenuFileExportSco";
-            this.MenuFileExportSco.Size = new System.Drawing.Size(112, 22);
+            this.MenuFileExportSco.Size = new System.Drawing.Size(117, 22);
             this.MenuFileExportSco.Text = "Sco";
             this.MenuFileExportSco.Click += new System.EventHandler(this.MenuFileExportSco_Click);
             // 
             // toolStripSeparator18
             // 
             this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator18.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFilePageSetup
             // 
             this.MenuFilePageSetup.Name = "MenuFilePageSetup";
-            this.MenuFilePageSetup.Size = new System.Drawing.Size(180, 22);
+            this.MenuFilePageSetup.Size = new System.Drawing.Size(188, 22);
             this.MenuFilePageSetup.Text = "Pa&ge Setup";
             this.MenuFilePageSetup.Click += new System.EventHandler(this.MenuFilePageSetup_Click);
             // 
             // MenuFilePrintPreview
             // 
             this.MenuFilePrintPreview.Name = "MenuFilePrintPreview";
-            this.MenuFilePrintPreview.Size = new System.Drawing.Size(180, 22);
+            this.MenuFilePrintPreview.Size = new System.Drawing.Size(188, 22);
             this.MenuFilePrintPreview.Text = "Print previe&w";
             this.MenuFilePrintPreview.Click += new System.EventHandler(this.MenuFilePrintPreview_Click);
             // 
@@ -558,14 +556,14 @@
             this.MenuFilePrint.Name = "MenuFilePrint";
             this.MenuFilePrint.ShortcutKeyDisplayString = "(Ctrl+P)";
             this.MenuFilePrint.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.MenuFilePrint.Size = new System.Drawing.Size(180, 22);
+            this.MenuFilePrint.Size = new System.Drawing.Size(188, 22);
             this.MenuFilePrint.Text = "&Print";
             this.MenuFilePrint.Click += new System.EventHandler(this.MenuFilePrint_Click);
             // 
             // toolStripSeparator19
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator19.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFileSettings
             // 
@@ -574,30 +572,30 @@
             this.MenuFileSettings.ShortcutKeyDisplayString = "(Ctrl+Alt+P)";
             this.MenuFileSettings.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.P)));
-            this.MenuFileSettings.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileSettings.Size = new System.Drawing.Size(188, 22);
             this.MenuFileSettings.Text = "Se&ttings";
             this.MenuFileSettings.Click += new System.EventHandler(this.MenuFileSettings_Click);
             // 
             // toolStripSeparator20
             // 
             this.toolStripSeparator20.Name = "toolStripSeparator20";
-            this.toolStripSeparator20.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator20.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFileRecentFiles
             // 
             this.MenuFileRecentFiles.Name = "MenuFileRecentFiles";
-            this.MenuFileRecentFiles.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileRecentFiles.Size = new System.Drawing.Size(188, 22);
             this.MenuFileRecentFiles.Text = "&Recent files";
             // 
             // toolStripSeparator21
             // 
             this.toolStripSeparator21.Name = "toolStripSeparator21";
-            this.toolStripSeparator21.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator21.Size = new System.Drawing.Size(185, 6);
             // 
             // MenuFileExit
             // 
             this.MenuFileExit.Name = "MenuFileExit";
-            this.MenuFileExit.Size = new System.Drawing.Size(180, 22);
+            this.MenuFileExit.Size = new System.Drawing.Size(188, 22);
             this.MenuFileExit.Text = "E&xit";
             this.MenuFileExit.Click += new System.EventHandler(this.MenuFileExit_Click);
             // 
@@ -626,7 +624,7 @@
             this.toolStripSeparator30,
             this.MenuEditEOLConversion});
             this.MenuEdit.Name = "MenuEdit";
-            this.MenuEdit.Size = new System.Drawing.Size(37, 20);
+            this.MenuEdit.Size = new System.Drawing.Size(39, 20);
             this.MenuEdit.Text = "&Edit";
             // 
             // MenuEditUndo
@@ -634,7 +632,7 @@
             this.MenuEditUndo.Image = ((System.Drawing.Image)(resources.GetObject("MenuEditUndo.Image")));
             this.MenuEditUndo.Name = "MenuEditUndo";
             this.MenuEditUndo.ShortcutKeyDisplayString = "(Ctrl+Z)";
-            this.MenuEditUndo.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditUndo.Size = new System.Drawing.Size(219, 22);
             this.MenuEditUndo.Text = "&Undo";
             this.MenuEditUndo.Click += new System.EventHandler(this.MenuEditUndo_Click);
             // 
@@ -643,21 +641,21 @@
             this.MenuEditRedo.Image = ((System.Drawing.Image)(resources.GetObject("MenuEditRedo.Image")));
             this.MenuEditRedo.Name = "MenuEditRedo";
             this.MenuEditRedo.ShortcutKeyDisplayString = "(Ctrl+Y)";
-            this.MenuEditRedo.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditRedo.Size = new System.Drawing.Size(219, 22);
             this.MenuEditRedo.Text = "&Redo";
             this.MenuEditRedo.Click += new System.EventHandler(this.MenuEditRedo_Click);
             // 
             // toolStripSeparator22
             // 
             this.toolStripSeparator22.Name = "toolStripSeparator22";
-            this.toolStripSeparator22.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator22.Size = new System.Drawing.Size(216, 6);
             // 
             // MenuEditCut
             // 
             this.MenuEditCut.Image = ((System.Drawing.Image)(resources.GetObject("MenuEditCut.Image")));
             this.MenuEditCut.Name = "MenuEditCut";
             this.MenuEditCut.ShortcutKeyDisplayString = "(Ctrl+X)";
-            this.MenuEditCut.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditCut.Size = new System.Drawing.Size(219, 22);
             this.MenuEditCut.Text = "Cu&t";
             this.MenuEditCut.Click += new System.EventHandler(this.MenuEditCut_Click);
             // 
@@ -666,7 +664,7 @@
             this.MenuEditCopy.Image = ((System.Drawing.Image)(resources.GetObject("MenuEditCopy.Image")));
             this.MenuEditCopy.Name = "MenuEditCopy";
             this.MenuEditCopy.ShortcutKeyDisplayString = "(Ctrl+C)";
-            this.MenuEditCopy.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditCopy.Size = new System.Drawing.Size(219, 22);
             this.MenuEditCopy.Text = "&Copy";
             this.MenuEditCopy.Click += new System.EventHandler(this.MenuEditCopy_Click);
             // 
@@ -675,7 +673,7 @@
             this.MenuEditPaste.Image = ((System.Drawing.Image)(resources.GetObject("MenuEditPaste.Image")));
             this.MenuEditPaste.Name = "MenuEditPaste";
             this.MenuEditPaste.ShortcutKeyDisplayString = "(Ctrl+V)";
-            this.MenuEditPaste.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditPaste.Size = new System.Drawing.Size(219, 22);
             this.MenuEditPaste.Text = "&Paste";
             this.MenuEditPaste.Click += new System.EventHandler(this.MenuEditPaste_Click);
             // 
@@ -683,28 +681,28 @@
             // 
             this.MenuEditDelete.Name = "MenuEditDelete";
             this.MenuEditDelete.ShortcutKeyDisplayString = "(Canc)";
-            this.MenuEditDelete.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditDelete.Size = new System.Drawing.Size(219, 22);
             this.MenuEditDelete.Text = "&Delete";
             this.MenuEditDelete.Click += new System.EventHandler(this.MenuEditDelete_Click);
             // 
             // toolStripSeparator23
             // 
             this.toolStripSeparator23.Name = "toolStripSeparator23";
-            this.toolStripSeparator23.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator23.Size = new System.Drawing.Size(216, 6);
             // 
             // MenuEditSelectAll
             // 
             this.MenuEditSelectAll.Name = "MenuEditSelectAll";
             this.MenuEditSelectAll.ShortcutKeyDisplayString = "(Ctrl+A)";
             this.MenuEditSelectAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.MenuEditSelectAll.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditSelectAll.Size = new System.Drawing.Size(219, 22);
             this.MenuEditSelectAll.Text = "Select &All";
             this.MenuEditSelectAll.Click += new System.EventHandler(this.MenuEditSelectAll_Click);
             // 
             // toolStripSeparator25
             // 
             this.toolStripSeparator25.Name = "toolStripSeparator25";
-            this.toolStripSeparator25.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator25.Size = new System.Drawing.Size(216, 6);
             // 
             // MenuEditFindBase
             // 
@@ -714,7 +712,7 @@
             this.FindLastWordPREV,
             this.FindJumpToSelection});
             this.MenuEditFindBase.Name = "MenuEditFindBase";
-            this.MenuEditFindBase.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditFindBase.Size = new System.Drawing.Size(219, 22);
             this.MenuEditFindBase.Text = "&Find and Replace";
             // 
             // MenuEditFind
@@ -723,7 +721,7 @@
             this.MenuEditFind.Name = "MenuEditFind";
             this.MenuEditFind.ShortcutKeyDisplayString = "(Ctrl+F)";
             this.MenuEditFind.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.MenuEditFind.Size = new System.Drawing.Size(255, 22);
+            this.MenuEditFind.Size = new System.Drawing.Size(270, 22);
             this.MenuEditFind.Text = "&Find And Replace";
             this.MenuEditFind.Click += new System.EventHandler(this.MenuEditFind_Click);
             // 
@@ -732,7 +730,7 @@
             this.FindLastWordNEXT.Name = "FindLastWordNEXT";
             this.FindLastWordNEXT.ShortcutKeyDisplayString = "(Ctrl and +)";
             this.FindLastWordNEXT.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Oemplus)));
-            this.FindLastWordNEXT.Size = new System.Drawing.Size(255, 22);
+            this.FindLastWordNEXT.Size = new System.Drawing.Size(270, 22);
             this.FindLastWordNEXT.Text = "Find Next";
             this.FindLastWordNEXT.Click += new System.EventHandler(this.FindLastWordNEXT_Click);
             // 
@@ -741,7 +739,7 @@
             this.FindLastWordPREV.Name = "FindLastWordPREV";
             this.FindLastWordPREV.ShortcutKeyDisplayString = "(Ctrl and -)";
             this.FindLastWordPREV.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.OemMinus)));
-            this.FindLastWordPREV.Size = new System.Drawing.Size(255, 22);
+            this.FindLastWordPREV.Size = new System.Drawing.Size(270, 22);
             this.FindLastWordPREV.Text = "Find Previous";
             this.FindLastWordPREV.Click += new System.EventHandler(this.FindLastWordPREV_Click);
             // 
@@ -751,7 +749,7 @@
             this.FindJumpToSelection.ShortcutKeyDisplayString = "(Ctrl+Alt+J)";
             this.FindJumpToSelection.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.J)));
-            this.FindJumpToSelection.Size = new System.Drawing.Size(255, 22);
+            this.FindJumpToSelection.Size = new System.Drawing.Size(270, 22);
             this.FindJumpToSelection.Text = "Jump to Caret/Selection";
             this.FindJumpToSelection.Click += new System.EventHandler(this.FindJumpToSelection_Click);
             // 
@@ -761,14 +759,14 @@
             this.MenuEditFindLine.Name = "MenuEditFindLine";
             this.MenuEditFindLine.ShortcutKeyDisplayString = "(Ctrl+G)";
             this.MenuEditFindLine.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.MenuEditFindLine.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditFindLine.Size = new System.Drawing.Size(219, 22);
             this.MenuEditFindLine.Text = "Find &Line Number";
             this.MenuEditFindLine.Click += new System.EventHandler(this.MenuEditFindLine_Click);
             // 
             // toolStripSeparator26
             // 
             this.toolStripSeparator26.Name = "toolStripSeparator26";
-            this.toolStripSeparator26.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator26.Size = new System.Drawing.Size(216, 6);
             // 
             // MenuEditComments
             // 
@@ -776,7 +774,7 @@
             this.MenuEditComment,
             this.MenuEditRemoveComment});
             this.MenuEditComments.Name = "MenuEditComments";
-            this.MenuEditComments.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditComments.Size = new System.Drawing.Size(219, 22);
             this.MenuEditComments.Text = "Co&mments";
             // 
             // MenuEditComment
@@ -785,7 +783,7 @@
             this.MenuEditComment.Name = "MenuEditComment";
             this.MenuEditComment.ShortcutKeyDisplayString = "(Ctrl+R)";
             this.MenuEditComment.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.MenuEditComment.Size = new System.Drawing.Size(268, 22);
+            this.MenuEditComment.Size = new System.Drawing.Size(288, 22);
             this.MenuEditComment.Text = "Co&mment line(s)";
             this.MenuEditComment.Click += new System.EventHandler(this.MenuEditComment_Click);
             // 
@@ -796,7 +794,7 @@
             this.MenuEditRemoveComment.ShortcutKeyDisplayString = "(Ctrl+Shift+R)";
             this.MenuEditRemoveComment.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.R)));
-            this.MenuEditRemoveComment.Size = new System.Drawing.Size(268, 22);
+            this.MenuEditRemoveComment.Size = new System.Drawing.Size(288, 22);
             this.MenuEditRemoveComment.Text = "Rem&ove line(s) comment";
             this.MenuEditRemoveComment.Click += new System.EventHandler(this.MenuEditRemoveComment_Click);
             // 
@@ -809,7 +807,7 @@
             this.MenuInsertGoToNextBookmark,
             this.MenuInsertGoToPreviousBookmark});
             this.MenuBookmarks.Name = "MenuBookmarks";
-            this.MenuBookmarks.Size = new System.Drawing.Size(203, 22);
+            this.MenuBookmarks.Size = new System.Drawing.Size(219, 22);
             this.MenuBookmarks.Text = "&Bookmarks";
             // 
             // MenuInsertBookmark
@@ -817,7 +815,7 @@
             this.MenuInsertBookmark.Name = "MenuInsertBookmark";
             this.MenuInsertBookmark.ShortcutKeyDisplayString = "(Ctrl+B)";
             this.MenuInsertBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.MenuInsertBookmark.Size = new System.Drawing.Size(256, 22);
+            this.MenuInsertBookmark.Size = new System.Drawing.Size(275, 22);
             this.MenuInsertBookmark.Text = "Insert/Remove &Bookmark";
             this.MenuInsertBookmark.Click += new System.EventHandler(this.MenuInsertBookmark_Click);
             // 
@@ -827,21 +825,21 @@
             this.MenuRemoveAllBookmark.ShortcutKeyDisplayString = "(Ctrl+Shift+B)";
             this.MenuRemoveAllBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.B)));
-            this.MenuRemoveAllBookmark.Size = new System.Drawing.Size(256, 22);
+            this.MenuRemoveAllBookmark.Size = new System.Drawing.Size(275, 22);
             this.MenuRemoveAllBookmark.Text = "Remove &all Bookmarks";
             this.MenuRemoveAllBookmark.Click += new System.EventHandler(this.MenuRemoveAllBookmark_Click);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(253, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(272, 6);
             // 
             // MenuInsertGoToNextBookmark
             // 
             this.MenuInsertGoToNextBookmark.Name = "MenuInsertGoToNextBookmark";
             this.MenuInsertGoToNextBookmark.ShortcutKeyDisplayString = "(Ctrl+F12)";
             this.MenuInsertGoToNextBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F12)));
-            this.MenuInsertGoToNextBookmark.Size = new System.Drawing.Size(256, 22);
+            this.MenuInsertGoToNextBookmark.Size = new System.Drawing.Size(275, 22);
             this.MenuInsertGoToNextBookmark.Text = "Go to &Next Bookmark";
             this.MenuInsertGoToNextBookmark.Click += new System.EventHandler(this.MenuInsertGoToNextBookmark_Click);
             // 
@@ -850,7 +848,7 @@
             this.MenuInsertGoToPreviousBookmark.Name = "MenuInsertGoToPreviousBookmark";
             this.MenuInsertGoToPreviousBookmark.ShortcutKeyDisplayString = "(Ctrl+F11)";
             this.MenuInsertGoToPreviousBookmark.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F11)));
-            this.MenuInsertGoToPreviousBookmark.Size = new System.Drawing.Size(256, 22);
+            this.MenuInsertGoToPreviousBookmark.Size = new System.Drawing.Size(275, 22);
             this.MenuInsertGoToPreviousBookmark.Text = "Go to &Previous Bookmark";
             this.MenuInsertGoToPreviousBookmark.Click += new System.EventHandler(this.MenuInsertGoToPreviousBookmark_Click);
             // 
@@ -862,7 +860,7 @@
             this.toolStripSeparator40,
             this.MenuEditFormatOptions});
             this.MenuEditCodeFormatting.Name = "MenuEditCodeFormatting";
-            this.MenuEditCodeFormatting.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditCodeFormatting.Size = new System.Drawing.Size(219, 22);
             this.MenuEditCodeFormatting.Text = "Code Formattin&g";
             this.MenuEditCodeFormatting.DropDownOpening += new System.EventHandler(this.MenuEditCodeFormatting_DropDownOpening);
             // 
@@ -871,7 +869,7 @@
             this.MenuEditFormatCode.Name = "MenuEditFormatCode";
             this.MenuEditFormatCode.ShortcutKeyDisplayString = "(Ctrl+K)";
             this.MenuEditFormatCode.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-            this.MenuEditFormatCode.Size = new System.Drawing.Size(243, 22);
+            this.MenuEditFormatCode.Size = new System.Drawing.Size(260, 22);
             this.MenuEditFormatCode.Text = "&Format Line/Selection";
             this.MenuEditFormatCode.Click += new System.EventHandler(this.MenuEditFormatCode_Click);
             // 
@@ -881,14 +879,14 @@
             this.MenuEditFormatAllCode.ShortcutKeyDisplayString = "(Ctrl+Shift+K)";
             this.MenuEditFormatAllCode.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.K)));
-            this.MenuEditFormatAllCode.Size = new System.Drawing.Size(243, 22);
+            this.MenuEditFormatAllCode.Size = new System.Drawing.Size(260, 22);
             this.MenuEditFormatAllCode.Text = "Format &All Lines";
             this.MenuEditFormatAllCode.Click += new System.EventHandler(this.MenuEditFormatAllCode_Click);
             // 
             // toolStripSeparator40
             // 
             this.toolStripSeparator40.Name = "toolStripSeparator40";
-            this.toolStripSeparator40.Size = new System.Drawing.Size(240, 6);
+            this.toolStripSeparator40.Size = new System.Drawing.Size(257, 6);
             // 
             // MenuEditFormatOptions
             // 
@@ -896,7 +894,7 @@
             this.MenuEditFormatOptions.ShortcutKeyDisplayString = "(Ctrl+Alt+K)";
             this.MenuEditFormatOptions.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.K)));
-            this.MenuEditFormatOptions.Size = new System.Drawing.Size(243, 22);
+            this.MenuEditFormatOptions.Size = new System.Drawing.Size(260, 22);
             this.MenuEditFormatOptions.Text = "Format Code &Options";
             this.MenuEditFormatOptions.Click += new System.EventHandler(this.MenuEditFormatOptions_Click);
             // 
@@ -906,7 +904,7 @@
             this.MenuEditShowRepository,
             this.MenuEditStoreSelectedText});
             this.toolStripMenuItem17.Name = "toolStripMenuItem17";
-            this.toolStripMenuItem17.Size = new System.Drawing.Size(203, 22);
+            this.toolStripMenuItem17.Size = new System.Drawing.Size(219, 22);
             this.toolStripMenuItem17.Text = "Code Repository";
             // 
             // MenuEditShowRepository
@@ -914,7 +912,7 @@
             this.MenuEditShowRepository.Name = "MenuEditShowRepository";
             this.MenuEditShowRepository.ShortcutKeyDisplayString = "(Ctrl+I)";
             this.MenuEditShowRepository.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.MenuEditShowRepository.Size = new System.Drawing.Size(240, 22);
+            this.MenuEditShowRepository.Size = new System.Drawing.Size(247, 22);
             this.MenuEditShowRepository.Text = "Show window";
             this.MenuEditShowRepository.Click += new System.EventHandler(this.MenuViewShowRepository_Click);
             // 
@@ -924,14 +922,14 @@
             this.MenuEditStoreSelectedText.ShortcutKeyDisplayString = "(Ctrl+Shift+I)";
             this.MenuEditStoreSelectedText.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.I)));
-            this.MenuEditStoreSelectedText.Size = new System.Drawing.Size(240, 22);
+            this.MenuEditStoreSelectedText.Size = new System.Drawing.Size(247, 22);
             this.MenuEditStoreSelectedText.Text = "Store selected text";
             this.MenuEditStoreSelectedText.Click += new System.EventHandler(this.MenuEditStoreSelectedText_Click);
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(216, 6);
             // 
             // MenuEditAutocompletion
             // 
@@ -939,14 +937,14 @@
             this.MenuEditListOpcodes,
             this.MenuEditOpcodesMenu});
             this.MenuEditAutocompletion.Name = "MenuEditAutocompletion";
-            this.MenuEditAutocompletion.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditAutocompletion.Size = new System.Drawing.Size(219, 22);
             this.MenuEditAutocompletion.Text = "Autocompletion";
             // 
             // MenuEditListOpcodes
             // 
             this.MenuEditListOpcodes.Name = "MenuEditListOpcodes";
             this.MenuEditListOpcodes.ShortcutKeyDisplayString = "(Ctrl+Enter) or (AltGr+Enter)";
-            this.MenuEditListOpcodes.Size = new System.Drawing.Size(283, 22);
+            this.MenuEditListOpcodes.Size = new System.Drawing.Size(298, 22);
             this.MenuEditListOpcodes.Text = "List Opcodes";
             this.MenuEditListOpcodes.Click += new System.EventHandler(this.MenuEditListOpcodes_Click);
             // 
@@ -955,14 +953,14 @@
             this.MenuEditOpcodesMenu.Name = "MenuEditOpcodesMenu";
             this.MenuEditOpcodesMenu.ShortcutKeyDisplayString = "(Ctrl+J)";
             this.MenuEditOpcodesMenu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.J)));
-            this.MenuEditOpcodesMenu.Size = new System.Drawing.Size(283, 22);
+            this.MenuEditOpcodesMenu.Size = new System.Drawing.Size(298, 22);
             this.MenuEditOpcodesMenu.Text = "CSound Opcodes Repository";
             this.MenuEditOpcodesMenu.Click += new System.EventHandler(this.MenuEditOpcodesMenu_Click);
             // 
             // toolStripSeparator30
             // 
             this.toolStripSeparator30.Name = "toolStripSeparator30";
-            this.toolStripSeparator30.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator30.Size = new System.Drawing.Size(216, 6);
             // 
             // MenuEditEOLConversion
             // 
@@ -971,28 +969,28 @@
             this.MenuEolCR,
             this.MenuEolLF});
             this.MenuEditEOLConversion.Name = "MenuEditEOLConversion";
-            this.MenuEditEOLConversion.Size = new System.Drawing.Size(203, 22);
+            this.MenuEditEOLConversion.Size = new System.Drawing.Size(219, 22);
             this.MenuEditEOLConversion.Text = "Li&ne Endings";
             this.MenuEditEOLConversion.DropDownOpening += new System.EventHandler(this.MenuEditEOLConversion_DropDownOpening);
             // 
             // MenuEolCRLF
             // 
             this.MenuEolCRLF.Name = "MenuEolCRLF";
-            this.MenuEolCRLF.Size = new System.Drawing.Size(208, 22);
+            this.MenuEolCRLF.Size = new System.Drawing.Size(220, 22);
             this.MenuEolCRLF.Text = "Convert to &CRLF (Windows)";
             this.MenuEolCRLF.Click += new System.EventHandler(this.LineEndsConverter);
             // 
             // MenuEolCR
             // 
             this.MenuEolCR.Name = "MenuEolCR";
-            this.MenuEolCR.Size = new System.Drawing.Size(208, 22);
+            this.MenuEolCR.Size = new System.Drawing.Size(220, 22);
             this.MenuEolCR.Text = "Convert to C&R (Mac)";
             this.MenuEolCR.Click += new System.EventHandler(this.LineEndsConverter);
             // 
             // MenuEolLF
             // 
             this.MenuEolLF.Name = "MenuEolLF";
-            this.MenuEolLF.Size = new System.Drawing.Size(208, 22);
+            this.MenuEolLF.Size = new System.Drawing.Size(220, 22);
             this.MenuEolLF.Text = "Convert to &LF (Unix/OsX)";
             this.MenuEolLF.Click += new System.EventHandler(this.LineEndsConverter);
             // 
@@ -1029,7 +1027,7 @@
             this.toolStripSeparator10,
             this.MenuViewWindowPosition});
             this.MenuView.Name = "MenuView";
-            this.MenuView.Size = new System.Drawing.Size(41, 20);
+            this.MenuView.Size = new System.Drawing.Size(44, 20);
             this.MenuView.Text = "&View";
             this.MenuView.DropDownOpening += new System.EventHandler(this.MenuView_DropDownOpening);
             // 
@@ -1038,7 +1036,7 @@
             this.MenuViewLineNumbers.Name = "MenuViewLineNumbers";
             this.MenuViewLineNumbers.ShortcutKeyDisplayString = "(Ctrl+1)";
             this.MenuViewLineNumbers.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
-            this.MenuViewLineNumbers.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewLineNumbers.Size = new System.Drawing.Size(321, 22);
             this.MenuViewLineNumbers.Text = "&Line numbers";
             this.MenuViewLineNumbers.Click += new System.EventHandler(this.MenuViewLineNumbers_Click);
             // 
@@ -1047,7 +1045,7 @@
             this.MenuViewExplorer.Name = "MenuViewExplorer";
             this.MenuViewExplorer.ShortcutKeyDisplayString = "(Ctrl+2)";
             this.MenuViewExplorer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
-            this.MenuViewExplorer.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewExplorer.Size = new System.Drawing.Size(321, 22);
             this.MenuViewExplorer.Text = "&Explorer";
             this.MenuViewExplorer.Click += new System.EventHandler(this.MenuViewExplorer_Click);
             // 
@@ -1056,7 +1054,7 @@
             this.MenuViewOnlineHelp.Name = "MenuViewOnlineHelp";
             this.MenuViewOnlineHelp.ShortcutKeyDisplayString = "(Ctrl+3)";
             this.MenuViewOnlineHelp.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
-            this.MenuViewOnlineHelp.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewOnlineHelp.Size = new System.Drawing.Size(321, 22);
             this.MenuViewOnlineHelp.Text = "&Opcodes Help";
             this.MenuViewOnlineHelp.Click += new System.EventHandler(this.MenuViewOnlineHelp_Click);
             // 
@@ -1065,7 +1063,7 @@
             this.MenuViewToolbar.Name = "MenuViewToolbar";
             this.MenuViewToolbar.ShortcutKeyDisplayString = "(Ctrl+4)";
             this.MenuViewToolbar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D4)));
-            this.MenuViewToolbar.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewToolbar.Size = new System.Drawing.Size(321, 22);
             this.MenuViewToolbar.Text = "&Toolbar";
             this.MenuViewToolbar.Click += new System.EventHandler(this.MenuViewToolbar_Click);
             // 
@@ -1074,7 +1072,7 @@
             this.MenuViewShowAll.Name = "MenuViewShowAll";
             this.MenuViewShowAll.ShortcutKeyDisplayString = "(Ctrl+5)";
             this.MenuViewShowAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D5)));
-            this.MenuViewShowAll.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewShowAll.Size = new System.Drawing.Size(321, 22);
             this.MenuViewShowAll.Text = "&Show all tools";
             this.MenuViewShowAll.Click += new System.EventHandler(this.MenuViewShowAll_Click);
             // 
@@ -1083,14 +1081,14 @@
             this.MenuViewHideAll.Name = "MenuViewHideAll";
             this.MenuViewHideAll.ShortcutKeyDisplayString = "(Ctrl+6)";
             this.MenuViewHideAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D6)));
-            this.MenuViewHideAll.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewHideAll.Size = new System.Drawing.Size(321, 22);
             this.MenuViewHideAll.Text = "Hide &all tools";
             this.MenuViewHideAll.Click += new System.EventHandler(this.MenuViewHideAll_Click);
             // 
             // toolStripSeparator27
             // 
             this.toolStripSeparator27.Name = "toolStripSeparator27";
-            this.toolStripSeparator27.Size = new System.Drawing.Size(293, 6);
+            this.toolStripSeparator27.Size = new System.Drawing.Size(318, 6);
             // 
             // MenuViewFullCode
             // 
@@ -1099,7 +1097,7 @@
             this.MenuViewFullCode.ShortcutKeyDisplayString = "(Ctrl+Shift+1)";
             this.MenuViewFullCode.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.D1)));
-            this.MenuViewFullCode.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewFullCode.Size = new System.Drawing.Size(321, 22);
             this.MenuViewFullCode.Text = "&Full Code";
             this.MenuViewFullCode.Click += new System.EventHandler(this.MenuViewFullCode_Click);
             // 
@@ -1110,7 +1108,7 @@
             this.MenuViewSplitHorizontal.ShortcutKeyDisplayString = "(Ctrl+Shift+2)";
             this.MenuViewSplitHorizontal.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.D2)));
-            this.MenuViewSplitHorizontal.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewSplitHorizontal.Size = new System.Drawing.Size(321, 22);
             this.MenuViewSplitHorizontal.Text = "Split &Horizontal";
             this.MenuViewSplitHorizontal.Click += new System.EventHandler(this.MenuViewSplitHorizontal_Click);
             // 
@@ -1121,7 +1119,7 @@
             this.MenuViewSplitHorizontalOrcSco.ShortcutKeyDisplayString = "(Ctrl+Shift+3)";
             this.MenuViewSplitHorizontalOrcSco.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.D3)));
-            this.MenuViewSplitHorizontalOrcSco.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewSplitHorizontalOrcSco.Size = new System.Drawing.Size(321, 22);
             this.MenuViewSplitHorizontalOrcSco.Text = "Split Horizontal (Orc/Sco)";
             this.MenuViewSplitHorizontalOrcSco.Click += new System.EventHandler(this.MenuViewSplitHorizontalOrcSco_Click);
             // 
@@ -1132,7 +1130,7 @@
             this.MenuViewSplitVertical.ShortcutKeyDisplayString = "(Ctrl+Shift+4)";
             this.MenuViewSplitVertical.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.D4)));
-            this.MenuViewSplitVertical.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewSplitVertical.Size = new System.Drawing.Size(321, 22);
             this.MenuViewSplitVertical.Text = "Split &Vertical";
             this.MenuViewSplitVertical.Click += new System.EventHandler(this.MenuViewSplitVertical_Click);
             // 
@@ -1143,21 +1141,21 @@
             this.MenuViewSplitVerticalOrcSco.ShortcutKeyDisplayString = "(Ctrl+Shift+5)";
             this.MenuViewSplitVerticalOrcSco.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.D5)));
-            this.MenuViewSplitVerticalOrcSco.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewSplitVerticalOrcSco.Size = new System.Drawing.Size(321, 22);
             this.MenuViewSplitVerticalOrcSco.Text = "Split Vertical (Orc/Sco)";
             this.MenuViewSplitVerticalOrcSco.Click += new System.EventHandler(this.MenuViewSplitVerticalOrcSco_Click);
             // 
             // toolStripSeparator28
             // 
             this.toolStripSeparator28.Name = "toolStripSeparator28";
-            this.toolStripSeparator28.Size = new System.Drawing.Size(293, 6);
+            this.toolStripSeparator28.Size = new System.Drawing.Size(318, 6);
             // 
             // MenuViewShowCode
             // 
             this.MenuViewShowCode.Name = "MenuViewShowCode";
             this.MenuViewShowCode.ShortcutKeyDisplayString = "(Ctrl+8)";
             this.MenuViewShowCode.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D8)));
-            this.MenuViewShowCode.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewShowCode.Size = new System.Drawing.Size(321, 22);
             this.MenuViewShowCode.Text = "Show Code";
             this.MenuViewShowCode.Click += new System.EventHandler(this.MenuViewShowCode_Click);
             // 
@@ -1166,7 +1164,7 @@
             this.MenuViewShowCompiler.Name = "MenuViewShowCompiler";
             this.MenuViewShowCompiler.ShortcutKeyDisplayString = "(Ctrl+9)";
             this.MenuViewShowCompiler.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D9)));
-            this.MenuViewShowCompiler.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewShowCompiler.Size = new System.Drawing.Size(321, 22);
             this.MenuViewShowCompiler.Text = "Show Compiler";
             this.MenuViewShowCompiler.Click += new System.EventHandler(this.MenuViewShowCompiler_Click);
             // 
@@ -1175,14 +1173,14 @@
             this.MenuViewShowHelp.Name = "MenuViewShowHelp";
             this.MenuViewShowHelp.ShortcutKeyDisplayString = "(Ctrl+0)";
             this.MenuViewShowHelp.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D0)));
-            this.MenuViewShowHelp.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewShowHelp.Size = new System.Drawing.Size(321, 22);
             this.MenuViewShowHelp.Text = "Show Help";
             this.MenuViewShowHelp.Click += new System.EventHandler(this.MenuViewShowHelp_Click);
             // 
             // toolStripSeparator42
             // 
             this.toolStripSeparator42.Name = "toolStripSeparator42";
-            this.toolStripSeparator42.Size = new System.Drawing.Size(293, 6);
+            this.toolStripSeparator42.Size = new System.Drawing.Size(318, 6);
             // 
             // MenuViewAttachDetachCompiler
             // 
@@ -1190,21 +1188,21 @@
             this.MenuViewAttachDetachCompiler.ShortcutKeyDisplayString = "(Ctrl+Alt+0)";
             this.MenuViewAttachDetachCompiler.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.D0)));
-            this.MenuViewAttachDetachCompiler.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewAttachDetachCompiler.Size = new System.Drawing.Size(321, 22);
             this.MenuViewAttachDetachCompiler.Text = "Attach/Detach Compiler Window";
             this.MenuViewAttachDetachCompiler.Click += new System.EventHandler(this.MenuViewAttachDetachCompiler_Click);
             // 
             // toolStripSeparator29
             // 
             this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(293, 6);
+            this.toolStripSeparator29.Size = new System.Drawing.Size(318, 6);
             // 
             // MenuEditShowHideWS
             // 
             this.MenuEditShowHideWS.Name = "MenuEditShowHideWS";
             this.MenuEditShowHideWS.ShortcutKeyDisplayString = "(Ctrl+Q)";
             this.MenuEditShowHideWS.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.MenuEditShowHideWS.Size = new System.Drawing.Size(296, 22);
+            this.MenuEditShowHideWS.Size = new System.Drawing.Size(321, 22);
             this.MenuEditShowHideWS.Text = "Show/Hide &White Spaces";
             this.MenuEditShowHideWS.Click += new System.EventHandler(this.MenuEditShowHideWS_Click);
             // 
@@ -1213,21 +1211,21 @@
             this.MenuEditShowHideEOL.Name = "MenuEditShowHideEOL";
             this.MenuEditShowHideEOL.ShortcutKeyDisplayString = "(Ctrl+H)";
             this.MenuEditShowHideEOL.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.MenuEditShowHideEOL.Size = new System.Drawing.Size(296, 22);
+            this.MenuEditShowHideEOL.Size = new System.Drawing.Size(321, 22);
             this.MenuEditShowHideEOL.Text = "Show/Hide &End Of Line Markers";
             this.MenuEditShowHideEOL.Click += new System.EventHandler(this.MenuEditShowHideEOL_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(293, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(318, 6);
             // 
             // MenuViewPrevious
             // 
             this.MenuViewPrevious.Name = "MenuViewPrevious";
             this.MenuViewPrevious.ShortcutKeyDisplayString = "(F3)";
             this.MenuViewPrevious.ShortcutKeys = System.Windows.Forms.Keys.F3;
-            this.MenuViewPrevious.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewPrevious.Size = new System.Drawing.Size(321, 22);
             this.MenuViewPrevious.Text = "Navigate Backward";
             this.MenuViewPrevious.Click += new System.EventHandler(this.MenuViewPrevious_Click);
             // 
@@ -1236,21 +1234,21 @@
             this.MenuViewNext.Name = "MenuViewNext";
             this.MenuViewNext.ShortcutKeyDisplayString = "(F4)";
             this.MenuViewNext.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.MenuViewNext.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewNext.Size = new System.Drawing.Size(321, 22);
             this.MenuViewNext.Text = "Navigate Forward";
             this.MenuViewNext.Click += new System.EventHandler(this.MenuViewNext_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(293, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(318, 6);
             // 
             // MenuViewFocus1
             // 
             this.MenuViewFocus1.Name = "MenuViewFocus1";
             this.MenuViewFocus1.ShortcutKeyDisplayString = "(F11)";
             this.MenuViewFocus1.ShortcutKeys = System.Windows.Forms.Keys.F11;
-            this.MenuViewFocus1.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewFocus1.Size = new System.Drawing.Size(321, 22);
             this.MenuViewFocus1.Text = "Set Caret on Primary View";
             this.MenuViewFocus1.Click += new System.EventHandler(this.MenuViewFocus1_Click);
             // 
@@ -1259,14 +1257,14 @@
             this.MenuViewFocus2.Name = "MenuViewFocus2";
             this.MenuViewFocus2.ShortcutKeyDisplayString = "(F12)";
             this.MenuViewFocus2.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.MenuViewFocus2.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewFocus2.Size = new System.Drawing.Size(321, 22);
             this.MenuViewFocus2.Text = "Set Caret on Secondary View";
             this.MenuViewFocus2.Click += new System.EventHandler(this.MenuViewFocus2_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(293, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(318, 6);
             // 
             // MenuViewWindowPosition
             // 
@@ -1278,46 +1276,46 @@
             this.toolStripSeparator37,
             this.MenuViewWindowReset});
             this.MenuViewWindowPosition.Name = "MenuViewWindowPosition";
-            this.MenuViewWindowPosition.Size = new System.Drawing.Size(296, 22);
+            this.MenuViewWindowPosition.Size = new System.Drawing.Size(321, 22);
             this.MenuViewWindowPosition.Text = "&WinXound screen position";
             // 
             // MenuViewWindowUP
             // 
             this.MenuViewWindowUP.Name = "MenuViewWindowUP";
-            this.MenuViewWindowUP.Size = new System.Drawing.Size(102, 22);
+            this.MenuViewWindowUP.Size = new System.Drawing.Size(105, 22);
             this.MenuViewWindowUP.Text = "&Up";
             this.MenuViewWindowUP.Click += new System.EventHandler(this.MenuViewWindowUP_Click);
             // 
             // MenuViewWindowDOWN
             // 
             this.MenuViewWindowDOWN.Name = "MenuViewWindowDOWN";
-            this.MenuViewWindowDOWN.Size = new System.Drawing.Size(102, 22);
+            this.MenuViewWindowDOWN.Size = new System.Drawing.Size(105, 22);
             this.MenuViewWindowDOWN.Text = "&Down";
             this.MenuViewWindowDOWN.Click += new System.EventHandler(this.MenuViewWindowDOWN_Click);
             // 
             // MenuViewWindowLEFT
             // 
             this.MenuViewWindowLEFT.Name = "MenuViewWindowLEFT";
-            this.MenuViewWindowLEFT.Size = new System.Drawing.Size(102, 22);
+            this.MenuViewWindowLEFT.Size = new System.Drawing.Size(105, 22);
             this.MenuViewWindowLEFT.Text = "&Left";
             this.MenuViewWindowLEFT.Click += new System.EventHandler(this.MenuViewWindowLEFT_Click);
             // 
             // MenuViewWindowRIGHT
             // 
             this.MenuViewWindowRIGHT.Name = "MenuViewWindowRIGHT";
-            this.MenuViewWindowRIGHT.Size = new System.Drawing.Size(102, 22);
+            this.MenuViewWindowRIGHT.Size = new System.Drawing.Size(105, 22);
             this.MenuViewWindowRIGHT.Text = "&Right";
             this.MenuViewWindowRIGHT.Click += new System.EventHandler(this.MenuViewWindowRIGHT_Click);
             // 
             // toolStripSeparator37
             // 
             this.toolStripSeparator37.Name = "toolStripSeparator37";
-            this.toolStripSeparator37.Size = new System.Drawing.Size(99, 6);
+            this.toolStripSeparator37.Size = new System.Drawing.Size(102, 6);
             // 
             // MenuViewWindowReset
             // 
             this.MenuViewWindowReset.Name = "MenuViewWindowReset";
-            this.MenuViewWindowReset.Size = new System.Drawing.Size(102, 22);
+            this.MenuViewWindowReset.Size = new System.Drawing.Size(105, 22);
             this.MenuViewWindowReset.Text = "Reset";
             this.MenuViewWindowReset.Click += new System.EventHandler(this.MenuViewWindowReset_Click);
             // 
@@ -1328,7 +1326,7 @@
             this.toolStripSeparator31,
             this.MenuFontReset});
             this.MenuFont.Name = "MenuFont";
-            this.MenuFont.Size = new System.Drawing.Size(41, 20);
+            this.MenuFont.Size = new System.Drawing.Size(43, 20);
             this.MenuFont.Text = "F&ont";
             // 
             // MenuFontSize
@@ -1350,7 +1348,7 @@
             this.MenuFontSize19,
             this.MenuFontSize20});
             this.MenuFontSize.Name = "MenuFontSize";
-            this.MenuFontSize.Size = new System.Drawing.Size(199, 22);
+            this.MenuFontSize.Size = new System.Drawing.Size(205, 22);
             this.MenuFontSize.Text = "&Size";
             // 
             // MenuFontSize6
@@ -1461,7 +1459,7 @@
             // toolStripSeparator31
             // 
             this.toolStripSeparator31.Name = "toolStripSeparator31";
-            this.toolStripSeparator31.Size = new System.Drawing.Size(196, 6);
+            this.toolStripSeparator31.Size = new System.Drawing.Size(202, 6);
             // 
             // MenuFontReset
             // 
@@ -1469,7 +1467,7 @@
             this.MenuFontReset.Name = "MenuFontReset";
             this.MenuFontReset.ShortcutKeyDisplayString = "(Ctrl+T)";
             this.MenuFontReset.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.MenuFontReset.Size = new System.Drawing.Size(199, 22);
+            this.MenuFontReset.Size = new System.Drawing.Size(205, 22);
             this.MenuFontReset.Text = "&Reset to Default";
             this.MenuFontReset.Click += new System.EventHandler(this.MenuFontReset_Click);
             // 
@@ -1494,7 +1492,7 @@
             this.toolStripSeparator4,
             this.MenuToolsWinXoundTest});
             this.MenuTools.Name = "MenuTools";
-            this.MenuTools.Size = new System.Drawing.Size(44, 20);
+            this.MenuTools.Size = new System.Drawing.Size(46, 20);
             this.MenuTools.Text = "&Tools";
             this.MenuTools.DropDownOpening += new System.EventHandler(this.MenuToolsCompileWithAdditionalOptions_DropDownOpening);
             // 
@@ -1504,14 +1502,14 @@
             this.MenuToolsCompile.Name = "MenuToolsCompile";
             this.MenuToolsCompile.ShortcutKeyDisplayString = "(F5)";
             this.MenuToolsCompile.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.MenuToolsCompile.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsCompile.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsCompile.Text = "&Compile";
             this.MenuToolsCompile.Click += new System.EventHandler(this.MenuToolsCompile_Click);
             // 
             // MenuToolsCompileWithAdditionalOptions
             // 
             this.MenuToolsCompileWithAdditionalOptions.Name = "MenuToolsCompileWithAdditionalOptions";
-            this.MenuToolsCompileWithAdditionalOptions.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsCompileWithAdditionalOptions.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsCompileWithAdditionalOptions.Text = "Compile with Additional Options";
             this.MenuToolsCompileWithAdditionalOptions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ToolStripCSoundConsole_DropDownItemClicked);
             // 
@@ -1521,14 +1519,14 @@
             this.MenuToolsExternalCompile.Name = "MenuToolsExternalCompile";
             this.MenuToolsExternalCompile.ShortcutKeyDisplayString = "(Ctrl+F5)";
             this.MenuToolsExternalCompile.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F5)));
-            this.MenuToolsExternalCompile.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsExternalCompile.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsExternalCompile.Text = "Compile (e&xternal cmd)";
             this.MenuToolsExternalCompile.Click += new System.EventHandler(this.MenuToolsExternalCompile_Click);
             // 
             // MenuToolsExternalCompileWithAdditionalOptions
             // 
             this.MenuToolsExternalCompileWithAdditionalOptions.Name = "MenuToolsExternalCompileWithAdditionalOptions";
-            this.MenuToolsExternalCompileWithAdditionalOptions.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsExternalCompileWithAdditionalOptions.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsExternalCompileWithAdditionalOptions.Text = "Compile (external cmd) with Additional Options";
             this.MenuToolsExternalCompileWithAdditionalOptions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ToolStripCSoundConsole_DropDownItemClicked);
             // 
@@ -1540,14 +1538,14 @@
             this.MenuToolsUseDefaultFlags.Name = "MenuToolsUseDefaultFlags";
             this.MenuToolsUseDefaultFlags.ShortcutKeyDisplayString = "(Ctrl+U)";
             this.MenuToolsUseDefaultFlags.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.MenuToolsUseDefaultFlags.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsUseDefaultFlags.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsUseDefaultFlags.Text = "Use WinXound Flags";
             this.MenuToolsUseDefaultFlags.CheckedChanged += new System.EventHandler(this.MenuToolsUseDefaultFlags_CheckedChanged);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(294, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(325, 6);
             // 
             // MenuToolsRunExternalEditor
             // 
@@ -1555,7 +1553,7 @@
             this.MenuToolsRunExternalEditor.Name = "MenuToolsRunExternalEditor";
             this.MenuToolsRunExternalEditor.ShortcutKeyDisplayString = "(F6)";
             this.MenuToolsRunExternalEditor.ShortcutKeys = System.Windows.Forms.Keys.F6;
-            this.MenuToolsRunExternalEditor.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsRunExternalEditor.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsRunExternalEditor.Text = "Run External &GUI";
             this.MenuToolsRunExternalEditor.Click += new System.EventHandler(this.MenuToolsRunExternalEditor_Click);
             // 
@@ -1565,14 +1563,14 @@
             this.MenuToolsRunCSoundAV.Name = "MenuToolsRunCSoundAV";
             this.MenuToolsRunCSoundAV.ShortcutKeyDisplayString = "(F7)";
             this.MenuToolsRunCSoundAV.ShortcutKeys = System.Windows.Forms.Keys.F7;
-            this.MenuToolsRunCSoundAV.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsRunCSoundAV.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsRunCSoundAV.Text = "Run CSound&AV";
             this.MenuToolsRunCSoundAV.Click += new System.EventHandler(this.MenuToolsRunCSoundAV_Click);
             // 
             // toolStripSeparator32
             // 
             this.toolStripSeparator32.Name = "toolStripSeparator32";
-            this.toolStripSeparator32.Size = new System.Drawing.Size(294, 6);
+            this.toolStripSeparator32.Size = new System.Drawing.Size(325, 6);
             // 
             // MenuToolsCSoundAnalysis
             // 
@@ -1580,14 +1578,14 @@
             this.MenuToolsCSoundAnalysis.Name = "MenuToolsCSoundAnalysis";
             this.MenuToolsCSoundAnalysis.ShortcutKeyDisplayString = "(F8)";
             this.MenuToolsCSoundAnalysis.ShortcutKeys = System.Windows.Forms.Keys.F8;
-            this.MenuToolsCSoundAnalysis.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsCSoundAnalysis.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsCSoundAnalysis.Text = "CSound A&nalysis";
             this.MenuToolsCSoundAnalysis.Click += new System.EventHandler(this.MenuToolsCSoundAnalysis_Click);
             // 
             // toolStripSeparator33
             // 
             this.toolStripSeparator33.Name = "toolStripSeparator33";
-            this.toolStripSeparator33.Size = new System.Drawing.Size(294, 6);
+            this.toolStripSeparator33.Size = new System.Drawing.Size(325, 6);
             // 
             // MenuToolsWinXoundPlayer
             // 
@@ -1595,7 +1593,7 @@
             this.MenuToolsWinXoundPlayer.Name = "MenuToolsWinXoundPlayer";
             this.MenuToolsWinXoundPlayer.ShortcutKeyDisplayString = "(F9)";
             this.MenuToolsWinXoundPlayer.ShortcutKeys = System.Windows.Forms.Keys.F9;
-            this.MenuToolsWinXoundPlayer.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsWinXoundPlayer.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsWinXoundPlayer.Text = "&Media Player";
             this.MenuToolsWinXoundPlayer.Click += new System.EventHandler(this.MenuToolsWinXoundPlayer_Click);
             // 
@@ -1603,7 +1601,7 @@
             // 
             this.MenuToolsWavePlayer.Image = ((System.Drawing.Image)(resources.GetObject("MenuToolsWavePlayer.Image")));
             this.MenuToolsWavePlayer.Name = "MenuToolsWavePlayer";
-            this.MenuToolsWavePlayer.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsWavePlayer.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsWavePlayer.Text = "External Wave &Editor";
             this.MenuToolsWavePlayer.Click += new System.EventHandler(this.MenuToolsWavePlayer_Click);
             // 
@@ -1611,7 +1609,7 @@
             // 
             this.MenuToolsCalc.Image = ((System.Drawing.Image)(resources.GetObject("MenuToolsCalc.Image")));
             this.MenuToolsCalc.Name = "MenuToolsCalc";
-            this.MenuToolsCalc.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsCalc.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsCalc.Text = "Calc&ulator";
             this.MenuToolsCalc.Click += new System.EventHandler(this.MenuToolsCalc_Click);
             // 
@@ -1619,19 +1617,19 @@
             // 
             this.MenuToolsCommandLine.Image = ((System.Drawing.Image)(resources.GetObject("MenuToolsCommandLine.Image")));
             this.MenuToolsCommandLine.Name = "MenuToolsCommandLine";
-            this.MenuToolsCommandLine.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsCommandLine.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsCommandLine.Text = "Command &Line";
             this.MenuToolsCommandLine.Click += new System.EventHandler(this.MenuToolsCommandLine_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(294, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(325, 6);
             // 
             // MenuToolsWinXoundTest
             // 
             this.MenuToolsWinXoundTest.Name = "MenuToolsWinXoundTest";
-            this.MenuToolsWinXoundTest.Size = new System.Drawing.Size(297, 22);
+            this.MenuToolsWinXoundTest.Size = new System.Drawing.Size(328, 22);
             this.MenuToolsWinXoundTest.Text = "WinXound &Test";
             this.MenuToolsWinXoundTest.Click += new System.EventHandler(this.MenuToolsWinXoundTest_Click);
             // 
@@ -1650,7 +1648,7 @@
             this.MenuInsertHeader.Name = "MenuInsertHeader";
             this.MenuInsertHeader.ShortcutKeyDisplayString = "(Ctrl+E)";
             this.MenuInsertHeader.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.MenuInsertHeader.Size = new System.Drawing.Size(206, 22);
+            this.MenuInsertHeader.Size = new System.Drawing.Size(214, 22);
             this.MenuInsertHeader.Text = "Orchestra &Header";
             this.MenuInsertHeader.Click += new System.EventHandler(this.MenuInsertHeader_Click);
             // 
@@ -1660,20 +1658,20 @@
             this.MenuInsertOptionsRealtimeOutput,
             this.MenuInsertOptionsFileOutput});
             this.MenuInsertOptions.Name = "MenuInsertOptions";
-            this.MenuInsertOptions.Size = new System.Drawing.Size(206, 22);
+            this.MenuInsertOptions.Size = new System.Drawing.Size(214, 22);
             this.MenuInsertOptions.Text = "&Options";
             // 
             // MenuInsertOptionsRealtimeOutput
             // 
             this.MenuInsertOptionsRealtimeOutput.Name = "MenuInsertOptionsRealtimeOutput";
-            this.MenuInsertOptionsRealtimeOutput.Size = new System.Drawing.Size(150, 22);
+            this.MenuInsertOptionsRealtimeOutput.Size = new System.Drawing.Size(159, 22);
             this.MenuInsertOptionsRealtimeOutput.Text = "&Realtime output";
             this.MenuInsertOptionsRealtimeOutput.Click += new System.EventHandler(this.MenuInsertOptionsRealtimeOutput_Click);
             // 
             // MenuInsertOptionsFileOutput
             // 
             this.MenuInsertOptionsFileOutput.Name = "MenuInsertOptionsFileOutput";
-            this.MenuInsertOptionsFileOutput.Size = new System.Drawing.Size(150, 22);
+            this.MenuInsertOptionsFileOutput.Size = new System.Drawing.Size(159, 22);
             this.MenuInsertOptionsFileOutput.Text = "&File output";
             this.MenuInsertOptionsFileOutput.Click += new System.EventHandler(this.MenuInsertOptionsFileOutput_Click);
             // 
@@ -1689,63 +1687,63 @@
             this.MenuItemCsdTags7,
             this.MenuItemCsdTags8});
             this.MenuItemCsdTags.Name = "MenuItemCsdTags";
-            this.MenuItemCsdTags.Size = new System.Drawing.Size(206, 22);
+            this.MenuItemCsdTags.Size = new System.Drawing.Size(214, 22);
             this.MenuItemCsdTags.Text = "CSD &Tags";
             this.MenuItemCsdTags.DropDownOpening += new System.EventHandler(this.MenuItemCsdTags_DropDownOpening);
             // 
             // MenuItemCsdTags1
             // 
             this.MenuItemCsdTags1.Name = "MenuItemCsdTags1";
-            this.MenuItemCsdTags1.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags1.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags1.Text = "&1. <CsoundSynthesizer>";
             this.MenuItemCsdTags1.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
             // MenuItemCsdTags2
             // 
             this.MenuItemCsdTags2.Name = "MenuItemCsdTags2";
-            this.MenuItemCsdTags2.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags2.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags2.Text = "&2. </CsoundSynthesizer>";
             this.MenuItemCsdTags2.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
             // MenuItemCsdTags3
             // 
             this.MenuItemCsdTags3.Name = "MenuItemCsdTags3";
-            this.MenuItemCsdTags3.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags3.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags3.Text = "&3. <CsOptions>";
             this.MenuItemCsdTags3.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
             // MenuItemCsdTags4
             // 
             this.MenuItemCsdTags4.Name = "MenuItemCsdTags4";
-            this.MenuItemCsdTags4.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags4.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags4.Text = "&4. </CsOptions>";
             this.MenuItemCsdTags4.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
             // MenuItemCsdTags5
             // 
             this.MenuItemCsdTags5.Name = "MenuItemCsdTags5";
-            this.MenuItemCsdTags5.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags5.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags5.Text = "&5. <CsInstruments>";
             this.MenuItemCsdTags5.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
             // MenuItemCsdTags6
             // 
             this.MenuItemCsdTags6.Name = "MenuItemCsdTags6";
-            this.MenuItemCsdTags6.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags6.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags6.Text = "&6. </CsInstruments>";
             this.MenuItemCsdTags6.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
             // MenuItemCsdTags7
             // 
             this.MenuItemCsdTags7.Name = "MenuItemCsdTags7";
-            this.MenuItemCsdTags7.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags7.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags7.Text = "&7. <CsScore>";
             this.MenuItemCsdTags7.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
             // MenuItemCsdTags8
             // 
             this.MenuItemCsdTags8.Name = "MenuItemCsdTags8";
-            this.MenuItemCsdTags8.Size = new System.Drawing.Size(199, 22);
+            this.MenuItemCsdTags8.Size = new System.Drawing.Size(207, 22);
             this.MenuItemCsdTags8.Text = "&8. </CsScore>";
             this.MenuItemCsdTags8.Click += new System.EventHandler(this.InsertCSDTags_Click);
             // 
@@ -1766,27 +1764,27 @@
             this.toolStripSeparator35,
             this.MenuInfoAbout});
             this.MenuInfo.Name = "MenuInfo";
-            this.MenuInfo.Size = new System.Drawing.Size(40, 20);
+            this.MenuInfo.Size = new System.Drawing.Size(44, 20);
             this.MenuInfo.Text = "&Help";
             // 
             // MenuInfoWinXoundHelp
             // 
             this.MenuInfoWinXoundHelp.Name = "MenuInfoWinXoundHelp";
-            this.MenuInfoWinXoundHelp.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoWinXoundHelp.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoWinXoundHelp.Text = "&WinXound Help";
             this.MenuInfoWinXoundHelp.Click += new System.EventHandler(this.MenuInfoWinXoundHelp_Click);
             // 
             // toolStripSeparator38
             // 
             this.toolStripSeparator38.Name = "toolStripSeparator38";
-            this.toolStripSeparator38.Size = new System.Drawing.Size(238, 6);
+            this.toolStripSeparator38.Size = new System.Drawing.Size(256, 6);
             // 
             // MenuInfoOpcodeHelp
             // 
             this.MenuInfoOpcodeHelp.Name = "MenuInfoOpcodeHelp";
             this.MenuInfoOpcodeHelp.ShortcutKeyDisplayString = "(F1)";
             this.MenuInfoOpcodeHelp.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.MenuInfoOpcodeHelp.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoOpcodeHelp.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoOpcodeHelp.Text = "Opcode Help";
             this.MenuInfoOpcodeHelp.Click += new System.EventHandler(this.MenuInfoOpcodeHelp_Click);
             // 
@@ -1795,64 +1793,64 @@
             this.MenuInfoCSoundHelp.Name = "MenuInfoCSoundHelp";
             this.MenuInfoCSoundHelp.ShortcutKeyDisplayString = "(F2)";
             this.MenuInfoCSoundHelp.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.MenuInfoCSoundHelp.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoCSoundHelp.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoCSoundHelp.Text = "CSound &Help";
             this.MenuInfoCSoundHelp.Click += new System.EventHandler(this.MenuInfoCSoundHelp_Click);
             // 
             // MenuInfoCSoundOpcodesHelp
             // 
             this.MenuInfoCSoundOpcodesHelp.Name = "MenuInfoCSoundOpcodesHelp";
-            this.MenuInfoCSoundOpcodesHelp.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoCSoundOpcodesHelp.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoCSoundOpcodesHelp.Text = "CSound &Opcodes Help";
             this.MenuInfoCSoundOpcodesHelp.Click += new System.EventHandler(this.MenuInfoCSoundOpcodesHelp_Click);
             // 
             // MenuInfoCSoundFlagsHelp
             // 
             this.MenuInfoCSoundFlagsHelp.Name = "MenuInfoCSoundFlagsHelp";
-            this.MenuInfoCSoundFlagsHelp.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoCSoundFlagsHelp.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoCSoundFlagsHelp.Text = "CSound &Flags Help";
             this.MenuInfoCSoundFlagsHelp.Click += new System.EventHandler(this.MenuInfoCSoundFlagsHelp_Click);
             // 
             // toolStripSeparator39
             // 
             this.toolStripSeparator39.Name = "toolStripSeparator39";
-            this.toolStripSeparator39.Size = new System.Drawing.Size(238, 6);
+            this.toolStripSeparator39.Size = new System.Drawing.Size(256, 6);
             // 
             // MenuInfoCSoundAVHelp
             // 
             this.MenuInfoCSoundAVHelp.Name = "MenuInfoCSoundAVHelp";
-            this.MenuInfoCSoundAVHelp.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoCSoundAVHelp.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoCSoundAVHelp.Text = "CSoundA&V Help";
             this.MenuInfoCSoundAVHelp.Click += new System.EventHandler(this.MenuInfoCSoundAVHelp_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(238, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(256, 6);
             // 
             // MenuInfoCSoundTutorial
             // 
             this.MenuInfoCSoundTutorial.Name = "MenuInfoCSoundTutorial";
-            this.MenuInfoCSoundTutorial.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoCSoundTutorial.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoCSoundTutorial.Text = "CSound &Tutorials (at csounds.com)";
             this.MenuInfoCSoundTutorial.Click += new System.EventHandler(this.MenuInfoCSoundTutorial_Click);
             // 
             // MenuInfoFlossManual
             // 
             this.MenuInfoFlossManual.Name = "MenuInfoFlossManual";
-            this.MenuInfoFlossManual.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoFlossManual.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoFlossManual.Text = "CSound &Manual (at Floss Manuals)";
             this.MenuInfoFlossManual.Click += new System.EventHandler(this.MenuInfoFlossManual_Click);
             // 
             // toolStripSeparator35
             // 
             this.toolStripSeparator35.Name = "toolStripSeparator35";
-            this.toolStripSeparator35.Size = new System.Drawing.Size(238, 6);
+            this.toolStripSeparator35.Size = new System.Drawing.Size(256, 6);
             // 
             // MenuInfoAbout
             // 
             this.MenuInfoAbout.Name = "MenuInfoAbout";
-            this.MenuInfoAbout.Size = new System.Drawing.Size(241, 22);
+            this.MenuInfoAbout.Size = new System.Drawing.Size(259, 22);
             this.MenuInfoAbout.Text = "&About";
             this.MenuInfoAbout.Click += new System.EventHandler(this.MenuInfoAbout_Click);
             // 
@@ -2043,21 +2041,21 @@
             this.FullCodeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("FullCodeToolStripMenuItem.Image")));
             this.FullCodeToolStripMenuItem.Name = "FullCodeToolStripMenuItem";
             this.FullCodeToolStripMenuItem.ShortcutKeyDisplayString = "(Ctrl+Shift+1)";
-            this.FullCodeToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.FullCodeToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
             this.FullCodeToolStripMenuItem.Text = "Full Code";
             this.FullCodeToolStripMenuItem.Click += new System.EventHandler(this.MenuViewFullCode_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(267, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(286, 6);
             // 
             // SplitHorizontalToolStripMenuItem
             // 
             this.SplitHorizontalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SplitHorizontalToolStripMenuItem.Image")));
             this.SplitHorizontalToolStripMenuItem.Name = "SplitHorizontalToolStripMenuItem";
             this.SplitHorizontalToolStripMenuItem.ShortcutKeyDisplayString = "(Ctrl+Shift+2)";
-            this.SplitHorizontalToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.SplitHorizontalToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
             this.SplitHorizontalToolStripMenuItem.Text = "Split Horizontal";
             this.SplitHorizontalToolStripMenuItem.Click += new System.EventHandler(this.MenuViewSplitHorizontal_Click);
             // 
@@ -2066,21 +2064,21 @@
             this.SplitHorizontalOrcScoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SplitHorizontalOrcScoToolStripMenuItem.Image")));
             this.SplitHorizontalOrcScoToolStripMenuItem.Name = "SplitHorizontalOrcScoToolStripMenuItem";
             this.SplitHorizontalOrcScoToolStripMenuItem.ShortcutKeyDisplayString = "(Ctrl+Shift+3)";
-            this.SplitHorizontalOrcScoToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.SplitHorizontalOrcScoToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
             this.SplitHorizontalOrcScoToolStripMenuItem.Text = "Split Horizontal (Orc/Sco)";
             this.SplitHorizontalOrcScoToolStripMenuItem.Click += new System.EventHandler(this.MenuViewSplitHorizontalOrcSco_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(267, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(286, 6);
             // 
             // SplitVerticalToolStripMenuItem
             // 
             this.SplitVerticalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SplitVerticalToolStripMenuItem.Image")));
             this.SplitVerticalToolStripMenuItem.Name = "SplitVerticalToolStripMenuItem";
             this.SplitVerticalToolStripMenuItem.ShortcutKeyDisplayString = "(Ctrl+Shift+4)";
-            this.SplitVerticalToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.SplitVerticalToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
             this.SplitVerticalToolStripMenuItem.Text = "Split Vertical";
             this.SplitVerticalToolStripMenuItem.Click += new System.EventHandler(this.MenuViewSplitVertical_Click);
             // 
@@ -2089,7 +2087,7 @@
             this.SplitVerticalOrcScoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SplitVerticalOrcScoToolStripMenuItem.Image")));
             this.SplitVerticalOrcScoToolStripMenuItem.Name = "SplitVerticalOrcScoToolStripMenuItem";
             this.SplitVerticalOrcScoToolStripMenuItem.ShortcutKeyDisplayString = "(Ctrl+Shift+5)";
-            this.SplitVerticalOrcScoToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.SplitVerticalOrcScoToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
             this.SplitVerticalOrcScoToolStripMenuItem.Text = "Split Vertical (Orc/Sco)";
             this.SplitVerticalOrcScoToolStripMenuItem.Click += new System.EventHandler(this.MenuViewSplitVerticalOrcSco_Click);
             // 
@@ -2445,19 +2443,6 @@
             this.tabCompiler.Text = "Compiler";
             this.tabCompiler.UseVisualStyleBackColor = true;
             // 
-            // wxCompilerConsole1
-            // 
-            this.wxCompilerConsole1.Arguments = "";
-            this.wxCompilerConsole1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wxCompilerConsole1.Filename = "";
-            this.wxCompilerConsole1.Location = new System.Drawing.Point(3, 3);
-            this.wxCompilerConsole1.Name = "wxCompilerConsole1";
-            this.wxCompilerConsole1.ReadOnly = true;
-            this.wxCompilerConsole1.Size = new System.Drawing.Size(786, 0);
-            this.wxCompilerConsole1.TabIndex = 1;
-            this.wxCompilerConsole1.Title = "";
-            this.wxCompilerConsole1.WorkingDirectory = "";
-            // 
             // tabHelp
             // 
             this.tabHelp.Controls.Add(this.HelpBrowser);
@@ -2531,7 +2516,7 @@
             // 
             this.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.ToolStripLabel1.Name = "ToolStripLabel1";
-            this.ToolStripLabel1.Size = new System.Drawing.Size(197, 22);
+            this.ToolStripLabel1.Size = new System.Drawing.Size(209, 22);
             this.ToolStripLabel1.Text = "   [Press <Esc> to return to Code View]";
             // 
             // tabOpcodes
@@ -2562,14 +2547,6 @@
             this.tabRepository.Text = "UDO & User Code Repository";
             this.tabRepository.UseVisualStyleBackColor = true;
             // 
-            // wxCodeRepository1
-            // 
-            this.wxCodeRepository1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wxCodeRepository1.Location = new System.Drawing.Point(0, 0);
-            this.wxCodeRepository1.Name = "wxCodeRepository1";
-            this.wxCodeRepository1.Size = new System.Drawing.Size(792, 0);
-            this.wxCodeRepository1.TabIndex = 0;
-            // 
             // ListBoxAutoComplete
             // 
             this.ListBoxAutoComplete.FormattingEnabled = true;
@@ -2580,6 +2557,16 @@
             this.ListBoxAutoComplete.Visible = false;
             this.ListBoxAutoComplete.Click += new System.EventHandler(this.ListBoxAutoComplete_Click);
             this.ListBoxAutoComplete.DoubleClick += new System.EventHandler(this.ListBoxAutoComplete_DoubleClick);
+            // 
+            // wxTabCode
+            // 
+            this.wxTabCode.AllowDrop = true;
+            this.wxTabCode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wxTabCode.Location = new System.Drawing.Point(0, 49);
+            this.wxTabCode.Name = "wxTabCode";
+            this.wxTabCode.SelectedIndex = 0;
+            this.wxTabCode.Size = new System.Drawing.Size(800, 389);
+            this.wxTabCode.TabIndex = 19;
             // 
             // splitter1
             // 
@@ -2609,13 +2596,13 @@
             this.toolStripSeparator12,
             this.ContextHelp});
             this.mContextMenu.Name = "ContextMenuStrip1";
-            this.mContextMenu.Size = new System.Drawing.Size(192, 232);
+            this.mContextMenu.Size = new System.Drawing.Size(195, 232);
             // 
             // ContextCut
             // 
             this.ContextCut.Image = ((System.Drawing.Image)(resources.GetObject("ContextCut.Image")));
             this.ContextCut.Name = "ContextCut";
-            this.ContextCut.Size = new System.Drawing.Size(191, 22);
+            this.ContextCut.Size = new System.Drawing.Size(194, 22);
             this.ContextCut.Text = "Cut";
             this.ContextCut.Click += new System.EventHandler(this.MenuEditCut_Click);
             // 
@@ -2623,7 +2610,7 @@
             // 
             this.ContextCopy.Image = ((System.Drawing.Image)(resources.GetObject("ContextCopy.Image")));
             this.ContextCopy.Name = "ContextCopy";
-            this.ContextCopy.Size = new System.Drawing.Size(191, 22);
+            this.ContextCopy.Size = new System.Drawing.Size(194, 22);
             this.ContextCopy.Text = "Copy";
             this.ContextCopy.Click += new System.EventHandler(this.MenuEditCopy_Click);
             // 
@@ -2631,14 +2618,14 @@
             // 
             this.ContextPaste.Image = ((System.Drawing.Image)(resources.GetObject("ContextPaste.Image")));
             this.ContextPaste.Name = "ContextPaste";
-            this.ContextPaste.Size = new System.Drawing.Size(191, 22);
+            this.ContextPaste.Size = new System.Drawing.Size(194, 22);
             this.ContextPaste.Text = "Paste";
             this.ContextPaste.Click += new System.EventHandler(this.MenuEditPaste_Click);
             // 
             // toolStripSeparator16
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
-            this.toolStripSeparator16.Size = new System.Drawing.Size(188, 6);
+            this.toolStripSeparator16.Size = new System.Drawing.Size(191, 6);
             // 
             // ContextComment
             // 
@@ -2647,27 +2634,27 @@
             this.ContextCommentRemove});
             this.ContextComment.Image = ((System.Drawing.Image)(resources.GetObject("ContextComment.Image")));
             this.ContextComment.Name = "ContextComment";
-            this.ContextComment.Size = new System.Drawing.Size(191, 22);
+            this.ContextComment.Size = new System.Drawing.Size(194, 22);
             this.ContextComment.Text = "Comment";
             // 
             // ContextCommentApply
             // 
             this.ContextCommentApply.Name = "ContextCommentApply";
-            this.ContextCommentApply.Size = new System.Drawing.Size(113, 22);
+            this.ContextCommentApply.Size = new System.Drawing.Size(117, 22);
             this.ContextCommentApply.Text = "Apply";
             this.ContextCommentApply.Click += new System.EventHandler(this.MenuEditComment_Click);
             // 
             // ContextCommentRemove
             // 
             this.ContextCommentRemove.Name = "ContextCommentRemove";
-            this.ContextCommentRemove.Size = new System.Drawing.Size(113, 22);
+            this.ContextCommentRemove.Size = new System.Drawing.Size(117, 22);
             this.ContextCommentRemove.Text = "Remove";
             this.ContextCommentRemove.Click += new System.EventHandler(this.MenuEditRemoveComment_Click);
             // 
             // toolStripSeparator17
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(188, 6);
+            this.toolStripSeparator17.Size = new System.Drawing.Size(191, 6);
             // 
             // ContextBookmarks
             // 
@@ -2678,83 +2665,83 @@
             this.goToNextToolStripMenuItem,
             this.goToPreviousToolStripMenuItem});
             this.ContextBookmarks.Name = "ContextBookmarks";
-            this.ContextBookmarks.Size = new System.Drawing.Size(191, 22);
+            this.ContextBookmarks.Size = new System.Drawing.Size(194, 22);
             this.ContextBookmarks.Text = "Bookmarks";
             // 
             // ContextBookInsert
             // 
             this.ContextBookInsert.Name = "ContextBookInsert";
-            this.ContextBookInsert.Size = new System.Drawing.Size(146, 22);
+            this.ContextBookInsert.Size = new System.Drawing.Size(151, 22);
             this.ContextBookInsert.Text = "Insert/Remove";
             this.ContextBookInsert.Click += new System.EventHandler(this.MenuInsertBookmark_Click);
             // 
             // toolStripSeparator36
             // 
             this.toolStripSeparator36.Name = "toolStripSeparator36";
-            this.toolStripSeparator36.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator36.Size = new System.Drawing.Size(148, 6);
             // 
             // ContextBookRemoveAll
             // 
             this.ContextBookRemoveAll.Name = "ContextBookRemoveAll";
-            this.ContextBookRemoveAll.Size = new System.Drawing.Size(146, 22);
+            this.ContextBookRemoveAll.Size = new System.Drawing.Size(151, 22);
             this.ContextBookRemoveAll.Text = "Remove All";
             this.ContextBookRemoveAll.Click += new System.EventHandler(this.MenuRemoveAllBookmark_Click);
             // 
             // goToNextToolStripMenuItem
             // 
             this.goToNextToolStripMenuItem.Name = "goToNextToolStripMenuItem";
-            this.goToNextToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.goToNextToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.goToNextToolStripMenuItem.Text = "Go to Next";
             this.goToNextToolStripMenuItem.Click += new System.EventHandler(this.MenuInsertGoToNextBookmark_Click);
             // 
             // goToPreviousToolStripMenuItem
             // 
             this.goToPreviousToolStripMenuItem.Name = "goToPreviousToolStripMenuItem";
-            this.goToPreviousToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.goToPreviousToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.goToPreviousToolStripMenuItem.Text = "Go to Previous";
             this.goToPreviousToolStripMenuItem.Click += new System.EventHandler(this.MenuInsertGoToPreviousBookmark_Click);
             // 
             // toolStripSeparator24
             // 
             this.toolStripSeparator24.Name = "toolStripSeparator24";
-            this.toolStripSeparator24.Size = new System.Drawing.Size(188, 6);
+            this.toolStripSeparator24.Size = new System.Drawing.Size(191, 6);
             // 
             // ContextGoToDefinition
             // 
             this.ContextGoToDefinition.Name = "ContextGoToDefinition";
-            this.ContextGoToDefinition.Size = new System.Drawing.Size(191, 22);
+            this.ContextGoToDefinition.Size = new System.Drawing.Size(194, 22);
             this.ContextGoToDefinition.Text = "Go to definition of ...";
             this.ContextGoToDefinition.Click += new System.EventHandler(this.ContextGoToDefinition_Click);
             // 
             // ContextGoToReference
             // 
             this.ContextGoToReference.Name = "ContextGoToReference";
-            this.ContextGoToReference.Size = new System.Drawing.Size(191, 22);
+            this.ContextGoToReference.Size = new System.Drawing.Size(194, 22);
             this.ContextGoToReference.Text = "Go to reference(s) of ...";
             this.ContextGoToReference.Click += new System.EventHandler(this.ContextGoToReference_Click);
             // 
             // toolStripSeparator34
             // 
             this.toolStripSeparator34.Name = "toolStripSeparator34";
-            this.toolStripSeparator34.Size = new System.Drawing.Size(188, 6);
+            this.toolStripSeparator34.Size = new System.Drawing.Size(191, 6);
             // 
             // ContextOpenFile
             // 
             this.ContextOpenFile.Name = "ContextOpenFile";
-            this.ContextOpenFile.Size = new System.Drawing.Size(191, 22);
+            this.ContextOpenFile.Size = new System.Drawing.Size(194, 22);
             this.ContextOpenFile.Text = "Open File";
             this.ContextOpenFile.Click += new System.EventHandler(this.ContextOpenFile_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(188, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(191, 6);
             // 
             // ContextHelp
             // 
             this.ContextHelp.Image = ((System.Drawing.Image)(resources.GetObject("ContextHelp.Image")));
             this.ContextHelp.Name = "ContextHelp";
-            this.ContextHelp.Size = new System.Drawing.Size(191, 22);
+            this.ContextHelp.Size = new System.Drawing.Size(194, 22);
             this.ContextHelp.Text = "... -> Help";
             this.ContextHelp.Click += new System.EventHandler(this.MenuInfoOpcodeHelp_Click);
             // 
@@ -2766,20 +2753,6 @@
             // TimerMod
             // 
             this.TimerMod.Tick += new System.EventHandler(this.TimerMod_Tick);
-            // 
-            // wxTabCode
-            // 
-            this.wxTabCode.AllowDrop = true;
-            this.wxTabCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wxTabCode.Location = new System.Drawing.Point(0, 49);
-            this.wxTabCode.Name = "wxTabCode";
-            this.wxTabCode.SelectedIndex = 0;
-            this.wxTabCode.Size = new System.Drawing.Size(800, 389);
-            this.wxTabCode.TabIndex = 14;
-            this.wxTabCode.SelectedIndexChanged += new System.EventHandler(this.wxTabCode_SelectedIndexChanged);
-            this.wxTabCode.DragDrop += new System.Windows.Forms.DragEventHandler(this.wxTabCode_DragDrop);
-            this.wxTabCode.DragEnter += new System.Windows.Forms.DragEventHandler(this.wxTabCode_DragEnter);
-            this.wxTabCode.DragOver += new System.Windows.Forms.DragEventHandler(this.wxTabCode_DragOver);
             // 
             // FormMain
             // 
@@ -2805,13 +2778,11 @@
             this.ToolStrip1.ResumeLayout(false);
             this.ToolStrip1.PerformLayout();
             this.tabControlBuild.ResumeLayout(false);
-            this.tabCompiler.ResumeLayout(false);
             this.tabHelp.ResumeLayout(false);
             this.tabHelp.PerformLayout();
             this.ToolStripBrowser.ResumeLayout(false);
             this.ToolStripBrowser.PerformLayout();
             this.tabOpcodes.ResumeLayout(false);
-            this.tabRepository.ResumeLayout(false);
             this.mContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

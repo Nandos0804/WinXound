@@ -9,14 +9,11 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.Collections.Specialized;
 using System.IO;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Windows.Forms;
 
 
 namespace ScintillaTextEditor
@@ -163,7 +160,7 @@ namespace ScintillaTextEditor
         //public event EventHandler SCI_ModContainer;
         public delegate void OnSciModContainer(object sender, Int32 token);
         public event OnSciModContainer SCI_ModContainer;
-        
+
         //public event EventHandler SCI_GotFocus;
         //public event EventHandler SCI_LostFocus;
         public event MouseEventHandler SCI_MouseEvent;
@@ -173,7 +170,9 @@ namespace ScintillaTextEditor
         public delegate void OnSCI_Modified(object sender, Int32 position, Int32 length);
         public event OnSCI_Modified SCI_Modified;
         public event MouseEventHandler SCI_MouseZoom;
+#pragma warning disable CS0067
         public event KeyEventHandler KeyAction;
+#pragma warning restore CS0067
 
         //EVENT for Autocomplete
         public delegate void OnAutocomplete(object sender, string command);
@@ -241,8 +240,8 @@ namespace ScintillaTextEditor
             //Set Scintilla ModeEventMask (to filter SCN_MODIFIED event)
             this.SetModeEventMask((int)SciConst.SC_MOD_INSERTTEXT |
                                   (int)SciConst.SC_MOD_DELETETEXT |
-                //(int)SciConst.SC_PERFORMED_REDO |
-                //(int)SciConst.SC_PERFORMED_UNDO |
+                                  //(int)SciConst.SC_PERFORMED_REDO |
+                                  //(int)SciConst.SC_PERFORMED_UNDO |
                                   (int)SciConst.SC_MOD_CONTAINER);
 
             //Set Eol conversion on Paste (and on drag_and_drop)
@@ -266,7 +265,7 @@ namespace ScintillaTextEditor
 
 
         //Various class overrides
-        bool sciLexerLoaded = false;
+        private static bool sciLexerLoaded = false;
         protected override CreateParams CreateParams
         {
             get
@@ -276,18 +275,32 @@ namespace ScintillaTextEditor
 
                 if (!sciLexerLoaded)
                 {
-                    /*mLib =*/
-                    WinApi.LoadLibrary("SciLexer.dll");
+                    EnsureSciLexerLoaded();
                 }
 
                 CreateParams cp = base.CreateParams;
                 cp.ClassName = "Scintilla";
                 cp.Style = (int)WinApi.WS_CHILD | (int)WinApi.WS_VISIBLE | (int)WinApi.WS_TABSTOP;
 
-                sciLexerLoaded = true;
-
                 return cp;
             }
+        }
+
+        private static void EnsureSciLexerLoaded()
+        {
+            IntPtr moduleHandle = WinApi.LoadLibrary("SciLexer.dll");
+            if (moduleHandle != IntPtr.Zero)
+            {
+                sciLexerLoaded = true;
+                return;
+            }
+
+            int win32Error = Marshal.GetLastWin32Error();
+            string bitness = IntPtr.Size == 8 ? "x64" : "x86";
+            throw new DllNotFoundException(
+                "Unable to load SciLexer.dll. " +
+                "Make sure the native dependency exists next to the executable and matches process architecture (" + bitness + "). " +
+                "Win32Error=" + win32Error + ".");
         }
 
 
@@ -961,14 +974,14 @@ namespace ScintillaTextEditor
                             case Keys.K:
                                 return base.PreProcessMessage(ref msg);
 
-                            //case Keys.Enter:
-                            //    if (mRemoveKeyDown)
-                            //    {
-                            //        if (SCI_AutoComplete != null)
-                            //            SCI_AutoComplete(this, "ctrl+shift+enter");
-                            //        return true;
-                            //    }
-                            //    break;
+                                //case Keys.Enter:
+                                //    if (mRemoveKeyDown)
+                                //    {
+                                //        if (SCI_AutoComplete != null)
+                                //            SCI_AutoComplete(this, "ctrl+shift+enter");
+                                //        return true;
+                                //    }
+                                //    break;
 
                         }
 

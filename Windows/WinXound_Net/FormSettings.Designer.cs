@@ -824,7 +824,7 @@
             this.GroupBox4.Size = new System.Drawing.Size(595, 136);
             this.GroupBox4.TabIndex = 0;
             this.GroupBox4.TabStop = false;
-            this.GroupBox4.Text = "CSound 5";
+            this.GroupBox4.Text = "CSound 7";
             // 
             // buttonClearCSoundGUI
             // 
@@ -930,7 +930,7 @@
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(185, 20);
             this.Label1.TabIndex = 0;
-            this.Label1.Text = "Csound 5 executable (csound.exe):";
+            this.Label1.Text = "Csound 7 executable (csound.exe):";
             this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Label2
@@ -939,7 +939,7 @@
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(448, 20);
             this.Label2.TabIndex = 1;
-            this.Label2.Text = "Csound 5 External GUI (winsound, csound5gui.exe, QuteCsound, ...):";
+            this.Label2.Text = "Csound 7 External GUI (winsound, csound5gui.exe, QuteCsound, ...):";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ButtonBrowseCSoundHelpHTML
@@ -957,7 +957,7 @@
             this.Label28.Name = "Label28";
             this.Label28.Size = new System.Drawing.Size(185, 20);
             this.Label28.TabIndex = 21;
-            this.Label28.Text = "CSound 5 Help (Html format):";
+            this.Label28.Text = "CSound 7 Help (Html format):";
             this.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // GroupBox5

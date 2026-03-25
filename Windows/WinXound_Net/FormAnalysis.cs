@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace WinXound_Net
 {
@@ -13,7 +8,7 @@ namespace WinXound_Net
     {
 
         string newline = System.Environment.NewLine;
-        
+
 
         public FormAnalysis()
         {
@@ -492,7 +487,7 @@ namespace WinXound_Net
             switch (TabControl1.SelectedTab.Name.Substring(3))
             {
                 case "Atsa":
-                    flags = ATSA(); 
+                    flags = ATSA();
                     break;
                 case "Cvanal":
                     flags = CVANAL();
@@ -532,7 +527,7 @@ namespace WinXound_Net
                         o += ".pvx";
                     else
                         o += ".pv"; //Simple format
-                    
+
                 }
                 else if (TabControl1.SelectedTab.Name.Substring(3, 3).ToLower() == "het" &&
                          checkBoxSDIF.Checked) //Check for sdif extension
@@ -566,7 +561,7 @@ namespace WinXound_Net
             ButtonOutput.Enabled = false;
             buttonClearInputField.Enabled = false;
             ButtonReset.Enabled = false;
-            
+
             ButtonStart.Enabled = false;
             if (input.Items.Count > 1)
             {
@@ -576,7 +571,7 @@ namespace WinXound_Net
                 WxUtilityConsole1.Title =
                     string.Format("Batch processing info:  {0}  [{1} of {2}]",
                                   input.SelectedItem.ToString(),
-                                  mCurrentIndex + 1, 
+                                  mCurrentIndex + 1,
                                   input.Items.Count);
             }
 
@@ -587,7 +582,7 @@ namespace WinXound_Net
             //Example: " -U cvanal [FLAGS] inputfile outputfile" 
             WxUtilityConsole1.Filename = wxGlobal.Settings.Directory.CSoundConsole;
             WxUtilityConsole1.Arguments = arguments;
-            
+
             //If we use batch file, we pass false to ClearPreviousText parameter
             //to compiler to preserve the old content
             WxUtilityConsole1.StartCompiler(true, mCurrentIndex < 1);
@@ -629,7 +624,7 @@ namespace WinXound_Net
 
                 WxUtilityConsole1.buttonStopBatch.Visible = false;
             }
-       }
+        }
 
         private void buttonStopBatch_Click(object sender, EventArgs e)
         {
@@ -639,7 +634,7 @@ namespace WinXound_Net
         }
 
 
-        
+
 
 
 
@@ -754,7 +749,7 @@ namespace WinXound_Net
 
         private void FormAnalysis_KeyDown(object sender, KeyEventArgs e)
         {
-            if(TabControl1.Enabled == false) return;
+            if (TabControl1.Enabled == false) return;
 
             if (e.KeyCode == Keys.Escape)
             {
@@ -835,7 +830,7 @@ namespace WinXound_Net
             }
 
             TabControl2.SelectedIndex = 0;
-            
+
             string UtilityName = TabControl1.SelectedTab.Name.Substring(3);
 
             try
@@ -849,7 +844,7 @@ namespace WinXound_Net
             }
             catch (Exception ex)
             {
-                wxGlobal.wxMessageError(ex.Message, 
+                wxGlobal.wxMessageError(ex.Message,
                     "Form Analysis - TabControl1_SelectedIndexChanged");
             }
 

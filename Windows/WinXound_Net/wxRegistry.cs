@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using System.Windows.Forms;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
+using System;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 
 namespace WinXound_Net
@@ -199,12 +196,12 @@ namespace WinXound_Net
                 sKeyName = Identifier;
                 if (!string.IsNullOrEmpty(Parameters))
                 {
-                    sKeyValue = "\"" + path + OpenWith + "\"" + " " + 
+                    sKeyValue = "\"" + path + OpenWith + "\"" + " " +
                                 Parameters.Trim();
                 }
                 else
                 {
-                    sKeyValue = "\"" + path + OpenWith + "\"" + " " + 
+                    sKeyValue = "\"" + path + OpenWith + "\"" + " " +
                                 "\"" + "%1" + "\"";
                 }
 

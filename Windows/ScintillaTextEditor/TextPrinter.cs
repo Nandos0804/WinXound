@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Printing;
-using System.ComponentModel;
-using ScintillaTextEditor;
 
 
 
@@ -18,7 +13,6 @@ namespace ScintillaTextEditor
         private int mPosition;
         private int mPrintEnd;
         private int mCurrentPage;
-        private int mLineCount = 0;
 
 
 
@@ -29,7 +23,7 @@ namespace ScintillaTextEditor
             this.DefaultPageSettings.Margins = new Margins(59, 59, 59, 59);
         }
 
-        
+
         protected override void OnBeginPrint(PrintEventArgs e)
         {
             base.OnBeginPrint(e);
@@ -53,7 +47,7 @@ namespace ScintillaTextEditor
             //FooterInformation oFooter = ((PageSettings)DefaultPageSettings).Footer;
             Rectangle mPrintBounds = e.MarginBounds;
             bool bIsPreview = this.PrintController.IsPreview;
-            
+
             //// When not in preview mode, adjust graphics to account for hard margin of the printer
             //if (!bIsPreview)
             //{

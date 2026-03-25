@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
-using System.Data;
+using System.Globalization;
+using System.Management;
 using System.Text;
 using System.Windows.Forms;
-using System.Management;
-using System.Globalization;
-using System.Diagnostics;
 
 
 
@@ -187,7 +184,7 @@ namespace WinXound_Net
 
         public void SetEnvironment(string NameValue)
         {
-            if(!process1.StartInfo.EnvironmentVariables.ContainsKey("SFDIR"))
+            if (!process1.StartInfo.EnvironmentVariables.ContainsKey("SFDIR"))
                 process1.StartInfo.EnvironmentVariables.Add("SFDIR", NameValue);
         }
 
@@ -322,11 +319,11 @@ namespace WinXound_Net
                         _paused = (p.Threads[0].WaitReason == ThreadWaitReason.Suspended);
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     _paused = mIsPaused;
                 }
-                
+
 
                 foreach (ProcessThread thread in p.Threads)
                 {
@@ -366,7 +363,7 @@ namespace WinXound_Net
             */
 
 
-            
+
         }
 
 
@@ -502,11 +499,15 @@ namespace WinXound_Net
         {
             try
             {
-                this.Invoke(d, new Object[] { RTB_Error, Encoding.ASCII.GetString(wxErrorBuffer, 0, process1.StandardError.BaseStream.EndRead(ar)) });
+                string errText = Encoding.ASCII.GetString(wxErrorBuffer, 0, process1.StandardError.BaseStream.EndRead(ar));
+                this.Invoke(d, new Object[] { RTB_Error, errText });
+                this.Invoke(d, new Object[] { RTB_Output, errText }); // show stderr in real-time
 
                 if (process1.HasExited)
                 {
-                    this.Invoke(d, new Object[] { RTB_Error, process1.StandardError.ReadToEnd() });
+                    string remaining = process1.StandardError.ReadToEnd();
+                    this.Invoke(d, new Object[] { RTB_Error, remaining });
+                    this.Invoke(d, new Object[] { RTB_Output, remaining }); // show stderr in real-time
                 }
                 else
                 {
@@ -584,13 +585,7 @@ namespace WinXound_Net
             //Compiler completed --
             this.Invoke(d, new Object[] { RTB_Output, "------- Compiler End -------" + newline + newline });
 
-            if (RTB_Error.Text.Length > 0)
-            {
-                string mString = @"Compiler Info/Warnings/Errors:" + newline +
-                                 RTB_Error.Text.Trim() + newline;
-
-                this.Invoke(d, new Object[] { RTB_Output, mString });
-            }
+            // stderr was already forwarded to RTB_Output in real-time via ErrorCallback
 
             string mError = FindError(RTB_Error);
             string mWave = FindSounds(RTB_Output);

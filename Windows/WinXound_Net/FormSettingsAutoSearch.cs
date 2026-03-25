@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace WinXound_Net
 {
@@ -228,7 +225,7 @@ namespace WinXound_Net
                         }
                     }
                 }
-                
+
                 else //Look in root path
                 {
                     //Retrieve System Folder
@@ -245,7 +242,7 @@ namespace WinXound_Net
                         }
                     }
                 }
-                
+
                 if (File.Exists(PythonPath + "\\python.exe"))
                 {
                     python_paths.Add(

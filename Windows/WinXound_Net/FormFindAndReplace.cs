@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-
-using System.Text.RegularExpressions;
 
 
 namespace WinXound_Net
@@ -55,11 +49,11 @@ namespace WinXound_Net
             catch { }
 
 
-            CheckBoxMatchWholeWord.Checked = 
+            CheckBoxMatchWholeWord.Checked =
                 wxGlobal.Settings.General.FindWholeWord;
-            CheckBoxMatchCase.Checked = 
+            CheckBoxMatchCase.Checked =
                 wxGlobal.Settings.General.FindMatchCase;
-            CheckBoxReplaceFromCaret.Checked = 
+            CheckBoxReplaceFromCaret.Checked =
                 wxGlobal.Settings.General.ReplaceFromCaret;
 
         }
@@ -71,11 +65,11 @@ namespace WinXound_Net
 
         private void FormFindAndReplace_FormClosing(object sender, FormClosingEventArgs e)
         {
-            wxGlobal.Settings.General.FindWholeWord = 
+            wxGlobal.Settings.General.FindWholeWord =
                 CheckBoxMatchWholeWord.Checked;
-            wxGlobal.Settings.General.FindMatchCase = 
+            wxGlobal.Settings.General.FindMatchCase =
                 CheckBoxMatchCase.Checked;
-            wxGlobal.Settings.General.ReplaceFromCaret = 
+            wxGlobal.Settings.General.ReplaceFromCaret =
                 CheckBoxReplaceFromCaret.Checked;
             wxGlobal.LastWordSearch = TextBoxFind.Text;
         }

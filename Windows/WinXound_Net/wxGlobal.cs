@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Collections;
+using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-using System.Collections;
-using System.Text.RegularExpressions;
-using System.IO;
 
 
 namespace WinXound_Net
@@ -296,7 +293,7 @@ namespace WinXound_Net
                            "'SET THE PATH TO THE WINDOWS DESKTOP FOLDER & MY DOCUMENTS FOLDER" + newline +
                            "desktopPath = shell.SpecialFolders(\"Desktop\")" + newline +
                            "'CREATE A SHORTCUT ON THE USER'S DESKTOP" + newline +
-                    //"Set link = shell.CreateShortcut(desktopPath & "\WinXound.lnk")
+                           //"Set link = shell.CreateShortcut(desktopPath & "\WinXound.lnk")
                            "Set link = shell.CreateShortcut(desktopPath & \"\\" + TITLE + ".lnk\")" + newline +
                            "'SET THE PROPERTIES FOR THE SHORTCUT" + newline +
                            "link.Description = \"WinXound\"" + newline +
@@ -329,7 +326,8 @@ namespace WinXound_Net
                                     "WinXound Error",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
-                };
+                }
+                ;
             }
             catch (Exception ex)
             {
@@ -391,11 +389,11 @@ namespace WinXound_Net
                 ProgramsFolder =
                     System.Environment.GetFolderPath(
                         Environment.SpecialFolder.ProgramFiles);
-                if(!ProgramsFolder.EndsWith("(x86)"))
+                if (!ProgramsFolder.EndsWith("(x86)"))
                     ProgramsFolder += "(x86)";
             }
 
-            if(string.IsNullOrEmpty(ProgramsFolder))
+            if (string.IsNullOrEmpty(ProgramsFolder))
                 return "";
 
             return ProgramsFolder;
@@ -426,7 +424,7 @@ namespace WinXound_Net
         //USEFUL METHOD TO RETRIEVE THE CURRENT LOCAL IP
         public static string GetLocalIP()
         {
-            System.Net.IPHostEntry h = System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName());
+            System.Net.IPHostEntry h = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
             return ((System.Net.IPAddress)h.AddressList.GetValue(0)).ToString();
         }
 

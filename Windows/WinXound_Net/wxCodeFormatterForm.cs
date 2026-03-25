@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using System.Collections;
 
 namespace WinXound_Net
 {
@@ -112,17 +107,17 @@ namespace WinXound_Net
                 //'Comment Line ";" - (SCE_C_COMMENTLINE 2)
                 textEditorExample.PrimaryView.StyleSetFore(2,
                     ColorTranslator.ToWin32(Color.FromArgb(0, 150, 0)));
-                textEditorExample.PrimaryView.StyleSetBack(2, 
+                textEditorExample.PrimaryView.StyleSetBack(2,
                     ColorTranslator.ToWin32(Color.FromArgb(255, 255, 255)));
                 //'Keyword(0): OPCODES - (SCE_C_WORD 5)
-                textEditorExample.PrimaryView.StyleSetFore(5, 
+                textEditorExample.PrimaryView.StyleSetFore(5,
                     ColorTranslator.ToWin32(Color.FromArgb(0, 0, 255)));
-                textEditorExample.PrimaryView.StyleSetBack(5, 
+                textEditorExample.PrimaryView.StyleSetBack(5,
                     ColorTranslator.ToWin32(Color.FromArgb(255, 255, 255)));
                 //'CSD Tags, Keyword(1) - (SCE_C_WORD2 16)
-                textEditorExample.PrimaryView.StyleSetFore(16, 
+                textEditorExample.PrimaryView.StyleSetFore(16,
                     ColorTranslator.ToWin32(Color.FromArgb(220, 0, 110)));
-                textEditorExample.PrimaryView.StyleSetBack(16, 
+                textEditorExample.PrimaryView.StyleSetBack(16,
                     ColorTranslator.ToWin32(Color.FromArgb(255, 255, 255)));
             }
             catch (Exception ex)

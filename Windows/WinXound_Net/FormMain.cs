@@ -1,16 +1,11 @@
-﻿using System;
+﻿using ScintillaTextEditor;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
+using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.IO;
-
-using ScintillaTextEditor;
-using System.Xml;
 
 
 namespace WinXound_Net
@@ -87,7 +82,7 @@ namespace WinXound_Net
                     MessageBoxIcon.Information);
                 mWinXoundIsReadOnly = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //wxGlobal.wxMessageError(ex.Message,
                 System.Diagnostics.Debug.WriteLine(
@@ -1184,7 +1179,7 @@ namespace WinXound_Net
                        report + newline + newline +
                        "WinXound will normalize all line endings to " + eol + ".",
                        "WinXound Information",
-                //MessageBoxButtons.YesNo,
+                       //MessageBoxButtons.YesNo,
                        MessageBoxButtons.OK,
                        MessageBoxIcon.Information);
         }
@@ -6152,16 +6147,14 @@ namespace WinXound_Net
         {
             try
             {
-                //http://www.csounds.com/resources/learning/
-                //http://www.csounds.com/tutorials
-                System.Diagnostics.Process.Start("http://www.csounds.com/resources/learning/");
+                System.Diagnostics.Process.Start("https://csound.com/docs/manual/index.html");
             }
             catch (System.ComponentModel.Win32Exception noBrowser)
             {
                 if (noBrowser.ErrorCode == -2147467259)
                 {
                     //MessageBox.Show(noBrowser.Message);
-                    MessageBox.Show("Could not open 'http://www.csounds.com/resources/learning/'!" + newline +
+                    MessageBox.Show("Could not open 'https://csound.com/docs/manual/index.html'!" + newline +
                                     "Internet browser not found.",
                                     "WinXound error!",
                                     MessageBoxButtons.OK,
@@ -6170,7 +6163,7 @@ namespace WinXound_Net
             }
             catch (System.Exception other)
             {
-                MessageBox.Show("Could not open 'http://www.csounds.com/resources/learning/'!" + newline +
+                MessageBox.Show("Could not open 'https://csound.com/docs/manual/index.html'!" + newline +
                                 other.Message,
                                 "WinXound error!",
                                 MessageBoxButtons.OK,
@@ -6854,7 +6847,7 @@ namespace WinXound_Net
             string link = "http://en.flossmanuals.net/csound/";
 
             try
-            {       
+            {
                 System.Diagnostics.Process.Start(link);
             }
             catch (System.ComponentModel.Win32Exception noBrowser)

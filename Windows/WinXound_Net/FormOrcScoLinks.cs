@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace WinXound_Net
@@ -46,7 +41,7 @@ namespace WinXound_Net
 
         private void ListBoxOrcSco_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Return)
+            if (e.KeyCode == Keys.Return)
                 buttonOK_Click(this, null);
         }
     }

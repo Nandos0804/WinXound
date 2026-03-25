@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 
 namespace WinXound_Net
 {
@@ -251,7 +247,7 @@ namespace WinXound_Net
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Unable to start the Wave Editor executable!\n" +
                                 "Please check WinXound Settings (Directories->Wave Editor Executable field)",
@@ -394,7 +390,7 @@ namespace WinXound_Net
                 functionReturnValue = true;
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
                 //MessageBox.Show(ex.Message, " Error", MessageBoxButtons.OK);
